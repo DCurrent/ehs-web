@@ -1,0 +1,105 @@
+/* 
+	CSS printing style.
+	Damon V. Caskey
+	2011_07_01
+	~2011_12_02
+*/
+
+body {
+	margin: 0px 0px 0px 0px;	
+	background-image: none;
+	background-color:#FFF;	
+	}
+	
+#container {	
+	margin: auto auto auto auto;	
+	width: auto;	
+	}
+
+#mainNavigation { display:none; }
+
+#subContainer {
+	margin: auto 0px 0px auto;
+	width:auto;
+	}
+
+#subNavigation { display:none; 
+	}
+#subNavigation ul {display:none; }
+
+#subNavigation li {display:none; }
+#subNavigation ul ul {display:none; }
+#subNavigation ul#toplevel {display:none; }
+
+#subNavigation a {display:none; }
+#subNavigation li a.fly {display:none; }
+
+#subNavigation li a:hover {display:none; }
+#subNavigation li:hover > a {display:none; }
+
+#subNavigation table {display:none;}
+
+#sidePanel { display:none; }
+
+#sideContent { display:none; }
+
+#footer { display:none;	}
+#footer a:link { display:none; }
+#footer a:visited { display:none; }
+#footer a:hover { display:none;}
+#footer a:active {  display:none; }
+
+#footerPad{ display:none; }
+
+#top h2 { display: none; }
+
+img.uk_logo { display:none; }
+.hideme {display:none; }
+
+.NoPrint {display:none; }
+
+/* Headings */
+h1 
+{
+	color: 						#005daa;
+	font-size:					xx-large;
+	font-weight: 				bold;
+	margin: 					0px 0px 0px 0px;
+	text-shadow:				none;		
+}
+
+h1.flame
+{
+	padding-top: 10px;
+	text-shadow:none;
+}
+
+h2
+{ 
+	color: 						#005daa; 
+	font-size:					x-large; 
+	font-weight: 				bold; 
+	text-shadow:				none;	
+}
+
+h3 
+{ 
+	color: 						#005daa; 
+	font-size:					large; 
+	font-weight: 				bold; 
+	text-shadow:				none;	
+}
+
+h3.flame
+{
+	color:						#F30;
+	padding-top: 				10px;
+	text-shadow: 				none;
+}
+
+h4
+{ 
+	color: 						#005daa;
+	font-size:					larger;  
+	text-shadow:				none;	
+}
