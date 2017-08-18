@@ -26,7 +26,7 @@
                 </div><!--/subContainer-->
                 <div id="content">
                     <h1 id="def">Automated External Defibrillator (AED)</h1>
-                    <p class="center"><a href="https://maps.uky.edu/aed/" target="_blank" class="no_icon"><img src="../media/image/aed_map.png" alt="AED Map" style="width:500px; height:350px;"></a></p>
+                    <h3 class="center"><a href="https://maps.uky.edu/aed/" target="_blank" class="no_icon">Click here for a map of AED locations</a></h3>
                   <p>An AED (automated external defibrillator) is a piece of medical equipment used to treat cardiac<br>
                       arrhythmias and cardiac arrest. It automatically diagnoses the hearts rhythm to determine if a shock<br>
                       needs to be administered to a person, and will deliver that shock if needed. As technology for this<br>
