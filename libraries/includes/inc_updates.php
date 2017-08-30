@@ -3,6 +3,11 @@
 <hr />
 
 <h2>Recent Updates </h2>
+<h3>Lab Safety Fair 2017</h3>
+<ul>
+  <li><a href="/docs/pdf/lsf_poster.pdf">Poster</a></li>
+  <li><a href="/docs/pdf/lsf_map.pdf">Map</a></li>
+</ul>
 <p><a href="/docs/pdf/ohs_walk_safely_flyer.pdf">Wildcats Walk Safely! Be a Safe Pedestrian at UK</a></p>
 <iframe id="campus_safety" src="//www.youtube.com/embed/9yH7nqJeRZw?wmode=transparent" allowfullscreen></iframe>
 
