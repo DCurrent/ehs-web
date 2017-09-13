@@ -14,7 +14,17 @@
         
         <?php 
             $cLRoot		= $cDocroot."ohs/";
-        ?>    
+        ?>  
+        <style>
+		img.instructions
+			{
+				padding-bottom:5px; 
+				padding-left:5px;
+				padding-right:5px;
+				padding-top:5px;
+			}
+		
+		</style>
     </head>
     
     <body>    
@@ -29,7 +39,7 @@
                 </div>
                 <div id="content">
                     <h1>Respiratory Protection</h1>
-                    <h2>Written Program</h2>
+                    <h2 id="written">Written Program</h2>
 <p>For any employment or tasks that  REQUIRE respiratory protection, either due to known/possible exposures,  regulations, or internal policy, the department in which the affected employee  works must have a written Respiratory Protection Program. </p>
 <p>A <a href="http://ehs.uky.edu/docs/pdf/ohs_resp_program_template_0001.pdf">template</a> is available. The specific  written program must reflect the conditions and realities of operations within  the department that requires the respirator use. This program must be reviewed  and (if necessary) updated on an annual basis. Employees must also be trained  or instructed on the contents of the department-specific Respiratory Protection  Program at least annually.</p>
 <h2>Voluntary Use of Disposable Filtering Facepiece (e.g. N-95) Respirators</h2>
@@ -44,40 +54,26 @@ There  are two considerations with respect to proper fit:</p>
 </ol>
 <p>The  answers to the above questions can be determined by the use of a fit test. Quantitative  fit tests are conducted by UK Health &amp; Safety after an employee&rsquo;s initial  program enrollment (see below) and annually thereafter. </p>
 Even N-95 filtering  facepiece respirators require annual fit testing, unless their usage is  strictly voluntary. Loose-fitting hood-type Powered Air-Purifying Respirators  (PAPR) do not require fit testing, as they do not form a tight seal around the  face/head/neck. PAPRs with tight-fitting elastomeric facepieces require annual  fit testing.
-<h2><strong><a name="enrollment"></a>Initial Program Enrollment and Medical Evaluation</strong></h2>
-<p>For  employees required to use respiratory protection, and who have never been  medically qualified and/or been fit-tested for a respirator:</p>
-<p>UK Health  and Safety provides fit-testing, training and program development assistance  for the use of respiratory protection. Employees who are required to use  respiratory protection must be medically qualified prior to being fit-tested  for a respirator. Once medically qualified, a fit-test and respiratory  protection training will be conducted.<br>
-  The  following procedures outline the steps to be taken to obtain medical  qualification, fit-testing, and training.</p>
-<ol start="1" type="1">
-  <li>The employee's supervisor must       complete the top section of the&nbsp;<a href="http://ehs.uky.edu/docs/pdf/ohs_resp_request.pdf" target="_blank">Respirator Program Request</a>.</li>
-  <li>The employee completes       the&nbsp;<a href="http://ehs.uky.edu/docs/pdf/ohs_resp_medical_ah.pdf" target="_blank">Respirator Medical       Questionnaire</a>.</li>
-  <li>The&nbsp;<a href="http://ehs.uky.edu/docs/pdf/ohs_resp_request.pdf" target="_blank">Respirator Program Request</a>&nbsp;and       the&nbsp;<a href="http://ehs.uky.edu/docs/pdf/ohs_resp_medical_ah.pdf" target="_blank">Respirator Medical       Questionnaire</a>&nbsp;are faxed to UK Healthcare/Employee       Health for review by a healthcare professional.&nbsp;<br>
-    <br>
-    Secure Fax: 859-257-9814&nbsp;<br>
-    <br>
-    Employee Health Contact: Leslie Ehrmantraut (859-218-3257)&nbsp;<br>
-    <br>
-    The Respirator Medical Evaluation Questionnaire will be reviewed, and the       healthcare professional will either clear the employee to wear a       respirator based on the information provided in the questionnaire, or the       employee will be contacted to schedule a medical exam. Final clearance to       wear a respirator will be indicated by the healthcare professional's       signature on the Respirator Request Form. The form should be maintained in       the employee&rsquo;s personnel record, and the Respirator Medical Evaluation       Questionnaire should be maintained at UK Healthcare/Employee Health with       the employee's medical records.</li>
-  <li>The respirator request form       shall be completed and signed by the healthcare professional before fit       testing can be conducted. Please allow 5-7 working days from the submittal       date to UK Healthcare/Employee Health before contacting UK Health &amp;       Safety at 257-3827 to schedule fit testing.</li>
+<h2><strong><a name="enrollment"></a>Program Enrollment and Medical Evaluation</strong></h2>
+<p>For  all employees required to use respiratory protection, an initial fit-testing and training is  required and must be repeated at least annually, provided that the employee  continues to require respiratory protection for their employment. Training on  the department&rsquo;s specific written Respiratory Protection Program must also be  performed at least annually. Complete the following steps for initial and anuual renewal.</p>
+<ol>
+  <li>The department must have a <a href="#written">written Respiratory Protection Program</a>.</li>
+  <li>Complete the <a href="http://ehs.uky.edu/classes/classes_ohs_0001.php#respirator_use">online Respirator Use training program</a>.</li>
+  <li>Fill out the online fit testing medical clearence form:
+    <ol>
+      <li>Access <a href="https://myuk.uky.edu" target="new">MyUK</a> and log in with your Link Blue ID and password.<br>
+        <img src="../media/image/ohs-respirator-non-hcw-fit-test-instructions-2.png" class="instructions"/></li>
+      <li>Click on the <strong>Employee  Self-Service Tab</strong> and  then the <strong>UK Accounts  and Services</strong> link  at  the bottom.<img src="../media/image/ohs-respirator-non-hcw-fit-test-instructions-1.png" width="295" height="382" alt="" class="instructions"/></li>
+      <li>Click on the <strong>myUK  Health Service </strong>link at the bottom  of the menu.<img src="../media/image/ohs-respirator-non-hcw-fit-test-instructions-3.png" width="327" height="119" alt="" class="instructions"/></li>
+      <li>Click on <strong>Forms</strong>.<img src="../media/image/ohs-respirator-non-hcw-fit-test-instructions-4.png" width="626" height="76" alt="" class="instructions"/></li>
+      <li>Scroll to the <strong>Employee Health</strong> heading, then  click on <strong>Non-Healthcare worker OSHA  Fit Test Questionnaire</strong>.</li>
+      <li>Answer  all of the questions &ndash; paying special attention to the section instructions.  When finished, hit Submit at the bottom of the form.</li>
+      <li>Log off.</li>
+    </ol>
+  </li>
+  <li>A representaive from the Environmental Health &amp; Safety Division will contact you to schedule a fit test.</li>
 </ol>
-Fit-testing and training is  required to be repeated on annual basis. Initial Respirator Use training is  available&nbsp;<a href="http://ehs.uky.edu/classes/classes_ohs_0001.php#respirator_use">online</a> and must be repeated at least annually, provided that the employee  continues to require respiratory protection for their employment. Training on  the department&rsquo;s specific written Respiratory Protection Program must also be  performed at least annually.
-<h2><strong>Renewal of Enrollment and Medical Evaluation</strong></h2>
-<p>For employees who have been enrolled in a departmental Respiratory  Protection Program for 12 months or longer:</p>
-<p>UK Health  and Safety provides annual fit-testing, training and program modification  assistance for the continuing use of respiratory protection. Employees who are  currently enrolled in a departmental Respiratory Protection Program must have  their medical qualification renewed prior to being refit-tested for a  respirator. Once medically requalified, the annual fit-test and respiratory  protection training will be conducted.<br>
-The  following procedures outline the steps to be taken to obtain medical re  qualification, and annual fit-testing, and training.</p>
-<ol start="1" type="1">
-  <li>The employee's supervisor must       complete the top section of the&nbsp;<u><a href="http://ehs.uky.edu/docs/pdf/ohs_resp_request.pdf" target="_blank">Respirator Program Request</a></u>.</li>
-  <li>The employee completes       the&nbsp;<u><a href="http://ehs.uky.edu/docs/pdf/ohs_resp_medical_annual.pdf" target="_blank">Annual Respirator Medical       Questionnaire</a></u>.</li>
-  <li>The&nbsp;<u><a href="http://ehs.uky.edu/docs/pdf/ohs_resp_request.pdf" target="_blank">Respirator Program Request</a></u>&nbsp;and       the&nbsp;<u><a href="http://ehs.uky.edu/docs/pdf/ohs_resp_medical_annual.pdf" target="_blank">Annual Respirator Medical       Questionnaire</a></u>&nbsp;are faxed to UK Healthcare/Employee       Health for review by a healthcare professional:&nbsp;<br>
-    <br>
-    Secure Fax: 859-257-9814<br>
-    <br>
-    Employee Health Contact: Leslie Ehrmantraut (859-257-3257)</li>
-  <li>If the reviewing physician       determines that further medical evaluation elements are required, the       employee's supervisor will be contacted to schedule a medical evaluation       for the employee.</li>
-  <li>The lower half of the       Respirator Program Request Form is completed by the physician or licensed       health care professional and forwarded to UK Health and Safety at the       address indicated on the bottom of the form.</li>
-  <li>The respirator request form       shall be completed and signed by the healthcare professional before fit       testing can be conducted. Please allow 5-7 working days from the submittal       date to UK Healthcare/Employee Health before contacting UK Health &amp;       Safety at 257-3827 to schedule fit testing.</li>
-</ol>
-<p>Fit-testing and training is  required to be repeated on annual basis. Initial Respirator Use training (available&nbsp;<a href="http://ehs.uky.edu/classes/classes_ohs_0001.php#respirator_use">online</a>)  must be repeated at least annually, provided that the employee continues to  require respiratory protection for their employment. Training on the  department&rsquo;s specific written Respiratory Protection Program must also be  performed at least annually.</p>
+<p>Fit-testing and training is  required to be repeated on annual basis. Initial Respirator Use training is  available&nbsp;<a href="http://ehs.uky.edu/classes/classes_ohs_0001.php#respirator_use">online</a> and must be repeated at least annually, provided that the employee  continues to require respiratory protection for their employment.</p>
 <h2>Contact Information</h2>
 <p>Please  contact <a href="mailto:brent.webber@uky.edu">Brent Webber</a>, administrator  for Respiratory Protection Programs, if you have any questions or need  assistance.                  </p>
 <hr>
