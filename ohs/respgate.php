@@ -26,7 +26,9 @@
 				padding-left:5px;
 				padding-right:5px;
 				padding-top:5px;
-				border:thin;
+				border-width:thin;
+				border-style:solid;
+				
 			}
 		
 		</style>
@@ -61,8 +63,7 @@ There  are two considerations with respect to proper fit:</p>
 Even N-95 filtering  facepiece respirators require annual fit testing, unless their usage is  strictly voluntary. Loose-fitting hood-type Powered Air-Purifying Respirators  (PAPR) do not require fit testing, as they do not form a tight seal around the  face/head/neck. PAPRs with tight-fitting elastomeric facepieces require annual  fit testing.
 <h2><strong><a name="enrollment"></a>Program Enrollment and Medical Evaluation</strong></h2>
 <p>For  all employees required to use respiratory protection, an initial fit-testing and training is  required and must be repeated at least annually, provided that the employee  continues to require respiratory protection for their employment. Training on  the department&rsquo;s specific written Respiratory Protection Program must also be  performed at least annually. Complete the following steps for initial and anuual renewal.</p>
-<ol>0
-  <li>The department must have a <a href="#written">written Respiratory Protection Program</a>.</li>
+<ol><li>The department must have a <a href="#written">written Respiratory Protection Program</a>.</li>
   <li>Complete the <a href="http://ehs.uky.edu/classes/classes_ohs_0001.php#respirator_use">online Respirator Use training program</a>.</li>
   <li>Fill out the online fit testing medical clearence form:.
     <ol>
