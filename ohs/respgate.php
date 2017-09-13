@@ -73,7 +73,6 @@ Even N-95 filtering  facepiece respirators require annual fit testing, unless th
   </li>
   <li>A representaive from the Environmental Health &amp; Safety Division will contact you to schedule a fit test.</li>
 </ol>
-<p>Fit-testing and training is  required to be repeated on annual basis. Initial Respirator Use training is  available&nbsp;<a href="http://ehs.uky.edu/classes/classes_ohs_0001.php#respirator_use">online</a> and must be repeated at least annually, provided that the employee  continues to require respiratory protection for their employment.</p>
 <h2>Contact Information</h2>
 <p>Please  contact <a href="mailto:melissa.claar@uky.edu">Melissa Claar</a>, administrator for Respiratory Protection Programs, if you have any questions or need  assistance.                  </p>
 <hr>
