@@ -41,7 +41,7 @@
                       training, and the appropriate placement of maintained AEDs are important keys in the improvement of<br>
                       survival. Many areas on the University of Kentucky’s campus have less than an 8 minute response time<br>
                       for emergency personnel and therefore an AED may not be necessary. UK Occupational Health &amp; Safety<br>
-                      requires that departments submit an official <a href="http://ehs.uky.edu/ohs/aed_request_0001.php">request form</a> for approval before procuring an AED so that a<br>
+                      requires that departments submit an official <a href="http://ehs.uky.edu/apps/shocker">request form</a> for approval before procuring an AED so that a<br>
                     review of your specific need for having this regulated piece of equipment can be done.</p>
                   <p><a href="#def">Top of Page</a></p>
                   <h2 id="why_contact">Why should Occupational Health &amp; Safety be contacted before a
