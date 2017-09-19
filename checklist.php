@@ -126,6 +126,14 @@
 		              No <br />
 		              <br />
 	                </li>
+		            <li>Will research involve field research or teaching field courses off campus, involve wildlife, or work performed at field stations or nature preserves?
+		            	<br />
+		            	<input type="radio" name="wildlife" value="yes" />
+		              Yes
+		              <input type="radio" name="wildlife" value="no" />
+		              No <br />
+		              <br />
+		            </li>
 		            <li>Will infectious or potentially infectious microorganisms, hazardous biological materials and/or recombinant or synthetic nucleic acid containing material?  (Infectious agents are microbial agents which can colonize humans, plants, and/or animals and which may or may not cause disease)
 		              <br />
 		              <input type="radio" name="no5" value="yes" />
@@ -220,14 +228,15 @@
 		              <input type="radio" name="no8" value="no" />
 		              No<br />
 		              <br />
-		              Do you have an <a href="docs/doc/bio_attachment_ecp.rtf">Exposure Control Plan for Bloodborne <em>Pathogens</em></a>?
+		             
+		              Have you submitted the <a href="http://ehs.uky.edu/biosafety/form.php">applicable registration forms</a> to the Institutional Biosafety Committee?
 		              <br />
-		              <input type="radio" name="no8b" value="yes" />
+		              <input type="radio" name="ibc_forms" value="yes" />
 		              Yes
-		              <input type="radio" name="no8b" value="no" />
+		              <input type="radio" name="ibc_forms" value="no" />
 		              No<br />
 		              <br />
-		              Has everyone who will be working with human blood, body fluids or tissues completed <a href="/classes/classes_biosafety_0001.php#bloodborne_pathogens_for_researchers">Bloodborne Pathogens Training</a>?
+		              Has everyone who will be working with human blood, body fluids or tissues completed <a href="/classes/classes_biosafety_0001.php#bloodborne_pathogens_for_researchers">Bloodborne Pathogens Training for Researchers</a>?
 		              <br />
 		              <input type="radio" name="no8c" value="yes" />
 		              Yes
