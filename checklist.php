@@ -55,7 +55,7 @@
 		              <input type="radio" name="no1" value="no" />
 		              No<br />
 		              <br />
-		              Does the lab meet minimum <a href="docs/pdf/Labs approved.pdf" target="_blank">UK 
+		              Does the lab meet minimum <a href="http://ehs.uky.edu/docs/pdf/Labs approved.pdf" target="_blank">UK 
 		                Standards</a> for the intended uses?
 		                <br />
 	                  <input type="radio" name="no1b" value="yes" />
@@ -72,7 +72,7 @@
 		              <input type="radio" name="no2" value="no" />
 		              No<br />
 		              <br />
-		              If used in a lab, do you have a <a  href="ohs/chp" target="_blank">Chemical 
+		              If used in a lab, do you have a <a  href="http://ehs.uky.edu/ohs/chp" target="_blank">Chemical 
 		                Hygiene Plan</a> (CHP)?
 		                <br />
 	                  <input type="radio" name="no2b" value="yes" />
@@ -80,14 +80,14 @@
 		              <input type="radio" name="no2b" value="no" />
 		              No<br />
 		              <br />
-		              If used somewhere other than a lab, do you have a <a  href="ohs/hazcom.html" target="_blank">Hazard 
+		              If used somewhere other than a lab, do you have a <a  href="http://ehs.uky.edu/docs/pdf/ohs_hcp.pdf" target="_blank">Hazard 
 		                Communication Program</a>?<br />
 		              <input type="radio" name="no2c" value="yes" />
 		              Yes
 		              <input type="radio" name="no2c" value="no" />
 		              No<br />
 		              <br />
-		              Has everyone who will be working with chemicals completed <a  href="/classes/classes_ohs_0001.php#chemical_hygiene" target="_blank">CHP/Lab 
+		              Has everyone who will be working with chemicals completed <a  href="http://ehs.uky.edu/classes/classes_ohs_0001.php#hazard_communication" target="_blank">CHP/Lab 
 		                Safety Training</a> or <a href="classes/classes_ohs_0001.php#hazard_communication">Hazard Communication Training</a>?
 		                <br />
 	                  <input type="radio" name="no2d" value="yes" />
@@ -95,7 +95,7 @@
 		              <input type="radio" name="no2d" value="no" />
 		              No<br />
 		              <br />
-		              Has everyone who will be working with chemicals completed <a href="/classes/classes_env_0001.php#hazardous_waste" target="_blank">Hazardous 
+		              Has everyone who will be working with chemicals completed <a href="http://ehs.uky.edu/classes/classes_env_0001.php#hazardous_waste" target="_blank">Hazardous 
 		                Waste Training</a>?
 		                <br />
 	                  <input type="radio" name="no2e" value="yes" />
@@ -104,7 +104,7 @@
 		              No <br />
 		              <br />
 	                </li>
-		            <li>Will any Homeland Security <a href="cfats">Chemicals of Interest (COIs)</a> be stored or used? <br />
+		            <li>Will any Homeland Security <a href="http://ehs.uky.edu/cfats">Chemicals of Interest (COIs)</a> be stored or used? <br />
 		              <input type="radio" name="no3" value="yes" />
 		              Yes
 		              <input type="radio" name="no3" value="no" />
@@ -141,40 +141,40 @@
 		              <input type="radio" name="no5" value="no" />
 		              No <br />
 		              <br />
-		              If used, has everyone who will work with infectious or potentially infectious microorganisms, hazardous biological materials and/or recombinant or synthetic nucleic acid containing material completed <a href="/classes/classes_biosafety_0001.php#biological_safety">Biological Safety Training</a>? <br />
+		              If used, has everyone who will work with infectious or potentially infectious microorganisms, hazardous biological materials and/or recombinant or synthetic nucleic acid containing material completed <a href="http://ehs.uky.edu/classes/classes_biosafety_0001.php#biological_safety">Biological Safety Training</a>? <br />
 		              <input type="radio" name="no5b" value="yes" />
 		              Yes
 		              <input type="radio" name="no5b" value="no" />
 		              No <br />
 		              <br />
-		              Do you have a copy of the <a href="docs/pdf/bio_uk_biosafety_manual_0001.pdf">UK Biosafety Manual</a>?
+		              Do you have a copy of the <a href="http://ehs.uky.edu/docs/pdf/bio_uk_biosafety_manual_0001.pdf">UK Biosafety Manual</a>?
 		              <br />
 		              <input type="radio" name="no5c" value="yes" />
 		              Yes
 		              <input type="radio" name="no5c" value="no" />
 		              No<br />
 		              <br />
-		              Do you have a copy of the <a href="//oba.od.nih.gov/rdna/nih_guidelines_oba.html">NIH Guidelines</a>?
+		              Do you have a copy of the <a href="https://osp.od.nih.gov/biotechnology/nih-guidelines/">NIH Guidelines</a>?
 		              <br />
 		              <input type="radio" name="no5d" value="yes" />
 		              Yes
 		              <input type="radio" name="no5d" value="no" />
 		              No<br />
 		              <br />
-		              Have you submitted the <a href="biosafety/form.php">applicable registration forms</a> to the Institutional Biosafety Committee?
+		              Have you submitted the <a href="http://ehs.uky.edu/biosafety/form.php">applicable registration forms</a> to the Institutional Biosafety Committee?
 		              <br />
 		              <input type="radio" name="no5e" value="yes" />
 		              Yes
 		              <input type="radio" name="no5e" value="no" />
 		              No<br />
 		              <br />
-		              Will any <a href="//www.selectagents.gov/">HHS Select Agents or USDA High Consequence Livestock Pathogens, Toxins or Plant Pathogens</a> be used, stored, transported, shipped or received?
+		              Will any <a href="http://www.selectagents.gov/">HHS Select Agents or USDA High Consequence Livestock Pathogens, Toxins or Plant Pathogens</a> be used, stored, transported, shipped or received?
 		              <br />
 		              <input type="radio" name="no5f" value="yes" />
 		              Yes
 		              <input type="radio" name="no5f" value="no" />
 		              No<br />
-		              <em>If you answer &quot;Yes&quot; to this item, you must contact the <a href="/biosafety">Biological  Safety Office</a> (257-1049) immediately for specific requirements.</em><br />
+		              <em>If you answer &quot;Yes&quot; to this item, you must contact the <a href="http://ehs.uky.edu/biosafety">Biological  Safety Office</a> (257-1049) immediately for specific requirements.</em><br />
 		              <br />
 	                </li>
 		            <li>Will an autoclave be used?
@@ -184,7 +184,7 @@
 		              <input type="radio" name="no6" value="no" />
 		              No<br />
 		              <br />
-		              If used, has everyone that will be utilizing an autoclave completed <a href="classes/classes_biosafety_0001.php#autoclave">Autoclave Training</a>?<br />
+		              If used, has everyone that will be utilizing an autoclave completed <a href="http://ehs.uky.edu/classes/classes_biosafety_0001.php#autoclave">Autoclave Training</a>?<br />
 		              <input type="radio" name="no6b" value="yes" />
 		              Yes
 		              <input type="radio" name="no6b" value="no" />
@@ -198,14 +198,14 @@
 		              <input type="radio" name="no7" value="no" />
 		              No<br />
 		              <br />
-		              Do you have a copy of the <a href="docs/pdf/bio_uk_biosafety_manual_0001.pdf">UK Biosafety Manual</a>?
+		              Do you have a copy of the <a href="http://ehs.uky.edu/docs/pdf/bio_uk_biosafety_manual_0001.pdf">UK Biosafety Manual</a>?
 		              <br />
 		              <input type="radio" name="no7b" value="yes" />
 		              Yes
 		              <input type="radio" name="no7b" value="no" />
 		              No<br />
 		              <br />
-		              Do you have a copy of the <a href="//oba.od.nih.gov/rdna/nih_guidelines_oba.html" target="_blank">NIH 
+		              Do you have a copy of the <a href="https://osp.od.nih.gov/biotechnology/nih-guidelines/" target="_blank">NIH 
 		                Guidelines</a>?
 		                <br />
 	                  <input type="radio" name="no7c" value="yes" />
@@ -213,7 +213,7 @@
 		              <input type="radio" name="no7c" value="no" />
 		              No<br />
 		              <br />
-		              Have you submitted a <a href="biosafety/form.php">Gene Transfer Registration Form</a> to the Institutional Biosafety Committee?
+		              Have you submitted a <a href="http://ehs.uky.edu/biosafety/form.php">Gene Transfer Registration Form</a> to the Institutional Biosafety Committee?
 		              <br />
 		              <input type="radio" name="no7d" value="yes" />
 		              Yes
@@ -236,7 +236,7 @@
 		              <input type="radio" name="ibc_forms" value="no" />
 		              No<br />
 		              <br />
-		              Has everyone who will be working with human blood, body fluids or tissues completed <a href="/classes/classes_biosafety_0001.php#bloodborne_pathogens_for_researchers">Bloodborne Pathogens Training for Researchers</a>?
+		              Has everyone who will be working with human blood, body fluids or tissues completed <a href="http://ehs.uky.edu/classes/classes_biosafety_0001.php#bloodborne_pathogens_for_researchers">Bloodborne Pathogens Training for Researchers</a>?
 		              <br />
 		              <input type="radio" name="no8c" value="yes" />
 		              Yes
@@ -251,21 +251,21 @@
 		              <input type="radio" name="no9" value="no" />
 		              No<br />
 		              <br />
-		              Do you have a copy of the <a href="radiation/KYReg/radman.html" target="_blank">UK Radiation Safety Manual</a>?
+		              Do you have a copy of the <a href="http://ehs.uky.edu/docs/pdf/rad_radiation_safety_manual.pdf" target="_blank">UK Radiation Safety Manual</a>?
 		              <br />
 		              <input type="radio" name="no9b" value="yes" />
 		              Yes
 		              <input type="radio" name="no9b" value="no" />
 		              No<br />
 		              <br />
-		              Have you submitted the forms for an &quot;<a href="radiation/radauth.html" target="_blank">Authorization to Possess and Use Radioactive Materials</a>&quot;  to the Radiation Safety Committee?
+		              Have you submitted the forms for an &quot;<a href="http://ehs.uky.edu/radiation/radauth.html" target="_blank">Authorization to Possess and Use Radioactive Materials</a>&quot;  to the Radiation Safety Committee?
 		              <br />
 		              <input type="radio" name="no9c" value="yes" />
 		              Yes
 		              <input type="radio" name="no9c" value="no" />
 		              No<br />
 		              <br />
-		              Has everyone who will be working with radioactive materials completed <a href="/classes/classes_radiation_0001.php">Radiation Safety Training</a>?
+		              Has everyone who will be working with radioactive materials completed <a href="http://ehs.uky.edu/classes/classes_radiation_0001.php">Radiation Safety Training</a>?
 		              <br />
 		              <input type="radio" name="no9d" value="yes" />
 		              Yes
@@ -280,7 +280,7 @@
 		              <input type="radio" name="no10" value="no" />
 		              No<br />
 		              <br />
-		              Has everyone who will be preparing dangerous goods for shipment completed training on the U.S. Department of Transportation (DOT) <a href="//hazmat.dot.gov/">hazardous materials regulations</a> and the International Air Transport Association (IATA) <a href="//www.iata.org/whatwedo/cargo/dangerous_goods/Pages/index.aspx">dangerous materials regulations</a>?<br />
+		              Has everyone who will be preparing dangerous goods for shipment completed training on the U.S. Department of Transportation (DOT) <a href="http://ehs.uky.edu/env/shipping.php">hazardous materials regulations</a> and the International Air Transport Association (IATA) <a href="http://ehs.uky.edu/env/shipping.php">dangerous materials regulations</a>?<br />
 		              <input type="radio" name="no10b" value="yes" />
 		              Yes
 		              <input type="radio" name="no10b" value="no" />
@@ -295,14 +295,14 @@
 		              <input type="radio" name="no11" value="no" />
 		              No<br />
 		              <br />
-		              Has the device been registered with the <a href="radiation/KYReg/appf.html" target="_blank">Radiation Safety Office</a>?
+		              Has the device been registered with the <a href="http://ehs.uky.edu/radiation/KYReg/appf.html" target="_blank">Radiation Safety Office</a>?
 		              <br />
 		              <input type="radio" name="no11b" value="yes" />
 		              Yes
 		              <input type="radio" name="no11b" value="no" />
 		              No<br />
 		              <br />
-		              Do you have a copy of the <a href="radiation/xrayman.html" target="_blank">UK Radiation Safety Manual for Radiation-Producing Devices</a>?
+		              Do you have a copy of the <a href="http://ehs.uky.edu/docs/pdf/rad_x_ray_man_academic.pdf" target="_blank">UK Radiation Safety Manual for Radiation-Producing Devices</a>?
 		              <br />
 		              <input type="radio" name="no11c" value="yes" />
 		              Yes
@@ -317,14 +317,14 @@
 		              <input type="radio" name="no12" value="no" />
 		              No<br />
 		              <br />
-		              Has the device been registered with the <a href="radiation/app_B.html" target="_blank">Radiation Safety Office</a>?
+		              Has the device been registered with the <a href="http://ehs.uky.edu/radiation/app_B.html" target="_blank">Radiation Safety Office</a>?
 		              <br />
 		              <input type="radio" name="no12b" value="yes" />
 		              Yes
 		              <input type="radio" name="no12b" value="no" />
 		              No<br />
 		              <br />
-		              Do you have a copy of the <a href="/docs/pdf/rad_laser_safety_manual.pdf" target="_blank">UK Laser Safety Manual</a>?
+		              Do you have a copy of the <a href="http://ehs.uky.edu/docs/pdf/rad_laser_safety_manual.pdf" target="_blank">UK Laser Safety Manual</a>?
 		              <br />
 		              <input type="radio" name="no12c" value="yes" />
 		              Yes
@@ -401,7 +401,7 @@
 		              <input type="radio" name="no16" value="no" />
 		              No<br />
 		              <br />
-		              Have you received all USDA, <a href="//www.cdc.gov/od/ohs/biosfty/imprtper.htm" target="_blank">CDC</a> and other required permits?
+		              Have you received all USDA, <a href="http://www.cdc.gov/od/ohs/biosfty/imprtper.htm" target="_blank">CDC</a> and other required permits?
 		              <br />
 		              <input type="radio" name="no16b" value="yes" />
 		              Yes
