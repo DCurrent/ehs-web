@@ -16,7 +16,7 @@
 	
 	$oAcc->access_verify();
 	
-	$name = $oAcc->get_full_name();	
+	$name = $oAcc->get_name_full();	
 ?>
 
 <!DOCtype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -25,7 +25,7 @@
 <title>UK - Environmental Health And Safety</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css">
-<link rel="stylesheet" href="/libraries/css/style.css" type="text/css" />
+<link rel="stylesheet" href="../libraries/css/style.css" type="text/css" />
 <link rel="stylesheet" href="../libraries/css/print.css" type="text/css" media="print" />
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
 
