@@ -87,7 +87,7 @@
 		              <input type="radio" name="no2c" value="no" />
 		              No<br />
 		              <br />
-		              Has everyone who will be working with chemicals completed <a  href="http://ehs.uky.edu/classes/classes_ohs_0001.php#hazard_communication" target="_blank">CHP/Lab 
+		              Has everyone who will be working with chemicals completed <a  href="http://ehs.uky.edu/classes/classes_ohs_0001.php#chemical_hygiene" target="_blank">CHP/Lab 
 		                Safety Training</a> or <a href="classes/classes_ohs_0001.php#hazard_communication">Hazard Communication Training</a>?
 		                <br />
 	                  <input type="radio" name="no2d" value="yes" />
