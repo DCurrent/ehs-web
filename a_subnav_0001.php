@@ -48,7 +48,7 @@
         
         <li><a href="#" onclick="return false" class="fly">Policies</a> 
           <ul>
-            <li><a href="//www.uky.edu/Regs/ar6-3" title="UK Policies" target="_blank" >AR 6:3</a></li>
+            <li><a href="https://www.uky.edu/regs/ar6-3" title="UK Policies" target="_blank" >AR 6:3</a></li>
             <li><a title="Checklist for Grants and Contracts" href="checklist.php">Checklist for Grants and Contracts</a></li>
             <li><a href="/cfats">DHS Chemical Facility Anti-Terrorism Standards</a></li>
             <li><a href="/ohs/minors_0001.php" title="Minors in Laboratories" target="_blank" >Minors in Laboratories</a></li>
