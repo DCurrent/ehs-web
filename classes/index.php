@@ -171,6 +171,9 @@
                         <tr>
                         	<td><a href="classes_ohs_0001.php#utility_cart">Utility Cart Training</a></td>
                         </tr>
+                        <tr>
+                          <td><a href="classes_biosafety_0001.php#viral_vectors">Viral Vectors</a></td>
+                        </tr>
                     </table>                  
                 </div>       
             </div>    
