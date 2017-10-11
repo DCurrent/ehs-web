@@ -45,6 +45,10 @@
                     <h2 id="select_agents_insider_threat">Select Agents - Insider Threat Awareness</h2>
                   	<p>This training is designed for individuals who work with Tier 1 Select Agents and/or Toxins.  This class must be taken on an annual basis by individuals approved for non-escorted access.</p>
                   	<p>This class is available <a href="main.php?cClassID=86">online</a>.</p>
+                  	<h2 id="viral_vectors">Viral Vectors</h2>
+                  	<p>This training is designed for individuals who work with viral vector systems.</p>
+                  	<p>This class must be retaken annually. Classroom training sessions are available upon request. Class duration is one hour. Contact the <a href="mailto:ehsbiosafety@uky.edu" >Biological Safety Department</a>, 323-5728 or 257-8655.                    </p>
+                  	<p>This class is available <a href="main.php?cClassID=78">online</a>.</p>
                 </div><!--/content-->       
             </div><!--/subContent-->    
             <div id="sidePanel">		
