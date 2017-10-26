@@ -11,7 +11,7 @@ class class_mail
 	Mail handler. 
 	*/	
 		
-	const	c_bWMAlert	= TRUE;										//Send webmaster a blind copy?
+	const	c_bWMAlert	= FALSE;										//Send webmaster a blind copy?
 	const	c_cEDefMsg	= "...";									//Default message.
 	const	c_cEHead	= "MIME-Version: 1.0 \r\nContent-type: text/html; charset=iso-8859-1\r\n";	//Default email headers.
 	const	c_cESubject	= "From EHS Web";							//Default outgoing email subject.
