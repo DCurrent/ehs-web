@@ -84,7 +84,7 @@
                   <br />
         This class is only available <a href="main.php?cClassID=6">online</a>.</p>
                 <h2 id="epipen">Epipen Safety</h2>
-                <p>Research personnel whose work involves honey bees or other organisms   that require the presence of an Epipen at the work location are required   to complete this training. A determination of an occupational hazard   must first be done by UK OHS before this training can be taken. Contact   OHS at <a href="mailto:lee.poore@uky.edu">lee.poore@uky.edu</a> or 859 257-2924 for assistance.</p>
+                <p>Research personnel whose work involves honey bees or other organisms   that require the presence of an Epipen at the work location are required   to complete this training. A determination of an occupational hazard   must first be done by UK OHS before this training can be taken. Contact   <a href="mailto:lee.poore@uky.edu">OHS</a> or 859 257-2924 for assistance.</p>
                 <h2 id="ladder_safety">Fall Protection &amp; Ladder Safety</h2>
                 <p>The course provides information on the working conditions that  prompt use of fall protection and the types of fall protection available to  protect workers.&nbsp; It assists those affected with complying with 29 CFR  1926.503.<br />
                   Upon  course completion, the student is able to:</p>
@@ -93,7 +93,7 @@
                   <li>State  the main criteria that prompts use of fall protection for construction workers</li>
                   <li>Identify  risk factors for working at elevated heights such as from ladders or  scaffolding</li>
                 </ul>
-                <p> Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="main.php?cClassID=30">Lee Poore</a> at (859) 257-2924.</p>
+                <p> Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="mailtomdtu222@uky.edu">Lee Poore</a> at (859) 257-2924.</p>
         <h2 id="hazard_assessment">Hazard Assessment</h2>
                 <p>Training                 for supervisors in how to conduct workplace   hazard assessments for                 determining the need and proper   selection of personal protective                 equipment. Provides   instruction on the use and application of the                   University's hazard assessment checklists. Training is for personnel                   responsible for employees who have the potential to   encounter hazards.<br />
                   <br />
