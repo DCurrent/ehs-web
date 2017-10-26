@@ -134,16 +134,7 @@
                   <br />
         Classroom training sessions are available upon request. Duration is 90 minutes.  Contact <a href="main.php?cClassID=35">Brent Webber</a> at (859) 257-7600.<br />
         <br />
-        This class is available <a href="main.php?cClassID=25">online</a>.</p>
-                <h2 id="safe_driving">Safe Driving</h2>
-                <p>Two                 classes are available and tailored to your needs.</p>
-                <ol>
-                  <li>                  Straight Truck &amp; Van Safe Driving Strategies.
-                  </li>
-                  <li>Automobile Safe Driving Strategies.</li>
-                </ol>
-                <p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="main.php?cClassID=30">Lee Poore</a> at (859) 257-2924.</p>
-                
+        This class is available <a href="main.php?cClassID=25">online</a>.                </p>
                 <h2 id="utility_cart">Utility Cart Training</h2>
                 <p>This training is mandatory  for all employees who drive a utility carts while working at University of  Kentucky.&nbsp; The objective of the training is </p>
                 <ul>
