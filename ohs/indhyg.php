@@ -30,9 +30,9 @@
 				  <p>The UK Industrial Hygiene Program deals with the anticipation, recognition, evaluation, and control of health hazards in the University environment.                  </p>
 				  <p>Please click on any of the tabs below to learn more about our various domains  of industrial hygiene programs and practice.   If you have any questions, comments, or concerns, please do not hesitate  to contact me.</p>
                   <p><img src="../media/image/sig_webber.png" alt="Signature, Brent Webber"><br />
-                    <a href="mailto:brent.webber@uky.edu">W. Brent Webber</a>, Senior Industrial Hygienist<br />
+                    <a href="mailto:derek.bocard@uky.edu">Bocard, Derek</a>, Senior Industrial Hygienist<br />
 					UK Occupational Health &amp; Safety<br />
-					252 East Maxwell Street, Lexington, KY  40506-0314<br />
+					252 East Maxwell Street, Lexington, KY  40503-0314<br />
 					(859) 257-7600 - office<br />
 					(859) 967-6397 - mobile<br />
 				  (859)  257-8787 - fax</p>
