@@ -34,7 +34,6 @@
 					UK Occupational Health &amp; Safety<br />
 					252 East Maxwell Street, Lexington, KY  40503-0314<br />
 					(859) 257-7600 - office<br />
-					(859) 967-6397 - mobile<br />
 				  (859)  257-8787 - fax</p>
                   
 					<nav class="nav_sub_button">
