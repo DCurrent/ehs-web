@@ -32,7 +32,7 @@
                     
                     <p>Potentially affected personnel must be trained at least annually on both the unit-specific procedures and general bloodborne pathogens (BBP) training.  Online BBP training modules for both researchers and non-research personnel can be found on the EHS Training page.</p>
                     
-                  <p>If you have questions about bloodborne pathogens, training, or how to complete an <a href="../docs/pdf/ohs_bp_exposure_control_plan_template.pdf">Exposure Control Plan</a>, please contact Brent Webber at UK OHS: 859-257-7600.</p>
+                  <p>If you have questions about bloodborne pathogens, training, or how to complete an <a href="../docs/doc/ohs_bbp_exposure_control_plan_template.doc">Exposure Control Plan</a>, please contact Derek Bocard at UK OHS: 859-257-7600.</p>
                     
                   <h2>Useful Links</h2>
                   <ul>
