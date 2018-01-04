@@ -38,7 +38,6 @@
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
-        <script src="../../../../libraries/javascript/jquery_ui_timepicker_addon.js"></script>
         <script src="../../../../libraries/javascript/options_update.js"></script>
         
         <style>
@@ -68,7 +67,7 @@
                         	<legend>Traning</legend>
                         	<div>
                         		<label for="taken">Taken</label>
-                            	<input type="date" name="taken" id="taken" value="<?php date('Y-m-d'); ?>" class="date_entry" placeholder="yyyy-mm-dd hh:mm:ss" readonly />
+                            	<input type="date" name="taken" id="taken" value="<?php date('Y-m-d'); ?>" class="" placeholder="yyyy-mm-dd hh:mm:ss" />
                         	</div>
                             
                             <div>
@@ -285,11 +284,7 @@
 
   ga('create', 'UA-40196994-1', 'uky.edu');
   ga('send', 'pageview');
-
-
-	$(function(){
-		$( '.date_entry' ).datetimepicker({dateFormat: 'yy-mm-dd', timeFormat: 'HH:mm:ss', changeYear: true, constrainInput: true});
-	});	
+	
 
 	$('.room_search').change(function(event)
 	{	
