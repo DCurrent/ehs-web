@@ -42,7 +42,6 @@
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
-        <script src="../../libraries/javascript/jquery_ui_timepicker_addon.js"></script>
         <script src="../../libraries/javascript/options_update.js"></script>    
     	
         <style>
@@ -118,10 +117,10 @@
                                 $query->get_line_params()->set_class_name('class_incident');
                             ?>
                             <label for="time_range_start">Start</label>
-                            <input type="date" name="time_range_start" id="time_range_start" value="<?php echo date(DATE_FORMAT, $query->get_line_object()->get_time()->getTimestamp()); ?>"  class="_date_entry" placeholder="yyyy-mm-dd hh:mm:ss" required />
+                            <input type="date" name="time_range_start" id="time_range_start" value=""  required />
                             
                             <label for="time_range_end">End</label>
-                            <input type="date" name="time_range_end" id="time_range_end" value="<?php echo date('Y-m-d h:m:s'); ?>" class="_date_entry" placeholder="yyyy-mm-dd hh:mm:ss" required />
+                            <input type="date" name="time_range_end" id="time_range_end" value="" required />
                         </fieldset>
                     
                         <fieldset class="center">
@@ -339,10 +338,6 @@
 			$('.room_search').change(function(event)
 			{	
 				options_update(event, null, '#area');	
-			});
-		
-			$(function(){
-				$( '.date_entry' ).datetimepicker({dateFormat: 'yy-mm-dd', timeFormat: 'HH:mm:ss', changeYear: true, constrainInput: true});
 			});
 		
         	$(document).ready(function(event) {		
