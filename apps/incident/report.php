@@ -111,17 +111,17 @@
                     <form method="post" name="main" id="main" action="report_out.php" target="_new">
                         <fieldset id="fs_time_range">
                             <legend>Time Range</legend>
-                            <p>Select the time range. Default range will include all items up to the present moment.</p>
+                            <p>Select the time range.</p>
                             <?php
                                 $query->set_sql("SELECT TOP 1 time FROM tbl_incident WHERE time IS NOT NULL ORDER BY time");
                                 $query->query();
                                 $query->get_line_params()->set_class_name('class_incident');
                             ?>
                             <label for="time_range_start">Start</label>
-                            <input type="date" name="time_range_start" id="time_range_start" value="<?php echo date(DATE_FORMAT, $query->get_line_object()->get_time()->getTimestamp()); ?>"  class="date_entry" placeholder="yyyy-mm-dd hh:mm:ss" readonly />
+                            <input type="date" name="time_range_start" id="time_range_start" value="<?php echo date(DATE_FORMAT, $query->get_line_object()->get_time()->getTimestamp()); ?>"  class="_date_entry" placeholder="yyyy-mm-dd hh:mm:ss" required />
                             
                             <label for="time_range_end">End</label>
-                            <input type="date" name="time_range_end" id="time_range_end" value="<?php echo date('Y-m-d h:m:s'); ?>" class="date_entry" placeholder="yyyy-mm-dd hh:mm:ss" readonly />
+                            <input type="date" name="time_range_end" id="time_range_end" value="<?php echo date('Y-m-d h:m:s'); ?>" class="_date_entry" placeholder="yyyy-mm-dd hh:mm:ss" required />
                         </fieldset>
                     
                         <fieldset class="center">
