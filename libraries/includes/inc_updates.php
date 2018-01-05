@@ -7,6 +7,7 @@
 <iframe id="campus_safety" src="//www.youtube.com/embed/9yH7nqJeRZw?wmode=transparent" allowfullscreen></iframe>
 
 <ul>
+	<li><a href="/docs/pdf/dea-controlled-substance-research-guide.php">Researchers DEA Controlled Substance Guide</a></li>
 	<li><a href="/ohs/heat_awareness.php">Heat Awareness</a></li>
   	<li><a href="/ohs/zika.php">Zika Virus</a></li>
   	<li><a href="//www.research.uky.edu/ori/univet/OccHealth/Program_Description.html">Occupational Health and Safety Program for Animal Handlers</a></li>
