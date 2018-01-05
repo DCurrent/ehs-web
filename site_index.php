@@ -187,12 +187,13 @@
                     <ul>
                         <li><a href="radiation/KYReg/application.php" title="Application for Authorization to Possess and Use Radioactive Materials">Radioactive Materials Use Application</a></li>
                         <li><a href="docs/pdf/ohs_fs_radon.pdf" target="_blank" title="A basic fact sheet on Radon gas.">Radon</a></li>
+                        <li><a href="docs/pdf/dea-controlled-substance-research-guide.pdf" target="_blank">Researchers DEA Controlled Substance Guide</a></li>
                         <li><a href="ohs/respgate.php" title="Respiratory protection and applications.">Respiratory Protection</a></li>
                     </ul>                        
                     
                     <a href="#" title="Go back to the top of this page.">Top of page</a> 
                         
-                  	<h2 id="S">S</h2>
+               	  <h2 id="S">S</h2>
                     
                     <ul>
                     	<li><a href="ep/sewer.html" title="Sanitary and storm sewers.">Sanitary and Storm Sewers</a></li>
