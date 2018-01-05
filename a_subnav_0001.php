@@ -22,6 +22,7 @@
             <li><a href="/ohs/off_lab_ergo.php">Office Ergonomics</a></li>
             <li><a href="/ohs/ppe.html">Personal Protective Equipment and Apparel in Chemical Laboratories</a></li>
             <li><a href="/docs/pdf/ohs_fs_radon.pdf" target="_blank">Radon</a></li>
+            <li><a href="/docs/pdf/dea-controlled-substance-research-guide.pdf" target="_blank">Researchers DEA Controlled Substance Guide</a></li>
             <li><a href="/ep/sewer.html">Sanitary and Storm Sewers</a></li>
             <li><a href="/ohs/exit.php">Setup and Exit Safety Surveys for Laboratories</a></li>
             <li><a href="/fire/flstpol1.html">Standard Policy for Solvents in Laboratories (Excluding Laboratories in Health Care Occupancies)</a></li>
