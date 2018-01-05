@@ -2,7 +2,7 @@
 
 <div id="footer_container" class="footer_container">
     
-    <a href="//www.uky.edu" target="_blank" class="no_icon"><img src="../../media/image/uk_logo_0002.gif" alt="University of Kentucky" class="uk_logo" /></a>    
+    <a href="//www.uky.edu" target="_blank" class="no_icon"><img src="../../media/image/uk_logo.png" alt="University of Kentucky" class="uk_logo" style="height: 50px; width: 50px" /></a>    
     
     <div id="footer_desc" class="footer_desc">
     	<a href="//www.uky.edu" target="_blank">University of Kentucky</a> - <a href="//www.uky.edu/Home/Web/eo/" target="_blank">An Equal Opportunity University</a>																																							<br />
