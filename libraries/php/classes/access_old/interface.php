@@ -2,6 +2,7 @@
 	abstract class ACCESS_SETTINGS
 	{	
 		const ADMINISTRATOR		= 'dvcask2';			// Administrator.
+		const LDAP_HOST_LIST	= 'ldap://ad.uky.edu:3268';		// LDAP host for binding.
 		const LDAP_HOST			= 'ukldap.uky.edu';		// LDAP host.
 		const LDAP_HOST_NEW		= 'LDAP://gc.ad.uky.edu';
 		const LDAP_BASE_DN		= 'o=uky';				// LDAP Base Domain Name.

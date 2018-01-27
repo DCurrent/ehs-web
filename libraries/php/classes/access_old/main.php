@@ -370,42 +370,14 @@ class class_access {
 				// If we were able to bind user through AD LDAP, we will then run search in EDIR to get their basic information. 
 				// Otherwise the account doesn't exist or user entered bad credentials. 
 				if($bind === TRUE)
-				{					
-					// Connect to LDAP EDIR.
-					$ldap = ldap_connect($cAD['Host']);
-					
-					if(!$ldap) trigger_error("Cannot connect to LDAP: ".$cAD['Host'], E_USER_ERROR);
-	
-					// Remove domain prefixes from account name.
-					$req_account = str_ireplace($prefix, "", $req_account); 
-					
-					// Search for account name.
-					$result = ldap_search($ldap, $cAD['BaseDn'], 'uid='.$req_account);			
-					
-					// Trigger error if no result located.			
-					if (!$result) trigger_error("Could not locate entry in EDIR.", E_USER_ERROR);
-					
-					// Get user info array.
-					$entries = ldap_get_entries($ldap, $result);
-					
-					// Trigger error if entries array is empty.
-					if($entries["count"] < 0) trigger_error("Entry found but contained no data.", E_USER_ERROR);
-									
-					// Populate object properties with user info.
-					if(isset($entries[0]['cn'][0])) 			$this->account_m 	= $entries[0]['cn'][0];
-					if(isset($entries[0]['givenname'][0])) 		$this->name_f_m 	= $entries[0]['givenname'][0];
-					if(isset($entries[0]['initials'][0]))		$this->name_m_m		= $entries[0]['initials'][0];
-					if(isset($entries[0]['sn'][0]))				$this->name_l_m		= $entries[0]['sn'][0];					
-					if(isset($entries[0]['workforceid'][0]))	$this->id_m			= $entries[0]['workforceid'][0];
-					if(isset($entries[0]['mail'][0]))			$this->email_m		= $entries[0]['mail'][0];				
-																									
+				{																								
 					$this->auth_result_m = ACCESS_LOGIN_RESULT::LDAP;			
 									
 					// Release ldap query result.
-					ldap_free_result($result);		
+					//ldap_free_result($result);		
 										
 					// Close ldap connection.
-					ldap_close($ldap);									
+					//ldap_close($ldap);									
 				}
 				else // No Bind.
 				{
@@ -471,50 +443,137 @@ class class_access {
 		return $this->auth_result_m;		
 	}
 	
-	private function ldap_bind_check($ldap, $account, $credential, $prefix_list = array(NULL, "AD\\", "MC\\"))
-	{
-		/*
-		ldap_bind_check
-		2013-11-13
-		Damon V. Caskey
-		
-		Attempt to bind ldap adding all possible prefixes. 
-		
-		$ldap: 			LDAP connection reference.
-		$account: 		Account name.
-		$credential:	Account password.
-		$prefix:		Array of possible domain prefixes (including none at all) that will be added to account name for bind attempts.
-		*/
-		
-		$result		= FALSE;	//Final result.
-		$prefix 	= NULL;		//Singular prefix value taken from array.
-		$ldap 		= NULL;
-		
-		$ldap = ldap_connect(ACCESS_SETTINGS::LDAP_HOST_NEW);
-		if(!$ldap) trigger_error("Cannot connect to LDAP: ".ACCESS_SETTINGS::LDAP_HOST_NEW, E_USER_ERROR);
-								
-		ldap_set_option($ldap, LDAP_OPT_PROTOCOL_VERSION, 3);
-		
-		//$prefix_list = explode(',', ', ad/, ad\\\\, mc/, mc\\\\');
-		
-		// Keep trying prefixes until there is a bind or we run out.
-		foreach($prefix_list as $prefix)
-		{		
-			//echo '<br />'.$prefix.$account;
+	//	Attempt to bind ldap adding all possible prefixes.
+		private function ldap_bind_check()
+		{			
+			$result			= FALSE;	// Final result.
+			$account		= NULL;		// Prepared account string to attempt bind.
+			$prefix_list 	= array();
+			$prefix 		= NULL;		// Singular prefix value taken from array.
+			$ldap_host_list	= NULL;		// List of LDAP connection strings.
+			$ldap_host		= NULL;
 			
-			// Attempt to bind with account (prefix included) and password.
-			$result = @ldap_bind($ldap, $prefix.$account, $credential);
+			$req_account 			= $this->request->get_auth_account();
+			$req_credential			= $this->request->get_auth_password();
 			
-			// If successfull bind.
-			if($result === TRUE) break;
-		}	
-		
-		// Close ldap connection.
-		ldap_close($ldap);				
+			// Dereference account name and remove any domain prefixes. We'll add our own below.
+			$account = str_ireplace($prefix, '', $account);
+			
+			// Move connection list to local var.
+			$ldap_host_list = array(',', ACCESS_SETTINGS::LDAP_HOST_LIST);
+			
+			// We'll attempt to bind on all known hosts.
+			// Here we loop through each host connection
+			// string.
+			foreach($ldap_host_list as $ldap_host)
+			{
+				// Check connection string integrity and get a connection
+				// resource handle. Don't let the name fool you - this 
+				// does NOT connect to the LDAP server.
+				$ldap = ldap_connect(ACCESS_SETTINGS::LDAP_HOST_LIST);
 				
-		// Return results.
-		return $result;
-	}
+				// If we failed to get a connection resource, then 
+				// exit this iteration of loop.
+				if(!$ldap)
+				{
+					continue;
+				}
+				
+				// Need this for win2k3.
+				ldap_set_option($ldap, LDAP_OPT_PROTOCOL_VERSION, 3);
+			
+				// Now we will attempt the bind using all
+				// possible domain prefixes.
+				
+				// Break prefix list into an array.
+				//$prefix_list = explode(',', $this->config->get_dn_prefix());
+				$prefix_list = array(NULL, 'ad/', 'ad\\', 'mc/', 'mc\\');
+			
+				// Keep trying prefixes until there is a bind or we run out.
+				foreach($prefix_list as $prefix)
+				{		
+					$account = $prefix.$req_account;//'.'@uky.edu';
+
+					//echo $account;
+					
+					// Attempt to bind with account (prefix included) and password.
+					$result = @ldap_bind($ldap, $account, $req_credential);
+					
+					// If successfull bind break out of loop.
+					if($result == TRUE) 
+					{
+						break;					
+					}
+				}
+				
+				// If successfull bind break out of loop.
+				if($result == TRUE) 
+				{
+					//break;				
+					
+					// Search goes here.
+					
+					// Prepare account filter.
+					$filter = "samaccountname=".$req_account;
+					
+					//echo 'filter: '.$filter;
+					
+					// Pull attributes for the AD domain
+					$attributes = array("displayname", "sn", "givenname", "pwdlastset", "cn");
+										
+					$sr = ldap_search($ldap, "dc=uky,dc=edu", $filter, $attributes);
+
+					$count = ldap_count_entries($ldap, $sr);
+						
+					// If no entries are found, return 0.
+					if (!$count) 
+					{
+						return $rc;
+					}
+					else 
+					{
+						//echo "found $count entrie(s)\n";
+
+						$rc = 1;
+
+						// get the entries
+						$entries = ldap_get_entries($ldap, $sr);
+						//echo "DN is: " . $entries[0]["dn"] . "\n";
+						//echo "First Name " . $entries[0]["givenname"][0]. "\n";
+						//echo "surname " . $entries[0]["sn"][0]. "\n";
+						//echo "displayName: " . $entries[0]["displayname"][0]. "\n";
+						//echo "pwdlastset: " . $entries[0]["pwdlastset"][0]. "\n";
+
+						//print_r($entries);
+						
+						// Populate account object members with user info.
+						if(isset($entries[0]['cn'][0])) 			$this->account_m 	= $entries[0]['cn'][0];
+						if(isset($entries[0]['givenname'][0])) 		$this->name_f_m 	= $entries[0]['givenname'][0];
+						if(isset($entries[0]['initials'][0]))		$this->name_m_m		= $entries[0]['initials'][0];
+						if(isset($entries[0]['sn'][0]))				$this->name_l_m		= $entries[0]['sn'][0];					
+						if(isset($entries[0]['workforceid'][0]))	$this->id_m			= $entries[0]['workforceid'][0];
+						if(isset($entries[0]['mail'][0]))			$this->email_m		= $entries[0]['mail'][0];
+						
+					}
+					
+					break;
+				}
+			}
+					
+			// If we never managed to get a connection resource, trigger an error here. 
+			if(!$ldap) trigger_error("Could not get a connection resource: ", E_USER_ERROR);
+			
+			// Close ldap connection.
+			// 2018-01-24, Commented out so lookup  
+			// can work. It requires a current bind.
+			ldap_close($ldap);
+			
+			//echo 'done';
+			
+			// Return results.
+			return $result;
+		}
+	
 	
 	// Send login information to external diagnostic log.
 	private function record_login()
