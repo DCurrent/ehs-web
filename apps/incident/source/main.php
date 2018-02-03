@@ -10,7 +10,7 @@
 		const SUBMIT_TRUE = 1;
 		const SUBMIT_FALSE = FALSE;
 		const INCIDENT_OB_SES_KEY = 'incident_object';
-		const ACCESS_REPORT = 'dwhibb0, lpoor2, mdtu222, trobert, jghamo2, mla263';
+		const ACCESS_REPORT = 'dwhibb0, lpoor2, trobert, jghamo2, mla263';
 		
 		const
 			NO 	= 0,
