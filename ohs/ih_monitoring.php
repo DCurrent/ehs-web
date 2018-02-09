@@ -182,7 +182,7 @@
                     <p>For more information on lead, asbestos, <a href="/ohs/hearcons.php">noise</a>, or <a href="/ohs/radon.php">radon</a>, refer to the specific UKHS pages  hyperlinked herein.  <em>(Insert hyperlinks for lead and asbestos after pages developed).</em></p>
                     <p>For questions about monitoring for biological  materials, infectious agents, autoclave testing, etc., contact the <a href="/biosafety/">UK Department of Biological Safety</a>.</p>
                     <p>For questions about radionuclide monitoring,  dosimetry, or ionizing radiation sources other than radon, contact the <a href="/radiation/">UK Radiation Safety Division</a>.</p>
-                  <p>OHS  can perform monitoring for any potential hazard that has a testing method  approved by a recognized organization such as NIOSH, ASTM, OSHA, etc.  If you have any questions about industrial  hygiene monitoring, or to request monitoring, please contact <a href="mailto:brent.webber@uky.edu">Brent Webber</a>.</p>
+                  <p>OHS  can perform monitoring for any potential hazard that has a testing method  approved by a recognized organization such as NIOSH, ASTM, OSHA, etc.  If you have any questions about industrial  hygiene monitoring, or to request monitoring, please contact <a href="mailto:djboca2@uky.edu">Derek Bocard</a>.</p>
                   <p>&nbsp;</p>
                 </div><!--/content-->      
             </div><!--/subContainer-->

@@ -44,13 +44,13 @@
                     <li>Avoiding                             Lifting Injuries<br />
                     </li>
                   </ul>
-                  <p>Classroom training sessions are available upon request. Duration is 45 minutes.  Contact <a href="main.php?cClassID=35">Brent Webber</a> at (859) 257-7600.</p>
+                  <p>Classroom training sessions are available upon request. Duration is 45 minutes.  Contact <a href="mailto:djboca2@uky.edu">Derek Bocard</a> at (859) 257-7600.</p>
         			
                     <h2 id="bloodborne_pathogens_general">Bloodborne Pathogens General</h2>
                   	
                     <p>This training is intended to promote general awareness of the potential   hazards associated with blood and other potentially infectious materials   (OPIM) in the occupational setting. Additionally, the responsibilities   and obligations of employers, supervisors, and employees under the   Occupational Safety and Health Administration (OSHA) Bloodborne   Pathogens Standard, and the University, will be discussed. This training   course must be complimented by workplace specific training conducted by   the respective worksite designee. It is required upon initial hire and   annually thereafter for those employees who have the potential for   exposure to blood or OPIM.</p>
         
-					<p>Classroom training sessions are available upon request. Class duration is one hour. Contact Brent Webber at (859) 257-7600.</p>
+					<p>Classroom training sessions are available upon request. Class duration is one hour. Contact <a href="mailto:djboca2@uky.edu">Derek Bocard</a> at (859) 257-7600.</p>
                   	<p>This class is available <a href="main.php?cClassID=2">online</a>.</p>
                
                   <h2 id="chemical_fume_hood">Chemical Fume Hood</h2>
@@ -132,7 +132,7 @@
                 <h2 id="respirator_use">Respirator Use</h2>
                 <p>The                   class is mandatory for all respirator users. It is   intended to provide                   basic information regarding the   proper use and maintenance of respirators.                   Topics for   discussion include an overview of the type(s) of respirators                     that will be used; conditions of use; fit testing; cleaning and                     maintenance; and storage. This course must be   supplemented with                   instruction from a departmental   designee (i.e. principal investigator,                   supervisor,   etc.) concerning the respiratory protection policies                     of each specific worksite. <br />
                   <br />
-        Classroom training sessions are available upon request. Duration is 90 minutes.  Contact <a href="main.php?cClassID=35">Brent Webber</a> at (859) 257-7600.<br />
+        Classroom training sessions are available upon request. Duration is 90 minutes.  Contact <a href="mailto:djboca2@uky.edu">Derek Bocard</a> at (859) 257-7600.<br />
         <br />
         This class is available <a href="main.php?cClassID=25">online</a>.                </p>
                 <h2 id="utility_cart">Utility Cart Training</h2>

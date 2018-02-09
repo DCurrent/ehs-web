@@ -35,7 +35,7 @@
 				  <li>American National Standards Institute, Institute of Inspection,  Cleaning, and Restoration Certification (<a href="//www.iicrc.org/standards/">IICRC</a>)  S520 – Standard and Reference Guide for Professional Mold Remediation;</li>
 				  <li>NYC Department of Health &amp; Mental Hygiene – Guidelines on Assessment  and Remediation of Fungi in Indoor Environments.</li>
 				  </ul>
-				<p>To request an IAQ investigation, please contact <a href="mailto:brent.webber@uky.edu">Brent Webber</a> at UK OHS: 859-257-7600.</p>
+				<p>To request an IAQ investigation, please contact <a href="mailto:djboca2@uky.edu">Derek Bocard</a> at UK OHS: 859-257-7600.</p>
 				<h2>Useful Links</h2>
 				<ul>
 				  <li>Fact Sheets: 
