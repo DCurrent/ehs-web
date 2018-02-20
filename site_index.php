@@ -1,5 +1,13 @@
 <?php require('libraries/php/classes/config.php'); //Basic configuration file. ?>
 
+<?php 
+
+//phpinfo(); 
+
+//echo 'Current PHP version: ' . phpversion();
+
+?>
+
 <!DOCtype html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
