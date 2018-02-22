@@ -34,7 +34,7 @@
                       </p>
                   <p>Contact Tommy Taylor at (859)  257-5295 for more information.
                       </p>
-This  class is only available <a href="http://ehs.uky.edu/apps/rocky/content/asbestos" target="_BLANK">online</a>.
+This  class is only available <a href="http://ehs.uky.edu/apps/rocky/content/asbestos" target="_BLANK" class="link-class">online</a>.
 
                       </p>
                     <h2>Shipping Dangerous Goods - Initial  Training</h2>
@@ -54,7 +54,7 @@ This  class is only available <a href="http://ehs.uky.edu/apps/rocky/content/asb
                     date, the classroom training must be retaken.</p>
                     
                     <p>
-                    	This class is available <a href="main.php?cClassID=14">online</a>.
+                    	This class is available <a href="main.php?cClassID=14" class="link-class">online</a>.
                     </p>
                     
                     <h2 id="hazardous_waste">Hazardous Waste</h2>

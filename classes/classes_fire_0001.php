@@ -29,7 +29,7 @@
           <p>Demonstration on proper fundamentals of using a fire extinguisher to put   out a small fire. This class is required for anyone who may need to use   an extinguisher on University property. If you have any questions about   this class, please contact <a href="mailto:ggwill2@uky.edu">Greg Williamson</a> at (859) 257-8590.<br />
             <br />
 Classes are held in the Young Gallery in WT Young Library. </p>
-          <p>This class is available <a href="main.php?cClassID=13">online</a>.</p>
+          <p>This class is available <a href="main.php?cClassID=13" class="link-class">online</a>.</p>
       </div>       
 	</div>    
 	<div id="sidePanel">		

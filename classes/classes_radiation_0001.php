@@ -87,7 +87,7 @@
         <h2><a name="advanced_radiation_safety" id="advanced_radiation_safety"></a>Advanced Radiation Safety </h2>
         <p>Required                   training for principal investigators, lab   managers, and others who                   have significant radioactive   materials experience and previous safety                   training, but   are new to UK. These personnel must complete the on-line class prior to their approval as an authorized user (AU).</p>
         <p>Contact <a href="../docs/pdf/rad_worker_reg_form_0001.pdf">Fred Rawlings</a> at  (859) 323-1008 for more information.</p>
-        <p>This class is only available <a href="main.php?cClassID=26">online</a>.</p>
+        <p>This class is only available <a href="main.php?cClassID=26" class="link-class">online</a>.</p>
         <h2><a name="diagnostic_xray" id="diagnostic_xray"></a>On-Site and Diagnostic X-Ray Safety</h2>
         <p>In  order to comply with federal and state regulations, all individuals at UK  proposing to work with diagnostic x-ray radiation must register with the  Radiation Safety Office by submitting a completed and signed <a href="../docs/pdf/rad_worker_reg_form_0001.pdf">Radiation Worker Registration  Form</a>, a completed and signed <a href="main.php?cClassID=35" target="_top">On-Site X-ray  Safety Training Form</a> and completing the Initial Radiation Safety Training.  Initial Training is held Monday &ndash; Friday at 1:40pm at the Radiation Safety  Office, 102 Animal Pathology Bldg. Please arrive by 1:30pm so the receptionist  can process your paperwork. If you  cannot make this scheduled time, call the Radiation Safety Office at 3-6777 to  schedule a specific appointment. This  training is a video and/or lecture lasting about fifteen minutes. You will receive the training form when you  come to the training.<br />
           <br />
@@ -102,13 +102,13 @@
                     The On-Site X-ray Safety Training is provided by the Authorized User or unit  supervisor at the individual's place of work. <br />
           <br />
           Note: Completion of <a href="../docs/pdf/rad_research_onsite_training_form_0001.pdf" target="_top">On-Site X-ray  Safety Training Form</a> and <a href="../docs/pdf/rad_worker_reg_form_0001.pdf">Radiation Worker Registration  Form</a> plus the Initial  Radiation Safety training enables an individual to begin as a radiation worker;  however, additional, specific x-ray safety (diagnostic, veterinary, dental,  research) courses may be needed at the discretion of the Radiation Safety  Officer.</p>
-                  <p> This class is only available <a href="main.php?cClassID=23">online</a>.</p>
+                  <p> This class is only available <a href="main.php?cClassID=23" class="link-class">online</a>.</p>
         Contact (859) 323-6276 for more information.
         <h2><a name="laser_safety" id="laser_safety"></a>Laser Safety</h2>
                   <p>Training for clinicians, principal investigators, operators, etc., who will use Class IIIb or IV lasers. Completion is required upon registration and prior to use of a Class IIIb or IV laser(s).<br />
                     <br />
                     Contact <a href="mailto:glschl1@uky.edu">Dave Rich</a> at&nbsp;(859) 323-1008 for more information.</p>
-                  <p>This class is only available <a href="main.php?cClassID=16">online</a>.<br />
+                  <p>This class is only available <a href="main.php?cClassID=16" class="link-class">online</a>.<br />
         <br />
               </p>
         </div><!--/content-->
