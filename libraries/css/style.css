@@ -433,7 +433,7 @@ a
 
 a:visited
 { 
-	color: 						#00528e; 
+	color: 						#920A39; 
 	text-decoration: 			none; 
 }
 	
@@ -1091,9 +1091,9 @@ th
 	width:						auto;
 }
 
-th a, table a:hover, table a:visited, table a:active
+th a, table a:hover, table a:active
 {
-	color:#FFF;
+	/* color:#FFF; */
 }
 
 th.header 
