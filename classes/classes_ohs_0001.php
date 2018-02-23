@@ -63,7 +63,7 @@
         Classes are held in the Keeneland Room of the William T. Young   Library. </p>
                 <p>This class is available  <a href="main.php?cClassID=9" class="link-class">online</a>.</p>
                 
-                	<h2 id="annual_refresher">Annual refresher</h2>
+                	<h2 id="annual_refresher">Chemical Hygiene Plan/Laboratory Safety - Annual refresher</h2>
                 	
                     <p>Required  annual refresh of Chemical Hygiene/Laboratory safety. If you have any questions                 about this class,   please contact <a href="mailto:jghamo2@uky.edu">Jan Eggum</a> at (859) 257-2924.</p>
                 	
