@@ -145,7 +145,7 @@
                   <li>Operator  Safety</li>
                   <li>Pedestrian  Safety</li>
                 </ul>
-                <p>Classroom training sessions are available upon  request. Duration is 1 hour. Contact <a href="mailto:mdtu222@uky.edu">Michael Turner</a> at (859) 257-3862.</p>
+                <p>Classroom training sessions are available upon  request. Duration is 1 hour. Contact<a href="../Aaron.Offutt@uky.edu"> Arron Offut</a> at (859) 257-3862.</p>
                 <p>This class is available <a href="main.php?cClassID=24" class="link-class">online</a>.</p>
               	</div><!--/content-->      
             </div><!--/subContainer-->
