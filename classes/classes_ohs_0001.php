@@ -93,7 +93,7 @@
                   <li>State  the main criteria that prompts use of fall protection for construction workers</li>
                   <li>Identify  risk factors for working at elevated heights such as from ladders or  scaffolding</li>
                 </ul>
-                <p> Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="mailtomdtu222@uky.edu">Lee Poore</a> at (859) 257-2924.</p>
+                <p> Classroom training sessions are available upon request. Duration is 1 hour.         Contact<a href="../Aaron.Offutt@uky.edu"> Arron Offut</a> at (859) 257-3862..</p>
         <h2 id="hazard_assessment">Hazard Assessment</h2>
                 <p>Training                 for supervisors in how to conduct workplace   hazard assessments for                 determining the need and proper   selection of personal protective                 equipment. Provides   instruction on the use and application of the                   University's hazard assessment checklists. Training is for personnel                   responsible for employees who have the potential to   encounter hazards.<br />
                   <br />
