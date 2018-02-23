@@ -94,10 +94,10 @@
                         	<td><a href="classes_ohs_0001.php#chemical_fume_hood" >Chemical Fume Hood</a></td>
                         </tr>
                         	<tr>
-                        <td><a href="classes_ohs_0001.php#chemical_hygiene" >Chemical Hygiene Plan/Laboratory Safety</a></td>
+                        <td><a href="classes_ohs_0001.php#chemical_hygiene" >Chemical Hygiene Plan / Laboratory Safety - General Awareness</a></td>
                         </tr>
                         <tr>
-                       	 	<td><a href="classes_ohs_0001.php#chemical_hygiene" >Chemical Hygiene Plan/Laboratory Safety (annual refresher)</a></td>
+                       	 	<td><a href="classes_ohs_0001.php#chemical_hygiene" >Chemical Hygiene Plan / Laboratory Safety (annual refresher)</a></td>
                         </tr>
                         <tr>
                         	<td><a href="classes_ohs_0001.php#confined_space_entry">Confined Space Entry</a></td>
