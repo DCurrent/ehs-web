@@ -93,7 +93,7 @@
                   <li>State  the main criteria that prompts use of fall protection for construction workers</li>
                   <li>Identify  risk factors for working at elevated heights such as from ladders or  scaffolding</li>
                 </ul>
-                <p> Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="mailto:Aaron.Offutt@uky.edu">Arron Offut</a> at (859) 257-3862..</p>
+                <p> Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862..</p>
         <h2 id="hazard_assessment">Hazard Assessment</h2>
                 <p>Training                 for supervisors in how to conduct workplace   hazard assessments for                 determining the need and proper   selection of personal protective                 equipment. Provides   instruction on the use and application of the                   University's hazard assessment checklists. Training is for personnel                   responsible for employees who have the potential to   encounter hazards.<br />
                   <br />
@@ -111,11 +111,11 @@
                   <br />
         This program applies to University of Kentucky departments that                   may be involved in hot work and those operations of   contractors                 working under contract to these departments.<br />
         <br />
-        Classroom training sessions are available upon request. Contact <a href="../Aaron.Offutt@uky.edu">Arron Offut</a> at (859) 257-3862.</p>
+        Classroom training sessions are available upon request. Contact <a href="../Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
                 <h2 id="lockout_tagout">Lockout/Tagout</h2>
                 <p>Training                 for employees performing service or maintenance   of equipment in                 which is the unexpected energization of   start up of equipment or                 release of stored energy could   cause injury. Provides instruction                 on the requirements   of OSHA's Lockout/Tagout Standard, overview                 of energy   sources, energy isolation devices and the basic lockout/tagout                   steps. This training is complimented by unit specific   lockout/tagout                 procedure training. <br />
                   <br />
-        Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="../Aaron.Offutt@uky.edu">Arron Offut</a> at (859) 257-3862.</p>
+        Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="../Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
                 <h2 id="office_ergonomics">Office Ergonomics</h2>
                 <p>Training                 for employees on proper office ergonomics,   including desk, chair                 and computer assessments.<br />
                   <br />
@@ -126,7 +126,7 @@
         <h2 id="pass_van">Passenger Van Safety Awareness</h2>
                   <p>The National Highway Traffic Safety Administration (NHTSA) has issued cautionary warnings to users of high capacity vans. In an effort to promote              safe driving practices for the protection of University employees, students, and the citizens and drivers using the highways, Occupational Health and Safety has developed a driver safety awareness training program for passenger van drivers.</p>
                   
-        		<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="../Aaron.Offutt@uky.edu">Arron Offut</a> at (859) 257-3862..</p>
+        		<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="../Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862..</p>
                   <p>This class is available <a href="main.php?cClassID=5" class="link-class">online</a>.</p>
         
                 <h2 id="respirator_use">Respirator Use</h2>
@@ -145,7 +145,7 @@
                   <li>Operator  Safety</li>
                   <li>Pedestrian  Safety</li>
                 </ul>
-                <p>Classroom training sessions are available upon  request. Duration is 1 hour. Contact <a href="mailto:Aaron.Offutt@uky.edu">Arron Offut</a> at (859) 257-3862.</p>
+                <p>Classroom training sessions are available upon  request. Duration is 1 hour. Contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
                 <p>This class is available <a href="main.php?cClassID=24" class="link-class">online</a>.</p>
               	</div><!--/content-->      
             </div><!--/subContainer-->
