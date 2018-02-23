@@ -44,7 +44,7 @@
 		    <li><a href="//www.uky.edu/EVPFA/Controller/files/risk/vehicleaccidentreportform.pdf" target="_blank" class="link">UK Vehicle Accident Report Form</a></li>
 	      </ul>
 		  <h2><a name="Property" id="Property"></a>Property Damage Accidents</h2>
-<p>Property Damage  accidents such as fire, water, wind, theft and other property damage claims are  not reported on any one form. After a loss is discovered, the loss should be  reported to the department head who will contact the University's <a href="mailto:ljdrap2@uky.edu" class="link">Risk  Manager</a> at 859-257-3372.</p>
+<p>Property Damage  accidents such as fire, water, wind, theft and other property damage claims are  not reported on any one form. After a loss is discovered, the loss should be  reported to the department head who will contact the University's <a href="twadki2@email.uky.edu" class="link">Risk  Manager</a> at 859-257-3372.</p>
 	  </div>       
 	</div>    
 	<div id="sidePanel">		
