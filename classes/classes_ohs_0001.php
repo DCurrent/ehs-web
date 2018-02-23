@@ -58,7 +58,7 @@
                     <br />
         This class is only available <a href="main.php?cClassID=22" class="link-class">online</a>.</p>
                   <h2 id="chemical_hygiene">Chemical Hygiene Plan/Laboratory Safety</h2>
-                <p>Chemical                 safety for laboratory workers. This class is   required for anyone                 who works with chemicals in a   laboratory. If you have any questions                 about this class,   please contact <a href="main.php?cClassID=30">Lee Poore</a> at (859) 257-2924.<br />
+                <p>Chemical                 safety for laboratory workers. This class is   required for anyone                 who works with chemicals in a   laboratory. If you have any questions                 about this class,   please contact <a href="mailto:jghamo2@uky.edu">Jan Eggum</a> at (859) 257-2924.<br />
                     <br />
         Classes are held in the Keeneland Room of the William T. Young   Library. </p>
                 <p>This class is available  <a href="main.php?cClassID=9" class="link-class">online</a>.</p>
