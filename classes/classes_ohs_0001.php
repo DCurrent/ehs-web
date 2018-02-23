@@ -111,11 +111,11 @@
                   <br />
         This program applies to University of Kentucky departments that                   may be involved in hot work and those operations of   contractors                 working under contract to these departments.<br />
         <br />
-        Classroom training sessions are available upon request. Contact <a href="mailto:mdtu222@uky.edu">Michael Turner</a> at (859) 257-3862.</p>
+        Classroom training sessions are available upon request. Contact <a href="../Aaron.Offutt@uky.edu">Arron Offut</a> at (859) 257-3862.</p>
                 <h2 id="lockout_tagout">Lockout/Tagout</h2>
                 <p>Training                 for employees performing service or maintenance   of equipment in                 which is the unexpected energization of   start up of equipment or                 release of stored energy could   cause injury. Provides instruction                 on the requirements   of OSHA's Lockout/Tagout Standard, overview                 of energy   sources, energy isolation devices and the basic lockout/tagout                   steps. This training is complimented by unit specific   lockout/tagout                 procedure training. <br />
                   <br />
-        Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="mailto:mdtu222@uky.edu">Michael Turner</a> at (859) 257-3862.</p>
+        Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="../Aaron.Offutt@uky.edu">Arron Offut</a> at (859) 257-3862.</p>
                 <h2 id="office_ergonomics">Office Ergonomics</h2>
                 <p>Training                 for employees on proper office ergonomics,   including desk, chair                 and computer assessments.<br />
                   <br />
