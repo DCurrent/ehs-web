@@ -67,7 +67,7 @@ This  class is only available <a href="http://ehs.uky.edu/apps/rocky/content/asb
                     	 You can  satisfy this training requirement by taking this class online:</p>
                     
                     <p>
-                    	For personnel within any of the following, see <a href="main.php?cClassID=3">Hazardous Waste Specfic</a>:
+                    	For personnel within any of the following, see <a href="main.php?cClassID=3" class="link-class">Hazardous Waste Specfic</a>:
                     </p>
                     
                     <ul>
@@ -78,7 +78,7 @@ This  class is only available <a href="http://ehs.uky.edu/apps/rocky/content/asb
                     </ul>
                     
                     <p>
-                    	All other personnel see <a href="main.php?cClassID=8">Hazardous Waste General</a>.
+                    	All other personnel see <a href="main.php?cClassID=8" class="link-class">Hazardous Waste General</a>.
                     </p>
                     
                 </div><!--content-->
