@@ -126,7 +126,7 @@
         <h2 id="pass_van">Passenger Van Safety Awareness</h2>
                   <p>The National Highway Traffic Safety Administration (NHTSA) has issued cautionary warnings to users of high capacity vans. In an effort to promote              safe driving practices for the protection of University employees, students, and the citizens and drivers using the highways, Occupational Health and Safety has developed a driver safety awareness training program for passenger van drivers.</p>
                   
-        		<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="mailto:mdtu222@uky.edu">Michael Turner</a> at (859) 257-3862.</p>
+        		<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="../Aaron.Offutt@uky.edu">Arron Offut</a> at (859) 257-3862..</p>
                   <p>This class is available <a href="main.php?cClassID=5" class="link-class">online</a>.</p>
         
                 <h2 id="respirator_use">Respirator Use</h2>
