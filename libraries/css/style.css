@@ -452,9 +452,9 @@ a:active
 
 .link-class
 {	
-	text-transform: uppercase;	
-	text-emphasis-style: filled;
-	text-emphasis-style: open;	
+	text-transform: uppercase;
+	font-size: larger;
+	text-shadow: 1px 1px 1px #00ff00;
 }
 
 /* Link, anchor 
