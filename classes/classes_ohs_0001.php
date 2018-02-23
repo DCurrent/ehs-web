@@ -57,7 +57,7 @@
                   <p>Chemical fume                   hoods are the primary engineering   control used in the laboratory                   to protect against the   inhalation of hazardous vapors and gases.                   They are   located in many of the labs across UK&rsquo;s campus. This                     training provides information about the types of fume hoods and                     their function, types of fume hood flow monitors, and   guidelines                   on how to correctly and safely use a fume   hood. Steps to follow                 if your fume hood is not   functioning properly are also included.<br />
                     <br />
         This class is only available <a href="main.php?cClassID=22" class="link-class">online</a>.</p>
-                  <h2 id="chemical_hygiene">Chemical Hygiene Plan/Laboratory Safety</h2>
+                  <h2 id="chemical_hygiene">Chemical Hygiene Plan/Laboratory Safety </h2>
                 <p>Chemical                 safety for laboratory workers. This class is   required for anyone                 who works with chemicals in a   laboratory. If you have any questions                 about this class,   please contact <a href="mailto:jghamo2@uky.edu">Jan Eggum</a> at (859) 257-2924.<br />
                     <br />
         Classes are held in the Keeneland Room of the William T. Young   Library. </p>
@@ -65,7 +65,7 @@
                 
                 	<h2 id="annual_refresher">Annual refresher</h2>
                 	
-                    <p>Required  annual refresh of Chemical Hygiene/Laboratory safety.</p>
+                    <p>Required  annual refresh of Chemical Hygiene/Laboratory safety. If you have any questions                 about this class,   please contact <a href="mailto:jghamo2@uky.edu">Jan Eggum</a> at (859) 257-2924.</p>
                 	
                     <p>This class is available <a href="main.php?cClassID=7" class="link-class">online</a>.</p>
                 
