@@ -127,6 +127,9 @@
                         	<td><a href="classes_fire_0001.php#fire_extinguisher_use" >Fire Extinguisher Training</a></td>
                         </tr>
                         <tr>
+                          <td><a href="../docs/ppt/train-first-aid.potx" target="_blank">First Aid</a></td>
+                        </tr>
+                        <tr>
                         	<td><a href="classes_ohs_0001.php#hazard_assessment">Hazard Assessment</a></td>
                         </tr>
                         <tr>
