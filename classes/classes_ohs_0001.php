@@ -128,6 +128,26 @@
                   
         		<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="../Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862..</p>
                   <p>This class is available <a href="main.php?cClassID=5" class="link-class">online</a>.</p>
+                  
+                  <h2 id="powered_industrial_trucks">Powered Industrial Trucks (Forklifts) </h2>
+                  <p>This course informs the   learner about the safe operating procedures needed for using powered   industrial trucks. Powered industrial trucks refer to fork trucks,   tractors, platform lift trucks, motorized hand trucks, and other   specialized industrial trucks powered by electric motor or internal   combustion engines.  The course participants will know safe operating   procedures for powered industrial trucks. </p>
+                  <p>A hands on practicum will be scheduled for those who attend this classroom training to be completed to be certified. </p>
+                  <h3>Contents</h3>
+                  <ul>
+                    <li>General operating instructions, warning, and precautions</li>
+                    <li>Truck controls and instrumentation</li>
+                    <li>Engine and motor operations</li>
+                    <li>Steering and maneuvering</li>
+                    <li>Visibility</li>
+                    <li>For and attachment adaptation, operation and use limitations</li>
+                    <li>Vehicle capacity</li>
+                    <li>Vehicle stability</li>
+                    <li>Vehicle inspection and maintenance</li>
+                    <li>Refueling vehicles</li>
+                    <li>Operating limitations</li>
+                    <li>Forklift safe work practices</li>
+                  </ul>
+                  <p> Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
         
                 <h2 id="respirator_use">Respirator Use</h2>
                 <p>The                   class is mandatory for all respirator users. It is   intended to provide                   basic information regarding the   proper use and maintenance of respirators.                   Topics for   discussion include an overview of the type(s) of respirators                     that will be used; conditions of use; fit testing; cleaning and                     maintenance; and storage. This course must be   supplemented with                   instruction from a departmental   designee (i.e. principal investigator,                   supervisor,   etc.) concerning the respiratory protection policies                     of each specific worksite. <br />
