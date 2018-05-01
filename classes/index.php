@@ -157,6 +157,9 @@
                         	<td><a href="classes_ohs_0001.php#pass_van">Passenger Van Training</a></td>
                         </tr>
                         <tr>
+                          <td><a href="classes_ohs_0001.php#powered_industrial_trucks">Powered Industrial Trucks (Forklifts)</a></td>
+                        </tr>
+                        <tr>
                         	<td><a href="classes_ohs_0001.php#respirator_use" >Respirator Use</a></td>
                         </tr>
                         <tr>
