@@ -112,6 +112,20 @@
         This program applies to University of Kentucky departments that                   may be involved in hot work and those operations of   contractors                 working under contract to these departments.<br />
         <br />
         Classroom training sessions are available upon request. Contact <a href="../Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
+                <h2 id="ladders">Ladders </h2>
+                <p>This course will inform the learner about the basic   requirements of ladder safety. This course is for those who use ladder   as part of the employment duties at UK.  Safe work practices and OSHA   regulations will be discussed. </p>
+                <h3>Contents  </h3>
+                <ul>
+                  <li>Types of ladders  </li>
+                  <li>Ladder inspection</li>
+                  <li>Ladder set up</li>
+                  <li>Climbing and standing</li>
+                  <li>Proper   ladder use</li>
+                  <li>Care and storage</li>
+                  <li>Electrical Hazards</li>
+                  <li>Fall hazards </li>
+                </ul>
+                <p>Classroom training sessions are available upon request. Duration is 45 minutes. Contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>
                 <h2 id="lockout_tagout">Lockout/Tagout</h2>
                 <p>Training                 for employees performing service or maintenance   of equipment in                 which is the unexpected energization of   start up of equipment or                 release of stored energy could   cause injury. Provides instruction                 on the requirements   of OSHA's Lockout/Tagout Standard, overview                 of energy   sources, energy isolation devices and the basic lockout/tagout                   steps. This training is complimented by unit specific   lockout/tagout                 procedure training. <br />
                   <br />
