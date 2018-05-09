@@ -148,6 +148,9 @@
                         	<td><a href="classes_radiation_0001.php#initial_radiation_safety">On-Site And Initial Radiation Safety</a></td>
                         </tr>
                         <tr>
+                          <td><a href="../docs/ppt/train-lab-safety-for-contractors.pptx">Laboratory Safety for Non-Laboratory Workers</a></td>
+                        </tr>
+                        <tr>
                         	<td><a href="classes_ohs_0001.php#ladders" >Ladder Safety</a></td>
                         </tr>
                         <tr>
