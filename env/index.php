@@ -42,7 +42,7 @@
                     <?php include($cLRoot."a_subnav.php"); ?>	
                 </div><!--/subContainer-->
                 <div id="content">
-					<h1 class="alert center"><span style="font-style: italic;">Attention</span> - Announcing</h1>
+				  <h1 class="alert center"><span style="font-style: italic;">Attention</span> - Announcing</h1>
                    	<br />
                     
 					<img style="float: right;" src="../media/image/rde-hand-01.png" width="343" height="389" alt=""/>						
@@ -54,14 +54,59 @@
 					</div>
 
 					<p class="float_right"  style="clear:both;">
-						<span style="font-size: xx-large; color: aqua;">Directly applicable to all hazardous waste generating locations at the University of Kentucky.</span>
+					  <span style="color: #005daa;font-size: xx-large;font-weight: bold;">Directly applicable to all hazardous waste generating locations at the University of Kentucky.</span>
 					</p>	
                     
                     <br/>
                     
-                    <div id="header-text" style="display: block; clear:both;">
-						<p>The Environmental Management Department is responsible for ensuring the safe and timely pick up and management of hazardous waste and various other special waste streams generated at the University of Kentucky by on and off-campus locations. We also provide various services regarding compliance with waste management, water and air quality regulations. The department provides opportunities for both live and on-line training programs related to hazardous waste management and DOT/IATA shipping requirements.  Additional services provided include responding to spills/releases on a 24-hour basis, conducting site remediation and property audits and serving as the University's primary resource for conducting investigations and abatement for asbestos and lead based paint. Finally, according to a University charter, we have the responsibility for conducting and reporting internal environmental audits on a regular basis. If you are a faculty, staff or student we look forward to serving you in any of these areas.
-						</p>
+                  <div id="header-text" style="display: block; clear:both;">
+						<h2>What</h2>
+						<p>A federally mandated regulation known as the <span class="alert">Hazardous Waste Generator Improvements Rule</span>, has been made final in Kentucky and it has changed key elements of the way in which those who generate hazardous waste must maange those wastes.</p>
+						<h2>How Are you Affected</h2>
+						<p>If your job functionsor researching and teaching activities result in the generation of hazardous waste the new regulation will impact the way in which you are required to document, accumulate and manage that waste while it is in your possession.</p>
+						<h2>Additional Information</h2>
+						<p>The details of the way in which the University will address the new regulation will be provided through live training opportunities as scheduled below:</p>
+						<table width="100%" border="0">
+						  <tbody>
+						    <tr>
+						      <td>Wednesday</td>
+						      <td>May 16</td>
+						      <td>10:00am - 11:00am</td>
+						      <td>Todd BioPharm Building, Rm. 224</td>
+					        </tr>
+						    <tr>
+						      <td>Thursday</td>
+						      <td>May 17</td>
+						      <td>11:00am - 12:00pm</td>
+						      <td>Agriculture Science North, Seay Aud.</td>
+					        </tr>
+						    <tr>
+						      <td>Friday</td>
+						      <td>May 18</td>
+						      <td>10:00am - 11:00am</td>
+						      <td>Todd BioPharm Building, Rm. 224</td>
+					        </tr>
+						    <tr>
+						      <td>Teusday</td>
+						      <td>May 22</td>
+						      <td>3:00pm - 4:00pm</td>
+						      <td>Agriculture Science North, Seay Aud.</td>
+					        </tr>
+						    <tr>
+						      <td>Wednesday</td>
+						      <td>May 23</td>
+						      <td>2:00pm - 3:00pm</td>
+						      <td>Jacobs Science Building, Rm. 121</td>
+					        </tr>
+						    <tr>
+						      <td>Thursday</td>
+						      <td>May 24</td>
+						      <td>2:00pm - 3:00pm</td>
+						      <td>Jacobs Science Building, Rm. 121</td>
+					        </tr>
+					      </tbody>
+				    </table>
+						<p>&nbsp;</p>
 					</div>
                   <div id="env_mission" class="center">
                         <a href="../docs/pdf/emm_mission_0001.pdf" target="_blank" class="no_icon"><img src="../media/image/em_mission_0001.jpg" title="Mission Statement" alt="Mission Statement" /></a>
