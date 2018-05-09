@@ -48,9 +48,9 @@
 					<img style="float: right;" src="../media/image/rde-hand-01.png" width="343" height="389" alt=""/>						
 
 
-					<div class="float_right">
+				  <div class="float_right">
 						<span class="custom_marker_normal">New</span><br />
-						<span class="custom_marker_alert">Regulations!</span>								
+					  <span class="custom_marker_alert"> Regulations!</span>								
 					</div>
 
 					<p class="float_right"  style="clear:both;">
@@ -106,7 +106,13 @@
 					        </tr>
 					      </tbody>
 				    </table>
-						<p>&nbsp;</p>
+						<p>Printed guidance and other resources are also available:</p>
+						<ul>
+						  <li>Hazardous Waste Generator Improvements - Rule Summary</li>
+						  <li>Quick Reference Contingency Plan</li>
+				    </ul>
+						<h2>Contact Information</h2>
+						<p>The primary contact for the new requirement and the University's strategies for compliance is Ron Taylor, Assistant Director, Environmental Management Dept.</p>
 					</div>
                   <div id="env_mission" class="center">
                         <a href="../docs/pdf/emm_mission_0001.pdf" target="_blank" class="no_icon"><img src="../media/image/em_mission_0001.jpg" title="Mission Statement" alt="Mission Statement" /></a>
