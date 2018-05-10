@@ -26,6 +26,10 @@
 				text-decoration-line: underline;
 				
 			}
+		li.double-space
+			{
+				padding:1em 0;
+			}
 		</style>    
     </head>
     
@@ -72,7 +76,7 @@
 						      <td>Wednesday</td>
 						      <td>May 16</td>
 						      <td>10:00am - 11:00am</td>
-						      <td>Todd BioPharm Building, Rm. 224</td>
+						      <td>Todd BioPharm Building, Rm. 234</td>
 					        </tr>
 						    <tr>
 						      <td>Thursday</td>
@@ -84,10 +88,10 @@
 						      <td>Friday</td>
 						      <td>May 18</td>
 						      <td>10:00am - 11:00am</td>
-						      <td>Todd BioPharm Building, Rm. 224</td>
+						      <td>Todd BioPharm Building, Rm. 234</td>
 					        </tr>
 						    <tr>
-						      <td>Teusday</td>
+						      <td>Tuesday</td>
 						      <td>May 22</td>
 						      <td>3:00pm - 4:00pm</td>
 						      <td>Agriculture Science North, Seay Aud.</td>
@@ -108,9 +112,12 @@
 				    </table>
 						<p>Printed guidance and other resources are also available:</p>
 						<ul>
-						  <li><a href="media/hazardous-waste-generator-improvements-summary.pdf" target="_blank">Hazardous Waste Generator Improvements - Rule Summary</a></li>
-						  <li><a href="media/contingency-plan-quick-reference-guide.pdf" target="_blank">Quick Reference Contingency Plan</a></li>
-				    </ul>
+						  <li class="double-space">For a summary of key parts of the new regulation consult - <a href="media/hazardous-waste-generator-improvements-summary.pdf" target="_blank">Hazardous Waste Generator Improvements  Rule - Summary</a><
+						  </li>
+						  <li class="double-space">For instructions for managing hazardous waste at their point of generation consult - <a href="media/saa-regulatory-guidance-paper.pdf" target="_blank">Hazardous  Waste  Generator Improvements Rule - SAA Regulatory Guidance Paper</a>
+						  </li>
+						  <li class = "double-space">The following must be available at every Satelite Accumulation Area for use in case of an emergency involving a release of hazardous waste - <a href="media/contingency-plan-quick-reference-guide.pdf" target="_blank">Quick Reference Contingency Plan</a></li>
+  			        </ul>
 						<h2>Contact Information</h2>
 						<p>The primary contact for the new requirement and the University's strategies for compliance is Ron Taylor, Assistant Director, Environmental Management Dept.</p>
 					</div>
