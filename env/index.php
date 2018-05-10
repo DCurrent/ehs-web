@@ -61,9 +61,9 @@
                     
                   <div id="header-text" style="display: block; clear:both;">
 						<h2>What</h2>
-						<p>A federally mandated regulation known as the <span class="alert">Hazardous Waste Generator Improvements Rule</span>, has been made final in Kentucky and it has changed key elements of the way in which those who generate hazardous waste must maange those wastes.</p>
+						<p>A federally mandated regulation known as the <span class="alert">Hazardous Waste Generator Improvements Rule</span>, has been made final in Kentucky and it has changed key elements of the way in which those who generate hazardous waste must manage those wastes.</p>
 						<h2>How Are you Affected</h2>
-						<p>If your job functionsor researching and teaching activities result in the generation of hazardous waste the new regulation will impact the way in which you are required to document, accumulate and manage that waste while it is in your possession.</p>
+						<p>If your job functions or researching and teaching activities result in the generation of hazardous waste the new regulation will impact the way in which you are required to document, accumulate and manage that waste while it is in your possession.</p>
 						<h2>Additional Information</h2>
 						<p>The details of the way in which the University will address the new regulation will be provided through live training opportunities as scheduled below:</p>
 						<table width="100%" border="0">
