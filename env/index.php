@@ -108,8 +108,8 @@
 				    </table>
 						<p>Printed guidance and other resources are also available:</p>
 						<ul>
-						  <li>Hazardous Waste Generator Improvements - Rule Summary</li>
-						  <li>Quick Reference Contingency Plan</li>
+						  <li><a href="media/hazardous-waste-generator-improvements-summary.pdf" target="_blank">Hazardous Waste Generator Improvements - Rule Summary</a></li>
+						  <li><a href="media/contingency-plan-quick-reference-guide.pdf" target="_blank">Quick Reference Contingency Plan</a></li>
 				    </ul>
 						<h2>Contact Information</h2>
 						<p>The primary contact for the new requirement and the University's strategies for compliance is Ron Taylor, Assistant Director, Environmental Management Dept.</p>
