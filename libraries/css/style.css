@@ -1219,12 +1219,14 @@ body
 	
 #content 
 {
-	display:					inherit;
-	float:						left;
-	margin: 					10px 0px 0px 10px;
-	padding: 					0px 0px 0px 0px;
-	position: 					relative;	
-	width: 						80%;		
+	display: inherit;
+	float: left;
+	margin: 10px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+	width: 80%;
+	font-family: arial, verdana, helvetica, sans-serif;
+	text-align: left;
 }
 
 #sidePanel 
