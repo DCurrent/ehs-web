@@ -112,7 +112,7 @@
 				    </table>
 						<p>Printed guidance and other resources are also available:</p>
 						<ul>
-						  <li class="double-space">For a summary of key parts of the new regulation consult - <a href="media/hazardous-waste-generator-improvements-summary.pdf" target="_blank">Hazardous Waste Generator Improvements  Rule - Summary</a><
+						  <li class="double-space">For a summary of key parts of the new regulation consult - <a href="media/hazardous-waste-generator-improvements-summary.pdf" target="_blank">Hazardous Waste Generator Improvements  Rule - Summary</a>
 						  </li>
 						  <li class="double-space">For instructions for managing hazardous waste at their point of generation consult - <a href="media/saa-regulatory-guidance-paper.pdf" target="_blank">Hazardous  Waste  Generator Improvements Rule - SAA Regulatory Guidance Paper</a>
 						  </li>
