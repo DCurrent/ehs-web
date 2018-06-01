@@ -70,47 +70,8 @@
 						<p>If your job functions or researching and teaching activities result in the generation of hazardous waste the new regulation will impact the way in which you are required to document, accumulate and manage that waste while it is in your possession.</p>
 						<h2>Additional Information</h2>
 						<p>The details of the way in which the University will address the new regulation will be provided through live training opportunities as scheduled below:</p>
-						<table width="100%" border="0">
-						  <tbody>
-						    <tr>
-						      <td>Wednesday</td>
-						      <td>May 16</td>
-						      <td>10:00am - 11:00am</td>
-						      <td>Todd BioPharm Building, Rm. 234</td>
-					        </tr>
-						    <tr>
-						      <td>Thursday</td>
-						      <td>May 17</td>
-						      <td>11:00am - 12:00pm</td>
-						      <td>Agriculture Science North, Seay Aud.</td>
-					        </tr>
-						    <tr>
-						      <td>Friday</td>
-						      <td>May 18</td>
-						      <td>10:00am - 11:00am</td>
-						      <td>Todd BioPharm Building, Rm. 234</td>
-					        </tr>
-						    <tr>
-						      <td>Tuesday</td>
-						      <td>May 22</td>
-						      <td>3:00pm - 4:00pm</td>
-						      <td>Agriculture Science North, Seay Aud.</td>
-					        </tr>
-						    <tr>
-						      <td>Wednesday</td>
-						      <td>May 23</td>
-						      <td>2:00pm - 3:00pm</td>
-						      <td>Jacobs Science Building, Rm. 121</td>
-					        </tr>
-						    <tr>
-						      <td>Thursday</td>
-						      <td>May 24</td>
-						      <td>2:00pm - 3:00pm</td>
-						      <td>Jacobs Science Building, Rm. 121</td>
-					        </tr>
-					      </tbody>
-				    </table>
-						<p>Printed guidance and other resources are also available:</p>
+						
+						Several live training events were held during the month May to provide details of the new regulation and the specific strategies of how the University will attain compliance. If you were unable to attend any of these live events, please check back to this page and a recorded version will be available very soon.  In addition, printed guidance and other resources are currently available:
 						<ul>
 						  <li class="double-space">For a summary of key parts of the new regulation consult - <a href="media/hazardous-waste-generator-improvements-summary.pdf" target="_blank">Hazardous Waste Generator Improvements  Rule - Summary</a>
 						  </li>
