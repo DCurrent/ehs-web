@@ -7,7 +7,8 @@
 	$cLRoot		= $cDocroot."ohs/";
 	
 	// Verify login.
-	$oAcc->access_verify(NULL, CONSTANTS::ACCESS_REPORT);
+	//$oAcc->access_verify(NULL, CONSTANTS::ACCESS_REPORT);
+	$oAcc->access_verify(NULL, NULL);
 		
 	// Initialize post vars object.
 	$post = new class_incident();
