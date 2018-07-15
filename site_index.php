@@ -35,9 +35,7 @@
                     <?php include("a_subnav_0001.php"); ?>                     
                 </div><!--/subNavigation-->                
                 <div id="content">                
-                    <h1>Site Index <span class="color_red">(Under Construction)</span></h1>                      
-                    
-                    <p>This site index is under construction as of 2014-09-23. Please check back with us soon!</p>
+                    <h1>Site Index</h1>
                     
                     <h2 id="A">A</h2>
 
@@ -129,12 +127,13 @@
                     <h2 id="H">H</h2>
                     
                     <ul>
-                        <li><a href="ohs/heat_awareness.php" title="Heat Awareness.">Heat Awareness</a>
+						<li><a href="ohs/heat_awareness.php" title="Heat Awareness.">Heat Awareness</a></li>
+						<li><a href="apps/hero" title="Hero application.">HERO (Hazard Education, Recording, and Observation) Application</a></li>
                     </ul>
                     
                     <a href="#" title="Go back to the top of this page.">Top of page</a>
                     
-                    <h2 id="I">I</h2>
+                  <h2 id="I">I</h2>
                     
                     <ul>
                         <li><a href="ohs/iaqfacts.html" title="Factors affecting indoor air quality.">Indoor Air Quality</a></li>
