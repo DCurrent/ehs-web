@@ -15,6 +15,7 @@
     <li><a href="//www.csb.gov/videoroom/detail.aspx?vid=61&amp;F=0&amp;CID=0&amp;pg=1&amp;F_All=y">CSB Investigation into Recent Academic Lab Accidents</a></li>
     <li><a href="/ohs/aed.php" target="_blank">Automated External Defibrillator Use</a></li>
     <li><a href="https://www.etrax.uky.edu/Chematix/">Chematix Chemical and Waste Management System</a></li>
+	<li><a href="/apps/hero" title="Hero application.">HERO (Hazard Education, Recording, and Observation) Application</a></li>
     <li><a href="/ohs/minors_0001.php">High Schoolers in UK Laboratories Program</a></li>
     <li><a href="/classes/classes_ohs_0001.php#annual_refresher">Laboratory Safety Refresher Training</a></li>
 </ul>
