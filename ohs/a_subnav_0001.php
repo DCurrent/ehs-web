@@ -22,7 +22,8 @@
                 <li><a href="/ohs/off_lab_ergo.php">Ergonomics</a></li>
                 <li><a href="https://www.uky.edu/ufs/sites/www.uky.edu.ufs/files/bpm/D-1-3.pdf" target="_blank">Golf Carts and Utility Vehicles</a></li>
                 <li><a href="/docs/pdf/ohs_hcp.pdf" target="_blank">Hazard Communication Program</a></li>
-                <li><a href="/classes/safe_checklist_non_lab_0001.php">Health &amp; Safety Checklist For Non-Laboratories</a></li>
+                <li><a href="/classes/safe_checklist_non_lab_0001.php">Health &amp; Safety Checklist For Non-Laboratories</a></li>				
+				<li><a href="/apps/hero">HERO (Hazard Education, Recording, and Observation)</a></li>				
                 <li><a href="/docs/pdf/ohs_hot_work_program_0001.pdf" target="_blank">Hot Work Program</a></li>
                 <li><a href="/ohs/lockout.html">Lockout/Tagout Program</a></li>
                 <li><a href="/ohs/machineguard">Machine Guarding</a></li>
