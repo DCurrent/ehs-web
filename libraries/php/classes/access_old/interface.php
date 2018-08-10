@@ -6,10 +6,10 @@
 		const LDAP_HOST			= 'ukldap.uky.edu';		// LDAP host.
 		const LDAP_HOST_NEW		= 'LDAP://gc.ad.uky.edu';
 		const LDAP_BASE_DN		= 'o=uky';				// LDAP Base Domain Name.
-		const AUTHENTICATE_URL	= 'https://ehs.uky.edu:8443/authenticate.php';	// Authenticate page URL.
+		const AUTHENTICATE_URL	= 'https://ehs.uky.edu/authenticate.php';	// Authenticate page URL.
 		
-		const DIAGNOSTIC		= FALSE;					// Record user info to outside database for diagnostics.
-		const DIAGNOSTIC_MAIL	= TRUE;					// Record user info to email for diagnostics.
+		const DIAGNOSTIC		= FALSE;				// Record user info to outside database for diagnostics.
+		const DIAGNOSTIC_MAIL	= FALSE;				// Record user info to email for diagnostics.
 		const USE_LOCAL			= TRUE;					// Attempt to log in user with local account.
 	}
 	
