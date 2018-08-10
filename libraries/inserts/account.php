@@ -32,9 +32,9 @@
 			{			
 				// If we can find a matching a post var with key matching
 				// key of current object var, set object var to the post value. 
-				if(isset($_POST[$key]))
+				if(isset($_REQUEST[$key]))
 				{					
-					$this->$key = $_POST[$key];           						
+					$this->$key = $_REQUEST[$key];           						
 				}
 			}	
 	 	}
