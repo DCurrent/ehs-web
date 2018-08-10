@@ -17,7 +17,7 @@
 	}
 
 	// Verify user authorization and get account info.
-	$oAcc->access_verify(NULL, 'kmcgu1, rdeldr0, dwhibb0');
+	$oAcc->access_verify(NULL, NULL);
 
 	$db			= NULL;	// Database object.
 	$query		= NULL;	// Query object.
