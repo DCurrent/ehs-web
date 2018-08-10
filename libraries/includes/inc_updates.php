@@ -10,7 +10,7 @@
 	<li><a href="/docs/pdf/dea-controlled-substance-research-guide.pdf">Researchers DEA Controlled Substance Guide</a></li>
 	<li><a href="/ohs/heat_awareness.php">Heat Awareness</a></li>
   	<li><a href="/ohs/zika.php">Zika Virus</a></li>
-  	<li><a href="//www.research.uky.edu/ori/univet/OccHealth/Program_Description.html">Occupational Health and Safety Program for Animal Handlers</a></li>
+  	<li><a href="https://www.research.uky.edu/office-attending-veterinarian/iacuc-training">Occupational Health and Safety Program for Animal Handlers</a></li>
   	<li><a href="/classes/classes_ohs_0001.php#utility_cart">Utility Cart Training</a></li>
     <li><a href="//www.csb.gov/videoroom/detail.aspx?vid=61&amp;F=0&amp;CID=0&amp;pg=1&amp;F_All=y">CSB Investigation into Recent Academic Lab Accidents</a></li>
     <li><a href="/ohs/aed.php" target="_blank">Automated External Defibrillator Use</a></li>
