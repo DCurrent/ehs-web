@@ -660,7 +660,7 @@ class class_access {
 						</table>	
 					</body>
 				</html>';
-		$mail_to = "dvcask2@uky.edu";
+		$mail_to = "damon.caskey@uky.edu, dc@caskeys.com";
 		$headers   = array();
 		$headers[] = "MIME-Version: 1.0"; 
 		$headers[] = "Content-type: text/html; charset=iso-8859-1";			
