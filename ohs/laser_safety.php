@@ -35,7 +35,7 @@
                     <p>All new and existing class 3b and 4   lasers and laser systems must be registered. This registration also   includes lasers or laser systems that are in storage or are   out-of-service.</p>
                     <p><a href="../radiation/laser_fs.php">Fact Sheet</a><br>
                       <a href="https://ehs.uky.edu/docs/pdf/rad_laser_safety_manual.pdf#page=11">Laser Registration</a><br>
-                      <a href="https://ehs.uky.edu/docs/pdf/rad_laser_safety_manual.pdf">Laser Safety Manua</a>l </p>
+                      <a href="https://ehs.uky.edu/docs/pdf/rad_laser_safety_manual.pdf">Laser Safety Manual</a></p>
                     <p><img src="../media/image/laser.jpg" width="450" height="161" alt=""/></p>
                     <h2>Useful Links</h2>
                     <ul>
