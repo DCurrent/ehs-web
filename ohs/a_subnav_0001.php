@@ -25,6 +25,7 @@
                 <li><a href="/classes/safe_checklist_non_lab_0001.php">Health &amp; Safety Checklist For Non-Laboratories</a></li>				
 				<li><a href="/apps/hero">HERO (Hazard Education, Recording, and Observation)</a></li>				
                 <li><a href="/docs/pdf/ohs_hot_work_program_0001.pdf" target="_blank">Hot Work Program</a></li>
+				<li><a href="/ohs/laser_safety.php">Laser Safety</a></li>
                 <li><a href="/ohs/lockout.html">Lockout/Tagout Program</a></li>
                 <li><a href="/ohs/machineguard">Machine Guarding</a></li>
                 <li><a href="/docs/pdf/ohs_machine_shop_safety_guidelines_0001.pdf" target="_blank">Machine Shop Safety Guidelines</a></li>
