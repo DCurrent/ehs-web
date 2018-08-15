@@ -74,7 +74,7 @@
                         <li><a href="clean.html" title="Cleaning Blood and Body Fluids.">Cleaning Blood and Body Fluids</a></li>
                         <li><a href="ohs/cgc2.html" title="Compressed Gas Cylinders.">Compressed Gas Cylinders</a></li>
                         <li><a href="docs/pdf/con_safe_hndbk.pdf" title="Contractor Safety Handbook" target="_blank">Contractor Safety Handbook</a></li>
-                        <li><a href="ohs/pregnant.php" title="Controlled substances.">Controlled Substances</a></li>
+                        <li><a href="env/controlled_substances.php" title="Controlled substances.">Controlled Substances</a></li>
                         <li><a href="cas_0001.php" title="A memorandum on cost accounting standards.">Cost Accounting Standards</a></li>
                         <li><a href="ohs/cryogenic.html" title="Cryogenic Materials Safety.">Cryogenic Materials</a></li>
                     </ul>
