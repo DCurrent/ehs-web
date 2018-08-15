@@ -25,9 +25,60 @@
                 </div><!--/subNavigation-->
                 <div id="content">
                     <h1>Welcome</h1>
-                    <p>Welcome to the  University of Kentucky's Radiation Safety Division. UK safety begins with you!</p>
-                    <h2>Our Mission</h2>
-                    <p>This department is responsible for all aspects of radioactive materials use at UK. The radiation protection program includes radioactive materials user authorization, film badges and bioassays, survey meter calibration, radiation safety training, radioactive waste handling, and purchasing of radioactive materials. The unit is also responsible for x-ray and laser safety programs.</p>
+                    <p><font size="2" face="Arial, Helvetica, sans-serif">Lasers are classified to describe 
+        the capabilities of a laser system to produce injury to personnel. This 
+        classification rates from Class I lasers (no harm) to Class IV lasers 
+        like the 2000 Watt, carbon dioxide (let's cut thick steel) laser here 
+        on campus. The manufacturer is required to label Class II, III and IV 
+        lasers with a warning label which will also have the laser's classification 
+        printed on it. </font></p>
+                    <p> <font size="2" face="Arial, Helvetica, sans-serif"><b>Class I lasers</b> are low powered devices that are considered safe from all potential hazards. 
+                      Some examples of Class I laser use are: laser printers, CD players, CD 
+                      ROM devices, geological survey equipment and laboratory analytical equipment. 
+                      No individual, regardless of exposure conditions to the eyes or skin, 
+                      would be expected to be injured by a Class I laser. <i>No</i> safety requirements 
+                      are needed to use Class I laser devices. </font></p>
+                    <p> <font size="2" face="Arial, Helvetica, sans-serif"><b>Class II lasers</b> are low power (&lt; 1mW), visible light lasers that could possibly cause 
+                      damage to a person's eyes. Some examples of Class II laser use are: classroom 
+                      demonstrations, laser pointers, aiming devices and range finding equipment. 
+                      If class II laser beams are directly viewed for long periods of time (i.e. 
+                      > 15 minutes) damage to the eyes could result. Avoid looking into a Class 
+                      II laser beam or pointing a Class II laser beam into another person's 
+                      eyes. Avoid viewing Class II laser beams with telescopic devices. Realize 
+                      that the bright light of a Class II laser beam into your eyes will cause 
+                      a normal reaction to look away or close your eyes. This response is expected 
+                      to protect you from Class II laser damage to the eyes. </font></p>
+                    <p> <font size="2" face="Arial, Helvetica, sans-serif"><b>Class IIIa lasers</b> are continuous wave, intermediate power (1-5 mW) devices. Some examples 
+                      of Class IIIa laser uses are the same as Class II lasers with the most 
+                      popular uses being laser pointers and laser scanners. Direct viewing of 
+                      the Class IIIa laser beam could be hazardous to the eyes. <i>Do not</i> view the Class IIIa laser beam directly. <i>Do not</i> point a Class IIIa 
+                      laser beam into another persons eyes. <i>Do not</i> view a Class IIIa 
+                      laser beam with telescopic devices; this amplifies the problem. </font> </p>
+                    <p> <font size="2" face="Arial, Helvetica, sans-serif"><b>Class IIIb lasers</b> are intermediate power (c.w. 5-500 mW or pulsed 10 J/cm²) devices. Some 
+                      examples of Class IIIb laser uses are spectrometry, stereolithography, 
+                      and entertainment light shows. Direct viewing of the Class IIIb laser 
+                      beam is hazardous to the eye and diffuse reflections of the beam can also 
+                      be hazardous to the eye. <i>Do not</i> view the Class IIIb laser beam 
+                      directly. <i>Do not</i> view a Class IIIb laser beam with telescopic devices; 
+                      this amplifies the problem. Whenever occupying a laser controlled area, 
+                      wear the proper eye protection. Refer to the University of Kentucky Laser 
+                      Safety Manual for complete instructions on the safety requirements for 
+                      Class IIIb laser use. </font></p>
+                    <p> <font size="2" face="Arial, Helvetica, sans-serif"><b>Class IV lasers</b> are high power (c.w. >500mW or pulsed >10J/cm²) devices. Some examples 
+                      of Class IV laser use are surgery, research, drilling, cutting, welding, 
+                      and micromachining. The direct beam and diffuse reflections from Class 
+                      IV lasers are hazardous to the eyes and skin. Class IV laser devices can 
+                      also be a fire hazard depending on the reaction of the target when struck. 
+                      Much greater controls are required to ensure the safe operation of this 
+                      class of laser devices. Whenever occupying a laser controlled area, wear 
+                      the proper eye protection. Most laser eye injuries occur from reflected 
+                      beams of class IV laser light, so keep all reflective materials away from 
+                      the beam. Do not place your hand or any other body part into the class 
+                      IV laser beam. The pain and smell of burned flesh will let you know if 
+                      this happens. Realize the dangers involved in the use of Class IV lasers 
+                      and please use common sense. Refer to the University of Kentucky Laser 
+                      Safety Manual for complete instructions on the safety requirements for 
+                      Class IV laser use.</font></p>
                 </div><!--/content-->
             </div><!--/subContainer-->
             <div id="sidePanel">		
