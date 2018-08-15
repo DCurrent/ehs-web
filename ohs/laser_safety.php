@@ -26,17 +26,21 @@
                 </div><!--/subContainer-->
                 <div id="content">
 					
-					<p>Laser Safety</p>
-                    <p>Statement of Purpose</p>
+					<h1>Laser Safety</h1>
+                    <h2>Statement of Purpose</h2>
                     <p>The university of Kentucky is dedicated to providing a safe and   healthy working environment for all faculty, staff, students and   visitors. This includes the use of lasers and their safet use.  If you   are interested in learning more about the University of Kentucky&rsquo;s Laser   Safety Program, or have further concerns, please contact the laser   safety officer (LSO), Robert Thomas at 859-257-4016.</p>
                     <p>UK adopts ANSI Z136.1-2000 as its laser safety program. Exceptions to   this standard will be considered on a case-by-case basis by the LSO.   The LSO shall document and keep record of any policy decisions that are   exceptions to the ANSI Z136.1- 2000 standard.</p>
                     <p>Attention: All class 3b and 4 lasers and laser systems and users MUST be registered!</p>
-                    <p>RC&amp;RS Laser Safety maintains records for all class 3b and 4   lasers and laser systems used in university facilities and is currently   updating the registration database.</p>
+                  <p>RC&amp;RS Laser Safety maintains records for all class 3b and 4   lasers and laser systems used in university facilities and is currently   updating the registration database.</p>
                     <p>All new and existing class 3b and 4 lasers and laser systems must be   registered. This registration also includes lasers or laser systems that   are in storage or are out-of-service.</p>
-                    <p>Below this should be the link to the registration form, fact sheet and manual. (all to be updated shortly)</p>
-                    <p>Include these USEFUL LINKS as well</p>
-                    <p><a href="http://www.osha.gov/dcsp/alliances/lia/lia.html">OSHA - LIA Alliance Website(link is external)</a></p>
-                    <p><a href="https://putrain.learn.com/learncenter.asp?id=178409&page=194">Laser Safety Training(link is external)</a></p>
+                    <p>Fact Sheet<br>
+                      Laser Registration<br>
+                      Laser Safety Manual                    </p>
+                    <h2>Useful Links</h2>
+                    <ul>
+                      <li><a href="http://www.osha.gov/dcsp/alliances/lia/lia.html">OSHA - LIA Alliance Website</a></li>
+                      <li><a href="https://putrain.learn.com/learncenter.asp?id=178409&page=194">Laser Safety Training</a></li>
+                    </ul>
 <?php include($cDocroot."libraries/includes/inc_updates.php"); ?>
                 </div><!--/content-->      
             </div><!--/subContainer-->
