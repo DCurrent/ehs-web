@@ -33,7 +33,7 @@
                     <p class="alert">Attention: All class 3b and 4 lasers and laser systems and users MUST be registered!</p>
                   <p>RC&amp;RS Laser Safety maintains records for all class 3b and 4   lasers and laser systems used in university facilities and is currently   updating the registration database.</p>
                     <p>All new and existing class 3b and 4 lasers and laser systems must be   registered. This registration also includes lasers or laser systems that   are in storage or are out-of-service.</p>
-                    <p>Fact Sheet<br>
+                    <p><a href="../radiation/laser_fs.php">Fact Sheet</a><br>
                       Laser Registration<br>
                       Laser Safety Manual                    </p>
                     <h2>Useful Links</h2>
