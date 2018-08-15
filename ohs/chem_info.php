@@ -34,7 +34,7 @@
             Compounds</a>  </li>
           <li><a href="https://www.etrax.uky.edu/Chematix">Chemical 
             Inventory Software</a> (UK Access Only)  </li>
-          <li><a href="pregnant.html">Chemical 
+          <li><a href="pregnant.php">Chemical 
             Use by Pregnant Laboratory Workers</a></li>
           <li><a href="cgc2.html">Compressed 
             Gas Cylinders</a></li>
@@ -55,7 +55,7 @@
           <li><a href="../docs/pdf/ohs_fshelife.pdf" target="_blank">Shelf 
             life of chemicals</a></li>
           <li><a href="storage.html">Storage 
-            and Use</a><a href="cgc2.html"></a><a href="pregnant.html"></a></li>
+            and Use</a><a href="cgc2.html"></a><a href="pregnant.php"></a></li>
         </ul>
 </div>       
 	</div>    

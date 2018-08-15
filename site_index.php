@@ -70,11 +70,11 @@
                         <li><a href="ohs/chp/" title="University chemical hygiene plan.">Chemical Hygiene Plan</a></li>
                         <li><a href="labstd.php" title="Safety standards for chemical laboratories.">Chemical Lab Safety Standards</a></li>
                         <li><a href="env/chemical_redistribution.php" title="Chemical redistribution.">Chemical Redistribution</a></li>
-                        <li><a href="ohs/pregnant.html" title="Chemical Use by Pregnant Laboratory Workers.">Chemical Use by Pregnant Laboratory Workers</a></li>
+                        <li><a href="ohs/pregnant.php" title="Chemical Use by Pregnant Laboratory Workers.">Chemical Use by Pregnant Laboratory Workers</a></li>
                         <li><a href="clean.html" title="Cleaning Blood and Body Fluids.">Cleaning Blood and Body Fluids</a></li>
                         <li><a href="ohs/cgc2.html" title="Compressed Gas Cylinders.">Compressed Gas Cylinders</a></li>
                         <li><a href="docs/pdf/con_safe_hndbk.pdf" title="Contractor Safety Handbook" target="_blank">Contractor Safety Handbook</a></li>
-                        <li><a href="ohs/pregnant.html" title="Controlled substances.">Controlled Substances</a></li>
+                        <li><a href="ohs/pregnant.php" title="Controlled substances.">Controlled Substances</a></li>
                         <li><a href="cas_0001.php" title="A memorandum on cost accounting standards.">Cost Accounting Standards</a></li>
                         <li><a href="ohs/cryogenic.html" title="Cryogenic Materials Safety.">Cryogenic Materials</a></li>
                     </ul>

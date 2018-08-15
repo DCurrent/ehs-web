@@ -33,7 +33,7 @@ MM_reloadPage(true);
           Projects</a>  </li>
         <li><a href="hmm/biohaz1.html">Biohazard Autoclave 
           Bags</a>  </li>
-        <li><a href="ohs/pregnant.html">Chemical Use 
+        <li><a href="ohs/pregnant.php">Chemical Use 
           by Pregnant Laboratory Workers</a>  </li>
         <li><a href="clean.html">Cleaning Blood and 
           Body Fluids</a>  </li>

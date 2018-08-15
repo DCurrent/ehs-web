@@ -7,7 +7,7 @@
             <li><a href="/docs/pdf/env_fs_asbestos_bm.pdf">Asbestos in Building Materials</a></li>
             <li><a href="/ep/asbestos.html">Asbestos Removal Projects</a></li>
             <li><a href="/hmm/biohaz1.html">Biohazard Autoclave Bags</a></li>
-            <li><a href="/ohs/pregnant.html">Chemical Use by Pregnant Laboratory Workers</a></li>
+            <li><a href="/ohs/pregnant.php">Chemical Use by Pregnant Laboratory Workers</a></li>
             <li><a href="/clean.html">Cleaning Blood and Body Fluids</a></li>
             <li><a href="/ohs/cgc2.html">Compressed Gas Cylinders</a></li>
             <li><a href="/ohs/cryogenic.html">Cryogenic Materials Safety</a></li>
