@@ -49,7 +49,7 @@ MM_reloadPage(true);
           Aid Assistance</a>  </li>
         <li><a href="ohs/iaqfacts.html">Factors Affecting 
           Indoor Air Quality</a>  </li>
-        <li><a href="radiation/laser_fs.html">Laser 
+        <li><a href="radiation/laser_fs.php">Laser 
           Safety</a> </li>
         <li><a href="ohs/labsecurity.html">Laboratory 
           Security</a> </li>

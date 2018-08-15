@@ -3,7 +3,7 @@
 	abstract class DEFAULTS
 	{
 		const 
-			LDAP_HOST			= "ukldap.uky.edu",		// LDAP host.
+			LDAP_HOST_LIST		= "ldap://ad.uky.edu:3268",		// LDAP host.
 			LDAP_BASE_DN		= "o=uky";				// LDAP Base Domain Name.
 	}
 	
@@ -75,43 +75,105 @@
 			$list->append($line_object->account);
 		}
 	}
+
+
+	//////
+	// We'll attempt to bind on all known hosts.
+	// Here we loop through each host connection
+	// string.
 	
-	// Now list get a list from Active directory.		
-	$filter = '(&(sn='.$post->name_l.'*)(givenname='.$post->name_f.'*)(workforceid='.$post->id.'*))';	//Filter string.
+	$req_account = 'dvcask2';
+	$req_credential = '67CeeHello@!';
+
 	
-	// Establish ldap connection.
-	$ldap = ldap_connect(DEFAULTS::LDAP_HOST);
-	
-	// Don't follow referal. This speeds things up a bit.	
-	ldap_set_option($ldap, LDAP_OPT_REFERRALS, 0);
+	// Check connection string integrity and get a connection
+	// resource handle. Don't let the name fool you - this 
+	// does NOT connect to the LDAP server.
+	$ldap = ldap_connect(DEFAULTS::LDAP_HOST_LIST);
+
+	// If we failed to get a connection resource, then 
+	// exit this iteration of loop.
+	if(!$ldap)
+	{
+		continue;
+	}
+
+	// Need this for win2k3.
+	ldap_set_option($ldap, LDAP_OPT_PROTOCOL_VERSION, 3);
+
+	// Now we will attempt the bind using all
+	// possible domain prefixes.
+
+	// Break prefix list into an array.
+	//$prefix_list = explode(',', $this->config->get_dn_prefix());
+	$prefix_list = array(NULL, 'ad/', 'ad\\', 'mc/', 'mc\\');
+
+	// Keep trying prefixes until there is a bind or we run out.
+	foreach($prefix_list as $prefix)
+	{		
+		$account = $prefix.$req_account;//'.'@uky.edu';
+
+		//echo $account;
+
+		// Attempt to bind with account (prefix included) and password.
+		$result = @ldap_bind($ldap, $account, $req_credential);
+
+		// If successfull bind break out of loop.
+		if($result == TRUE) 
+		{
+			break;					
+		}
+	}
+
+	// If successfull bind.
+	if($result == TRUE) 
+	{
+		//break;				
+
+		// Search goes here.
+
+		// Prepare account filter.
+		//$filter = "samaccountname=".$req_account;
 		
-	// Ldap connected and search string provided?
-	if (isset($ldap)) 
-	{	
-		// search for auth_account dn.
-		$result = ldap_search($ldap, DEFAULTS::LDAP_BASE_DN, $filter, array("userid"));
+		// Now list get a list from Active directory.		
+		$filter = '(&(sn='.$post->name_l.'*)(givenname='.$post->name_f.'*))';	//Filter string.
 		
-		// Valid result returned?
-		if ($result != FALSE)
-		{		
-			// Get entry array.
-			$entries 	= ldap_get_entries($ldap, $result);					
-			
-			// Loop entry array
-			foreach($entries as $entry)
-			{					
-				// Domain set? 
-				if (isset($entry['dn']))
-				{	
-					// Populate list array.
-					$list->append($entry['userid'][0]);							 
-				}		
-			}
-			
-			// Clear result set.
-			ldap_free_result($result);		
-		}				
-	}	
+		//echo 'filter: '.$filter;
+
+		// Pull attributes for the AD domain
+		$attributes = array("displayname", "sn", "givenname", "pwdlastset", "cn");
+
+		$sr = ldap_search($ldap, "dc=uky,dc=edu", $filter, $attributes);
+
+		if ($sr != FALSE)
+		{
+			$count = ldap_count_entries($ldap, $sr);
+
+			// If no entries are found, return 0.
+			if ($count) 		 
+			{			
+					
+				// Get entry array.
+				$entries 	= ldap_get_entries($ldap, $sr);					
+
+				// Loop entry array
+				foreach($entries as $entry)
+				{					
+					// Domain set? 
+					if (isset($entry['dn']))
+					{	
+						// Populate list array.
+						$list->append($entry['cn'][0]);							 
+					}		
+				}
+
+				// Clear result set.
+				ldap_free_result($sr);		
+			}						
+			//echo "found $count entrie(s)\n";
+
+		}
+	}
 	
 	// Close ldap connection.
 	ldap_close($ldap);

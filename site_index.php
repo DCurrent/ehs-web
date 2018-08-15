@@ -146,7 +146,7 @@
                     
                     <ul>
                     	<li><a href="ohs/labsecurity.html" title="Laboratory Security.">Laboratory Security</a></li>
-                        <li><a href="radiation/laser_fs.html" title="Laser Safety.">Laser Safety</a></li>
+                        <li><a href="radiation/laser_fs.php" title="Laser Safety.">Laser Safety</a></li>
                     </ul>
                     
                     <a href="#" title="Go back to the top of this page.">Top of page</a>
