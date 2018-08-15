@@ -41,7 +41,6 @@
                       <li><a href="http://www.osha.gov/dcsp/alliances/lia/lia.html">OSHA - LIA Alliance Website</a></li>
                       <li><a href="https://ehs.uky.edu/classes/main.php?cClassID=16">Laser Safety Training</a></li>
                     </ul>
-<?php include($cDocroot."libraries/includes/inc_updates.php"); ?>
                 </div><!--/content-->      
             </div><!--/subContainer-->
             <div id="sidePanel">		
