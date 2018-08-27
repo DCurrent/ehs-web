@@ -228,13 +228,7 @@
                             	id="name_l" 
                                 class="account_search"
                                 required
-                                placeholder="Last Name" />                         
-                                
-                            <label for="id">UK ID</label>
-                            <input name="id" 	
-                            	id="id" 
-                                class="account_search"                                
-                                placeholder="UK ID" />     
+                                placeholder="Last Name" /> 
                                                                
                             <div>
                                 <label for="account">Account</label>
