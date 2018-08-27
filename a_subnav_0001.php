@@ -16,7 +16,7 @@
             <li><a href="/ohs/911.html">Emergency First Aid Assistance</a></li>
             <li><a href="/ohs/iaqfacts.html">Factors Affecting Indoor Air Quality</a></li>
             <li><a href="/hmm/moving.html">Guidelines for Moving Chemicals</a></li>
-            <li><a href="/radiation/laser_fs.html">Laser Safety</a></li>
+            <li><a href="/radiation/laser_fs.php">Laser Safety</a></li>
             <li><a href="/ohs/labsecurity.html">Laboratory Security</a></li>
             <li><a href="/hmm/light.html">Management of Fluorescent Lighting Wastes</a></li>
             <li><a href="/ohs/off_lab_ergo.php">Office Ergonomics</a></li>
