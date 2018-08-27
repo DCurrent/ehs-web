@@ -35,8 +35,8 @@
                     <h2>UK Laser Resources</h2>
                     <ul>
                       <li><a href="https://ehs.uky.edu/classes/main.php?cClassID=16">Laser Safety Training</a></li>
-                      <li><a href="https://ehs.uky.edu/docs/pdf/rad_laser_safety_manual.pdf#page=9">Laser Registration Form</a></li>
                       <li><a href="https://ehs.uky.edu/docs/pdf/rad_laser_safety_manual.pdf">Laser Safety Manual</a></li>
+                      <li><a href="https://ehs.uky.edu/docs/pdf/rad_laser_safety_manual.pdf#page=9">Laser Registration Form</a></li>
                       <li><a href="../radiation/laser_fs.php">Fact Sheet</a></li>
                     </ul>
                     <h2>Other Resources</h2>
