@@ -39,7 +39,7 @@
                       <li><a href="https://ehs.uky.edu/docs/pdf/rad_laser_safety_manual.pdf">Laser Safety Manual</a></li>
                       <li><a href="../radiation/laser_fs.php">Fact Sheet</a></li>
                     </ul>
-                    <h2>Useful Links</h2>
+                    <h2>Other Resources</h2>
                     <ul>
                       <li><a href="http://www.osha.gov/dcsp/alliances/lia/lia.html">OSHA - LIA Alliance Website</a></li>
                       <li><a href="https://www.osha.gov/SLTC/laserhazards/standards.html">OSHA Laser Hazards</a></li>
