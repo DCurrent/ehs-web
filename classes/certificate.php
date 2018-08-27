@@ -260,7 +260,7 @@
         <div id="container_outer" class="container_outer">
             <div id="container_inner" class="container_inner">
                 <div id="container_cert" class="container_cert">        	
-                    <img src="../media/image/uk.png" class="logo" alt="University of Kentucky" title="University of Kentucky" />
+                    <img src="../media/image/uk_logo.png" class="logo" alt="University of Kentucky" title="University of Kentucky" />
                     
                     
                     <div id="container_content" class="center">
