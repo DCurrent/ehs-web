@@ -30,17 +30,19 @@
                     <h2>Statement of Purpose</h2>
                     <p>The University of Kentucky is dedicated   to providing a safe and healthy working environment for all faculty,   staff, students and visitors. This includes the use of lasers.  If you   are interested in learning more about the University of Kentucky&rsquo;s Laser   Safety Program, or have further concerns, please contact the laser   safety officer (LSO), <a href="mailto:trobert@uky.edu">Robert Thomas</a> at <a href="tel:+18592574016">859-257-4016</a>.</p>
                     <p>UK adopts ANSI Z136.1-2000 as its laser   safety program. Exceptions to this standard will be considered on a   case-by-case basis by the LSO. The LSO shall document and keep record of   any policy decisions that are exceptions to the ANSI Z136.1- 2000   standard.</p>
-                  <p class="alert">Attention: All class 3b and 4 lasers and laser systems and users MUST be registered!</p>
+                  <p class="alert">Attention: All class 3b and 4 lasers and laser systems and users MUST be registered! This includes active and inactive systems.</p>
                   <p>UK OHS Laser Safety maintains records for   all class 3b and 4 lasers and laser systems used in university   facilities and is currently updating the registration database.</p>
-                    <p>All new and existing class 3b and 4   lasers and laser systems must be registered. This registration also   includes lasers or laser systems that are in storage or are   out-of-service.</p>
-                    <p><a href="../radiation/laser_fs.php">Fact Sheet</a><br>
-                      <a href="https://ehs.uky.edu/docs/pdf/rad_laser_safety_manual.pdf#page=11">Laser Registration</a><br>
-                      <a href="https://ehs.uky.edu/docs/pdf/rad_laser_safety_manual.pdf">Laser Safety Manual</a></p>
-                    <p><img src="../media/image/laser.jpg" width="450" height="161" alt=""/></p>
+                    <h2>UK Laser Resources</h2>
+                    <ul>
+                      <li><a href="https://ehs.uky.edu/classes/main.php?cClassID=16">Laser Safety Training</a></li>
+                      <li><a href="https://ehs.uky.edu/docs/pdf/rad_laser_safety_manual.pdf#page=9">Laser Registration Form</a></li>
+                      <li><a href="https://ehs.uky.edu/docs/pdf/rad_laser_safety_manual.pdf">Laser Safety Manual</a></li>
+                      <li><a href="../radiation/laser_fs.php">Fact Sheet</a></li>
+                    </ul>
                     <h2>Useful Links</h2>
                     <ul>
                       <li><a href="http://www.osha.gov/dcsp/alliances/lia/lia.html">OSHA - LIA Alliance Website</a></li>
-                      <li><a href="https://ehs.uky.edu/classes/main.php?cClassID=16">Laser Safety Training</a></li>
+                      <li><a href="https://www.osha.gov/SLTC/laserhazards/standards.html">OSHA Laser Hazards</a></li>
                     </ul>
                 </div><!--/content-->      
             </div><!--/subContainer-->
