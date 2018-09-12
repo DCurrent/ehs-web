@@ -12,7 +12,7 @@
         <li><a href="#" onclick="return false" class="fly">Procedures &amp; Processes</a>
             <ul>
                 <li><a href="/radiation/KYReg/application.html">Application for Authorization to Possess and Use Radioactive Material</a></li>
-                <li><a href="//ehssrv02.ad.uky.edu/Ehsaweb/EHSAWebISAPI.dll">EHS Online Inventory</a></li>
+                <li><a href="http://ehssrv02.ad.uky.edu/Ehsaweb/EHSAWebISAPI.dll">EHS Online Inventory</a></li>
                 <li><a href="/radiation/isotopes/genreq.html">General Safety Precautions</a></li>
                 <li><a href="//ehssrv02.ad.uky.edu/Ehsaweb/EHSAWebISAPI.dll">Online Waste Ticket</a></li>
                 <li><a href="/docs/pdf/rad_radiation_safety_manual.pdf">Radiation Safety Manual</a></li>
