@@ -3,9 +3,7 @@
     <ul id="toplevel">    
         <li><a href="#" onclick="return false" class="fly">Laser Safety</a>
             <ul>
-                <li><a href="/docs/pdf/rad_laser_safety_manual.pdf#11" target="_blank">Laser Registration Form</a></li>
-                <li><a href="/radiation/laser_fs.php">Laser Safety Fact Sheet</a></li>
-                <li><a href="/docs/pdf/rad_laser_safety_manual.pdf" target="_blank">Laser Safety Manual</a></li>
+                <li><a href="/ohs/laser_safety.php" target="_blank">Laser Safety Overview</a></li>
             </ul>
         </li>
         
