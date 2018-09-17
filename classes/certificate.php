@@ -215,7 +215,8 @@
 			img.logo
 			{			
 				height:55;
-				width:113;			
+				width:113;
+				border: none;
 			}
 			
 			img.signature
