@@ -145,13 +145,16 @@
 		
 		// Dereference database line object.
 		$db->space->line = $db->space->query->get_line_object();
-				
-		$department .= ', ' .$db->space->line->DeptName;
+		
+		// If we have the department, let's add the name as well.
+		if($department)
+		{
+			$department .= ', ' .$db->space->line->DeptName;
+		}
 		
 		$fields->verbiage	= $fields->verbiage ? $fields->verbiage : 'Unavailable';
 		$fields->party		= $fields->party ? $fields->party : 'Unavailable';
 		$fields->signature	= $fields->signature ? $fields->signature : NULL;
-		//$department		= $department ? $department : NULL;
 		$fields->taken		= $fields->taken ? $fields->taken : 'Unavailable';
 		
 		// Start caching page contents.
