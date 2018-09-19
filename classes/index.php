@@ -106,6 +106,9 @@
                         	<td><a href="classes_ohs_0001.php#construction_safety_awareness">Construction Safety Awareness</a></td>
                         </tr>
                         <tr>
+                          <td><a href="classes_ohs_0001.php#cpr-aed">CPR / AED</a></td>
+                        </tr>
+                        <tr>
                         	<td><a href="classes_env_0001.php#dot_iata">DOT/IATA (Shipping Dangerous Goods)</a></td>
                         </tr>
                         <tr>
