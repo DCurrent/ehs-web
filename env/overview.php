@@ -24,7 +24,7 @@
                     <?php include("a_subnav.php"); ?>	
                 </div><!--/subNavigation-->
                 <div id="content">
-                    <h1>Stormwater Qualty Overview</h1>
+                    <h1>Stormwater Quality Management Plan Overview</h1>
                     <p>Welcome to the University of Kentucky's website dedicated expressly for the dissemination of stormwater management information associated with its main Lexington campus.   This website forms a crucial component of the University's efforts to comply with a state-issued general permit to discharge stormwater.  Formally entitled a Municipal Separate Storm Sewer System (MS4) Permit and issued by authority from the US EPA through the Kentucky Division of Water, it establishes conditions whereby the University can discharge stormwater runoff into the waters of the Commonwealth.</p>
                     <p>The University's stormwater system is comprised of detention basins, open drainage ditches and miles of underground piping.  In addition, this system is also comprised of outfalls that discharge stormwater from the campus' property boundary and into streams or directly into the city of Lexington's stormwater system.</p>
                     <p>The goal of the MS4 Permit and the primary objective of the University is to ensure that this runoff does not adversely impact surface water quality.  To this end, the Permit has established six categories of Minimum Control Measures (MCM's) that the University is required to address.  These six MCM's are outlined below along with a link for further discussion on the substance of each measure:</p>
