@@ -24,7 +24,8 @@
         <li><a href="#" onclick="return false" class="fly">Stormwater Quality</a>
             <ul>
                 <li><a href="/env/overview.php">Overview</a></li>
-                <li><a href="/env/storm_water_quality.php">Stormwater Quality Main</a></li>
+                <li><a href="/env/storm_water_quality.php">Stormwater Quality Management Plan 
+Overview</a></li>
                 <li><a href="/env/fss_information.php">Faculty, Staff and Students Information</a></li>
                 <li><a href="/env/permit_discharge.php">Kentucky Permit to Discharge from a Small Municipal Separate Storm Sewer System (MS4)</a></li>
                 <li><a href="/env/coverage_map.php">Map of the University of Kentucky MS4 Permit Coverage</a></li>
