@@ -34,7 +34,6 @@
                         <li><a href="fs_light_0001.php">Fluorescent Bulbs</a></li>
                         <li><a href="fs_moving_0001.php">Guidelines for Moving Chemicals</a></li>
                         <li><a href="../docs/pdf/env_fs_spent_aerosol_cans.pdf" target="_blank">Management of Aerosol Cans</a></li>
-                        <li><a href="../docs/pdf/env_fs_batteries.pdf" target="_blank">Management of Spent Batteries</a></li>
                         <li><a href="/docs/pdf/env_petroleum_spill_flow_chart_0001.pdf" target="_blank">Oil Spill Response Guide</a></li>
                         <li><a href="/docs/xls/bio_pi_req_matrix.xls" target="_blank">PI Requirements Matrix</a></li>
                         <li><a href="/docs/pdf/ep_factsheet_surplus_0001.pdf" target="_blank">Surplusing Equipment</a></li>
