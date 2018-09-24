@@ -70,11 +70,7 @@ AED acquired must be given to this agent (i.e. local 911/dispatch).</li>
                   </ul>
                     <p><a href="#def">Top of Page</a></p>
                   <h2 id="training">Where can we get trained for AED use?</h2>
-                    <p>UK Occupational Health &amp; Safety suggests receiving AED use and CPR training from the American Heart<br>
-                      Association or the American Red Cross. Other entities can provide training as long as they provide<br>
-                    equivalent nationally recognized courses.</p>
-                    <p><a href="http://www.redcross.org/services/hss/courses/aed.html">American Heart Association</a><br>
-                      <a href="http://www.americanheart.org/presenter.jhtml?identifier=3012360">American Red Cross</a><br>
+                    <p>UK Occupational Health & Safety provides training in CPR and AED use free for full-time UK campus employees. To receive training from UK OHS, please contact <a href="mailto:melissa.claar@uky.edu">Melissa Claar</a>.
                     </p>
                     <p><a href="#def">Top of Page</a></p>
                   <h2 id="samaritan">Does Kentucky have a Good Samaritan law in regards to the use of an
