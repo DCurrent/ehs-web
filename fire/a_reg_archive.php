@@ -5,6 +5,7 @@
     
     <form action="/libraries/php/general_redirect_0001.php" method="post" name="form1" id="frm_fire_safety_rpt" target="_blank">
         <select name="select" class="small">
+			<option value="/docs/pdf/fs_annual_fire_safety_report_2018_01.pdf">2018</option>
         	<option value="/docs/pdf/fs_annual_fire_safety_report_2017_01.pdf">2017</option>
         	<option value="/docs/pdf/fs_annual_fire_safety_report_2016_01.pdf">2016</option>
         	<option value="/docs/pdf/fs_annual_fire_safety_report_2015_01.pdf">2015</option>
