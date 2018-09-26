@@ -66,12 +66,17 @@
         <li><a href="#" onclick="return false" class="icon_search">Search</a>  	  
         	<ul>
             	<li>
-                    <form method="get" action="//diogenes.uky.edu/search" target="new" class="search">          
-                        <input type="hidden" name="site" value="uk" />
-                        <input type="hidden" name="output" value="xml_no_dtd" />
-                        <input type="hidden" name="client" value="uk" />
-                        <input type="hidden" name="proxystylesheet" value="uk" />
-                        <input type="hidden" name="sitesearch" value="ehs.uky.edu" />
+					<!--https://cse.google.com/cse?cx=006049166686491933951:ssb7y1fquzc &site=ehs.uky.edu &sa=Search &ie=UTF-8 &q=uk+safety   https://cse.google.com/cse?cx=015124578214071639168:9pwptfstfow-->
+					
+                    <form method="get" action="https://cse.google.com/cse" target="new" class="search">          
+                        <!--input type="hidden" name="site" value="uk" /-->
+                        <!--input type="hidden" name="output" value="xml_no_dtd" /-->
+                        <!--input type="hidden" name="client" value="uk" /-->
+                        <!--input type="hidden" name="proxystylesheet" value="uk" /-->
+                        <input type="hidden" name="cx" value="015124578214071639168:9pwptfstfow" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<input type="hidden" name="sa" value="Search" />
+						<input type="hidden" name="site" value="ehs.uky.edu" />
                         <input type="search" placeholder="Search EHS" name="q" size="20" maxlength="100" accesskey="s" style="width:60%; font-size:12px;"/>		
                         <input type="submit" name="btn_search_submit" id="btn_search_submit" value="Go" />
                     </form>
@@ -121,4 +126,8 @@
     <!--/Site index letter links-->
     
 </div><!--/nav_main-->
+
+
+
+
 <!--/Include: <?php echo __FILE__; ?>-->
