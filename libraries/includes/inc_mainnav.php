@@ -103,27 +103,12 @@
     
     <!--Site index letter links-->    
     <ul class="nav navbar-nav" style="z-index: 1;">
-    	<li><a href="#" onclick="return false">A</a>
-        	<ul>
-            	<li><a href="//www.uky.edu/regs/files/ar/ar6-3.pdf" title="Administrative Regulation 6:3." target="_blank">Administrative Regulation 6:3</a></li>
-				<li><a href="/authenticate.php" title="Log in using your Link Blue or EHS account to access EHS training and other services.">Account, Log In</a></li>
-				<li><a href="/authenticate_reg.php" title="Register for an EHS account.">Account, Registration</a></li>
-				<li><a href="/ohs/accident.php" title="Report an accident.">Accident Reporting</a></li>
-				<li><a href="/env/air_quality" title="Air quality.">Air Quality</a></li>
-				<li><a href="/env/asbestos_awareness" title="An overview of asbestos.">Asbestos Awareness</a></li>
-				<li><a href="/docs/pdf/env_fs_asbestos_bm.pdf" title="Asbestos in building materials." target="_blank">Asbestos In Building Materials</a></li>
-				<li><a href="/env/asbestos_management" title="Dealing with asbestos.">Asbestos Management</a></li>   
-				<li><a href="/ep/asbestos.html" title="Asbestos Testing and Abatement.">Asbestos Removal Projects</a></li>
-				<li><a href="/ohs/aed.php" title="Automated external defibrillator (AED) use at UK." target="_blank">Automated External Defibrillator</a></li> 
-        	</ul>
-        </li>
-            
 		<?php							
             $list 	= NULL;	// List markup.
             $letter	= NULL;	// Letter placeholder.
             
             // Loop range array (A to Z)
-            foreach (range('B', 'Z') as $letter)
+            foreach (range('A', 'Z') as $letter)
             {
                 // Build link list markup.
                 $list .= '<li><a href="/site_index.php#'.$letter.'" class="no_icon">'.$letter.'</a></li>'.PHP_EOL;
