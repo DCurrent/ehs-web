@@ -12,7 +12,7 @@
 	$cLRoot		= $cDocroot."ohs/";	
 		
 	// Verify login.
-	$oAcc->access_verify(NULL, CONSTANTS::ACCESS_REPORT);
+	$oAcc->access_verify(NULL, NULL);
 	
 	$query_request = new class_query_request();
 	$request = new class_incident();
