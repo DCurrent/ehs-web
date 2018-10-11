@@ -4,7 +4,7 @@
 
 <!--[if lte IE 8]>
     <hr/>
-    <h3 class="color_red">Notice: Your browser is out of date or non WC3 standard compliant and may not render portions of this website correctly. We highly recommend upgrading to a more compliant browser such as <a href="//windows.microsoft.com/en-us/internet-explorer/download-ie">IE 9+</a>, <a href="//www.opera.com">Opera</a>, <a href="//www.mozilla.org">Firefox</a>, <a href="//www.google.com/chrome/">Google Chrome</a> or <a href="www.apple.com/safari/‎">Safari</a>.</h3>
+    <h3 class="color_red">Notice: Your browser is out of date or non WC3 standard compliant and may not render portions of this website correctly. We highly recommend upgrading to a more compliant browser such as <a href="//windows.microsoft.com/en-us/internet-explorer/download-ie">IE 9+</a>, <a href="//www.opera.com">Opera</a>, <a href="//www.mozilla.org">Firefox</a>, <a href="//www.google.com/chrome/">Google Chrome</a> or <a href="www.apple.com/safari/">Safari</a>.</h3>
     <hr/>
 <![endif]-->
 

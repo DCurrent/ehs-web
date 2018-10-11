@@ -29,9 +29,9 @@
                     <?php include($cLRoot."a_subnav.php"); ?> 
                 </div><!--#subNavigation-->
                 <div id="content">
-                    <p class="center">
-                   	<img src="../media/image/bio_lab_safe_fair_2015.png" alt="Lab Safety Fair Flyer" width="733"></p>
-                    <h2 class="center">Don't miss out! <a href="../docs/bio_lab_safety_fair_2015.ics">Click here</a> to add to your calendar.</h2>           
+                    <h2 class="center">Don't miss out! <a href="bio_lab_safety_fair_2018.ics">Click here</a> to add to your calendar. <a href="lsf-map.pdf">Click here</a> for bus routes.</h2>
+                    <p class="center"><a href="lsf-poster.pdf"><img src="lsf-poster.png" alt="Lab Safety Fair Flyer" style="border:none; width:100%"></a></p>
+                    <h2 class="center">&nbsp;</h2>           
                                     
                 </div><!--#content-->       
             </div><!--#subContainer-->
