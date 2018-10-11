@@ -90,7 +90,14 @@
         This class is only available <a href="main.php?cClassID=6" class="link-class">online</a>.</p>
                 <h2 id="epipen">Epipen Safety</h2>
                 <p>Research personnel whose work involves honey bees or other organisms   that require the presence of an Epipen at the work location are required   to complete this training. A determination of an occupational hazard   must first be done by UK OHS before this training can be taken. Contact   <a href="mailto:lee.poore@uky.edu">OHS</a> or 859 257-2924 for assistance.</p>
-                <h2 id="ladder_safety">Fall Protection &amp; Ladder Safety</h2>
+                
+				  <h2 id="first_aid">First Aid</h2>
+					
+					<p>The purpose of this training is to help participants identify and eliminate potentially hazardous conditions in their environment, recognize emergencies and make appropriate decisions regarding first aid care. It teaches information that participants need to know in order to provide immediate care for a suddenly ill or injured person until more advanced medical care arrives to take over.
+
+					Please note that is only a training course and does not lead to a certification in First Aid. </p>
+					<p>This class is only available <a href="../docs/ppt/train-first-aid.potx" class="link-class">online</a>.</p>
+					<h2 id="ladder_safety">Fall Protection &amp; Ladder Safety</h2>
                 <p>The course provides information on the working conditions that  prompt use of fall protection and the types of fall protection available to  protect workers.&nbsp; It assists those affected with complying with 29 CFR  1926.503.<br />
                   Upon  course completion, the student is able to:</p>
                 <ul>
