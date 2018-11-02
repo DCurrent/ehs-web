@@ -1,7 +1,7 @@
 <!--Include: <?php echo __FILE__ . ", Last update: " . date(DATE_ATOM,filemtime(__FILE__)); ?>-->
 <nav id="nav_sub" class="nav_sub">
     <ul id="toplevel"> 
-    	<li><a href="//www.research.uky.edu/ori/univet/OccHealth/Program_Description.html">Animal Handlers</a></li>
+    	<li><a href="https://www.research.uky.edu/office-attending-veterinarian/iacuc-training">Animal Handlers</a></li>
       
         <li><a href="#" onclick="return false" class="fly" >Chematix Chemical and Waste Management</a>
             <ul>
