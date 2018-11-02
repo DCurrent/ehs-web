@@ -91,13 +91,7 @@
                 <h2 id="epipen">Epipen Safety</h2>
                 <p>Research personnel whose work involves honey bees or other organisms   that require the presence of an Epipen at the work location are required   to complete this training. A determination of an occupational hazard   must first be done by UK OHS before this training can be taken. Contact   <a href="mailto:lee.poore@uky.edu">OHS</a> or 859 257-2924 for assistance.</p>
                 
-				  <h2 id="first_aid">First Aid</h2>
-					
-					<p>The purpose of this training is to help participants identify and eliminate potentially hazardous conditions in their environment, recognize emergencies and make appropriate decisions regarding first aid care. It teaches information that participants need to know in order to provide immediate care for a suddenly ill or injured person until more advanced medical care arrives to take over.
-
-					Please note that is only a training course and does not lead to a certification in First Aid. </p>
-					<p>This class is only available <a href="../docs/ppt/train-first-aid.potx" class="link-class">online</a>.</p>
-					<h2 id="ladder_safety">Fall Protection &amp; Ladder Safety</h2>
+				  <h2 id="first_aid">Fall Protection &amp; Ladder Safety</h2>
                 <p>The course provides information on the working conditions that  prompt use of fall protection and the types of fall protection available to  protect workers.&nbsp; It assists those affected with complying with 29 CFR  1926.503.<br />
                   Upon  course completion, the student is able to:</p>
                 <ul>
@@ -106,7 +100,13 @@
                   <li>Identify  risk factors for working at elevated heights such as from ladders or  scaffolding</li>
                 </ul>
                 <p> Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862..</p>
-        <h2 id="hazard_assessment">Hazard Assessment</h2>
+                
+				<h2 id="first_aid2">First Aid</h2>
+                <p>The purpose of this training is to help participants identify and eliminate potentially hazardous conditions in their environment, recognize emergencies and make appropriate decisions regarding first aid care. It teaches information that participants need to know in order to provide immediate care for a suddenly ill or injured person until more advanced medical care arrives to take over.
+                  
+                  Please note that is only a training course and does not lead to a certification in First Aid. </p>
+                <p>This class is only available <a href="main.php?cClassID=109" class="link-class">online</a>.</p>
+                <h2>Hazard Assessment</h2>
                 <p>Training                 for supervisors in how to conduct workplace   hazard assessments for                 determining the need and proper   selection of personal protective                 equipment. Provides   instruction on the use and application of the                   University's hazard assessment checklists. Training is for personnel                   responsible for employees who have the potential to   encounter hazards.<br />
                   <br />
         Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="main.php?cClassID=30">Lee Poore</a> at (859) 257-2924.</p>
@@ -138,6 +138,7 @@
                   <li>Fall hazards </li>
                 </ul>
                 <p>Classroom training sessions are available upon request. Duration is 45 minutes. Contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>
+                <p>This class is available <a href="../docs/ppt/train_ladder_safety.pptx" class="link-class">online</a>.</p>
                 <h2 id="lockout_tagout">Lockout/Tagout</h2>
                 <p>Training                 for employees performing service or maintenance   of equipment in                 which is the unexpected energization of   start up of equipment or                 release of stored energy could   cause injury. Provides instruction                 on the requirements   of OSHA's Lockout/Tagout Standard, overview                 of energy   sources, energy isolation devices and the basic lockout/tagout                   steps. This training is complimented by unit specific   lockout/tagout                 procedure training. <br />
                   <br />
