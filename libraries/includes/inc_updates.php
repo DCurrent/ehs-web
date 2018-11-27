@@ -3,7 +3,6 @@
 <hr />
 
 <h2>Recent Updates </h2>
-<a href="../../biosafety/lab_safety_fair.php"><img src="../../biosafety/lsf-poster-s.png" alt="" style="width:500px; height: 733px"/></a>
 
 <p><a href="/docs/pdf/ohs_walk_safely_flyer.pdf">Wildcats Walk Safely! Be a Safe Pedestrian at UK</a></p>
 <iframe id="campus_safety" src="//www.youtube.com/embed/9yH7nqJeRZw?wmode=transparent" allowfullscreen></iframe>
