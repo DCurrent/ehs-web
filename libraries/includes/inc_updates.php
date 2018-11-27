@@ -4,7 +4,13 @@
 
 <h2>Recent Updates </h2>
 
-<p><a href="/docs/pdf/ohs_walk_safely_flyer.pdf">Wildcats Walk Safely! Be a Safe Pedestrian at UK</a></p>
+<!-- Winter Walking -->
+<a href="http://www.uky.edu/hr/hr-home/uk-walk-safe-winter"><img src="../../media/image/female_snowboot_0001.png" /></a>
+<h3><a href="http://www.uky.edu/hr/hr-home/uk-walk-safe-winter">Walk Safe This Winter!</a></h3>
+
+<!-- Generic Walking Tips -->
+<!--p><a href="/docs/pdf/ohs_walk_safely_flyer.pdf">Wildcats Walk Safely! Be a Safe Pedestrian at UK</a></p -->
+
 <iframe id="campus_safety" src="//www.youtube.com/embed/9yH7nqJeRZw?wmode=transparent" allowfullscreen></iframe>
 
 <ul>
