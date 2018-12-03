@@ -107,7 +107,7 @@
         <h2><a name="laser_safety" id="laser_safety"></a>Laser Safety</h2>
                   <p>Training for clinicians, principal investigators, operators, etc., who will use Class IIIb or IV lasers. Completion is required upon registration and prior to use of a Class IIIb or IV laser(s).<br />
                     <br />
-                    Contact <a href="mailto:glschl1@uky.edu">Dave Rich</a> at&nbsp;(859) 323-1008 for more information.</p>
+                    Contact <a href="mailto:trobert@uky.edu@uky.edu">Robert Thomas</a> at&nbsp;(859) 257-4016 for more information.</p>
                   <p>This class is only available <a href="main.php?cClassID=16" class="link-class">online</a>.<br />
         <br />
               </p>
