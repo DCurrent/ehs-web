@@ -99,7 +99,7 @@
                   <li>State  the main criteria that prompts use of fall protection for construction workers</li>
                   <li>Identify  risk factors for working at elevated heights such as from ladders or  scaffolding</li>
                 </ul>
-                <p> Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862..</p>
+                <p> Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
                 
 				<h2 id="first_aid2">First Aid</h2>
                 <p>The purpose of this training is to help participants identify and eliminate potentially hazardous conditions in their environment, recognize emergencies and make appropriate decisions regarding first aid care. It teaches information that participants need to know in order to provide immediate care for a suddenly ill or injured person until more advanced medical care arrives to take over.
@@ -146,14 +146,14 @@
                 <h2 id="office_ergonomics">Office Ergonomics</h2>
                 <p>Training                 for employees on proper office ergonomics,   including desk, chair                 and computer assessments.<br />
                   <br />
-        Classroom training sessions are available upon request. contact <a href="main.php?cClassID=35">Jason Burns</a> at (859) 257-3862.<br />
+        Classroom training sessions are available upon request. contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.<br />
         <br />
         This class is available <a href="main.php?cClassID=43" class="link-class">online</a>.</p>
         
         <h2 id="pass_van">Passenger Van Safety Awareness</h2>
                   <p>The National Highway Traffic Safety Administration (NHTSA) has issued cautionary warnings to users of high capacity vans. In an effort to promote              safe driving practices for the protection of University employees, students, and the citizens and drivers using the highways, Occupational Health and Safety has developed a driver safety awareness training program for passenger van drivers.</p>
                   
-        		<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="../Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862..</p>
+        		<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
                   <p>This class is available <a href="main.php?cClassID=5" class="link-class">online</a>.</p>
                   
                   <h2 id="powered_industrial_trucks">Powered Industrial Trucks (Forklifts) </h2>
