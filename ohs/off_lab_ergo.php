@@ -31,7 +31,7 @@
 			<h1>Office &amp; Laboratory Ergonomics</h1>
 		  <h2>General Ergonomics</h2>
 		  <ul>
-		    <li><a href="/docs/pdf/ohs_lab_ergonomics_0001.pdf" target="_blank" class="link">Laboratory 
+		    <li><a href="lab_ergonomics_checklist.pdf" target="_blank" class="link">Laboratory 
 		      Ergonomics</a></li>
 		    <li><a href="//www.osha.gov/SLTC/etools/hospital/hazards/ergo/ergo.html" target="_blank" class="link">HealthCare 
 		      Ergonomics</a></li>
