@@ -22,7 +22,7 @@
 		$aFiles = direcrtory_scan($cDir, $cSearch, 'name', 1);	
 		
 		foreach ($aFiles as &$aFilesE)
-		{				
+		{	
 			if(strpos($aFilesE, $cTopEntry))
 			{					
 				$cSel .= "<option value='$cFile$aFilesE' selected='selected'>Listserv Subscription</option>";
