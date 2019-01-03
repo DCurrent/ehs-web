@@ -2,8 +2,8 @@
 <?php 
 
 	$cDocroot		= $_SERVER['DOCUMENT_ROOT']."/"; 		// Get siteroot address.
-	$cFile			= "/docs/pdf/";							// Newsletter file path.
-	$dir    		= $cDocroot."/docs/pdf";
+	$cFile			= "/biosafety/";				// Newsletter file path.
+	$dir    		= $cDocroot."biosafety";				// Search path.
 	$cNewsletter	= NULL;				
 	
 	require($cDocroot.'libraries/php/newsletter_0001.php');	// Populate newsletter selection box.
