@@ -45,8 +45,7 @@
                 <li><a href="/docs/pdf/bio_ibc_members_0001.pdf" target="_blank">Committee Membership</a></li>
                 <li><a href="/docs/pdf/bio_ibc_attendance_policy_0001.pdf" target="_blank">IBC Attendance Policy</a></li>
                 <li><a href="/docs/pdf/bio_ibc_by_laws_0001.pdf" target="_blank">IBC By-Laws</a></li>
-                <li><a href="/docs/pdf/bio_ibc_meeting_schedule_0001.pdf" target="_blank">IBC Meeting Schedule 2017</a></li>
-                <li><a href="/docs/pdf/bio_ibc_meeting_schedule_2018.pdf" target="_blank">IBC Meeting Schedule 2018</a></li>
+                <li><a href="ibc_meeting_schedule.pdf" target="_blank">IBC Meeting Schedule 2019</a></li>
                 <li><a href="/docs/pdf/bio_ibc_review_process_flowchart_0001.pdf" target="_blank">IBC Process Flowchart</a></li>
                 <li><a href="/biosafety/nbsm.php">National Biosafety Stewardship Month </a></li>
                 <li><a href="/docs/pdf/bio_ibc_registration_0001.pdf" target="_blank">Registration Process</a></li>
