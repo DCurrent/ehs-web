@@ -27,10 +27,7 @@
 		</div>
 		<div id="content">
 			<h1>Other Types of Waste</h1>
-			<h2><a href="/docs/pdf/env_fs_12012010B_batteries_0001.pdf" target="_blank">Batteries</a></h2>
-			<p>Virtually all batteries except common alkalines are regulated as universal waste. Although the regulations on universal wastes are less stringent than those for hazardous waste, universal wastes are still regulated wastes.</p>
-			<p>See  <a href="/docs/pdf/env_fs_12012010B_batteries_0001.pdf" target="_blank">fact sheet</a> for complete information.</p>
-	    <h2><a href="fs_light_0001.php">Fluorescent and Other Lamps</a></h2>
+			<h2><a href="fs_light_0001.php">Fluorescent and Other Lamps</a></h2>
 			<p>Certain light bulbs and lamps may contain toxic metals such as mercury which require special disposal. These light bulbs and lamps are regulated as universal waste lamps. Use the E-Trax system to request a pick up or contact <a href="mailto:brianbutler@uky.edu">Brian Butler</a></p>
 			<h2>Mercury Thermometers</h2>
 			<p>A mercury thermometer exchange program is available to help eliminate mercury and its associated health and environmental hazards. The mercury thermometer exchange program enables laboratories to exchange their intact mercury thermometers for non-mercury thermometers at no cost so as to:</p>
