@@ -103,7 +103,7 @@
 		{	
 			/* Create passed verbiage markup. */
 			$markup .= '<h2 class="color_green">Pass</h2>';		
-			$markup .= '<p class="color_green">Congratulations, you have successfully completed the exam. Your completion of this training has been recorded and can be verified any time <a href="/classes/transcript.php" target="_blank">here</a> (you will also be able to print a certificate for your own records if needed).</p>';
+			$markup .= '<p class="color_green">Congratulations, you have successfully completed the exam. Your completion of this training has been recorded and can be verified any time <a class="link-class" href="transcript.php" target="_blank">here</a> (you will also be able to print a certificate for your own records if needed).</p>';
 			
 			/* Record to database. */
 			$iRecordID = $oTra->training_class_record($cClassParams);

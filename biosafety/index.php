@@ -44,7 +44,7 @@
                     </ul>
                     
                     <h3><a href="//topaz.uky.edu">Topaz - IBC Registration Link</a></h3>
-                    <h3><a href="../docs/pdf/bio_bsc_certification_approved_vendors.pdf">BSC Certification &ndash;  Approved Vendors</a></h3>
+                    <h3><a href="bio_bsc_certification_approved_vendors.pdf">BSC Certification &ndash;  Approved Vendors</a></h3>
                 
                 	<?php include($cDocroot."libraries/includes/inc_updates.php"); ?>                
                 </div><!--/content-->       

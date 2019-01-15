@@ -40,7 +40,7 @@
         	<ul>
             	<li><a href="/ohs/accident.php">Accidents and Unsafe Conditions</a></li>
                 <li><a href="/env/storm_water_quality.php">Illicit Stormwater Discharge</a></li>
-                <li><a href="/docs/pdf/bio_ar_reporting_exposures_to_potentially_biohazardous_materials_0001.pdf">Potentially Biohazardous Material Exposure</a></li>
+                <li><a href="/biosafety/bio_ar_reporting_exposures_to_potentially_biohazardous_materials_0001.pdf">Potentially Biohazardous Material Exposure</a></li>
             </ul>        
         </li>
         

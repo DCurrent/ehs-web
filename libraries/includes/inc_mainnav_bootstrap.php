@@ -77,7 +77,7 @@
                         	<li><a href="/ohs/accident.php"><?php echo NAV_INDENT; ?>Accidents and Unsafe Conditions</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Hazardous Conditions</li>
-                        	<li><a href="/docs/pdf/bio_ar_reporting_exposures_to_potentially_biohazardous_materials_0001.pdf"><?php echo NAV_INDENT; ?>Potentially Biohazardous Material Exposure</a></li>
+                        	<li><a href="/biosafety/bio_ar_reporting_exposures_to_potentially_biohazardous_materials_0001.pdf"><?php echo NAV_INDENT; ?>Potentially Biohazardous Material Exposure</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Stormwater</li>
                         	<li><a href="/env/storm_water_quality.php"><?php echo NAV_INDENT; ?>Illicit Stormwater Discharge</a></li>

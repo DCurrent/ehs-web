@@ -46,7 +46,7 @@
                     
                     <p>Training sessions for the use of the software are offered regularly. Please contact the Department of Biological Safety at 859-257-8655 or <a href="mailto:ehsbiosafety@uky.edu" class="link">ehsbiosafety@uky.edu</a> for more information.</p>
                     
-                    <p>For research involving human pathogens, the following document will also be required: <a href="../docs/pdf/bio_ecp_personnel_statement.pdf" class="link">ECP Personnel Statement </a></p>
+                    <p>For research involving human pathogens, the following document will also be required: <a href="bio_ecp_personnel_statement.pdf" class="link">ECP Personnel Statement </a></p>
                     
                     <p>
                     	Any research involving any infectious agents, potentially infectious materials or recombinant nucleic acids is required to be registered with the Institutional Biosafety Committee as established by University of Kentucky policy and the NIH. Because the University receives funding from NIH grants, ALL research conducted at the University must comply with the NIH Guidelines for Research Involving Recombinant DNA Molecules and University policies. </p>

@@ -8,14 +8,14 @@
             <ul>          
                 <li><a href="/ohs/accident.php" class="fly">Accident Reporting</a>
                     <ul>
-                        <li><a href="/docs/pdf/bio_ar_reporting_exposures_to_potentially_biohazardous_materials_0001.pdf">Reporting Exposures to Potentially Biohazardous Materials</a></li>
+                        <li><a href="/biosafety/bio_ar_reporting_exposures_to_potentially_biohazardous_materials_0001.pdf">Reporting Exposures to Potentially Biohazardous Materials</a></li>
                         <li><a href="/ohs/accident.php">Reporting Accidents and Injuries</a></li>
                     </ul>
                 </li>
               
                 <li><a href="#" class="fly">Biological Select Agents And Toxins</a>
                     <ul>
-                        <li><a href="/docs/pdf/bio_exempt_quantities_of_select_agents_and_toxins_0001.pdf" target="_blank">Exempt Quantities of Select Agents and Toxins</a></li>
+                        <li><a href="/biosafety/bio_exempt_quantities_of_select_agents_and_toxins_0001.pdf" target="_blank">Exempt Quantities of Select Agents and Toxins</a></li>
                         <li><a href="/docs/pdf/bio_select_agent_additional_info_0001.pdf" target="_blank">Select Agent Information</a></li>
                     </ul>
                 </li>
@@ -24,7 +24,7 @@
                     <ul>
                         <li><a href="/docs/pdf/bio_laboratory_disinfectants_0001.pdf" target="_blank">Laboratory Disinfectants</a></li>
                         <li><a href="/docs/pdf/bio_spill_procedure_0001.pdf" target="_blank">Spill Procedures</a></li>
-                        <li><a href="/docs/pdf/bio_fs_uv_light_0001.pdf" target="_blank">Ultraviolet Light</a></li>
+                        <li><a href="/biosafety/bio_fs_uv_light_0001.pdf" target="_blank">Ultraviolet Light</a></li>
                         <li><a href="/docs/pdf/bio_waste_flowchart_0001.pdf" target="_blank">Waste Disposal</a></li>
                     </ul>
                 </li>
@@ -68,9 +68,9 @@
                         <li><a href="/docs/pdf/bio_le_autoclave_user_log_0001.pdf" target="_blank">Autoclave User Log</a></li>
                         <li><a href="/docs/pdf/bio_le_biological_indicator_test_result_log_0001.pdf" target="_blank">Biological Indicator Test Result Log</a></li>
                         <li><a href="/docs/pdf/bio_le_biological_safety_cabinet_operations_0001.pdf" target="_blank">Biological Safety Cabinet Operations</a></li>
-                        <li><a href="/docs/pdf/bio_audit_checklist_biomedical_0001.pdf" target="_blank">Biosafety Audit Checklist (Biomedical)</a></li>
-                        <li><a href="/docs/pdf/bio_audit_checklist_plant_0001.pdf" target="_blank">Biosafety Audit Checklist (Plant)</a></li>
-                        <li><a href="/docs/pdf/bio_bsc_canopy_or_thimble_0001.pdf" target="_blank">BSCs With Canopy or Thimble Connection</a></li>
+                        <li><a href="/biosafety/bio_audit_checklist_biomedical_0001.pdf" target="_blank">Biosafety Audit Checklist (Biomedical)</a></li>
+                        <li><a href="/biosafety/bio_audit_checklist_plant_0001.pdf" target="_blank">Biosafety Audit Checklist (Plant)</a></li>
+                        <li><a href="/biosafety/bio_bsc_canopy_or_thimble_0001.pdf" target="_blank">BSCs With Canopy or Thimble Connection</a></li>
                         <li><a href="/docs/pdf/bio_le_centrifuge_safety_0001.pdf" target="_blank">Centrifuge Safety</a></li>
                         <li><a href="/docs/pdf/bio_le_hand_hygiene_0001.pdf" target="_blank">Hand Hygiene</a></li>
                         <li><a href="/docs/pdf/bio_laboratory_specific_training_checklist_0001.pdf" target="_blank">Laboratory Specific Training Checklist</a></li>
