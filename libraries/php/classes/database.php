@@ -3,7 +3,7 @@
 interface DB_DEFAULTS_old
 {
 	// Connection options.
-	const HOST 			= 'gensql\general';		// Database host (server name/address)
+	const HOST 			= 'GENSQLAGL\general';		// Database host (server name/address)
 	const NAME 			= 'ehsinfo';			// Database logical name.
 	const USER 			= 'EHSInfo_User';		// User name to access database.
 	const PASSWORD 		= 'ehsinfo';			// Password to access database.
@@ -421,14 +421,16 @@ class class_db implements DB_DEFAULTS_old {
 		$user = $this->connect->get_user();
 		$password = $this->connect->get_password();
 		
-		//$host = 'gensql\general', $name = 'ehsinfo', $user = 'EHSInfo_User', $password = 'ehsinfo'
+		//$host = 'GENSQLAGL\general', $name = 'ehsinfo', $user = 'EHSInfo_User', $password = 'ehsinfo'
 		
 		// Set up credential array.
 		$db_cred = array('Database' => $name, 'UID' => $user, 'PWD' => $password);
 									
 		// Establish database connection.
 		$this->DBConn = sqlsrv_connect($host, $db_cred);		
-				
+		
+		echo "<!-- class_db->DBConn: ".$this->DBConn." -->";
+		
 		// False returned. Database connection has failed.
 		if($this->DBConn === FALSE)
 		{
@@ -634,6 +636,8 @@ class class_db implements DB_DEFAULTS_old {
 	
 		// Execute query.
 		$this->DBResult = sqlsrv_query($this->DBConn, $query, $params, $options);
+		
+		echo "<!-- class_db->db_query(query): ".$query." -->";
 		
 		// Error trapping.
 		$this->db_error();
