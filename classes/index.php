@@ -61,6 +61,9 @@
                         	<th>Class List</th>
                         </tr>
                         <tr>
+                          <td><a href="classes_ohs_0001.php#aerial_lift_safety">Aerial Lift Safety</a></td>
+                        </tr>
+                        <tr>
                           <td><a href="classes_ohs_0001.php#atv">All-Terrian Vehicle (ATV)</a></td>
                         </tr>
                         <tr>
@@ -173,6 +176,9 @@
                         </tr>
                         <tr>
                         	<td><a href="classes_ohs_0001.php#respirator_use" >Respirator Use</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="classes_ohs_0001.php#respirator_use_voluntary">Respirator  - Voluntary Use</a></td>
                         </tr>
                         <tr>
                         	<td><a href="classes_ohs_0001.php#safe_driving">Safe Driving</a></td>
