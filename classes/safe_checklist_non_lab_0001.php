@@ -33,7 +33,7 @@
 		  <table width="100%" border="2" cellspacing="0" cellpadding="1">
 		    <tr>
 		      <th>Activity</th>
-		      <th>Training Rrequirements</th>
+		      <th>Training Requirements</th>
 		      <th>Minimum Required Frequency*</th>
 	        </tr>
 		    <tr >
@@ -115,7 +115,7 @@
 	        </tr>
 		    <tr >
 		      <td>Will Powered Platforms, Manlifts, and Vehicle-Mounted Work Platforms(e.g.,  lifts, scissors lifts, booms) be used?</td>
-		      <td><a href="../docs/pdf/ohs_powered_industrial_truck_safety_program_0001.pdf">Powered  Platforms</a></td>
+		      <td><a href="../docs/pdf/ohs_aerial_lift_safety_program_0001.pdf">Powered  Platforms</a></td>
 		      <td>Once</td>
 	        </tr>
 		    <tr >
