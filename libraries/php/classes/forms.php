@@ -488,6 +488,8 @@ class class_forms implements e_fieldset_clear, e_label_use, e_label_type, e_read
 			// Query for list items.
 			$this->db->db_basic_select($query, $params, FALSE, TRUE, TRUE);
 			
+			echo "<!-- class_forms->forms_list_array_from_query(query): ".$query." -->";
+			
 			$keycount = $this->db->DBFCount;
 					
 			// Populate list variable.
