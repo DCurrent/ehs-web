@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 
 	
 
-	$db_host		= "gensql\general";			//Database server name.
+	$db_host		= "GENSQLAGL\general";			//Database server name.
 	$db_user		= "EHSInfo_User";			//Database user name.
 	$db_pword		= "ehsinfo";				//Database user password.
 	$db_dbase		= "UKSpace";				//Target database.
