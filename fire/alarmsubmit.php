@@ -121,7 +121,7 @@ if ($propDamage != "1")
 //Database connection 128.163.184.42					
 
 			//$db_hostname 	= "128.163.184.42";
-			$db_hostname 	= "gensql\general";
+			$db_hostname 	= "GENSQLAGL\general";
 			$db_connection 	= array("Database"=>"ehsinfo", "UID"=>"EHSInfo_User", "PWD"=>"ehsinfo");
 			
 			$db_conn 		= sqlsrv_connect($db_hostname, $db_connection);	
@@ -597,7 +597,7 @@ else
 	$propDamage = "False";
 }
 
-		$db_hostname 	= "gensql\general";
+		$db_hostname 	= "GENSQLAGL\general";
 		$db_connection 	= array("Database"=>"UKSpace", "UID"=>"EHSInfo_User", "PWD"=>"ehsinfo");
 		
 		//Connect to DB server.	
