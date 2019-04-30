@@ -244,7 +244,7 @@
         <h2 id="glove_links">Glove Links</h2>
                     <p>              A more complete guide on specific chemicals and materials can be found             at the following links.</p>
                     <ul>
-                      <li><a href="/docs/pdf/ohs_chp.pdf">Appendix VI pgs 66-71 of the Chemical Hygiene Plan for the University             of Kentucky</a></li>
+                      <li><a href="/docs/ohs/chp/chemical_hygiene_plan.pdf">Appendix VI pgs 66-71 of the Chemical Hygiene Plan for the University             of Kentucky</a></li>
                       <li><a href="//www.chemrest.com">Chemrest - a Comprehensive Guide to Chemical             Resistant Best Gloves</a></li>
                       <li> <a href="//www.ecu.edu/cs-admin/oehs/ih/Glove-Selection-Chart.cfm">East Carolina University</a></li>
                       <li><a href="//ehs.okstate.edu/modules/ppe/Gloves.htm">Oklahoma State University</a></li>

@@ -92,7 +92,7 @@
 		  </ul>
 			<h2><a name="lab_setup" id="lab_setup"></a>Lab Design And Emergency Equipment (lab setup)</h2>
 			<ul>
-			  <li><a href="/docs/pdf/ohs_chp.pdf">Chemical Hygiene Plan</a></li>
+			  <li><a href="/docs/ohs/chp/chemical_hygiene_plan.pdf">Chemical Hygiene Plan</a></li>
 			  <li><a href="/docs/pdf/ohs_ansi_2004.pdf">Eyewash and Safety Shower, 
               ANSI Standards</a></li>
 			  <li><a href="eyewash.php">Eyewash and Safety Shower 
