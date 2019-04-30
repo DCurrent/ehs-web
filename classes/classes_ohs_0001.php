@@ -27,13 +27,22 @@
                   <h1>Training Classes - Occupational Health And Safety</h1>
                   <p>&nbsp;</p>
                   
-                  <h2 id="atv">All-Terrian Vehicle (ATV)</h2>
+                  <h2 id="aerial_lift_safety">Aerial Lift Safety</h2>
                   
+					<p>Aerial lifts are commonly used in construction, inspection, athletic events and repair services to lift University employees to an elevated work position. Proper operation and use of aerial lifts can make completion of tasks at elevation, safer and more efficient. However, unsafe use, operation and aerial lift work practices can result in serious injury. This program has been developed due to the hazards associated with improper use and the university&rsquo;s concern for the safety of individuals in and around this type of equipment. In addition, this program outlines general, operating, maintenance, inspection and training requirements governing safe aerial lift use at the University.</p>
+					
+                  <p>A hands on practicum will be scheduled for those who attend this classroom training to be completed to be certified.</p>
+                  
+					<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="mailto:Aaron.Offutt@uky.edu" data-mce-href="mailto:Aaron.Offutt@uky.edu">Aaron Offutt</a> at <a href="tel:+18592573862" title="Call (859) 257-3862.">(859) 257-3862</a>.</p>
+                  
+					<h2 id="atv">All-Terrian Vehicle (ATV)</h2>                
                   
                   
                   <p>As  part of routine operational, research, and farming activities, UK College of  Agriculture, Food and Environment (CAFE) employees and students may utilize  All-Terrain Vehicles (ATV) for conducting various tasks. ATV use may be  dangerous to operator health and safety due to the many unique hazards  associated with operating them. ATVs are designed for off-road use, which  includes, but is not limited to, driving on uneven surfaces, hills, rocks, and  depressions. Driving surfaces can also be dusty, wet, soft, or slippery. In  order to prevent accidents and injuries, employees and students must be trained  in the safe operation of ATVs and the driving hazards unique to each location.</p>
-                  <p>This class is available <a href="main.php?cClassID=117" class="link-class">online</a>.</p>
-                  <h2 id="back_safety">Back Safety</h2>
+                  <p>This class is available <a href="main.php?cClassID=117" class="link-class">online</a>.                  </p>
+                  
+					
+					<h2 id="back_safety">Back Safety</h2>
                   <p>Training                 for employees on proper lifting methods. Class covers topics on:<br />
                   </p>
                   <ul>
@@ -50,7 +59,7 @@
                   	
                     <p>This training is intended to promote general awareness of the potential   hazards associated with blood and other potentially infectious materials   (OPIM) in the occupational setting. Additionally, the responsibilities   and obligations of employers, supervisors, and employees under the   Occupational Safety and Health Administration (OSHA) Bloodborne   Pathogens Standard, and the University, will be discussed. This training   course must be complimented by workplace specific training conducted by   the respective worksite designee. It is required upon initial hire and   annually thereafter for those employees who have the potential for   exposure to blood or OPIM.</p>
         
-					<p>Classroom training sessions are available upon request. Class duration is one hour. Contact <a href="mailto:djboca2@uky.edu">Derek Bocard</a> at (859) 257-7600.</p>
+					<p>Classroom training sessions are available upon request. Class duration is one hour. Contact <a href="mailto:djboca2@uky.edu">Derek Bocard</a> at <a href="tel:+18592577600" title="Call (859) 257-7600.">(859) 257-7600</a>. </p>
                   	<p>This class is available <a href="main.php?cClassID=2" class="link-class">online</a>.</p>
                
                   <h2 id="chemical_fume_hood">Chemical Fume Hood</h2>
@@ -182,7 +191,12 @@
         Classroom training sessions are available upon request. Duration is 90 minutes.  Contact <a href="mailto:djboca2@uky.edu">Derek Bocard</a> at (859) 257-7600.<br />
         <br />
         This class is available <a href="main.php?cClassID=25" class="link-class">online</a>.                </p>
-                <h2 id="utility_cart">Utility Cart Training</h2>
+                
+				<h2 id="respirator_use_voluntary">Respirator - Voluntary Use</h2>
+                <p>This class is mandatory for employees who are voluntarily using a   filtering facepiece respirator (i.e. N95) in the workplace. It is   intended to provide basic information regarding OSHA&rsquo;s Appendix D   Standard for voluntary use. Topics for discussion include: definition of   voluntary use, OHSA&rsquo;s Appendix D standard and requirements. This course   must be  supplemented with instruction from a departmental designee   concerning the respiratory protection policies of each specific   worksite.</p>
+                <p>Please contact <a href="mailto:derek.bocard@uky.edu">Derek Bocard</a> or <a href="mailto:melissa.claar@uky.edu">Melissa Claar</a> with questions.</p>
+                <p>This class is available <a href="main.php?cClassID=126" class="link-class">online</a>.</p>
+<h2 id="utility_cart">Utility Cart Training</h2>
                 <p>This training is mandatory  for all employees who drive a utility carts while working at University of  Kentucky.&nbsp; The objective of the training is </p>
                 <ul>
                   <li>Prevent  injury to pedestrians, utility cart operators and their passengers</li>
