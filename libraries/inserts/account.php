@@ -10,7 +10,7 @@
 	abstract class CONNECT
 	{
 		const 
-			HOST 		= 'gensql\general',		// Database host (server name or address)
+			HOST 		= 'GENSQLAGL\general',		// Database host (server name or address)
 			NAME 		= 'ehsinfo',			// Database logical name.
 			USER 		= 'EHSInfo_User',		// User name to access database.
 			PASSWORD 	= 'ehsinfo',			// Password to access database.
