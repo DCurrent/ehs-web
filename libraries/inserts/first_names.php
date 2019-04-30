@@ -16,7 +16,7 @@
 			FROM         		tbl_class_participant	
 			WHERE     			((name_l = ?) OR (? = '-1')) AND (name_f IS NOT NULL AND name_f <>'')			
 			
-			ORDER BY 			name_f", array(&$cSel, &$cSel), array("All First Names" => -1));
+			ORDER BY tbl_class_participant.name_f", array(&$cSel, &$cSel), array("All First Names" => -1));
 	
 	echo $oFrm->forms_select("name_f", class_forms::ID_USE_NAME, "First Name:", class_forms::LABEL_USE_ITEM_KEY, $list, -1, NULL, array("element" => NULL));
 
