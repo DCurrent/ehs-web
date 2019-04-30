@@ -362,12 +362,6 @@
 			$oFrm->forms_fieldset("fs_supervisor", "Supervisor"); 								
 		}
 		
-		/* If any extra registration information was asked for, add in a header markup. */
-		if($bRegInfo === TRUE)
-		{
-			$oFrm->forms_fieldset_all_set('<div class="table_header">Registration - All fields required unless otherwise noted.</div> <p>Note that registration information will be published in Chematix and will be available to all registered UK users of Chematix.</p>'. $oFrm->forms_fieldset_all_get());
-		}
-		
 		/* Populate questions list. */
 		$markup['questions'] = $oTra->training_quiz_questions($quiz_id, $moduleStatus->order, $moduleStatus->quantity); 
 	}		
