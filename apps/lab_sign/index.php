@@ -115,24 +115,38 @@
                     <form name="lab_sign" id="lab_sign" class="lab_sign" action="print.php" method="post" target="_blank">                                    
                         
                         
-                        <fieldset>
-                        	<legend>Principal Investigator</legend>
-                            
-                            <label for="pi_name_f">First Name</label>
-                        	<input name="pi_name_f" id="pi_name_f" required placeholder="PI's First Name" value="<?php //echo $oAcc->get_name_f(); ?>" />
-                            
-                            <label for="pi_name_l">Last name</label>
-                            <input name="pi_name_l" id="pi_name_l" required placeholder="PI's Last Name" value="<?php //echo $oAcc->get_name_l(); ?>" />
-						</fieldset>
+                        <fieldset name="fs_pi" id="fs_pi">
+							<legend>Principal Investigator</legend>
+							
+							<p>Principal Investigators. Press the <span class="color_green" style="font-weight:bold;">+</span> button to add more investigators. At least one principal investigator is required.</p> 
+							
+                            <div class="pi">
+								<!-- Principal Investigators are added by script here. -->
+							</div>
+							
+							<span class="legend color_green">
+                                <a href="#" title="Add a principal investigator." id="pi_edit" class="pi_edit cmd_add_pi">
+                                    <img src="/media/image/icon_plus.ico" alt="+" title="Add new item." style="border:none; margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px">
+                                </a>
+                            </span>
+							
+						</fieldset>						
                         
-                        <fieldset>
-                        	<legend>Lab Supervisor</legend>
-                            
-                            <label for="super_name_f">First Name</label>
-                        	<input name="super_name_f" id="super_name_f" placeholder="Supervisor's First Name" />
-                            
-                            <label for="super_name_l">Last name</label>
-                            <input name="super_name_l" id="super_name_l" placeholder="Supervisor's Last Name" />
+						<fieldset name="fs_super" id="fs_super">
+							<legend>Lab Supervisor</legend>
+							
+							<p>Lab supervisors. Press the <span class="color_green" style="font-weight:bold;">+</span> button to add more lab supervisors. At least one lab supervisor is required.</p> 
+							
+                            <div class="super">
+								<!-- Lab supervisors are added by script here. -->
+							</div>
+							
+							<span class="legend color_green">
+                                <a href="#" title="Add a lab supervisor." id="super_edit" class="super_edit cmd_add_super">
+                                    <img src="/media/image/icon_plus.ico" alt="+" title="Add new item." style="border:none; margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px">
+                                </a>
+                            </span>
+							
 						</fieldset>
                         
                         <fieldset>
@@ -216,7 +230,7 @@
                     	<fieldset name="fs_ec" id="fs_ec">
                             <legend>After Hours Contact</legend>
                             
-                            <p>Press the <span class="color_green" style="font-weight:bold;">+</span> button to add after hours and emergency contacts. You may add as many as you like, but at least one contact is required.</p> 
+                            <p>After hours contacts for the lab. Press the <span class="color_green" style="font-weight:bold;">+</span> button to add more contacts. At least one contact is required.</p> 
                             
                             <div class="ec">
                                 <!--Emergency contacts are added by script here.-->
@@ -432,9 +446,8 @@
         	<?php include($cDocroot."libraries/includes/inc_footerpad.php"); ?>
         </div><!--#footerPad-->
     
-	<script>
-	  var $temp_int = 0;
-	  
+	<script src="source/javascript/dc_guid.js"></script>
+	<script>	  
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -452,42 +465,124 @@
 			options_update(event, null, '#department');	
 			options_update(event, null, '#facility');							
 		
-			//ec_append($temp_int);
+			pi_append();
+			super_append();
+			ec_append();
 		});
 		
-		function ec_append($temp_int)
+		function pi_append()
 		{
+			var $temp_guid = dc_guid(); 
+			
+			$(".pi").append(
+				'<fieldset>'
+					+'<legend>'
+						+'<a href="#" title="Remove this item." class="pi_edit cmd_remove_pi"><img src="/media/image/icon_minus.ico" alt="-" title="Remove this item." style="border:none; margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px"></a>'
+					+'</legend>'
+												
+					+'<input type="hidden" name="pi_id[]" id="pi_id_' + $temp_guid + '" value="'+ $temp_guid +'"/>'
+												
+					+'<div>'
+						+'<label for="pi_name_f_' + $temp_guid + '">First:</label>'
+						+'<input type="text" placeholder="PI First Name" name="pi_name_f[]" id="pi_name_f_' + $temp_guid + '" />'
+						
+						+'<label for="pi_name_l_' + $temp_guid + '">Last:</label>'
+						+'<input type="text" placeholder="PI Last Name" name="pi_name_l[]" id="pi_name_l_' + $temp_guid + '" />'
+				
+					+'</div>'			
+				+'</fieldset>');
+		}
+		
+		// Add new input with associated 'remove' link when 'add' button is clicked.
+		$('.cmd_add_pi').click(function(e) {
+			
+			alert('test');
+			
+			e.preventDefault();			
+			pi_append();
+		});
+		
+		// Remove parent of 'remove' link when link is clicked.
+		$('.pi').on('click', '.cmd_remove_pi', function(e) {
+			e.preventDefault();
+		
+			$(this).parent().parent().remove();
+		});
+		
+		//  Lab Supervisor
+		function super_append()
+		{
+			var $temp_guid = dc_guid(); 
+			
+			$(".super").append(
+				'<fieldset>'
+					+'<legend>'
+						+'<a href="#" title="Remove this item." class="pi_edit cmd_remove_super"><img src="/media/image/icon_minus.ico" alt="-" title="Remove this item." style="border:none; margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px"></a>'
+					+'</legend>'
+												
+					+'<input type="hidden" name="super_id[]" id="super_id_' + $temp_guid + '" value="'+ $temp_guid +'"/>'
+												
+					+'<div>'
+						+'<label for="super_name_f_' + $temp_guid + '">First:</label>'
+						+'<input type="text" placeholder="Supervisor First Name" name="super_name_f[]" id="super_name_f_' + $temp_guid + '" />'
+						
+						+'<label for="super_name_l_' + $temp_guid + '">Last:</label>'
+						+'<input type="text" placeholder="Supervisor Last Name" name="super_name_l[]" id="super_name_l_' + $temp_guid + '" />'
+				
+					+'</div>'			
+				+'</fieldset>');
+		}
+		
+		// Add new input with associated 'remove' link when 'add' button is clicked.
+		$('.cmd_add_super').click(function(e) {
+			
+			e.preventDefault();			
+			super_append();
+		});
+		
+		// Remove parent of 'remove' link when link is clicked.
+		$('.super').on('click', '.cmd_remove_super', function(e) {
+			e.preventDefault();
+		
+			$(this).parent().parent().remove();
+		});
+		
+		// Emergency contact
+		function ec_append()
+		{
+			var $temp_guid = dc_guid();
+			
 			$(".ec").append(
 				'<fieldset>'
 					+'<legend>'
 						+'<a href="#" title="Remove this item." class="ec_edit cmd_remove_ec"><img src="/media/image/icon_minus.ico" alt="-" title="Remove this item." style="border:none; margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px"></a>'
 					+'</legend>'
 												
-					+'<input type="hidden" name="ec_id[]" id="ec_id_' + $temp_int + '" value="'+ $temp_int +'"/>'
+					+'<input type="hidden" name="ec_id[]" id="ec_id_' + $temp_guid + '" value="'+ $temp_guid +'"/>'
 												
 					+'<div>'
-						+'<label for="ec_name_f_' + $temp_int + '">First:</label>'
-						+'<input type="text" placeholder="First Name" name="ec_name_f[]" id="ec_name_f_' + $temp_int + '" />'
+						+'<label for="ec_name_f_' + $temp_guid + '">First:</label>'
+						+'<input type="text" placeholder="First Name" name="ec_name_f[]" id="ec_name_f_' + $temp_guid + '" />'
 					+'</div>'
 				
 					+'<div>'
-						+'<label for="ec_name_l_' + $temp_int + '">Last:</label>'
-						+'<input type="text" placeholder="Last Name" name="ec_name_l[]" id="ec_name_l_' + $temp_int + '" />'
+						+'<label for="ec_name_l_' + $temp_guid + '">Last:</label>'
+						+'<input type="text" placeholder="Last Name" name="ec_name_l[]" id="ec_name_l_' + $temp_guid + '" />'
 					+'</div>'
 										
 					+'<div>'
-						+'<label for="ec_loc_' + $temp_int + '">Location:</label>'
-						+'<input type="text" placeholder="Office Location" name="ec_loc[]" id="ec_loc_' + $temp_int + '" />'
+						+'<label for="ec_loc_' + $temp_guid + '">Location:</label>'
+						+'<input type="text" placeholder="Office Location" name="ec_loc[]" id="ec_loc_' + $temp_guid + '" />'
 					+'</div>'
 				
 					+'<div>'
-						+'<label for="ec_phone_o_' + $temp_int + '">Phone # (Office):</label>'
-						+'<input type="tel" placeholder="x-xxx-xxx-xxxx" name="ec_phone_o[]" id="ec_phone_o_' + $temp_int + '" />'
+						+'<label for="ec_phone_o_' + $temp_guid + '">Phone # (Office):</label>'
+						+'<input type="tel" placeholder="x-xxx-xxx-xxxx" name="ec_phone_o[]" id="ec_phone_o_' + $temp_guid + '" />'
 					+'</div>'
 	
 					+'<div>'
-						+'<label for="ec_phone_h_' + $temp_int + '">Phone # (Home/Cell):</label>'
-						+'<input type="tel" placeholder="x-xxx-xxx-xxxx" name="ec_phone_h[]" id="ec_phone_h_' + $temp_int + '" />'
+						+'<label for="ec_phone_h_' + $temp_guid + '">Phone # (Home/Cell):</label>'
+						+'<input type="tel" placeholder="x-xxx-xxx-xxxx" name="ec_phone_h[]" id="ec_phone_h_' + $temp_guid + '" />'
 					+'</div>'
 				+'</fieldset>');
 		}
@@ -495,8 +590,7 @@
 		// Add new input with associated 'remove' link when 'add' button is clicked.
 		$('.cmd_add_ec').click(function(e) {
 			e.preventDefault();			
-			ec_append($temp_int);		
-			$temp_int++;
+			ec_append();
 		});
 		
 		// Remove parent of 'remove' link when link is clicked.

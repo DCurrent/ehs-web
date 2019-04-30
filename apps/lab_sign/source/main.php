@@ -13,10 +13,13 @@
 		private			
 			$department		= NULL,
 			$room			= NULL,
-			$pi_name_f		= NULL,
-			$pi_name_l		= NULL,
-			$super_name_f	= NULL,
-			$super_name_l	= NULL,
+			
+			$pi_id			= array(),
+			$pi_name_f		= array(),
+			$pi_name_l		= array(),
+			$super_id		= array(),
+			$super_name_f	= array(),
+			$super_name_l	= array(),
 			
 			$ec_id			= array(),
 			$ec_name_f		= array(),
@@ -110,7 +113,12 @@
 		{
 			$this->room = $value;
 		}
-			
+		
+		public function set_pi_id($value)
+		{
+			$this->pi_id = $value;
+		}
+		
 		public function set_pi_name_f($value)
 		{
 			$this->pi_name_f = $value;
@@ -120,7 +128,12 @@
 		{
 			$this->pi_name_l = $value;
 		}
-			
+		
+		public function set_super_id($value)
+		{
+			$this->super_id = $value;
+		}
+		
 		public function set_super_name_f($value)
 		{
 			$this->super_name_f = $value;
@@ -267,6 +280,11 @@
 			return $this->room;
 		}
 		
+		public function get_pi_id()
+		{
+			return $this->pi_id;
+		}
+		
 		public function get_pi_name_f()
 		{
 			return $this->pi_name_f;
@@ -275,6 +293,11 @@
 		public function get_pi_name_l()
 		{
 			return $this->pi_name_l;
+		}
+		
+		public function get_super_id()
+		{
+			return $this->super_id;
 		}
 		
 		public function get_super_name_f()

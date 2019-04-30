@@ -1,4 +1,4 @@
-<?php 
+5<?php 
 	
 	require('source/main.php');
 	require($_SERVER['DOCUMENT_ROOT'].'/libraries/php/classes/config.php'); // Basic configuration file. 
@@ -303,9 +303,25 @@
 		//exit;	
 	}
 	
-	$contacts = $post->get_ec_id();
+	$pi_array = $post->get_pi_id();
+	$super_array = $post->get_super_id();
+	$ec_array = $post->get_ec_id();
+
+	if(empty($pi_array))
+	{
+		echo 'You have not entered any principal investigators. Close this window and add at least one investigator, then submit again.';
 	
-	if(empty($contacts))
+		exit;
+	}
+
+	if(empty($super_array))
+	{
+		echo 'You have not entered any lab supervisors. Close this window and add at least one supervisor, then submit again.';
+	
+		exit;
+	}
+
+	if(empty($ec_array))
 	{
 		echo 'You have not entered any after hours or emergency contacts. Close this window and add at least one contact, then submit again.';
 	
@@ -467,35 +483,72 @@
                     <?php 
                         } 
                     ?>  
-                   
-                           
-                    <p>                    	
-                        <!--Principal Investigator-->  
-                        <table>
-                        	<?php if($post->get_room()){ ?>
-                                <tr>
-                                	<th>Area/Room:</td>
-									<td><?php echo $room_data->room.' ('.$post->get_room().'), '.ucwords(strtolower($room_data->useage_desc)); ?><td>
-                                </td>
-                            <?php } ?>
-                            
-							<?php if($post->get_department()) { ?>
-                            	<tr>
-                                	<th>Department:</th>
-									<td><?php echo $post->get_department() .', '.$department_name->name; ?></td>
-                            	</tr>
-                            <?php } ?>
-                            
-                        	<tr>
-                            	<th>Principal Investigator:</th>
-                                <td><?php echo $post->get_pi_name_f().' '.$post->get_pi_name_l(); ?></td>
-                            </tr>
-                            <tr>
-                                <th>Lab Supervisor:</th>
-                                <td><?php echo $post->get_super_name_f().' '.$post->get_super_name_l(); ?></td>                    
-                            </tr>
-                        </table>                        
-                    </p>
+                   	<!-- Principal Investigator -->
+					<p>
+                    	<?php 
+							$pi_id = $post->get_pi_id();
+							$pi_count = count($pi_id);	
+						
+							if($pi_count > 0)
+							{
+								$pi_name_f	= $post->get_pi_name_f();
+                                $pi_name_l	= $post->get_pi_name_l();
+						?>							
+                                <table>
+                                  <caption>
+                                    Principal Investigator<?php if($pi_count > 1){ echo 's'; } ?>
+                                  </caption>
+                                  
+                                  <?php foreach ($post->get_pi_id() as $key => $value)
+                                        {                                            						  
+                                  ?>                                            
+                                            <tr>
+                                                <td class="center"><?php 
+                                                        if(array_key_exists($key, $pi_name_f)) echo $pi_name_f[$key];
+                                                        if(array_key_exists($key, $pi_name_l)) echo ' '.$pi_name_l[$key]; ?></td>
+                                            </tr>
+                                    <?php 
+                                        }
+                                    ?>                                
+                                </table>
+                    	<?php
+							}
+						?>
+                   	</p>
+                    
+					<!-- Lab Supervisor -->
+					<p>
+                    	<?php 
+							$super_id = $post->get_super_id();
+							$super_count = count($super_id);	
+						
+							if($super_count > 0)
+							{
+								$super_name_f	= $post->get_super_name_f();
+                                $super_name_l	= $post->get_super_name_l();
+						?>							
+                                <table>
+                                  <caption>
+                                    Lab Supervisor<?php if($super_count > 1){ echo 's'; } ?>
+                                  </caption>
+                                  
+                                  <?php foreach ($post->get_super_id() as $key => $value)
+                                        {                                            						  
+                                  ?>                                            
+                                            <tr>
+                                                <td class="center"><?php 
+                                                        if(array_key_exists($key, $super_name_f)) echo $super_name_f[$key];
+                                                        if(array_key_exists($key, $super_name_l)) echo ' '.$super_name_l[$key]; ?></td>
+                                            </tr>
+                                    <?php 
+                                        }
+                                    ?>                                
+                                </table>
+                    	<?php
+							}
+						?>
+                   	</p>
+
                     <p>
                     	<?php 
 							$ec_id = $post->get_ec_id();
@@ -540,18 +593,29 @@
 							}
 						?>
                    	</p>
-                    
-                    <p>          
-                    <table>                        
-                        <!--<tr>
-                        	<th>Prepared By:</th>
-                            <td><?php //echo $oAcc->get_name_full(); ?></td>
-                    	</tr>-->
-                        <tr>
-                        	<th>Date Posted:</th>
-                            <td><?php echo date(DATE_COOKIE); ?></td>
-						</tr>
-                	</table>       	         
+
+              		<p>                    	
+                        <table>
+                        	<?php if($post->get_room()){ ?>
+                                <tr>
+                                	<th>Area/Room:</td>
+									<td><?php echo $room_data->room.' ('.$post->get_room().'), '.ucwords(strtolower($room_data->useage_desc)); ?><td>
+                                </td>
+                            <?php } ?>
+                            
+							<?php if($post->get_department()) { ?>
+                            	<tr>
+                                	<th>Department:</th>
+									<td><?php echo $post->get_department() .', '.$department_name->name; ?></td>
+                            	</tr>
+                            <?php } ?>
+							
+								<tr>
+                        			<th>Date Posted:</th>
+                            		<td><?php echo date(DATE_COOKIE); ?></td>
+								</tr>
+						</table>
+      
                     </p>
                     
                     <p>
