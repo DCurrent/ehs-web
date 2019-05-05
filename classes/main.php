@@ -66,7 +66,8 @@
 										'MatBelowHead'	=> NULL,	//Material header (shown below instructions).
 										'MatBelow'		=> NULL,	//Material (shown below instructions).
 										'InstrHead'		=> NULL,	//Instructions header.
-										'Inst'			=> NULL);	//Instructions.
+										'Inst'			=> NULL,
+									    'pass_score'	=> NULL);	// Required grade to pass.
 	
 	$cDList						= array('Facility' 		=> NULL,	//Facility select markup.
 										'Room' 			=> NULL,	//Room select markup.
@@ -115,32 +116,7 @@
 	if(is_numeric($cClassID)===FALSE){ $cClassID = NULL; }
 									
 	/* Construct quiz parameters query string. */
-	$query = "SELECT
-			id, 
-			email_list,
-			desc_title, 
-			intro, 
-			material_above_head, 
-			material_above, 
-			material_below_head, 
-			material_below, 
-			instr_head, 
-			instr, 
-			field_comments, 
-			field_facility, 
-			field_dept, 
-			field_addroom, 
-			field_mail, 
-			field_email, 
-			field_training_status, 
-			field_etrax, 
-			field_uk_status, 
-			field_ukid, 
-			field_supervisor, 
-			field_phone, 
-			hidden, 
-			question_order, 
-			question_quantity
+	$query = "SELECT *
 		FROM 		tbl_class_train_parameters
 		WHERE		id = ? AND (hidden <> 1 OR hidden <> 3 OR
 				  hidden IS NULL)";	
@@ -194,7 +170,8 @@
 		$cCP['MatBelowHead']		= $line['material_below_head'];		// Class material link/text, shown below instructions, header.
 		$cCP['MatBelow']			= $line['material_below'];			// Class material link/text, shown below instructions.	
 		$cCP['InstrHead']			= $line['instr_head'];				// Class instructions header.				
-		$cCP['Instr']				= $line['instr'];					// Class instructions.					
+		$cCP['Instr']				= $line['instr'];					// Class instructions.	
+		$cCP['pass_score']			= $line['pass_score'];				// Required score.
 		$showField->comments		= $line['field_comments'];			// Include Comments input field?	
 		$showField->facility		= $line['field_facility'];			// Include Facility & Room input field?
 		$showField->department		= $line['field_dept'];				// Include Department input field?
@@ -421,10 +398,12 @@
                     <form action="main_verify.php" method="post" entype="multipart/form-data" name="class" id="class" onsubmit="return validate_form_inputs('required')" class="class_register">
                         <input type="hidden" name="class" 				value="<?php echo $quiz_id; ?>" />
                         <input type="hidden" name="desc_title"			value="<?php echo $cCP['desc_title']; ?>" />
-                        <input type="hidden" name="email_list" 			value="<?php echo $cCP['EMail']; ?>" />              
+                        <input type="hidden" name="email_list" 			value="<?php echo $cCP['EMail']; ?>" />
+						<input type="hidden" name="pass_score" 			value="<?php echo $cCP['pass_score']; ?>" />
                         <input type="hidden" name="name_f"				value="<?php echo $cMHidden['RNameF']; ?>" />
                         <input type="hidden" name="name_l" 				value="<?php echo $cMHidden['RNameL']; ?>" />
-                        <input type="hidden" name="account"				value="<?php echo $cMHidden['RNameA']; ?>" />               	
+                        <input type="hidden" name="account"				value="<?php echo $cMHidden['RNameA']; ?>" />
+						
                         
                      <?php
                             
