@@ -65,6 +65,7 @@ class class_training implements E_ORDER
 	
 	public function training_grade()
 	{
+		$question_count		= 0;
 		$QuestionID 		= NULL;
 		$QuestionAssigned 	= NULL;
 		$cResponse 			= NULL;
@@ -77,16 +78,16 @@ class class_training implements E_ORDER
 		$queryQuestion		= NULL;
 		$cParamQuestion		= NULL;
 		
-		/* Get array of questions that were assigned to user. */
+		// Get array of questions that were assigned to user.
 		$QuestionAssigned = $_SESSION['quiz_questions_assigned'];
 		
-		/* Construct question string. */
+		// Construct question string.
 			$queryQuestion = "SELECT 
 					text				
 				FROM 	tbl_class_train_questions
 				WHERE	id = ?";
 		
-		/* Construct answers query string. */
+		// Construct answers query string.
 			$this->query = "SELECT 
 					id,
 					correct,
@@ -96,28 +97,35 @@ class class_training implements E_ORDER
 				WHERE	id = ?
 				ORDER BY value";
 		
-		/* If no data passed, we'll catch the error here. */
+		// If no data passed, we'll catch the error here.
 		if(is_array($QuestionAssigned))
-		{	
-		
+		{			
 			$iQueCnt = count($QuestionAssigned);
 			
-			$cQuizGradeStr.= '<ol>';
+			//$cQuizGradeStr.= '<ol>';
 			
-			/* Loop ID of every question that was assigned to user. */		
+			// Loop ID of every question that was assigned to user.		
 			foreach($QuestionAssigned as $QuestionID)
-			{				
+			{	
+				// Increment the question count by 1. This is used
+				// as a number label for end user (question 1, question2, ...).
+				$question_count++;
+				
 				$cParamQuestion = array(&$QuestionID);
 							
-				/* Run query. */
+				// Run query.
 				$this->dependencies->database->db_basic_select($queryQuestion, $cParamQuestion);
 					
-				/* Populate line array. */
+				// Populate line array.
 				$this->dependencies->database->db_line();
 					
-				$cQuizGradeStr.= '<!--Question ID: '.$QuestionID.'--><li><span class="TrainQuestionText">'.$this->dependencies->database->DBLine["text"]." - </span>";
+				$cQuizGradeStr.= '<br><div id="question_grade_'.$QuestionID.'_container">'.PHP_EOL
+					.'<span class="TrainQuestionHeader">Question '.$question_count.'</span><br />'.PHP_EOL
+					//.'<div class="TrainQuestionText">'
+					.$this->dependencies->database->DBLine["text"];
+					//." - </div>";
 							
-				/* Get question response */
+				// Get question response.
 				$cResponse = $this->dependencies->filter->utl_get_post("Q".$QuestionID);
 				
 				echo PHP_EOL.'<!--Reponse: '.$cResponse.'-->'; 
@@ -125,49 +133,49 @@ class class_training implements E_ORDER
 								
 				if (!$cResponse)
 				{
-					$cQuizGradeStr.= '<span class="icon_no color_red">No Answer.</class>';
+					$cQuizGradeStr.= '<span class="icon_no color_red">No Answer.</span>';
 				}
 				else				
 				{					
-					/* Apply parameters. */
+					// Apply parameters.
 					$this->params = array(&$cResponse);
 					
-					/* Run query. */
+					// Run query.
 					$this->dependencies->database->db_basic_select($this->query, $this->params);
 					
-					/* Populate line array. */
+					// Populate line array.
 					$this->dependencies->database->db_line();
 					
 					echo '<!--Correct: '.$this->dependencies->database->DBLine["correct"].'-->';
 					
-					/* Is answer correct? */
+					// Is answer correct?
 					if ($this->dependencies->database->DBLine["correct"])
 					{
-						/* Increment right count and text. */
-						$cQuizGradeStr.= '<span class="icon_yes color_green">Correct!</class>';
+						// Increment right count and text.
+						$cQuizGradeStr.= '<span class="icon_yes color_green">Correct!</span>';
 						$iCorrectCnt++;
 					}
 					else
 					{
-						/* Wrong text. */
-						$cQuizGradeStr.= '<span class="icon_no color_red">Incorrect.</class>';					
+						// Wrong text.
+						$cQuizGradeStr.= '<span class="icon_no color_red">Incorrect.</span>';					
 					}	
 				}
 				
-				/* Close list item. */
-				$cQuizGradeStr.= '</span></li><!--/'.$QuestionID.'-->';
+				// Close list item.
+				$cQuizGradeStr.= '</div><!--/'.$QuestionID.'-->'.PHP_EOL;
 			}
 			
-			$cQuizGradeStr.= "</ol>";
+			//$cQuizGradeStr.= "</ol>";
 			
-			/* Calculate grade percentage. */
+			// Calculate grade percentage.
 			if($iCorrectCnt > 0 && $iQueCnt > 0)
 			{
 				$cScore			= $iCorrectCnt / $iQueCnt;
 				$cPercentage	= round($cScore*100);
 				
 				/* Build grading string. */	
-				$cQuizGradeStr.= '<p>Score: <meter low="0.9" optimum="1" value="'.$cScore.'">'.$iCorrectCnt. ' of '.$iQueCnt. '</meter> ('.$cPercentage.'%)</p>';
+				$cQuizGradeStr.= '<br><span class="TrainQuestionHeader">Final Score</span><p><meter low="0.9" optimum="1" value="'.$cScore.'">'.$iCorrectCnt. ' of '.$iQueCnt. '</meter> ('.$cPercentage.'%)</p>';
 
 			}
 			
@@ -178,13 +186,14 @@ class class_training implements E_ORDER
 			}
 			
 						
-			/* Prepare output array. */
+			// Prepare output array.
 			$Result["ans"] 			= $iCorrectCnt;
+			$Result["score"]		= $cScore;
 			$Result["percentage"] 	= $cPercentage;
 			$Result["text"] 		= $cQuizGradeStr;
 		}
         
-		/* Return results. */
+		// Return results.
 		return $Result;		
 	}
 	
@@ -232,13 +241,13 @@ class class_training implements E_ORDER
 			WHERE		fk_id = ? AND (record_deleted IS NULL OR record_deleted = 0)"
 			.$cOrder;	
 		
-		/* Apply parameters. */
+		// Apply parameters.
 		$this->params = array(&$cQuizID);
 		
-		/* Execute questions query. */
+		// Execute questions query.
 		$this->dependencies->database->db_basic_select($this->query, $this->params);
 		
-		/* Construct answers query string. */
+		// Construct answers query string.
 		$this->query = "SELECT 
 				id,
 				value,
@@ -247,34 +256,35 @@ class class_training implements E_ORDER
 			WHERE	fk_id = ? AND (record_deleted IS NULL OR record_deleted = 0)
 			ORDER BY value";
 		
-		/* Apply parameters. */
+		// Apply parameters.
 		$this->params = array(&$QuestionID);
 		
 		while($this->dependencies->database->db_line())
 		{
 			$QuestionID = $this->dependencies->database->DBLine["id"];
 			
-			/* Get answer set matching current question ID. */
+			// Get answer set matching current question ID.
 			$this->params = array(&$QuestionID);
 			
-			/* Record question to "assigned" array. */			
+			// Record question to "assigned" array.	
 			$QuestionsAssigned[] = $this->dependencies->database->DBLine["id"];
 						
-			/* Build question string. */
+			// Build question string.
 			$cQuizStr 	.= PHP_EOL
-						.'<!--Question ID: '.$QuestionID.' -->'.PHP_EOL
-						.'<p>'.PHP_EOL
-						.'<span class="TrainQuestionHeader">'
-						.'Question '.++$cQuestionCount			
-						.'</span><br />'.PHP_EOL
-						.'<span class="TrainQuestionText">'			
+						.'<br>&nbsp;'.PHP_EOL
+						.'<div id="question_'.$QuestionID.'_container">'.PHP_EOL
+						
+						.'<div id="question_'.$QuestionID.'_header">'.PHP_EOL
+						.'<span class="TrainQuestionHeader">Question '.++$cQuestionCount.'</span><br />'.PHP_EOL
+						//.'<span class="TrainQuestionText">'
 						.$this->dependencies->database->DBLine['text']		
-						.'</span>'.PHP_EOL.'</p>'.PHP_EOL;			
+						//.'</span>'
+						.PHP_EOL.'</div>'.PHP_EOL;			
 			
 			/* Execute answers query. */
 			$this->dependencies->database_ans->db_basic_select($this->query, $this->params);
 			
-			$cQuizStr .= '<p>'.PHP_EOL;
+			$cQuizStr .= '<div id="question_'.$QuestionID.'_answer_container">'.PHP_EOL;
 			
 			while ($this->dependencies->database_ans->db_line())
     		{			
@@ -293,7 +303,11 @@ class class_training implements E_ORDER
 							.'<br />'.PHP_EOL;							
 			}
 			
-			$cQuizStr .= '</p>'.PHP_EOL;	
+			// Close answer container
+			$cQuizStr .= '</div>'.PHP_EOL;
+			
+			// Close question container.
+			$cQuizStr .= '</div>'.PHP_EOL;
 		}			
 		
 		if(!$cQuizStr)
