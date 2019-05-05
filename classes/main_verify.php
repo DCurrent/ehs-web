@@ -34,7 +34,8 @@
 							"addroom"			=> NULL,
 							"supervisor_namef"	=> NULL,
 							"supervisor_namel"	=> NULL,
-							"external_grade"	=> NULL);
+							"external_grade"	=> NULL,
+						 	"pass_grade			=> NULL");
 	
 	/* Get current date. */
 	$cDate		= date(DATE_FORMAT);
@@ -73,7 +74,7 @@
 		$cClassParams['external_grade']	= $_GET['eg'];
 	}
 	
-	/* Append non post values. */
+	// Append non post values.
 	$cClassParams['trainer'] 	= 0;		//Trainer (0 = online).
 	$cClassParams['taken'] 		= $cDate;	//Class taken date.
 	
@@ -84,24 +85,27 @@
 	}
 	else
 	{
-		/* Verify answers and return array with results. */
+		// Verify answers and return array with results.
 		$cResults = $oTra->training_grade();
 					
 		$markup .= $cResults["text"];					
 		
-		// If the grade is not 100 or the grading isn't
+		echo "<!--Required Score: ".$cClassParams['pass_score']."-->".PHP_EOL;
+		echo "<!--External Score: ".$cClassParams['external_grade']."-->".PHP_EOL;
+		echo "<!--Assesment Score : ".$cResults["score"]."-->".PHP_EOL;
+		
+		// If the score is not passing or the grading isn't
 		// handled elsewhere, the user failed.
-		if ($cResults["percentage"] < 100 && !$cClassParams['external_grade'])
+		if ($cResults["score"] < $cClassParams['pass_score'] && !$cClassParams['external_grade'])
 		{	
 			/* Create failed verbiage markup. */
 			$markup .= '<h2 class="color_red">Fail</h2>';
 			$markup .= '<p class="color_red">You have failed the course. Please try again.</p>';
 			$markup .= '<p class="color_red">Click <a href="javascript:history.back(1)">here</a> to retake the exam now, or you may try again at any other time. Please note that to ensure knowledge of material, questions and the order in which they are presented may be randomized.</p>';
-		}	
-		/* Passed. */			
+		}				
 		else
 		{	
-			/* Create passed verbiage markup. */
+			// Create passed verbiage markup.
 			$markup .= '<h2 class="color_green">Pass</h2>';		
 			$markup .= '<p class="color_green">Congratulations, you have successfully completed the exam. Your completion of this training has been recorded and can be verified any time <a class="link-class" href="transcript.php" target="_blank">here</a> (you will also be able to print a certificate for your own records if needed).</p>';
 			
