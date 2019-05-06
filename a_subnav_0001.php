@@ -24,7 +24,7 @@
             <li><a href="/docs/pdf/ohs_fs_radon.pdf" target="_blank">Radon</a></li>
             <li><a href="/docs/pdf/dea-controlled-substance-research-guide.pdf" target="_blank">Researchers DEA Controlled Substance Guide</a></li>
             <li><a href="/ep/sewer.html">Sanitary and Storm Sewers</a></li>
-            <li><a href="/ohs/exit.php">Setup and Exit Safety Surveys for Laboratories</a></li>
+            <li><a href="/exit.php">Setup and Exit Safety Surveys for Laboratories</a></li>
             <li><a href="/fire/flstpol1.html">Standard Policy for Solvents in Laboratories (Excluding Laboratories in Health Care Occupancies)</a></li>
             <li><a href="/ep/surplus.html">Surplusing Lab and Medical Equipment</a></li>
             <li><a href="/ohs/peroxide.htm">Peroxide Forming Chemicals</a></li>
@@ -55,7 +55,7 @@
             <li><a href="/ohs/minors_0001.php" title="Minors in Laboratories" target="_blank" >Minors in Laboratories</a></li>
             <li><a href="/docs/xls/bio_pi_req_matrix.xls" target="_blank" >PI Requirements Matrix</a></li>
             <li><a title="Safety Standards for Chemical Labs" href="/labstd.php" >Safety Standards for Chemical Labs</a></li>
-            <li><a href="/ohs/exit.php" title="Setup and Exit Survey Checklist" >Setup and Exit Survey Checklist</a></li>
+            <li><a href="/exit.php" title="Setup and Exit Survey Checklist" >Setup and Exit Survey Checklist</a></li>
             <li><a href="/docs/pdf/ohs_van_policy.pdf" target="_blank" >University Van Policy</a></li>
           </ul>
         </li>

@@ -136,6 +136,9 @@
                           <td><a href="classes_ohs_0001.php#first_aid" target="_blank">First Aid</a></td>
                         </tr>
                         <tr>
+                          <td><a href="classes_ohs_0001.php#formaldehyde_awareness">Formaldehyde Awareness</a></td>
+                        </tr>
+                        <tr>
                         	<td><a href="classes_ohs_0001.php#hazard_assessment">Hazard Assessment</a></td>
                         </tr>
                         <tr>

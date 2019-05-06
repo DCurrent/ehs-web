@@ -204,7 +204,7 @@
                     
                     <ul>
                     	<li><a href="ep/sewer.html" title="Sanitary and storm sewers.">Sanitary and Storm Sewers</a></li>
-                        <li><a href="ohs/exit.php" title="Setup and exit survey checklist.">Setup and Exit Survey Checklist</a></li>
+                        <li><a href="exit.php" title="Setup and exit survey checklist.">Setup and Exit Survey Checklist</a></li>
                     	<li><a href="env/fs_disposal_0001.php" title="Disposal of needles, syringes, broken glass, and other sharps.">Sharps Disposal</a></li>
                         <li><a href="ehsstaff.php" title="Complete EHS staff listing.">Staff List</a></li>
                         <li><a href="fire/flstpol1.html" title="Standards for solvents in laboratories

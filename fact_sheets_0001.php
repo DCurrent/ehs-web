@@ -63,7 +63,7 @@ MM_reloadPage(true);
         </li>
         <li><a href="ep/sewer.html">Sanitary and Storm 
           Sewers</a>  </li>
-        <li><a href="ohs/exit.php">Setup and Exit Safety 
+        <li><a href="exit.php">Setup and Exit Safety 
           Surveys for Laboratories</a>  </li>
         <li><a href="fire/flstpol1.html">Standard 
           Policy for Solvents in Laboratories (Excluding Laboratories in Health 

@@ -28,7 +28,7 @@
         <li><a href="#" onclick="return false" class="fly">Radioactive Materials</a>
             <ul>
                 <li><a href="/radiation/KYReg/newappb.html">Film Badges</a></li>
-                <li><a href="/ohs/exit.php">Lab Setup &amp; Close Out</a></li>
+                <li><a href="/exit.php">Lab Setup &amp; Close Out</a></li>
                 <li><a href="/radiation/KYReg/newappc.html">Purchasing</a></li>
                 <li><a href="/radiation/KYReg/newappa.html">User Authorization</a></li>
                 <li><a href="/radiation/KYReg/newappe.html">Waste Pickup</a></li>

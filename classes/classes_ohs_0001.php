@@ -115,7 +115,13 @@
                   
                   Please note that is only a training course and does not lead to a certification in First Aid. </p>
                 <p>This class is only available <a href="main.php?cClassID=109" class="link-class">online</a>.</p>
-                <h2>Hazard Assessment</h2>
+                
+				<h2 id="formaldehyde_awareness">Formaldehyde Awareness</h2>
+                
+				<p>Formaldehyde awareness training is provided for all employees that work   with formaldehyde containing products as part of their job duties. This   training should be completed upon hire, when a new formaldehyde exposure   is introduced, and repeated annually.  This course is designed to meet   the training requirements for the OSHA Formaldehyde Standard (29 CFR   1910.1048), as well as formaldehyde-specific requirements of the OSHA   Laboratory Standard (29 CFR 1910.1450) and OSHA Hazard Communication   Standard (29 CFR 1910.1200).</p>
+                <p>This class is only available <a href="main.php?cClassID=128" class="link-class">online</a>.</p>
+                
+				<h2>Hazard Assessment</h2>
                 <p>Training                 for supervisors in how to conduct workplace   hazard assessments for                 determining the need and proper   selection of personal protective                 equipment. Provides   instruction on the use and application of the                   University's hazard assessment checklists. Training is for personnel                   responsible for employees who have the potential to   encounter hazards.<br />
                   <br />
         Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="main.php?cClassID=30">Lee Poore</a> at (859) 257-2924.</p>

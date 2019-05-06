@@ -99,7 +99,7 @@
 			    Guidelines</a></li>
 			  <li><a href="fumehood.php">Fume Hood Guidelines</a></li>
 			  <li><a href="labdesign.php">Laboratory Design Guidelines</a></li>
-			  <li><a href="exit.php">Lab Exit Checklist</a></li>
+			  <li><a href="../exit.php">Lab Exit Checklist</a></li>
 			  <li><a href="../apps/lab_sign">Laboratory
               Sign Template</a></li>
 			  <li><a href="#training">Training</a></li>
