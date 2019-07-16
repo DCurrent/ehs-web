@@ -140,7 +140,8 @@
         <br />
         Classroom training sessions are available upon request. Contact <a href="../Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
                 <h2 id="ladders">Ladders </h2>
-                <p>This course will inform the learner about the basic   requirements of ladder safety. This course is for those who use ladder   as part of the employment duties at UK.  Safe work practices and OSHA   regulations will be discussed. </p>
+                <p>This course will inform the learner about the basic   requirements of ladder safety. This course is for those who use ladder   as part of the employment duties at UK.  Safe work practices and OSHA   regulations will be discussed. Contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739 for more information.</p>
+                <p>This class is available <a href="main.php?cClassID=52" class="link-class">online</a>.</p>
                 <h3>Contents  </h3>
                 <ul>
                   <li>Types of ladders  </li>
