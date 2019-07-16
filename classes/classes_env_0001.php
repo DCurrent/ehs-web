@@ -32,12 +32,12 @@
                       <p>Successful completion of this on-line course will meet the requirements for the training of maintenance and custodial staff about the dangers of asbestos fibers in University-owned buildings, the methods available to control hazards, and the actions one must take and avoid when working in an area known or presumed to contain asbestos. This course will NOT allow you to work with asbestos. This is only an awareness course to provide information for working around asbestos safely.<br>
                       
                       </p>
-                  <p>Contact Tommy Taylor at (859)  257-5295 for more information.
-                      </p>
-This  class is only available <a href="http://ehs.uky.edu/apps/rocky/content/asbestos" target="_BLANK" class="link-class">online</a>.
+                  <!-- p>This  class is only available <a href="http://ehs.uky.edu/apps/rocky/content/asbestos" target="_BLANK" class="link-class">online</a>.
 
-                      </p>
-                    <h2>Shipping Dangerous Goods - Initial  Training</h2>
+                      </p -->
+                  
+                  <p class="color_orange"><strong>Note the online version of this class is temporarly unavailable. Please contact Tommy Taylor at (859)  257-5295 for more information.</strong></p>
+                  <h2>Shipping Dangerous Goods - Initial  Training</h2>
                     
                     <p>The University requires all faculty, staff and students who are involved in any aspect of shipping dangerous<br>
                     goods (e.g., packing, labeling, transporting, etc.) to attend a DOT/IATA Initial Training course.</p>
@@ -74,7 +74,6 @@ This  class is only available <a href="http://ehs.uky.edu/apps/rocky/content/asb
                         <li>Veterinary Diagnostic Laboratory</li>
                         <li>Center For Applied Energy  Research</li>
                         <li>Chemistry-Physics Building</li>
-                        <li>UK Healthcare</li>
                     </ul>
                     
                     <p>
