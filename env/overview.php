@@ -25,7 +25,7 @@
                 </div><!--/subNavigation-->
                 <div id="content">
                     <h1>Stormwater Quality Management Plan Overview</h1>
-                    <p>Welcome to the University of Kentucky's website dedicated expressly for the dissemination of stormwater management information associated with its main Lexington campus.   This website forms a crucial component of the University's efforts to comply with a state-issued general permit to discharge stormwater.  Formally entitled a Municipal Separate Storm Sewer System (MS4) Permit and issued by authority from the US EPA through the Kentucky Division of Water, it establishes conditions whereby the University can discharge stormwater runoff into the waters of the Commonwealth.</p>
+                    <p>Welcome to the University of Kentucky's website dedicated expressly for the dissemination of stormwater quality management information associated with its main Lexington campus.   This website forms a crucial component of the University's efforts to comply with a state-issued general permit to discharge stormwater.  Formally entitled a Municipal Separate Storm Sewer System (MS4) Permit and issued by authority from the US EPA through the Kentucky Division of Water, it establishes conditions whereby the University can discharge stormwater runoff into the waters of the Commonwealth.</p>
                     <p>The University's stormwater system is comprised of detention basins, open drainage ditches and miles of underground piping.  In addition, this system is also comprised of outfalls that discharge stormwater from the campus' property boundary and into streams or directly into the city of Lexington's stormwater system.</p>
                     <p>The goal of the MS4 Permit and the primary objective of the University is to ensure that this runoff does not adversely impact surface water quality.  To this end, the Permit has established six categories of Minimum Control Measures (MCM's) that the University is required to address.  These six MCM's are outlined below along with a link for further discussion on the substance of each measure:</p>
                     <ul>
@@ -37,6 +37,10 @@
                         <li><a href="municipal_operations.php">Pollution Prevention/Goodhouskeeping</a></li>
                         <li>A description of how the University addresses each of these MCM's for a 5-year time period is spelled out in a Stormwater Quality Management Plan.</li>
                     </ul>
+                    <ul>
+                      <li><a href="media/ms4_permit.pdf" target="new">UK MS4 Permit (March 30th, 2018)</a></li>
+                      <li><a href="media/stormwater_quality_plan.pdf" target="new">UK Stormwater Quality Management Plan (October, 2018)</a></li>
+                  </ul>
                     <p>The University  does not utilize ordinance-based governance the way that city/county entities  do.  Instead, the University utilizes  &ldquo;Administrative Regulations&rdquo; (AR&rsquo;s) which provide interpretation and  implementation of University-wide policies set forth by the Board of Trustees  in the Governing Regulations and the Minutes of the Board of  Trustees. The AR&rsquo;s promote  the responsible and efficient administration of the University and the  accomplishment of its goals.  The AR&rsquo;s which include the Human Resources Policy and Procedure Administrative  Regulations and the Business Procedures  Manual are official University rules or  directives that:</p>
                     <ol start="1" type="1">
                       <li>Mandate       requirements of or provisions for members of the University community, and       may also provide procedures for implementation.</li>
