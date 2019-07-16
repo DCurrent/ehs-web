@@ -10,7 +10,7 @@
 <h3><a href="http://www.uky.edu/hr/hr-home/uk-walk-safe-winter">Walk Safe This Winter!</a></h3 -->
 
 <div id="heat_illness">
-    <h3>Prevent heat Related Illness - Know The Signs</h3>
+    <h3>Prevent Heat Related Illness - Know The Signs</h3>
     <p><iframe id="heat_illness_frame" src="https://www.youtube.com/embed/6XG5E4aPizU" allowfullscreen></iframe></p>
 </div>
 
