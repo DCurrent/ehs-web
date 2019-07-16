@@ -90,9 +90,9 @@
 					
 		$markup .= $cResults["text"];					
 		
-		echo "<!--Required Score: ".$cClassParams['pass_score']."-->".PHP_EOL;
-		echo "<!--External Score: ".$cClassParams['external_grade']."-->".PHP_EOL;
-		echo "<!--Assesment Score : ".$cResults["score"]."-->".PHP_EOL;
+		//echo "<!--Required Score: ".$cClassParams['pass_score']."-->".PHP_EOL;
+		//echo "<!--External Score: ".$cClassParams['external_grade']."-->".PHP_EOL;
+		//echo "<!--Assesment Score : ".$cResults["score"]."-->".PHP_EOL;
 		
 		// If the score is not passing or the grading isn't
 		// handled elsewhere, the user failed.
@@ -173,7 +173,7 @@
 						"Training Status"			=>	$cClassParams['trainstatus'],
 						"Taken"						=>	$cDate,
 						"Supervisor"				=>	$cClassParams['supervisor_namef'] .' '.$cClassParams['supervisor_namel']);				
-			$oMail->mail_send($cMailCont, $cMailHead['Subject'], $cMailHead['To'], $cMailHead['From'], "dvcask2@uky.edu"); 
+			$oMail->mail_send($cMailCont, $cMailHead['Subject'], $cMailHead['To'], $cMailHead['From']); 
 			
 			/*
 			$cEtraxReturn = file_get_contents($cClassParams['etrax']);	
