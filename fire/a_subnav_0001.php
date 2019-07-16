@@ -4,7 +4,8 @@
       <li><a href="#" onclick="return false" class="fly">Fire Policy</a>
         <ul>
           <li><a href="ada_evac.html">ADA Evacuation Policy</a></li>
-          <li><a href="corridor.html">Corridor Utilization Program</a></li>
+          <li><a href="bicycle.php">Bicycle In Buildings</a></li>
+		  <li><a href="corridor.html">Corridor Utilization Program</a></li>
           <li><a href="electrical.html">Electrical Policy</a></li>
           <li><a href="evacuation.html">Evacuation Policy - Fire Alarms</a></li>
           <li><a href="micro.html">Microwave Policy<br /></a></li>
@@ -13,6 +14,7 @@
           <li><a href="openfire.html">Open Flame Policy</a></li>
           <li><a href="floatpolicy.html">Parade Float Policy</a></li>
           <li><a href="recyclepolicy.html">Recycling Container Policy</a></li>
+		  <li><a href="shell_space.php">Shell Space Usage</a></li>
           <li><a href="heater.html">Space Heater Policy</a></li>
           <li><a href="stove.html">Stove (Cooking) Policy</a></li>
           <li><a href="tentpolicy.html">Tent Policy</a></li>
@@ -21,11 +23,11 @@
         </ul>
       </li>
       <li><a href="#" onclick="return false" class="fly">Procedures &amp; Processes</a>
-        <ul>
+        <ul>          
           <li><a href="plan01.html">Construction Plan Review/Approval Process</a></li>
           <li><a href="ukfire1.html">Emergency Evacuation Plans</a></li>
           <li><a href="/apps/flashpoint/alarm_entry.php">Fire Alarm Report</a></li>
-          <li><a href="drill.php"> Fire Drill Report</a></li>
+          <li><a href="drill.php"> Fire Drill Report</a></li>          
           <li><a href="flstpol1.html">Standard for Solvents in Labs</a></li>
         </ul>
       </li>
