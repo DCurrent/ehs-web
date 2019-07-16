@@ -46,37 +46,37 @@
             
             <tr>
               <td><p>Thursday </p></td>
-              <td><p>January 24</p></td>
+              <td><p>July 25</p></td>
               <td><p>09:00 to 12:00</p></td>
               <td><p>Animal Pathology Bldg, rm. 202</p></td>
             </tr>
             <tr>
               <td><p>Wednesday            </p></td>
-              <td><p>February 20</p></td>
+              <td><p>August 21</p></td>
               <td><p>09:00 to 12:00</p></td>
               <td><p>Animal Pathology Bldg, rm. 202</p></td>
             </tr>
             <tr>
               <td><p>Thursday  </p></td>
-              <td><p>March 21</p></td>
+              <td><p>September 26</p></td>
               <td><p>09:00 to 12:00</p></td>
               <td><p>Animal Pathology Bldg, rm. 202</p></td>
             </tr>
             <tr>
               <td><p>Wednesday      </p></td>
-              <td><p>April 24</p></td>
+              <td><p>October 23</p></td>
               <td><p>09:00 to 12:00</p></td>
               <td><p>Animal Pathology Bldg, rm. 202</p></td>
             </tr>
             <tr>
               <td><p>Thursday</p></td>
-              <td><p>May 30</p></td>
+              <td><p>November 21</p></td>
               <td><p>09:00 to 12:00</p></td>
               <td><p>Animal Pathology Bldg, rm. 202</p></td>
             </tr>
             <tr>
               <td><p>Wednesday </p></td>
-              <td><p>June 26</p></td>
+              <td><p>December 18</p></td>
               <td><p>09:00 to 12:00</p></td>
               <td><p>Animal Pathology Bldg, rm. 202</p></td>
             </tr>
