@@ -17,7 +17,7 @@
 	}
 
 	// Verify user authorization and get account info.
-	$oAcc->access_verify(NULL, 'rdeldr0, rdeldr0@uky.edu');
+	$oAcc->access_verify(NULL, NULL);
 
 	$db			= NULL;	// Database object.
 	$query		= NULL;	// Query object.
