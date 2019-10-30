@@ -27,7 +27,7 @@
                 <div id="content">
                     <h1>Heat Awareness</h1>
                     <p><img src="../media/image/ohs_heat_awareness_man.jpg" alt="Heat Awareness" class="center"></p>
-                    <p>For UK Student or  Employee training, contact  <a href="mailto:michael.turner1@uky.edu">Michael Turner</a> at 859-257-3862. Training  takes approximately 30 mins.</p>
+                    <p>For UK Student or  Employee training, contact  <a href="mailto:michael.turner1@uky.edu">Michael Turner</a> at 859-257-9739. Training  takes approximately 30 mins.</p>
                   <p>Heat Illness is a potentially serious medical condition that  affects millions of people around the United States every summer. If you&rsquo;ve  ever lived in Kentucky and its humid subtropical climate, you know that  summertime temperature can quickly become dangerous within the Bluegrass state.  When high temperatures combine with high humidity, heat indices can easily rise  over 100°F, leaving even the strongest among us vulnerable to heat illness. </p>
                   <p><img src="../media/image/ohs_heat_awareness_chart.png" alt="Chart"></p>
                     <p>
