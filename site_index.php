@@ -83,10 +83,6 @@
                     
                     <h2 id="D">D</h2>
                     
-                    <ul>
-                        <li><a href="env/fs_water.php" title="Drinking Water Quality.">Drinking Water Quality</a></li>
-                    </ul>
-                    
                     <a href="#" title="Go back to the top of this page.">Top of page</a>
                     
                     <h2 id="E">E</h2>

@@ -12,7 +12,6 @@
             <li><a href="/ohs/cgc2.html">Compressed Gas Cylinders</a></li>
             <li><a href="/ohs/cryogenic.html">Cryogenic Materials Safety</a></li>
             <li><a href="/hmm/disposal.html">Disposal of Needles, Syringes, Other Sharps and Broken Glass</a></li>
-            <li><a href="/env/fs_water.php">Drinking Water</a></li>
             <li><a href="/ohs/911.html">Emergency First Aid Assistance</a></li>
             <li><a href="/ohs/iaqfacts.html">Factors Affecting Indoor Air Quality</a></li>
             <li><a href="/hmm/moving.html">Guidelines for Moving Chemicals</a></li>
