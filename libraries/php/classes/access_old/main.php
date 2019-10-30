@@ -220,7 +220,7 @@ class class_access {
 				foreach($list as $val)				
 				{
 					// Current element match vs. user account?
-					if($val == $this->account_m || $this->account_m == ACCESS_SETTINGS::ADMINISTRATOR)
+					if($val == $this->account_m)// || $this->account_m == ACCESS_SETTINGS::ADMINISTRATOR)
 					{					
 						$result = ACCESS_AUTHORIZED_RESULT::YES;						
 					}
