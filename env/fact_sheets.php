@@ -28,9 +28,7 @@
                     <ul>
                         <li><a href="/docs/pdf/env_fs_asbestos_bm.pdf" target="_blank">Asbestos In Building Materials</a></li>
                         <li><a href="fs_biohaz_0001.php">Biohazard Autoclave Bags</a></li>
-                        <li><a href="fs_disposal_0001.php">Disposal of Needles, Other Sharps and Broken Glass</a></li>
-                        <li><a href="fs_water.php">Drinking Water Quality</a></li>
-                        <li><a href="../docs/pdf/env_fs_ethidium_bromide.pdf" target="_blank">Ethidium Bromide</a></li>
+                        <li><a href="fs_disposal_0001.php">Disposal of Needles, Other Sharps and Broken Glass</a></li>                        
                         <li><a href="fs_light_0001.php">Fluorescent Bulbs</a></li>
                         <li><a href="fs_moving_0001.php">Guidelines for Moving Chemicals</a></li>
                         <li><a href="../docs/pdf/env_fs_spent_aerosol_cans.pdf" target="_blank">Management of Aerosol Cans</a></li>
