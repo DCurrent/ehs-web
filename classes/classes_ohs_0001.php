@@ -33,7 +33,7 @@
 					
                   <p>A hands on practicum will be scheduled for those who attend this classroom training to be completed to be certified.</p>
                   
-					<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="mailto:Aaron.Offutt@uky.edu" data-mce-href="mailto:Aaron.Offutt@uky.edu">Aaron Offutt</a> at <a href="tel:+18592573862" title="Call (859) 257-3862.">(859) 257-3862</a>.</p>
+					<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="mailto:Michele.Laur@uky.edu" data-mce-href="mailto:Michele.Laur@uky.edu">Michele Laur</a> at <a href="tel:+18592573862" title="Call (859) 257-9739.">(859) 257-9739</a>.</p>
                   
 					<h2 id="atv">All-Terrian Vehicle (ATV)</h2>                
                   
@@ -54,6 +54,7 @@
                     </li>
                   </ul>
                   <p>Classroom training sessions are available upon request. Duration is 45 minutes.  Contact <a href="mailto:djboca2@uky.edu">Derek Bocard</a> at (859) 257-7600.</p>
+                  <p>This class is available <a href="main.php?cClassID=33" class="link-class">online</a>.</p>
         			
                     <h2 id="bloodborne_pathogens_general">Bloodborne Pathogens General</h2>
                   	
@@ -108,7 +109,7 @@
                   <li>State  the main criteria that prompts use of fall protection for construction workers</li>
                   <li>Identify  risk factors for working at elevated heights such as from ladders or  scaffolding</li>
                 </ul>
-                <p> Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
+                <p> Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>
                 
 				<h2 id="first_aid2">First Aid</h2>
                 <p>The purpose of this training is to help participants identify and eliminate potentially hazardous conditions in their environment, recognize emergencies and make appropriate decisions regarding first aid care. It teaches information that participants need to know in order to provide immediate care for a suddenly ill or injured person until more advanced medical care arrives to take over.
@@ -138,7 +139,7 @@
                   <br />
         This program applies to University of Kentucky departments that                   may be involved in hot work and those operations of   contractors                 working under contract to these departments.<br />
         <br />
-        Classroom training sessions are available upon request. Contact <a href="../Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
+        Classroom training sessions are available upon request. Contact <a href="../Michele.Laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>
                 <h2 id="ladders">Ladders </h2>
                 <p>This course will inform the learner about the basic   requirements of ladder safety. This course is for those who use ladder   as part of the employment duties at UK.  Safe work practices and OSHA   regulations will be discussed. </p>
                 <h3>Contents  </h3>
@@ -157,19 +158,23 @@
                 <h2 id="lockout_tagout">Lockout/Tagout</h2>
                 <p>Training                 for employees performing service or maintenance   of equipment in                 which is the unexpected energization of   start up of equipment or                 release of stored energy could   cause injury. Provides instruction                 on the requirements   of OSHA's Lockout/Tagout Standard, overview                 of energy   sources, energy isolation devices and the basic lockout/tagout                   steps. This training is complimented by unit specific   lockout/tagout                 procedure training. <br />
                   <br />
-        Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="../Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
+        Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="../Michele.Laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>
                 <h2 id="office_ergonomics">Office Ergonomics</h2>
                 <p>Training                 for employees on proper office ergonomics,   including desk, chair                 and computer assessments.<br />
                   <br />
-        Classroom training sessions are available upon request. contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.<br />
+        Classroom training sessions are available upon request. contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739.<br />
         <br />
         This class is available <a href="main.php?cClassID=43" class="link-class">online</a>.</p>
         
         <h2 id="pass_van">Passenger Van Safety Awareness</h2>
                   <p>The National Highway Traffic Safety Administration (NHTSA) has issued cautionary warnings to users of high capacity vans. In an effort to promote              safe driving practices for the protection of University employees, students, and the citizens and drivers using the highways, Occupational Health and Safety has developed a driver safety awareness training program for passenger van drivers.</p>
                   
-        		<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
+        		<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>
                   <p>This class is available <a href="main.php?cClassID=5" class="link-class">online</a>.</p>
+                  <h2 id="pesticide">Pesticide Handler in Agriculture</h2>
+                  <p>Provide employees and students of potential risks of working in areas   where pesticides are being used and pesticide residues may be found.    This will complete annual training requirements of Worker Protection   Standard.</p>
+                  <p>This class is available <a href="main.php?cClassID=129" class="link-class">online</a>.</p>
+                  <p>&nbsp;</p>
                   
                   <h2 id="powered_industrial_trucks">Powered Industrial Trucks (Forklifts) </h2>
                   <p>This course informs the   learner about the safe operating procedures needed for using powered   industrial trucks. Powered industrial trucks refer to fork trucks,   tractors, platform lift trucks, motorized hand trucks, and other   specialized industrial trucks powered by electric motor or internal   combustion engines.  The course participants will know safe operating   procedures for powered industrial trucks. </p>
@@ -189,7 +194,7 @@
                     <li>Operating limitations</li>
                     <li>Forklift safe work practices</li>
                   </ul>
-                  <p> Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
+                  <p> Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>
         
                 <h2 id="respirator_use">Respirator Use</h2>
                 <p>The                   class is mandatory for all respirator users. It is   intended to provide                   basic information regarding the   proper use and maintenance of respirators.                   Topics for   discussion include an overview of the type(s) of respirators                     that will be used; conditions of use; fit testing; cleaning and                     maintenance; and storage. This course must be   supplemented with                   instruction from a departmental   designee (i.e. principal investigator,                   supervisor,   etc.) concerning the respiratory protection policies                     of each specific worksite. <br />
@@ -202,6 +207,13 @@
                 <p>This class is mandatory for employees who are voluntarily using a   filtering facepiece respirator (i.e. N95) in the workplace. It is   intended to provide basic information regarding OSHA&rsquo;s Appendix D   Standard for voluntary use. Topics for discussion include: definition of   voluntary use, OHSA&rsquo;s Appendix D standard and requirements. This course   must be  supplemented with instruction from a departmental designee   concerning the respiratory protection policies of each specific   worksite.</p>
                 <p>Please contact <a href="mailto:derek.bocard@uky.edu">Derek Bocard</a> or <a href="mailto:melissa.claar@uky.edu">Melissa Claar</a> with questions.</p>
                 <p>This class is available <a href="main.php?cClassID=126" class="link-class">online</a>.</p>
+                
+				<h2 id="hero">Slips, Trips, and Falls; Hazard Recognition</h2>
+				<p>Learn how slips, trips, and falls happen, how to identify hazards, and how to eliminate or minimize these hazards.</p>
+				<p>This class is available <a href="https://ehs.uky.edu/apps/hero" class="link-class">online</a>.</p>
+					
+				
+					
 <h2 id="utility_cart">Utility Cart Training</h2>
                 <p>This training is mandatory  for all employees who drive a utility carts while working at University of  Kentucky.&nbsp; The objective of the training is </p>
                 <ul>
@@ -212,7 +224,7 @@
                   <li>Operator  Safety</li>
                   <li>Pedestrian  Safety</li>
                 </ul>
-                <p>Classroom training sessions are available upon  request. Duration is 1 hour. Contact <a href="mailto:Aaron.Offutt@uky.edu">Aaron Offut</a> at (859) 257-3862.</p>
+                <p>Classroom training sessions are available upon  request. Duration is 1 hour. Contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>
                 <p>This class is available <a href="main.php?cClassID=24" class="link-class">online</a>.</p>
               	</div><!--/content-->      
             </div><!--/subContainer-->
