@@ -16,7 +16,6 @@
           <li><a href="recyclepolicy.html">Recycling Container Policy</a></li>
 		  <li><a href="shell_space.php">Shell Space Usage</a></li>
           <li><a href="heater.html">Space Heater Policy</a></li>
-          <li><a href="stove.html">Stove (Cooking) Policy</a></li>
           <li><a href="tentpolicy.html">Tent Policy</a></li>
           <li><a href="vending.html">Vending Machine Policy</a></li>
           <li><a href="/docs/pdf/fire_property_acceptance_form.pdf" target="_blank">Property Acceptance Form</a></li>
