@@ -31,7 +31,7 @@
         <li><a href="#" onclick="return false" class="icon_events">Events</a>
         	<ul>
             	<li><a href="/fsm">Campus Fire Safety Month, September</a></li>
-      			<li><a href="/docs/pdf/bio_lab_safety_fair.pdf" target="_blank">Lab Safety Fair</a></li>
+      			<li><a href="biosafety/lab_safety_fair.jpg" target="_blank">Lab Safety Fair</a></li>
       			<li><a href="/docs/ppt/StormReady.ppt" title="StormReady Ceremony pictures in PowerPoint" target="_blank" >UK Campus StormReady Ceremony Pictures</a></li>
         	</ul>
         </li>
