@@ -1,4 +1,7 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/libraries/php/classes/config.php"); //Basic configuration file. ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/libraries/php/classes/config.php"); //Basic configuration file. 
+
+error_reporting( error_reporting() & ~E_NOTICE );
+?>
 
 <?php echo "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?".">"; ?>
 <!DOCtype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -29,8 +32,8 @@ window.print();
     <tr> 
       <td> <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr> 
-            <td><img src="../media/image/rad_waste_app.png" alt="" width="371" height="58" /></td>
-            <td align="right"><img src="../media/image/app_symbol.png" alt="" width="208" height="52" /></td>
+            <td><img src="../../media/image/rad_waste_app.png" alt="" width="371" height="58" /></td>
+            <td align="right"><img src="../../media/image/app_symbol.png" alt="" width="208" height="52" /></td>
           </tr>
         </table></td>
     </tr>
@@ -303,8 +306,15 @@ window.print();
     </tr>
     <tr> 
       <td>Is the material to be obtained or used in especially hazardous form? (e.g. carcinogen, highly toxic)<br />
-        <strong><?php echo $_POST['espHaz']; 
-					$espHaz = $_POST['espHaz'];
+        <strong><?php if(isset($_POST['espHaz']))
+						 {
+							 echo $_POST['espHaz']; 
+							$espHaz = $_POST['espHaz'];
+						 }
+						else
+						 { 
+							$espHaz = '';
+						 }
 				?></strong> </td>
     </tr>
     <tr> 
@@ -325,7 +335,7 @@ window.print();
           <tr> 
             <td> 
               <?php 
-					if ($_POST['glove'] == "checkbox"){
+					if (isset($_POST['glove'])){
 						echo "&#x2713;";
 						$glove = "T";}
 					else{ echo "&#x2717;";
@@ -335,7 +345,7 @@ window.print();
             <td>Glove Box</td>
             <td>
               <?php 
-					if ($_POST['ionChamber'] == "checkbox"){
+					if (isset($_POST['ionChamber'])){
 						echo "&#x2713;";
 						$ionChamber = "T";}
 					else{ echo "&#x2717;";
@@ -345,7 +355,7 @@ window.print();
             <td>Ion chamber survey meter</td>
             <td>
               <?php 
-					if ($_POST['respirator'] == "checkbox"){
+					if (isset($_POST['respirator'])){
 						echo "&#x2713;";
 						$respirator = "T";}
 					else{ echo "&#x2717;";
@@ -357,7 +367,7 @@ window.print();
           <tr> 
             <td>
               <?php 
-					if ($_POST['mechanical'] == "checkbox"){
+					if (isset($_POST['mechanical'])){
 						echo "&#x2713;";
 						$mechanical = "T";}
 					else{ echo "&#x2717;"; 
@@ -367,7 +377,7 @@ window.print();
             <td>Mechanical pipettes</td>
             <td>
               <?php 
-					if ($_POST['shieldedStorage'] == "checkbox"){
+					if (isset($_POST['shieldedStorage'])){
 						echo "&#x2713;";
 						$shieldedStorage = "T";}
 					else{ echo "&#x2717;"; 
@@ -377,7 +387,7 @@ window.print();
             <td>Shielded storage container</td>
             <td>
               <?php 
-					if ($_POST['liquidScint'] == "checkbox"){
+					if (isset($_POST['liquidScint'])){
 						echo "&#x2713;";
 						$liquidScint = "T";}
 					else{ echo "&#x2717;"; 
@@ -389,7 +399,7 @@ window.print();
           <tr> 
             <td>
               <?php 
-					if ($_POST['fumeHood'] == "checkbox"){
+					if (isset($_POST['fumeHood'])){
 						echo "&#x2713;";
 						$fumeHood = "T";}
 					else{ echo "&#x2717;"; 
@@ -399,7 +409,7 @@ window.print();
             <td>Fume Hood</td>
             <td>
               <?php 
-					if ($_POST['shoeCovers'] == "checkbox"){
+					if (isset($_POST['shoeCovers'])){
 						echo "&#x2713;";
 						$shoeCovers = "T";}
 					else{ echo "&#x2717;"; 
@@ -409,7 +419,7 @@ window.print();
             <td>Shoe covers</td>
             <td>
               <?php 
-					if ($_POST['transportation'] == "checkbox"){
+					if (isset($_POST['transportation'])){
 						echo "&#x2713;";
 						$transportation = "T";}
 					else{ echo "&#x2717;";
@@ -421,7 +431,7 @@ window.print();
           <tr> 
             <td>
               <?php 
-					if ($_POST['trays'] == "checkbox"){
+					if (isset($_POST['trays'])){
 						echo "&#x2713;";
 						$trays = "T";}
 					else{ echo "&#x2717;";
@@ -431,7 +441,7 @@ window.print();
             <td>Trays</td>
             <td>
               <?php 
-					if ($_POST['scintWell'] == "checkbox"){
+					if (isset($_POST['scintWell'])){
 						echo "&#x2713;";
 						$scintWell = "T";}
 					else{ echo "&#x2717;";
@@ -441,7 +451,7 @@ window.print();
             <td>Scintillation well counter</td>
             <td>
               <?php 
-					if ($_POST['labCoat'] == "checkbox"){
+					if (isset($_POST['labCoat'])){
 						echo "&#x2713;";
 						$labCoat = "T";}
 					else{ echo "&#x2717;";
@@ -453,7 +463,7 @@ window.print();
           <tr> 
             <td>
               <?php 
-					if ($_POST['shielding'] == "checkbox"){
+					if (isset($_POST['shielding'])){
 						echo "&#x2713;";
 						$shielding = "T";}
 					else{ echo "&#x2717;"; 
@@ -463,7 +473,7 @@ window.print();
             <td>Lead Shielding</td>
             <td>
               <?php 
-					if ($_POST['body'] == "checkbox"){
+					if (isset($_POST['body'])){
 						echo "&#x2713;";
 						$body = "T";}
 					else{ echo "&#x2717;";
@@ -473,7 +483,7 @@ window.print();
             <td>Body Dosimetry</td>
             <td>
               <?php 
-					if ($_POST['protGloves'] == "checkbox"){
+					if (isset($_POST['protGloves'])){
 						echo "&#x2713;";
 						$protGloves = "T";}
 					else{ echo "&#x2717;";
@@ -485,7 +495,7 @@ window.print();
           <tr> 
             <td>
               <?php 
-					if ($_POST['GM'] == "checkbox"){
+					if (isset($_POST['GM'])){
 						echo "&#x2713;";
 						$GM = "T";}
 					else{ echo "&#x2717;";
@@ -495,7 +505,7 @@ window.print();
             <td>GM survey meters</td>
             <td>
               <?php 
-					if ($_POST['radSigns'] == "checkbox"){
+					if (isset($_POST['radSigns'])){
 						echo "&#x2713;";
 						$radSigns = "T";}
 					else{ echo "&#x2717;";
@@ -505,7 +515,7 @@ window.print();
             <td>Radiation signs and labels</td>
             <td>
               <?php 
-					if ($_POST['wrist'] == "checkbox"){
+					if (isset($_POST['wrist'])){
 						echo "&#x2713;";
 						$wrist = "T";}
 					else{ echo "&#x2717;";
@@ -517,7 +527,7 @@ window.print();
           <tr> 
             <td>
               <?php 
-					if ($_POST['handling'] == "checkbox"){
+					if (isset($_POST['handling'])){
 						echo "&#x2713;";
 						$handling = "T";}
 					else{ echo "&#x2717;";
@@ -527,7 +537,7 @@ window.print();
             <td>Handling tongs</td>
             <td>
               <?php 
-					if ($_POST['finger'] == "checkbox"){
+					if (isset($_POST['finger'])){
 						echo "&#x2713;";
 						$finger = "T";}
 					else{ echo "&#x2717;"; 
@@ -537,7 +547,7 @@ window.print();
             <td>Finger Dosimetry</td>
             <td>
               <?php 
-					if ($_POST['plexiglass'] == "checkbox"){
+					if (isset($_POST['plexiglass'])){
 						echo "&#x2713;";
 						$plexiglass = "T";}
 					else{ echo "&#x2717;";
@@ -642,17 +652,15 @@ window.print();
         a separate Word document describing the use of the radioactive material 
         by supplying a response to each 'bullet' topic. (e.g. - a user doing experiments 
         with radiation in mice would answer all topics in the section 'Unsealed 
-        Applications' and 'Use in Animal Studies'.) Send the documents to Fred 
-        Rawlings at <a href="mailto:fprawl@email.uky.edu"></a><a href="mailto:fprawl@email.uky.edu">fprawl@email.uky.edu</a>.</td>
+        Applications' and 'Use in Animal Studies'.) Send the documents to <a href="mailto:david.rich@uky.edu">David Rich</a>.</td>
     </tr>
     <tr> 
       <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
 	  <?php if ($_POST['c1'] == "True"){
 	  		$c1 = "T";		
-			echo
 		?>
           <tr> 
-            <td width="4%" valign="top"> <img src="../media/image/check.png" alt="" /></td>
+            <td width="4%" valign="top"> <img src="../../media/image/icon_pencil.png" alt="" /></td>
             <td>Use as a sealed source.</td>
           </tr>
           <tr> 
@@ -677,10 +685,10 @@ window.print();
 		  <?php ;}
 		  		else{
 					$c1 ="F";
-					echo
+					
 		  ?>
 		   <tr> 
-            <td width="4%" valign="top"> <img src="../media/image/x.png" alt="" /></td>
+            <td width="4%" valign="top"> <img src="../../media/image/x.png" alt="" /></td>
             <td>Use as a sealed source.</td>
           </tr>
 		  <?php
@@ -688,10 +696,10 @@ window.print();
 		  ?>
 		  <?php if ($_POST['c2'] == "True"){
 		  	$c2 = "T";
-	  		echo
+	  		
 		  ?>
           <tr> 
-            <td width="4%" valign="top"><img src="../media/image/check.png" alt="" /></td>
+            <td width="4%" valign="top"><img src="../../media/image/icon_pencil.png" alt="" /></td>
             <td>Use in unsealed applications.</td>
           </tr>
           <tr> 
@@ -720,10 +728,10 @@ window.print();
 		  <?php ;}
 		  		else{
 					$c2 = "F";
-					echo
+					
 		  ?>
 		   <tr> 
-            <td width="4%" valign="top"> <img src="../media/image/x.png" alt="" /></td>
+            <td width="4%" valign="top"> <img src="../../media/image/x.png" alt="" /></td>
             <td>Use in unsealed applications.</td>
           </tr>
 		  <?php
@@ -731,10 +739,10 @@ window.print();
 		  ?>
 		  <?php if ($_POST['c3'] == "True"){
 		  	$c3 = "T";
-	  		echo
+	  		
 		  ?>
           <tr> 
-            <td width="4%" valign="top"><img src="../media/image/check.png" alt="" /></td>
+            <td width="4%" valign="top"><img src="../../media/image/icon_pencil.png" alt="" /></td>
             <td>Use as on ionization source for an electron capture detector in 
               gas chromatography.</td>
           </tr>
@@ -756,25 +764,25 @@ window.print();
                 * Note: Please refer to the Radiation Safety Manual for the proper 
                 guidelines for the segregation and consolidation of waste.</td>
           </tr>
-		  <?php ;}
+		  <?php }
 		  		else{
 					$c3 = "F";
-					echo
+					
 		  ?>
 		   <tr> 
-            <td width="4%" valign="top"> <img src="../media/image/x.png" alt="" /></td>
+            <td width="4%" valign="top"> <img src="../../media/image/x.png" alt="" /></td>
             <td>Use as on ionization source for an electron capture detector in 
               gas chromatography.</td>
           </tr>
 		  <?php
-		  ;}
+		  }
 		  ?>
 		  <?php if ($_POST['c4'] == "True"){
 	  		$c4 = "T";		
-			echo
+			
 		  ?>
           <tr> 
-            <td width="4%" valign="top"><img src="../media/image/check.png" alt="" /></td>
+            <td width="4%" valign="top"><img src="../../media/image/icon_pencil.png" alt="" /></td>
             <td>Use in animal studies.</td>
           </tr>
           <tr> 
@@ -801,24 +809,24 @@ window.print();
                 handling and monitoring of the animals and proposed method of 
                 disposal of the animal(s) and excreta.</td>
           </tr>
-		   <?php ;}
+		   <?php }
 		  		else{
 					$c4 = "F";
-					echo
+					
 		  ?>
 		   <tr> 
-            <td width="4%" valign="top"> <img src="../media/image/x.png" alt="" /></td>
+            <td width="4%" valign="top"> <img src="../../media/image/x.png" alt="" /></td>
             <td>Use in animal studies.</td>
           </tr>
 		  <?php
-		  ;}
+		  }
 		  ?>
 		   <?php if ($_POST['c5'] == "True"){
 		   	$c5 = "T";
-	  		echo
+	  		
 		  ?>
           <tr> 
-            <td width="4%" valign="top"><img src="../media/image/check.png" alt="" /></td>
+            <td width="4%" valign="top"><img src="../../media/image/icon_pencil.png" alt="" /></td>
             <td>Human use.</td>
           </tr>
           <tr>
@@ -849,17 +857,17 @@ window.print();
                 <img src="../../media/image/pointer.gif" alt="" width="15" height="14" />Schedule 
                 for reporting the results of the study.</td>
           </tr>
-		  <?php ;}
+		  <?php }
 		  		else{
 					$c5 = "F";
-					echo
+					
 		  ?>
 		   <tr> 
-            <td width="4%" valign="top"> <img src="../media/image/x.png" alt="" /></td>
+            <td width="4%" valign="top"> <img src="../../media/image/x.png" alt="" /></td>
             <td>Human use.</td>
           </tr>
 		  <?php
-		  ;}
+		  }
 		  ?>
         </table></td>
     </tr>
@@ -872,7 +880,7 @@ window.print();
 
 $todaysdate = date("F d, Y");
 				
-$toaddress = "fprawl@email.uky.edu, mamillf@email.uky.edu";
+$toaddress = "david.rich@uky.edu";
 $subject = "Application to possess and use rad materials " .$todaysdate;
 $mailcontent = "Today's date: " .$todaysdate."\n\n"
 	."Name: ".$firstName." ".$lastName."\n"
