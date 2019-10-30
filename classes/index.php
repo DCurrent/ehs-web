@@ -175,6 +175,9 @@
                         	<td><a href="classes_ohs_0001.php#pass_van">Passenger Van Training</a></td>
                         </tr>
                         <tr>
+                          <td><a href="classes_ohs_0001.php#pesticide">Pesticide Handler in Agriculture</a></td>
+                        </tr>
+                        <tr>
                           <td><a href="classes_ohs_0001.php#powered_industrial_trucks">Powered Industrial Trucks (Forklifts)</a></td>
                         </tr>
                         <tr>
@@ -191,6 +194,9 @@
                         </tr>
                         <tr>
                           <td><a href="classes_biosafety_0001.php#select_agents_insider_threat">Select Agents - Insider threat Awareness</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="classes_ohs_0001.php#hero">Slips, Trips, and Falls; Hazard Recognition</a></td>
                         </tr>
                         <tr>
                         	<td><a href="classes_ohs_0001.php#utility_cart">Utility Cart Training</a></td>
