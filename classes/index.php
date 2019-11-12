@@ -72,6 +72,9 @@
                         <tr>
                         	<td><a href="classes_radiation_0001.php#analytical_xray" >Analytical X-Ray</a></td>
                         </tr>
+						<tr>
+                        	<td><a href="classes_ohs_0001.php#arc-flash" >Arc Flash Awareness</a></td>
+                        </tr>
                         <tr>
                           <td><a href="classes_env_0001.php#asbestos_awareness">Asbestos Awareness</a></td>
                         </tr>
@@ -203,6 +206,9 @@
                         </tr>
                         <tr>
                           <td><a href="classes_biosafety_0001.php#viral_vectors">Viral Vectors</a></td>
+                        </tr>
+						<tr>
+                          <td><a href="classes_ohs_0001.php#working-in-winter-weather">Working In Winter Weather</a></td>
                         </tr>
                     </table>                  
                 </div>       

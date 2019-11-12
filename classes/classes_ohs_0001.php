@@ -40,6 +40,19 @@
                   
                   <p>As  part of routine operational, research, and farming activities, UK College of  Agriculture, Food and Environment (CAFE) employees and students may utilize  All-Terrain Vehicles (ATV) for conducting various tasks. ATV use may be  dangerous to operator health and safety due to the many unique hazards  associated with operating them. ATVs are designed for off-road use, which  includes, but is not limited to, driving on uneven surfaces, hills, rocks, and  depressions. Driving surfaces can also be dusty, wet, soft, or slippery. In  order to prevent accidents and injuries, employees and students must be trained  in the safe operation of ATVs and the driving hazards unique to each location.</p>
                   <p>This class is available <a href="main.php?cClassID=117" class="link-class">online</a>.                  </p>
+					
+				  <h2 id="arc-flash">Arc Flash Awareness</h2>                
+                  
+                  
+                  <p>This course is to provide an overall understanding of the current   requirements of NFPA 70E. A complete review of the standard will be   provided, along with a review of the tables used to determine the   Limited and Restricted Approach Boundaries and tables and calculation   methods used to determine the Arc Flash Boundary and for determining   proper personal protective equipment (PPE).</p>
+                  <p>This course will present the following major topics:</p>
+                  <ul>
+                    <li>Review of Work Practices required by NFPA 70E Standard for Electrical Safety in the Workplace</li>
+                    <li>Determining Limited and Restricted Approach Boundaries</li>
+                    <li>Determining/Calculating the Arc Flash Boundary</li>
+                    <li>Selection of Personal Protective Equipment</li>
+                  </ul>
+                  <p>Contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> (859) 257-9739 to provide training.</p>
                   
 					
 					<h2 id="back_safety">Back Safety</h2>
@@ -226,7 +239,13 @@
                 </ul>
                 <p>Classroom training sessions are available upon  request. Duration is 1 hour. Contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>
                 <p>This class is available <a href="main.php?cClassID=24" class="link-class">online</a>.</p>
-              	</div><!--/content-->      
+                
+					<h2 id="working-in-winter-weather">Working In Winter Weather</h2>
+					<p>This course is for employees whose role it is to work outside during   winter weather.  This course will teach employees to recognize winter   weather hazards, how to prevent those hazards, and what to do if   affected</p>
+					<p>Call <a href="mailto:michele.laur@uky.edu">Michele Laur</a> (859) 257-9739 to provide training.</p>
+					
+              	
+				</div><!--/content-->      
             </div><!--/subContainer-->
             
             <div id="sidePanel">		
