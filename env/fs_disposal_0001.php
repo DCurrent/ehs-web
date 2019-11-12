@@ -32,38 +32,11 @@
     with the potential to cut or puncture an individual as they are sent through
     the waste stream.</font></p>
           <h2> Needles, Syringes and Other Sharps</h2>
-          <p>Used needles, syringes
-            and other sharps must be placed into rigid, red plastic sharps containers.
-            Needles should not be removed from syringes. Do not cut, bend or recap
-            needles.
-            This policy applies to <b>ALL</b> needles and syringes, whether (a) used or unused,
-            (b) used together or separately, (c) used with blood or (d) <em>used for any
-              other purpose</em>. Approved sharps containers may be obtained from UK Stores
-            (stock number 6515-5265). When the container is full, secure the lid. (Don&#8217;t
-            overfill containers and risk getting stuck!) Containers must be disposed
-            of as medical waste&#8212;whether contaminated or not&#8212;and never placed
-            in the regular trash. Contact Environmental Management if you need assistance
-            disposing of medical waste in your area.</p>
+          <p>Used needles, syringes and other sharps must be placed into rigid, red plastic sharps containers. Needles should not be removed from syringes. Do not cut, bend or recap needles. This policy applies to <strong>ALL</strong> needles and syringes, whether (a) used or unused, (b) used together or separately, (c) used with blood or (d) used for any other purpose. When the container is full, secure the lid. (Don&rsquo;t overfill containers and risk getting stuck!) Containers must be disposed of as medical waste&mdash;whether contaminated or not&mdash;and never placed in the regular trash. Contact Environmental Management if you need assistance disposing of medical waste in your area.</p>
           <h2> Broken Glass and Laboratory Glassware</h2>
-          <p><b>ALL</b> broken glass
-            must be placed into a separate waste container. Never place broken glass
-            into the regular trash container. The waste glass container itself will be
-            disposed of along with the broken glass. Acceptable containers for broken
-            glass include small (1 to 2 cu. ft.) cardboard boxes with plastic liners,
-            empty plastic paint cans, or any similar puncture-proof, leak-resistant containers.
-            Cardboard boxes made especially for broken glass may be obtained from UK
-            Stores (stock numbers: 5121-1797 large box; 5121-1798 small box; 5121-1801
-            plastic liner large; 5121-1803 plastic liner small). Waste glass containers
-            should be labeled &#8220;Caution--Broken Glass.&#8221; When full, put the
-            top on the container and secure with tape. Custodians will place the whole
-            container into the general waste stream.</p>
-          <p><b>ALL</b> laboratory glassware&#8212;whether
-            broken or unbroken&#8212;must be disposed of as described above. This applies
-            to all glass items from medical, research and teaching labs and includes
-            containers, pipettes, tubing, glass slides, cover slips, etc.</p>
-          <p>Glassware which may be contaminated 
-            with infectious agents should first be autoclaved or chemically disinfected, 
-            and then disposed of as above.</p>
+          <p><strong>ALL</strong>&nbsp;broken glass must be placed into a separate waste   container. Never place broken glass into the regular trash container.   The waste glass container itself will be disposed of along with the   broken glass. Acceptable containers for broken glass include small (1 to   2 cu. ft.) cardboard boxes with plastic liners, empty plastic paint   cans, or any similar puncture-proof, leak-resistant containers.  Waste glass   containers should be labeled &ldquo;Caution--Broken Glass.&rdquo; When full, put the   top on the container and secure with tape. Custodians will place the   whole container into the general waste stream.</p>
+          <p><b>ALL </b>laboratory glassware&mdash;whether broken or unbroken&mdash;must be disposed of as described above. This applies to all glass items from medical, research and teaching labs and includes containers, pipettes, tubing, glass slides, cover slips, etc. </p>
+          <p>Glassware which may be contaminated with infectious agents should first be autoclaved or chemically disinfected, and then disposed of as above.</p>
       </div>
 	</div>
 	<div id="sidePanel">
