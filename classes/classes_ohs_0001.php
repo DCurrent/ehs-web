@@ -81,14 +81,14 @@
                     <br />
         This class is only available <a href="main.php?cClassID=22" class="link-class">online</a>.</p>
                   <h2 id="chemical_hygiene">Chemical Hygiene Plan/Laboratory Safety - General Awareness</h2>
-                <p>Chemical                 safety for laboratory workers. This class is   required for anyone                 who works with chemicals in a   laboratory. If you have any questions                 about this class,   please contact <a href="mailto:jghamo2@uky.edu">Jan Eggum</a> at (859) 257-2924.<br />
+                <p>Chemical                 safety for laboratory workers. This class is   required for anyone                 who works with chemicals in a   laboratory. If you have any questions                 about this class,   please contact <a href="mailto:Jacquelyn.rhinehart@uky.edu">Jackie Rhinehart</a> at (859) 257-3862.<br />
                     <br />
         Classes are held in the Keeneland Room of the William T. Young   Library. </p>
                 <p>This class is available  <a href="main.php?cClassID=9" class="link-class">online</a>.</p>
                 
                 	<h2 id="annual_refresher">Chemical Hygiene Plan/Laboratory Safety - Annual refresher</h2>
                 	
-                    <p>Required  annual refresh of Chemical Hygiene/Laboratory safety. If you have any questions                 about this class,   please contact <a href="mailto:jghamo2@uky.edu">Jan Eggum</a> at (859) 257-2924.</p>
+                    <p>Required  annual refresh of Chemical Hygiene/Laboratory safety. If you have any questions                 about this class,   please contact <a href="mailto:Jacquelyn.rhinehart@uky.edu">Jackie Rhinehart</a> at (859) 257-3862.</p>
                 	
                     <p>This class is available <a href="main.php?cClassID=7" class="link-class">online</a>.</p>
                 
@@ -97,11 +97,11 @@
                 	
                     <p>Confined space entry training is provided for   employees that may enter areas such as pits, tanks, tunnels, silos, air handlers, or pipes. 		Recognizing                     and controlling the hazards associated with a confined space is required training for any employee that may be required to   enter                   an area meeting the specifications of a confined   space (limited means of enter/exit, may or may not   contain hazardous atmosphere                   or other physical hazard,   and is not intended for continuous occupancy.)<br />
                   <br />
-        Classroom training sessions are available upon request. Duration is 90 minutes.         Contact <a href="main.php?cClassID=30">Lee Poore</a> at (859) 257-2924.</p>
+        Classroom training sessions are available upon request. Duration is 90 minutes.         Contact <a href="main.php?cClassID=30">Lee Poore</a> at (859) 257-3862.</p>
                 <h2 id="construction_safety_awareness">Construction Safety Awareness</h2>
                 <p>Safety                 awareness training for those employees accessing   construction sites.                 Program focuses on hazards to look   out for, areas to avoid, and                 provides construction   safety resources for those employees who are                 exposed to   contractors' work activities.<br />
                   <br />
-        Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="main.php?cClassID=30">Lee Poore</a> at (859) 257-2924.</p>
+        Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="main.php?cClassID=30">Lee Poore</a> at (859) 257-3862.</p>
                 <h2 id="cpr-aed">CPR / AED</h2>
                 <p>This basic CPR/AED skills course will prepare you to recognize and respond to emergencies including: obstructed airway, cardiac arrest, and other life-threatening emergencies. Hands on skills will include: how to perform the abdominal thrusts/back blows, how to perform CPR on an adult, skills and knowledge needed to provide care for victims of sudden cardiac arrest through the safe use of an automated external defibrillator (AED).</p>
 					
@@ -112,7 +112,7 @@
                   <br />
         This class is only available <a href="main.php?cClassID=6" class="link-class">online</a>.</p>
                 <h2 id="epipen">Epipen Safety</h2>
-                <p>Research personnel whose work involves honey bees or other organisms   that require the presence of an Epipen at the work location are required   to complete this training. A determination of an occupational hazard   must first be done by UK OHS before this training can be taken. Contact   <a href="mailto:lee.poore@uky.edu">OHS</a> or 859 257-2924 for assistance.</p>
+                <p>Research personnel whose work involves honey bees or other organisms   that require the presence of an Epipen at the work location are required   to complete this training. A determination of an occupational hazard   must first be done by UK OHS before this training can be taken. Contact   <a href="mailto:lee.poore@uky.edu">OHS</a> or 859 257-3862 for assistance.</p>
                 
 				  <h2 id="first_aid">Fall Protection &amp; Ladder Safety</h2>
                 <p>The course provides information on the working conditions that  prompt use of fall protection and the types of fall protection available to  protect workers.&nbsp; It assists those affected with complying with 29 CFR  1926.503.<br />
@@ -138,7 +138,7 @@
 				<h2>Hazard Assessment</h2>
                 <p>Training                 for supervisors in how to conduct workplace   hazard assessments for                 determining the need and proper   selection of personal protective                 equipment. Provides   instruction on the use and application of the                   University's hazard assessment checklists. Training is for personnel                   responsible for employees who have the potential to   encounter hazards.<br />
                   <br />
-        Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="main.php?cClassID=30">Lee Poore</a> at (859) 257-2924.</p>
+        Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="main.php?cClassID=30">Lee Poore</a> at (859) 257-3862.</p>
                 <h2 id="hazard_communication">Hazard Communication</h2>
                 <p>This                 is chemical &quot;Right to Know&quot; training for anyone who   uses hazardous                 chemicals in a non-laboratory setting.   Workers must be instructed                 in how to use chemicals in a   safe manner.</p>
                 <p>The Hazard Communication/GHS is an update to align  with the Globally Harmonized System of Classification and Labeling of Chemicals  (GHS). This update to the Hazard Communication Standard (HCS) will provide a  common and coherent approach to classifying chemicals and communicating hazard  information on labels and safety data sheets.<br />
