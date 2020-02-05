@@ -32,8 +32,7 @@
 		  <p>The 
         Occupational Health and Safety department issues the Certificate of Environmental 
         Compliance for DOD Grant Applications. For OH&amp;S to do this in a timely 
-        manner please contact <a href="mailto:jghamo2@uky.edu?subject=DOD Grants">Jan 
-        Eggum</a> within two (2) weeks before proposal deadline, and have the 
+        manner please contact <a href="mailto:Jacquelyn.rhinehart@uky.edu?subject=DOD Grants">Jackie Rhinehart</a> within two (2) weeks before proposal deadline, and have the 
         following information prepared for review. </p>
 		  <ul>
 		    <li>Names 

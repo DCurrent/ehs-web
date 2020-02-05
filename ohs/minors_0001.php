@@ -33,7 +33,7 @@
                       <li>Fill out the <a href="/docs/pdf/ohs_minors_in_labs_project_hazard_assessment_form_0001.pdf" target="_blank">Project Risk Assessment</a></li>
                       <li><a href="../docs/pdf/train_minors_in_labs.pdf">Materials for High School Instructors</a></li>
                     </ul>
-                    <p>The risk assessment and the project form will be reviewed by  EHS and an approval letter will be sent to the Principal investigator once the  review is complete. If you have any questions about this process of laboratory  safety at UK, please contact <a href="mailto:jghamo2@uky.edu">Jan Eggum</a>,  Lab safety specialist, or <a href="mailto:lee.poore@uky.edu">Lee Poore</a>.</p>
+                    <p>The risk assessment and the project form will be reviewed by  EHS and an approval letter will be sent to the Principal investigator once the  review is complete. If you have any questions about this process of laboratory  safety at UK, please contact <a href="mailto:Jacquelyn.rhinehart@uky.edu">Jackie Rhinehart</a>,  Lab safety specialist, or <a href="mailto:lee.poore@uky.edu">Lee Poore</a>.</p>
                     
                     
                 </div><!--/content-->      

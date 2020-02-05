@@ -33,7 +33,7 @@
                     
                   	<h2><a href="chemical_hygiene_plan.pdf" target="_blank">Chemical Hygiene Plan</a></h2>
         			
-                  <p>Printed versions of the Chemical Hygiene Plan can be requested, please contact <a href="mailto:jghamo2@email.uky.edu">Jan Eggum</a> at 257-3242 to request a copy.
+                  <p>Printed versions of the Chemical Hygiene Plan can be requested, please contact <a href="mailto:jghamo2@email.uky.edu">Jackie Rhinehart</a> at 257-3242 to request a copy.
                   Any manual preceding the 2012 edition needs the updated information on the Globally Harmonized Standard of Classification and Labeling of 					Chemicals (GHS). This can be done by requesting a new manual, or just copying Chapter 6 and replacing it in the existing manual of the laboratory.</p>
                     
                     <h2><a href="/docs/pdf/ohs_chp_chapter_6.pdf">Chapter 6</a></h2>

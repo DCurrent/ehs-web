@@ -49,7 +49,7 @@
               <li>The control valve             shall be designed so that the water flow remains in the on position             without the use of the operator's hands and must remain open until manually             shut off. The valve shall be large enough to be easily located and operated             by the user. </li>
             </ul>
             <p> Emergency eyewash           and shower equipment must be installed in every lab that is provided with           a fume hood. Laboratories sharing a common suite or area not separated           by closed doors may find one emergency shower is sufficient but each lab           unit must be equipped with an approved eyewash. </p>
-          <p> You can contact the           University of Kentucky Occupational Health and Safety Department for questions           related to this guideline at (859) 257-2924. </p>
+          <p> You can contact the           University of Kentucky Occupational Health and Safety Department for questions           related to this guideline at (859) 257-3862. </p>
             <p> Approved by UK Design           Guidelines &amp; Technical Standards Committee June 18, 1998. </p>
 </div>       
 	</div>    

@@ -67,14 +67,14 @@
 		 	<?php include($cLRoot."a_subnav_0001.php"); ?> 
 		</div>
 		<div id="content"> <h1>Chemical Hygiene Plan Annual Review</h1>
-		  <p>OSHA's lab standard 29 CFR 1910.1450 requires labs conducting research with hazardous chemicals on a laboratory scale to have written, specific and current chemical hygiene plans. All labs should have a copy of the Model CHP and have filled it out to make it specific for that lab. An annual review is also required to keep the plan current. The following checklist has been provided for your assistance. Please complete the following form. After submitting the report you will be given an opportunity to print out a final copy for your records. If you have any questions regarding the form, contact <a href="mailto:jghamo2@uky.edu">Jan Eggum</a>.</p>
+		  <p>OSHA's lab standard 29 CFR 1910.1450 requires labs conducting research with hazardous chemicals on a laboratory scale to have written, specific and current chemical hygiene plans. All labs should have a copy of the Model CHP and have filled it out to make it specific for that lab. An annual review is also required to keep the plan current. The following checklist has been provided for your assistance. Please complete the following form. After submitting the report you will be given an opportunity to print out a final copy for your records. If you have any questions regarding the form, contact <a href="mailto:Jacquelyn.rhinehart@uky.edu">Jackie Rhinehart</a>.</p>
           
           
           <div class="table_header">
           	Demographics
           </div>
           <form action="anrev_complete.php" method="post" name="CHP_Annual_Review" id="CHP_Annual_Review" class="standard_entry">
-          <input type="hidden" name="email_list" value="jghamo2@uky.edu" />
+          <input type="hidden" name="email_list" value="Jacquelyn.rhinehart@uky.edu" />
 		                  
           <?php 
 		  	echo $oFrm->forms_fieldset_get("fs_pi");
