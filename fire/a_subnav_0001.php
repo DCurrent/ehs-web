@@ -5,7 +5,6 @@
         <ul>
           <li><a href="ada_evac.html">ADA Evacuation Policy</a></li>
           <li><a href="bicycle.php">Bicycle In Buildings</a></li>
-		  <li><a href="corridor.html">Corridor Utilization Program</a></li>
           <li><a href="electrical.html">Electrical Policy</a></li>
           <li><a href="evacuation.html">Evacuation Policy - Fire Alarms</a></li>
           <li><a href="micro.html">Microwave Policy<br /></a></li>
