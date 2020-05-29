@@ -44,9 +44,12 @@
                     </ul>
                     
                     <h3><a href="//topaz.uky.edu">Topaz - IBC Registration Link</a></h3>
-                    <h3><a href="bio_bsc_certification_approved_vendors.pdf">BSC Certification &ndash;  Approved Vendors</a></h3>
-                
-                	<?php include($cDocroot."libraries/includes/inc_updates.php"); ?>                
+                  <h3><a href="bio_bsc_certification_approved_vendors.pdf">BSC Certification &ndash;  Approved Vendors</a></h3>
+					
+					
+					<p class="alert">Notice: Due to the current public health crisis, meetings of the University of Kentucky Institutional Biosafety Committee (IBC) will be conducted via videoconference.  The NIH Guidelines encourage IBCs to open their meetings to the public.  Members of the public who would like to attend videoconference meetings may contact <a href="mailto:brandy.nelson@uky.edu">brandy.nelson@uky.edu</a> for additional information. </p>
+					
+					<?php include($cDocroot."libraries/includes/inc_updates.php"); ?>                
                 </div><!--/content-->       
             </div><!--/subContainer-->
             <div id="sidePanel">		
