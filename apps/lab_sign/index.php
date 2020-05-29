@@ -494,10 +494,7 @@
 		}
 		
 		// Add new input with associated 'remove' link when 'add' button is clicked.
-		$('.cmd_add_pi').click(function(e) {
-			
-			alert('test');
-			
+		$('.cmd_add_pi').click(function(e) {			
 			e.preventDefault();			
 			pi_append();
 		});

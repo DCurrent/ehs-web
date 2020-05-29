@@ -103,3 +103,153 @@ h4
 	font-size:					larger;  
 	text-shadow:				none;	
 }
+
+/* Banners */
+.banner_container
+{
+	display:					block;
+	box-sizing: 				none;
+	-moz-box-sizing: 			none;
+	-webkit-box-sizing: 		none;
+	height:						auto;
+	width:						auto;
+	
+	border-bottom:				thick solid;	
+	border-top:					thick solid;
+	font-weight:				bolder;
+	margin-bottom:				20px;
+	margin-top:					20px;
+}
+
+.banner_container a,
+.banner_container a:hover
+{
+	font-style:					inherit;
+	text-decoration:			none;
+	color:inherit !important;	
+}
+
+.banner_container div.banner
+{
+	background-color: 			#fff;
+	background-image: 			none;
+	border-radius:				5px; 
+	box-shadow: 				none;
+	color: 						#FFF;
+	height: 					auto;
+	margin-bottom: 				5px;
+	padding: 					5px 5px 5px 5px;
+	width: 						auto;
+}
+
+.banner_container h1
+{
+	color:						#FFF;
+}
+
+.banner_container img.logo
+{
+	float:						left;
+	margin: 					3px 3px 3px 3px;
+}
+
+.banner_container .slogan
+{
+	font-family: 				"Comic Sans MS", cursive;
+	font-style: 				italic;
+	text-align: 				right;
+}
+
+
+a
+{
+	 
+	color:darkgrey;
+	cursor: 					pointer;
+	text-decoration: 			none;
+}
+
+a:visited
+{ 
+	color: 						#920A39; 
+	
+}
+	
+a:hover
+{
+	color:darkgrey; 
+	font-style:none; 
+	text-shadow:none;
+	
+}
+	
+a:active
+{ 
+	color:darkgrey;
+}
+
+.link-class
+{	
+	text-transform: uppercase;
+	font-size: larger;
+	text-shadow: 1px 1px 1px #00ff00;
+}
+
+/* Link, anchor 
+a[href^='#']:not(.no_icon):not(nav):after
+{
+	font-family: 				FontAwesome;
+	padding-left: 				5px;
+	content: 					"\f13d";
+}
+*/
+
+/* Link, external */
+a[href^='//']:not(.no_icon):after,
+a[href^='//']:not(.no_icon):after,
+a[href^='https://']:not(.no_icon):after,
+a[href^='www.']:not(.no_icon):after,
+.icon_external:after,
+a[href$='.pdf']:not(.no_icon):after,
+.icon_pdf:after, 
+a:not(.no_icon):after,
+a[href*='.doc']:not(.no_icon):after,
+.icon_word:after, 
+a[href^='tel:']:not(.no_icon):after,
+.icon_mail:after, 
+a[href^='mailto:']:not(.no_icon):after,
+.icon_mail:after,
+a[href*='.xl']:not(.no_icon):after,
+.icon_excel:after,
+a[href*='.ppt']:not(.no_icon):after,
+.icon_powerpoint:after,
+a[href*='.pps']:not(.no_icon):after,
+.icon_powerpoint:after
+{	
+	color:#00528e;
+	font-family: 				FontAwesome;
+	padding-left: 				5px;
+	content: 					"(" attr(href) ")";
+}
+
+/* Link, images */
+a > img 
+{
+	border:						thick;
+	border-style:				solid;
+	border-radius:				5px;
+	opacity: 					1;
+	margin:						5px 5px 5px 5px;
+	padding:					5px 5px 5px 5px;
+	transition: 				opacity .25s ease-in-out;
+}
+
+a > img::after
+{
+	content:" ";
+}
+
+a:hover > img
+{
+	opacity:					0.5;
+}

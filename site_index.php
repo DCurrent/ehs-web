@@ -76,12 +76,16 @@
                         <li><a href="docs/pdf/con_safe_hndbk.pdf" title="Contractor Safety Handbook" target="_blank">Contractor Safety Handbook</a></li>
                         <li><a href="env/controlled_substances.php" title="Controlled substances.">Controlled Substances</a></li>
                         <li><a href="cas_0001.php" title="A memorandum on cost accounting standards.">Cost Accounting Standards</a></li>
-                        <li><a href="ohs/cryogenic.html" title="Cryogenic Materials Safety.">Cryogenic Materials</a></li>
+                        <li><a href="/covid-19_cleaning_computer.php" title="Covid-19, Cleaning Computer Surfaces Guide" target="" >Covid-19, Computers and High Touch Surfaces</a></li>
+						<li><a href="/covid-19_guidance.php" title="Covid-19, General Guidelines" target="">Covid-19, General Guidelines</a></li>
+      					<li><a href="/covid-19_mask_fit.php" title="Covid-19, Mask Fitting Guide" target="" >Covid-19, Mask Guidance</a></li>
+						<li><a href="/covid-19_cleaning_office.php" title="Covid-19, Office Cleaning Guide" target="">Covid-19, Office Cleaning</a></li>
+						<li><a href="ohs/cryogenic.html" title="Cryogenic Materials Safety.">Cryogenic Materials</a></li>
                     </ul>
                     
                     <a href="#" title="Go back to the top of this page.">Top of page</a>
                     
-                    <h2 id="D">D</h2>
+                  <h2 id="D">D</h2>
                     
                     <a href="#" title="Go back to the top of this page.">Top of page</a>
                     

@@ -36,7 +36,7 @@
                     
                   <h2>Useful Links</h2>
                   <ul>
-                    <li>Bloodborne Pathogens: Exposure Control Plan template</li>
+                    <li>Bloodborne Pathogens: <a href="../docs/doc/ohs_bbp_exposure_control_plan_template.doc">Exposure Control Plan template</a></li>
                     <li>NIOSH ALERT:<a href="//www.cdc.gov/niosh/docs/2000-108/pdfs/2000-108.pdf"> Preventing Needlestick Injuries in Health Care  Settings</a></li>
                     <li>Fact Sheet: <a href="/env/fs_disposal_0001.php">Disposal of Needles, Syringes, Other Sharps and Broken Glass</a></li>
                     <li>Fact Sheet: <a href="/env/fs_biohaz_0001.php">Biohazard Autoclave Bags</a></li>

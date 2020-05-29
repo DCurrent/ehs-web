@@ -3,6 +3,11 @@
 		
 	require($_SERVER['DOCUMENT_ROOT']."/libraries/php/classes/config.php"); //Basic configuration file.
 	
+	function append_like_char($value)
+	{
+		return ($value.'%');
+	};
+	
 	$cLRoot		= $cDocroot;	//Local root.
 	$cPost		= NULL;			//Copy of post array.
 	$params	= NULL;			//Query parameter array.
@@ -21,8 +26,8 @@
 	$cPost['department'] 		= $utl->utl_get_post('department');
 	$cPost['class'] 			= $utl->utl_get_post('class');
 	$cPost['trainer'] 			= $utl->utl_get_post('trainer');
-	$cPost['name_l'] 			= $utl->utl_get_post('name_l');
-	$cPost['name_f'] 			= $utl->utl_get_post('name_f');
+	$cPost['name_l'] 			= $utl->utl_get_post('name_l').'%';
+	$cPost['name_f'] 			= $utl->utl_get_post('name_f').'%';
 	$cPost['frm_lst_account']	= $utl->utl_get_post('frm_lst_account');
 	
 	/* Build parameter array. */
@@ -68,7 +73,12 @@
 	if(is_array($cPost['frm_lst_account']) === TRUE)
 	{	
 		/* Build parameter string insert for query. */
-		$sqlAdd['account'] = " AND (account IN (".str_repeat('?,', count($cPost['frm_lst_account']) - 1). '?'."))";
+		//$sqlAdd['account'] = " AND (account IN (".str_repeat('?,', count($cPost['frm_lst_account']) - 1). '?'."))";
+		
+		$sqlAdd['account'] = " AND (".str_repeat('account LIKE ? OR ', count($cPost['frm_lst_account']) - 1). 'account LIKE ?'.")";
+		
+		// Adds the '%' to end of every string in array.'
+		$cPost['frm_lst_account'] = array_map('append_like_char', $cPost['frm_lst_account']);
 		
 		/* Merge into parameter array. */
 		$params = array_merge($params, $cPost['frm_lst_account']);	
@@ -89,11 +99,15 @@
 						.$sqlAdd['department']						
 						.$sqlAdd['class']
 						.$sqlAdd['trainer']."			AND						
-						((?='-1') OR (name_l = ?))	 	AND
-						((?='-1') OR (name_f = ?))"
+						((?='-1') OR (name_l LIKE ?))	 	AND
+						((?='-1') OR (name_f LIKE ?))"
 						.$sqlAdd['account']
 					."ORDER BY name_l, name_f, class_date desc";
 
+	echo "<!-- QUERY: ";
+	echo $query;
+	echo " -->";
+	
 	/* Execute query. */
 	$oDB->db_basic_select($query, $params, FALSE, TRUE, TRUE, TRUE);
 			

@@ -43,7 +43,9 @@
                       for emergency personnel and therefore an AED may not be necessary. UK Occupational Health &amp; Safety<br>
                       requires that departments submit an official <a href="http://ehs.uky.edu/apps/shocker">request form</a> for approval before procuring an AED so that a<br>
                     review of your specific need for having this regulated piece of equipment can be done.</p>
-                  <p><a href="#def">Top of Page</a></p>
+                  
+					<a style="font-size: x-large;" href="https://www.zoll.com/medical-products/automated-external-defibrillators/aed-plus/step-by-step-demo" target="_blank">Zoll AED Plus - A Step-by-Step User Guide</a>                  </h3>
+				  <p><a href="#def">Top of Page</a></p>
                   <h2 id="why_contact">Why should Occupational Health &amp; Safety be contacted before a
                     department/building purchases an AED?</h2>
                     

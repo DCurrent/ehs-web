@@ -42,16 +42,18 @@
 	}	
 	
 	// If date range values are not set, populate with defaults.
-	$query = "SELECT TOP 1 class_date FROM tbl_class WHERE class_date IS NOT NULL ORDER BY class_date";
-	$oDB->db_basic_select($query, NULL, TRUE);	
-	$range_start	= $range_start ? $range_start : date_format($oDB->DBLine['class_date'], DATE_FORMAT);
+	//$query = "SELECT TOP 1 class_date FROM tbl_class WHERE class_date IS NOT NULL ORDER BY class_date";
+	//$oDB->db_basic_select($query, NULL, TRUE);	
+	//$range_start	= $range_start ? $range_start : date_format($oDB->DBLine['class_date'], DATE_FORMAT);
 	
-	$date_range_start['Year'] = date('Y', strtotime($range_start));
+	$range_start = date('Y-m-d H:i', strtotime("-1 year"));
+	$date_range_start['Year'] = date('Y', strtotime("1980-01-01"));
 		
-	$query .= " DESC";
-	$oDB->db_basic_select($query, NULL, TRUE);
-	$range_end		= $range_end ? $range_end : date_format($oDB->DBLine['class_date'], DATE_FORMAT);
+	//$query .= " DESC";
+	//$oDB->db_basic_select($query, NULL, TRUE);
+	//$range_end		= $range_end ? $range_end : date_format($oDB->DBLine['class_date'], DATE_FORMAT);
 	
+	$range_end = date('Y-m-d H:i');
 	$date_range_end['Year'] = date('Y', strtotime($range_end));
 		
 	$query 	= "SELECT id, desc_title FROM tbl_class_train_parameters";
@@ -77,25 +79,33 @@
 	$oFrm->forms_fieldset("fs_range", "Date Range");
 	
 	// Fieldset markup: Account
-	$query 		= "SELECT DISTINCT account FROM tbl_class_participant WHERE (account <> '') ORDER BY account";
+	//$query 		= "SELECT DISTINCT account FROM tbl_class_participant WHERE (account <> '') ORDER BY account";
 	
 	$oFrm->itemsList = $oFrm->forms_list_array_from_query($query, NULL);	
 	
-	$oFrm->forms_fieldset_addition('instructions', 'Select account, or leave blank for all accounts. Type the first few letters of an item to quickly locate it in the list. Hold Ctrl (Windows) or Command (Mac) to choose multiple items or remove a previous selection.');
+	$oFrm->forms_fieldset_addition('instructions', 'Enter a link blue account name. Only enter the name (i.e. "liblue2", not "ad/liblue2" or "liblue2@uky.edu"). Leave blank to include all account names.');
 	
-	$oFrm->forms_select("frm_lst_account[]", class_forms::ID_USE_NAME, "Account: ", class_forms::LABEL_USE_ITEM_KEY, $oFrm->itemsList, -1, NULL, array("element" => NULL), class_forms::EVENTS_NONE, 'multiple size="6"');
+	$oFrm->forms_fieldset_addition('frm_lst_account', '<label for="frm_lst_account" id="frm_lst_account_label" class="">Account:</label><input type="text" id="frm_lst_account" name="frm_lst_account[]">');
+
+	//$oFrm->forms_select("frm_lst_account[]", class_forms::ID_USE_NAME, "Account: ", class_forms::LABEL_USE_ITEM_KEY, $oFrm->itemsList, -1, NULL, array("element" => NULL), class_forms::EVENTS_NONE, 'multiple size="6"');
 	
 	$oFrm->forms_fieldset("fs_account", "Accounts");
 	
 	// Fieldset markup: Names
-	$query 		= "SELECT DISTINCT name_l FROM tbl_class_participant WHERE (name_l IS NOT NULL AND name_l <> '') ORDER BY name_l";
+	//$query 		= "SELECT DISTINCT name_l FROM tbl_class_participant WHERE (name_l IS NOT NULL AND name_l <> '') ORDER BY name_l";
+
+
+	$oFrm->forms_fieldset_addition('instructions', '<p>Enter a last and first name. Leave a field blank to select all available last or first names. </p>');
 	
-	$oFrm->forms_fieldset_addition('instructions', '<p>Choose a last name; the list of first names will then be populated based on your selection.</p>');
+	// -- 2020-04-23 - What in the HELL was I thinking with all this?
+	// Adding a temp string to insert write in field.
+	$oFrm->forms_fieldset_addition('element_name_l', '<label for="name_l" id="name_l_label" class="">Last Name:</label><input type="text" id="name_l" name="name_l">');
+	$oFrm->forms_fieldset_addition('element_name_f', '<label for="name_f" id="name_d_label" class="">First Name:</label><input type="text" id="name_f" name="name_f">');
+
+	//$oFrm->itemsList = $oFrm->forms_list_array_from_query($query, NULL, array("All Last Names" => -1));	
 	
-	$oFrm->itemsList = $oFrm->forms_list_array_from_query($query, NULL, array("All Last Names" => -1));	
-	
-	$oFrm->forms_select("name_l", class_forms::ID_USE_NAME, "Last Name:", class_forms::LABEL_USE_ITEM_KEY, $oFrm->itemsList, -1, NULL, array("element" => "first_name_search"));
-	$oFrm->forms_select("name_f", class_forms::ID_USE_NAME, "First Name:", class_forms::LABEL_USE_ITEM_KEY, array("All First Names" => -1), -1, NULL);
+	//$oFrm->forms_select("name_l", class_forms::ID_USE_NAME, "Last Name:", class_forms::LABEL_USE_ITEM_KEY, $oFrm->itemsList, -1, NULL, array("element" => "first_name_search"));
+	//$oFrm->forms_select("name_f", class_forms::ID_USE_NAME, "First Name:", class_forms::LABEL_USE_ITEM_KEY, array("All First Names" => -1), -1, NULL);
 	
 	$oFrm->forms_fieldset("fs_name", "Name");	
 	
