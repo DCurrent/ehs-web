@@ -37,6 +37,10 @@
                   	<p>This training is designed to provide awareness of United States   Government policies related to the concept of Dual Use Research and Dual   Use Research of Concern (DURC). All Principal Investigators are asked   to complete this training as they are ultimately responsible for   ensuring that their research is properly reviewed for Dual Use Research   to ensure continued funding from United States Government Funding   Agencies and/or the National Institutes of Health.</p>
                   	<p>This class is available <a href="main.php?cClassID=107" class="link-class">online</a>.</p>
                   	
+				  <h2>Resumption of Research</h2>
+					<p>This training provides  basic information for the Vice President of Research's Resumption of Research  Plan.</p>
+                  	<p>This class is only available <a href="main.php?cClassID=133" class="link-class">online</a>.</p>
+					
                     <h2 id="select_agents">Select Agents</h2>
                   	<p>This  training is designed to promote safe and secure handing of designated Select  Agents. All personnel must be  pre-authorized in order to receive Select Agent training. Contact the <a href="mailto:ehsbiosafety@uky.edu" >Biological Safety Department</a>, 323-5728 or 257-8655.</p>
                   	<p>This class is available <a href="main.php?cClassID=62" class="link-class">online</a>.</p>
