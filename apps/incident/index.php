@@ -125,7 +125,7 @@
 			
 		// Set up and send email alert.		
 		$subject = MAILING::SUBJECT;
-		$body = 'Incident posted. <a href="http://ehs.uky.edu/apps/incident/details.php?&id='.$inserted->id.'">Click here</a> to view.';
+		$body = 'Incident posted. <a href="https://ehs.uky.edu/apps/incident/details.php?&id='.$inserted->id.'">Click here</a> to view.';
 	
 		$address = $post->get_email();
 		$headers   = array();

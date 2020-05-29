@@ -3,7 +3,7 @@
 <div id="banner_container" class="banner_container">	
 	<div id="banner_content" class="banner">
     	<a href="//www.uky.edu" class="no_icon">University of Kentucky</a>
-        <h1><a href="/">Environmental Health and Safety</a></h1>
+        <h1><a href="/" class="no_icon">Environmental Health and Safety</a></h1>
       	<div id="banner_slogan" class="slogan">
       		UK Safety Begins with You!
       	</div><!--#banner_slogan-->
