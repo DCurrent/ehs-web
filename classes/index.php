@@ -189,6 +189,9 @@
                         <tr>
                           <td><a href="classes_ohs_0001.php#respirator_use_voluntary">Respirator  - Voluntary Use</a></td>
                         </tr>
+						<tr>
+                        	<td><a href="classes_biosafety_0001.php#resumtion_of_research">Resumption of Research</a></td>
+                        </tr>
                         <tr>
                         	<td><a href="classes_ohs_0001.php#safe_driving">Safe Driving</a></td>
                         </tr>
