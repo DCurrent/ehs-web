@@ -157,26 +157,28 @@
 				$cClassParams['trainstatus'].= ', '. $cClassParams['trainstatus'] == 1 ? "Annual Refresher" : "Initial";
 			}		
 			
-			/* Email results to responsible party and webmaster. */		  
-			$cMailHead['From'] 		= "EHS Online Training";
-			$cMailHead['To'] 		= $cClassParams['email_list'];
-            $cMailHead['Subject']	= "EHS Online Training: ".$cClassParams['desc_title'];			
-			$cMailCont = array(
-						"Record ID"					=>	$iRecordID,
-						"Etrax Setup Link"			=>	$cClassParams['etrax'],		
-						"Class"						=>	$cClassParams['class'],
-						"Account"					=>	$cClassParams['account'],
-						"Name" 						=>	$cClassParams['name_f'].' '.$cClassParams['name_l'],
-						"Department" 				=>	$cClassParams['department'],
-						"Location (room/lab)"		=>	$cClassParams['room'],
-						"Additonal Rooms/Labs"		=>	$cClassParams['addroom'],						
-						"Phone number" 				=>	$cClassParams['phone'],
-						"Status" 					=>	$cClassParams['status'],
-						"Training Status"			=>	$cClassParams['trainstatus'],
-						"Taken"						=>	$cDate,
-						"Supervisor"				=>	$cClassParams['supervisor_namef'] .' '.$cClassParams['supervisor_namel']);				
-			$oMail->mail_send($cMailCont, $cMailHead['Subject'], $cMailHead['To'], $cMailHead['From']); 
-			
+			if($cClassParams['email_list'])
+			{			
+				/* Email results to responsible party and webmaster. */		  
+				$cMailHead['From'] 		= "EHS Online Training";
+				$cMailHead['To'] 		= $cClassParams['email_list'];
+				$cMailHead['Subject']	= "EHS Online Training: ".$cClassParams['desc_title'];			
+				$cMailCont = array(
+							"Record ID"					=>	$iRecordID,
+							"Etrax Setup Link"			=>	$cClassParams['etrax'],		
+							"Class"						=>	$cClassParams['class'],
+							"Account"					=>	$cClassParams['account'],
+							"Name" 						=>	$cClassParams['name_f'].' '.$cClassParams['name_l'],
+							"Department" 				=>	$cClassParams['department'],
+							"Location (room/lab)"		=>	$cClassParams['room'],
+							"Additonal Rooms/Labs"		=>	$cClassParams['addroom'],						
+							"Phone number" 				=>	$cClassParams['phone'],
+							"Status" 					=>	$cClassParams['status'],
+							"Training Status"			=>	$cClassParams['trainstatus'],
+							"Taken"						=>	$cDate,
+							"Supervisor"				=>	$cClassParams['supervisor_namef'] .' '.$cClassParams['supervisor_namel']);				
+				$oMail->mail_send($cMailCont, $cMailHead['Subject'], $cMailHead['To'], $cMailHead['From']); 
+			}
 			/*
 			$cEtraxReturn = file_get_contents($cClassParams['etrax']);	
 			
