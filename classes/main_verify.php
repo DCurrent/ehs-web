@@ -158,7 +158,23 @@
 			}		
 			
 			if($cClassParams['email_list'])
-			{			
+			{	
+				// paraquat text
+				
+				$paraquat = 'No';
+				$paraquat_assured = 'No';
+				
+				if($cClassParams['paraquat'] == 1)
+				{
+					$paraquat = 'Yes';
+				}
+				
+				if($cClassParams['paraquat_assured'] == 1)
+				{
+					$paraquat_assured = 'Yes';
+				}
+				
+				
 				/* Email results to responsible party and webmaster. */		  
 				$cMailHead['From'] 		= "EHS Online Training";
 				$cMailHead['To'] 		= $cClassParams['email_list'];
@@ -176,7 +192,9 @@
 							"Status" 					=>	$cClassParams['status'],
 							"Training Status"			=>	$cClassParams['trainstatus'],
 							"Taken"						=>	$cDate,
-							"Supervisor"				=>	$cClassParams['supervisor_namef'] .' '.$cClassParams['supervisor_namel']);				
+							"Supervisor"				=>	$cClassParams['supervisor_namef'] .' '.$cClassParams['supervisor_namel'],
+							"EPA Paraquat"				=> 	$paraquat,
+							"Paraquat Assured"			=> 	$paraquat_assured);				
 				$oMail->mail_send($cMailCont, $cMailHead['Subject'], $cMailHead['To'], $cMailHead['From']); 
 			}
 			/*
