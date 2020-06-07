@@ -462,8 +462,6 @@
 							</div><!--/fs_status_element_status-->
 						</fieldset>
 						
-						<p>...Paraquat certification questions in progress...</p>
-						
 						<?php
 						}
 						
