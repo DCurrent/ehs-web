@@ -175,7 +175,7 @@
                 <h2 id="office_ergonomics">Office Ergonomics</h2>
                 <p>Training                 for employees on proper office ergonomics,   including desk, chair                 and computer assessments.<br />
                   <br />
-        Classroom training sessions are available upon request. contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739.<br />
+        Classroom training sessions are available upon request. Contact <a href="mailto:melissa.claar@uky.edu" title="Email Melissa Claar.">Melissa Claar</a> at <a href="tel:+18592573827" title="Call (859) 257-9739.">(859) 257-3827</a>.<br />
         <br />
         This class is available <a href="main.php?cClassID=43" class="link-class">online</a>.</p>
         
