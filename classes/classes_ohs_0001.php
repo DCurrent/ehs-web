@@ -114,6 +114,13 @@
                 <h2 id="epipen">Epipen Safety</h2>
                 <p>Research personnel whose work involves honey bees or other organisms   that require the presence of an Epipen at the work location are required   to complete this training. A determination of an occupational hazard   must first be done by UK OHS before this training can be taken. Contact   <a href="mailto:lee.poore@uky.edu">OHS</a> or 859 257-2924 for assistance.</p>
                 
+                <h2 id="ergonomics_remote">Ergonomics For Remote Workers</h2>
+                <p>If you are a remote worker, ergonomics is just as important as if you   were working in an employer&rsquo;s office.  By adopting proper ergonomics,   you can work comfortably, avoid injury, and improve your productivity.   Our online training provides recommendations on improving your remote   workstation. Zoom meetings are available upon request or if you need   more information. Contact <a href="mailto:melissa.claar@uky.edu" title="Email Melissa Claar.">Melissa Claar</a> at <a href="tel:+18592573827" title="Call (859) 257-9739.">(859) 257-3827</a>.</p>
+                
+				Class Materials Available <a href="../docs/ppt/train_ergonomics_for_remote_workers.pptx" class="link-class">here</a>
+					
+					
+                
 				  <h2 id="first_aid">Fall Protection &amp; Ladder Safety</h2>
                 <p>The course provides information on the working conditions that  prompt use of fall protection and the types of fall protection available to  protect workers.&nbsp; It assists those affected with complying with 29 CFR  1926.503.<br />
                   Upon  course completion, the student is able to:</p>

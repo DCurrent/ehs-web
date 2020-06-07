@@ -130,6 +130,9 @@
 							<td><a href="classes_ohs_0001.php#epipen" >Epipen Safety</a></td>
                         </tr>
                         <tr>
+                          <td><a href="classes_ohs_0001.php#ergonomics_remote" >Ergonomics For Remote Workers</a></td>
+                        </tr>
+                        <tr>
                         	<td><a href="classes_ohs_0001.php#ladder_safety">Fall Protection &amp; Ladder Safety</a></td>
                         </tr>
                         <tr>
