@@ -25,7 +25,9 @@
 							"name_l" 			=> NULL, 
 							"email" 			=> NULL, 
 							"department"		=> NULL, 
-							"account" 			=> NULL, 
+							"account" 			=> NULL,
+						    "paraquat"			=> NULL,
+						    "paraquat_assured"	=> NULL,
 							"phone" 			=> NULL,
 							"desc_title"		=> NULL,
 							"status"			=> NULL,
@@ -35,8 +37,8 @@
 							"supervisor_namef"	=> NULL,
 							"supervisor_namel"	=> NULL,
 							"external_grade"	=> NULL,
-						 	"pass_grade			=> NULL");
-	
+						 	"pass_grade"		=> NULL);
+
 	/* Get current date. */
 	$cDate		= date(DATE_FORMAT);
 	
@@ -67,7 +69,7 @@
 	{		
 		$cClassParams[$key] = $value;	
 	}	
-	
+
 	// This is for Captivate posting.
 	if(isset($_GET['eg']) == TRUE)
 	{

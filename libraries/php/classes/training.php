@@ -97,12 +97,19 @@ class class_training implements E_ORDER
 				WHERE	id = ?
 				ORDER BY value";
 		
-		// If no data passed, we'll catch the error here.
+		// We need to make sure we have an array of questions.
+		//
+		// The array is a list containing the IDs of questions
+		// that were assigned to user. We'll need to use those
+		// ID's to look up the question from database and
+		// compare its correct answer to answer from user.
+		
 		if(is_array($QuestionAssigned))
-		{			
+		{	
+			// First let's find out how many questions were assigned.
 			$iQueCnt = count($QuestionAssigned);
 			
-			//$cQuizGradeStr.= '<ol>';
+			//$cQuizGradeStr.= '<ol>';			
 			
 			// Loop ID of every question that was assigned to user.		
 			foreach($QuestionAssigned as $QuestionID)
@@ -111,9 +118,10 @@ class class_training implements E_ORDER
 				// as a number label for end user (question 1, question2, ...).
 				$question_count++;
 				
-				$cParamQuestion = array(&$QuestionID);
-							
-				// Run query.
+				// Run query to select the question using
+				// current question ID.
+				$cParamQuestion = array(&$QuestionID);							
+				
 				$this->dependencies->database->db_basic_select($queryQuestion, $cParamQuestion);
 					
 				// Populate line array.
@@ -348,13 +356,15 @@ class class_training implements E_ORDER
 				name_f				= ?,									
 				room				= ?,
 				status				= ?,
+				paraquat			= ?,
+				paraquat_assured	= ?,
 				phone				= ?,									
 				department			= ?,
 				supervisor_name_f	= ?,
 				supervisor_name_l	= ?
 		WHEN NOT MATCHED THEN
-			INSERT (account, name_l, name_f, room, status, phone, department, supervisor_name_f, supervisor_name_l)
-			VALUES (SRC.Search_Col, ?, ?, ?, ?, ?, ?, ?, ?)
+			INSERT (account, name_l, name_f, room, status, paraquat, paraquat_assured, phone, department, supervisor_name_f, supervisor_name_l)
+			VALUES (SRC.Search_Col, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 			OUTPUT INSERTED.id;";		
 		
 		/* Apply parameters. */
@@ -363,6 +373,8 @@ class class_training implements E_ORDER
 						&$cTrainingParams['name_f'],
 						&$cTrainingParams['room'],
 						&$cTrainingParams['status'],
+						&$cTrainingParams['paraquat'],
+						&$cTrainingParams['paraquat_assured'],
 						&$cTrainingParams['phone'],
 						&$cTrainingParams['department'],
 						&$cTrainingParams['supervisor_name_f'],
@@ -371,17 +383,21 @@ class class_training implements E_ORDER
 						&$cTrainingParams['name_f'],
 						&$cTrainingParams['room'],
 						&$cTrainingParams['status'],
+						&$cTrainingParams['paraquat'],
+						&$cTrainingParams['paraquat_assured'],
 						&$cTrainingParams['phone'],
 						&$cTrainingParams['department'],
 						&$cTrainingParams['supervisor_name_f'],
 						&$cTrainingParams['supervisor_name_l']);	
-						
+		
+		var_dump($params);
+		
 		/* Execute query. */	
 		$this->dependencies->database->db_basic_action($query, $params, TRUE);
 		
 		/* Get ID of created/updated record. */
 		$p_id = $this->dependencies->database->DBLine["id"];
-		
+				
 		/* 	User demographics have now been found or inserted. Now we will deal with class type, instructor and time. */		
 		$query = "INSERT INTO	tbl_class
 		

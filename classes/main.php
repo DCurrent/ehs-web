@@ -44,6 +44,7 @@
 		public $ukStatus	= NULL;
 		public $ukid		= NULL;
 		public $supervisor	= NULL;
+		public $paraquat	= NULL;
 		public $phone		= NULL;
 	}
 	
@@ -74,7 +75,8 @@
 										'Dept' 			=> NULL,	//Department select markup.
 										'Status' 		=> NULL);	//Status select markup.
 	
-	$c_vals						= array('phone'			=> NULL,
+	$c_vals						= array('paraquat'		=> NULL,
+										'phone'			=> NULL,
 										'email'			=> NULL,
 										'status'		=> NULL,
 										'department'	=> NULL,
@@ -183,6 +185,7 @@
 		$showField->ukStatus		= $line['field_uk_status'];			// Include UK status field?
 		$showField->ukid			= $line['field_ukid'];				// Include UK ID field?	
 		$showField->supervisor		= $line['field_supervisor'];		// Include PI/Supervisor field?
+		$showField->paraquat		= $line['field_paraquat'];			// Include Paraquat certified fields?
 		$showField->phone			= $line['field_phone'];				// Include phone number field?
 		$moduleStatus->hidden		= $line['hidden'];					// Show/hide the quiz?
 		$moduleStatus->order		= $line['question_order'];			// Question order (random, etc.).
@@ -316,6 +319,8 @@
 			$oFrm->forms_fieldset("fs_email");	
 		}
 		
+		
+		
 		// Phone
 		if($showField->phone == TRUE)
 		{
@@ -326,6 +331,8 @@
 			
 			$oFrm->forms_fieldset("fs_phone");
 		}
+		
+		
 		
 		// PI/Supervisor.
 		if($showField->supervisor == TRUE)
@@ -409,6 +416,57 @@
                             
 						/* If fieldset markup contains any items, echo them here. */
 						echo $oFrm->forms_fieldset_all_get();	//Registration fields and markup.
+						
+						/* Paraquat certified. */
+						if($showField->paraquat == TRUE)
+						{	
+						?>
+						
+						<fieldset name="fs_paraquat" id="fs_paraquat" class="">
+							
+							<legend id="fs_paraquat_legend" class="">Paraquat Certification</legend>
+							<div id="fs_paraquat_element_status" class="element paraquat">
+								<div id="fs_paraquat_element_status" class="element paraquat">
+									<div class="Show Me">
+										
+										<p>Are you an EPA Certified Pesticide Applicator that uses Paraquat?</p>
+										
+										<label for="paraquat_1" id="paraquat_1_label" class="">Yes</label>
+										
+										<div class="">
+											<input type="radio" name="paraquat" id="paraquat_1" value="1" required="">
+										</div>
+										
+										<label for="paraquat_0" id="paraquat_0_label" class="">No</label>
+										
+										<div class="">
+											<input type="radio" name="paraquat" id="paraquat_0" value="0" required="" checked>
+										</div>
+										
+										<p>As an EPA Certified Pesticide Applicator that uses Paraquat, I certifiy that I have met all the requirements by the EPA to handle, mix, and spray paraquat.</p>
+										
+										<label for="paraquat_assured_1" id="paraquat_1_label" class="">Yes</label>
+										
+										<div class="">
+											<input type="radio" name="paraquat_assured" id="paraquat_assured_1" value="1" required="">
+										</div>
+										
+										<label for="paraquat_assured_0" id="paraquat_assured_0_label" class="">No</label>
+										
+										<div class="">
+											<input type="radio" name="paraquat_assured" id="paraquat_assured_0" value="0" required="" checked>
+										</div>
+										
+									</div>
+								</div>
+							</div><!--/fs_status_element_status-->
+						</fieldset>
+						
+						<p>...Paraquat certification questions in progress...</p>
+						
+						<?php
+						}
+						
 						echo $markup['questions']; //Questions from database.
                         
                         if($cNoClass != TRUE)
