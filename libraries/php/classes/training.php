@@ -356,15 +356,13 @@ class class_training implements E_ORDER
 				name_f				= ?,									
 				room				= ?,
 				status				= ?,
-				paraquat			= ?,
-				paraquat_assured	= ?,
 				phone				= ?,									
 				department			= ?,
 				supervisor_name_f	= ?,
 				supervisor_name_l	= ?
 		WHEN NOT MATCHED THEN
-			INSERT (account, name_l, name_f, room, status, paraquat, paraquat_assured, phone, department, supervisor_name_f, supervisor_name_l)
-			VALUES (SRC.Search_Col, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+			INSERT (account, name_l, name_f, room, status, phone, department, supervisor_name_f, supervisor_name_l)
+			VALUES (SRC.Search_Col, ?, ?, ?, ?, ?, ?, ?, ?)
 			OUTPUT INSERTED.id;";		
 		
 		/* Apply parameters. */
@@ -372,9 +370,7 @@ class class_training implements E_ORDER
 						&$cTrainingParams['name_l'],
 						&$cTrainingParams['name_f'],
 						&$cTrainingParams['room'],
-						&$cTrainingParams['status'],
-						&$cTrainingParams['paraquat'],
-						&$cTrainingParams['paraquat_assured'],
+						&$cTrainingParams['status'],						
 						&$cTrainingParams['phone'],
 						&$cTrainingParams['department'],
 						&$cTrainingParams['supervisor_name_f'],
@@ -383,20 +379,36 @@ class class_training implements E_ORDER
 						&$cTrainingParams['name_f'],
 						&$cTrainingParams['room'],
 						&$cTrainingParams['status'],
-						&$cTrainingParams['paraquat'],
-						&$cTrainingParams['paraquat_assured'],
 						&$cTrainingParams['phone'],
 						&$cTrainingParams['department'],
 						&$cTrainingParams['supervisor_name_f'],
 						&$cTrainingParams['supervisor_name_l']);	
 		
-		var_dump($params);
-		
 		/* Execute query. */	
 		$this->dependencies->database->db_basic_action($query, $params, TRUE);
 		
 		/* Get ID of created/updated record. */
-		$p_id = $this->dependencies->database->DBLine["id"];
+		$p_id = $this->dependencies->database->DBLine["id"];		
+		
+		// Paraquat kludge. If paraquat has any value, update
+		// it here. We have to use a seperate query so that
+		// non paraquat quizes taken afterward don't overwrite 
+		// a paraquat value with NULL.
+		if($cTrainingParams['paraquat'] != NULL || $cTrainingParams['paraquat_assured'] != NULL)
+		{
+			$query ="UPDATE tbl_class_participant
+			SET
+				paraquat			= ?,
+				paraquat_assured	= ?
+			WHERE id = ?;";
+			
+			$params = array(&$cTrainingParams['paraquat'],
+						&$cTrainingParams['paraquat_assured'],
+						   &$p_id);
+			
+			$this->dependencies->database->db_basic_action($query, $params, TRUE);
+			
+		}
 				
 		/* 	User demographics have now been found or inserted. Now we will deal with class type, instructor and time. */		
 		$query = "INSERT INTO	tbl_class
