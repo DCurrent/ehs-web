@@ -114,7 +114,13 @@
                 <h2 id="epipen">Epipen Safety</h2>
                 <p>Research personnel whose work involves honey bees or other organisms   that require the presence of an Epipen at the work location are required   to complete this training. A determination of an occupational hazard   must first be done by UK OHS before this training can be taken. Contact   <a href="mailto:lee.poore@uky.edu">OHS</a> or 859 257-2924 for assistance.</p>
                 
-                <h2 id="ergonomics_remote">Ergonomics For Remote Workers</h2>
+                <h2 id="office_ergonomics2"> Ergonomics For Office Workers</h2>
+                <p>Training                 for employees on proper office ergonomics,   including desk, chair                 and computer assessments.<br />
+                  <br />
+                  Classroom training sessions are available upon request. Contact <a href="mailto:melissa.claar@uky.edu" title="Email Melissa Claar.">Melissa Claar</a> at <a href="tel:+18592573827" title="Call (859) 257-9739.">(859) 257-3827</a>.<br />
+  <br />
+                  This class is available <a href="main.php?cClassID=43" class="link-class">online</a>.</p>
+                <h2>Ergonomics For Remote Workers</h2>
                 <p>If you are a remote worker, ergonomics is just as important as if you   were working in an employer&rsquo;s office.  By adopting proper ergonomics,   you can work comfortably, avoid injury, and improve your productivity.   Our online training provides recommendations on improving your remote   workstation. Zoom meetings are available upon request or if you need   more information. Contact <a href="mailto:melissa.claar@uky.edu" title="Email Melissa Claar.">Melissa Claar</a> at <a href="tel:+18592573827" title="Call (859) 257-9739.">(859) 257-3827</a>.</p>
                 
 				Class Materials Available <a href="../docs/ppt/train_ergonomics_for_remote_workers.pptx" class="link-class">here</a>
@@ -179,14 +185,7 @@
                 <p>Training                 for employees performing service or maintenance   of equipment in                 which is the unexpected energization of   start up of equipment or                 release of stored energy could   cause injury. Provides instruction                 on the requirements   of OSHA's Lockout/Tagout Standard, overview                 of energy   sources, energy isolation devices and the basic lockout/tagout                   steps. This training is complimented by unit specific   lockout/tagout                 procedure training. <br />
                   <br />
         Classroom training sessions are available upon request. Duration is 1 hour.         Contact <a href="../Michele.Laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>
-                <h2 id="office_ergonomics">Office Ergonomics</h2>
-                <p>Training                 for employees on proper office ergonomics,   including desk, chair                 and computer assessments.<br />
-                  <br />
-        Classroom training sessions are available upon request. Contact <a href="mailto:melissa.claar@uky.edu" title="Email Melissa Claar.">Melissa Claar</a> at <a href="tel:+18592573827" title="Call (859) 257-9739.">(859) 257-3827</a>.<br />
-        <br />
-        This class is available <a href="main.php?cClassID=43" class="link-class">online</a>.</p>
-        
-        <h2 id="pass_van">Passenger Van Safety Awareness</h2>
+                <h2 id="office_ergonomics">Passenger Van Safety Awareness</h2>
                   <p>The National Highway Traffic Safety Administration (NHTSA) has issued cautionary warnings to users of high capacity vans. In an effort to promote              safe driving practices for the protection of University employees, students, and the citizens and drivers using the highways, Occupational Health and Safety has developed a driver safety awareness training program for passenger van drivers.</p>
                   
         		<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>

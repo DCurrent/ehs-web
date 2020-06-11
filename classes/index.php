@@ -129,6 +129,9 @@
                         <tr>
 							<td><a href="classes_ohs_0001.php#epipen" >Epipen Safety</a></td>
                         </tr>
+						<tr>
+                        	<td><a href="classes_ohs_0001.php#office_ergonomics" >Ergonomics For Office Workers</a></td>
+                        </tr>
                         <tr>
                           <td><a href="classes_ohs_0001.php#ergonomics_remote" >Ergonomics For Remote Workers</a></td>
                         </tr>
@@ -173,9 +176,6 @@
                         </tr>
                         <tr>
                         	<td><a href="classes_ohs_0001.php#lockout_tagout">Lockout/Tagout</a></td>
-                        </tr>
-                        <tr>
-                        	<td><a href="classes_ohs_0001.php#office_ergonomics" >Office Ergonomics</a></td>
                         </tr>
                         <tr>
                         	<td><a href="classes_ohs_0001.php#pass_van">Passenger Van Training</a></td>
