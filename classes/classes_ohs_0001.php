@@ -114,7 +114,7 @@
                 <h2 id="epipen">Epipen Safety</h2>
                 <p>Research personnel whose work involves honey bees or other organisms   that require the presence of an Epipen at the work location are required   to complete this training. A determination of an occupational hazard   must first be done by UK OHS before this training can be taken. Contact   <a href="mailto:lee.poore@uky.edu">OHS</a> or 859 257-2924 for assistance.</p>
                 
-                <h2 id="office_ergonomics2"> Ergonomics For Office Workers</h2>
+                <h2 id="office_ergonomics"> Ergonomics For Office Workers</h2>
                 <p>Training                 for employees on proper office ergonomics,   including desk, chair                 and computer assessments.<br />
                   <br />
                   Classroom training sessions are available upon request. Contact <a href="mailto:melissa.claar@uky.edu" title="Email Melissa Claar.">Melissa Claar</a> at <a href="tel:+18592573827" title="Call (859) 257-9739.">(859) 257-3827</a>.<br />
