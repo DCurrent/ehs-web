@@ -61,13 +61,13 @@
 	
 	$cCP						= array('desc_title'	=> NULL,	//Title of class. 
 										'Intro' 		=> NULL,	//Introduction text.
-										'Email'			=> NULL,	//Email list.
+										'EMail'			=> NULL,	//Email list.
 										'MatAboveHead'	=> NULL,	//Material header (shown above instructions).
 										'MatAbove'		=> NULL,	//Material (shown above instructions).
 										'MatBelowHead'	=> NULL,	//Material header (shown below instructions).
 										'MatBelow'		=> NULL,	//Material (shown below instructions).
 										'InstrHead'		=> NULL,	//Instructions header.
-										'Inst'			=> NULL,
+										'Instr'			=> NULL,
 									    'pass_score'	=> NULL);	// Required grade to pass.
 	
 	$cDList						= array('Facility' 		=> NULL,	//Facility select markup.
