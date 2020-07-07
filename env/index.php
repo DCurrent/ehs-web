@@ -50,7 +50,22 @@
 					  <h1>Attention</h1>
 					  <p style="color:#0056b3">Due to the University’s response to COVID-19 concerns, as of March 30, 2020 the Environmental Management Department has adjusted its normal work location assignments for much of its staff. These reassignments may cause a slight deviation in normal response times for waste pick-up requests made through the E-Trax system or those that are called or emailed into the department.</p>
 					  
-					  <p style="color:#0056b3">We hope that this period of staff reassignment is short-lived but if you have any questions concerning a waste pick up request during this time, please call <a href="tel:18593235005">859-323-5005</a> or <a href="tel:18592573129">859-257-3129</a>.</p></div>
+					  <p style="color:#0056b3">We hope that this period of staff reassignment is short-lived but if you have any questions concerning a waste pick up request during this time, please call <a href="tel:18593235005">859-323-5005</a> or <a href="tel:18592573129">859-257-3129</a>.</p></div>					
+					
+					<br>
+					<div style="width: 100%; display: table;">
+						<div style="display: table-row">
+							<div style="display: table-cell;" class="center"><img src="taylor_ron.jpg" width="200" alt=""></div>
+							<div style="display: table-cell;" class="center"><img src="loyselle_maridely.jpg" width="200" alt=""></div>
+						</div>
+						<div style="display: table-row">
+							<div style="display: table-cell; padding:5px; ">As Assistant Director and the institution’s primary Environmental Affairs Compliance Manager, Ron Taylor has always exemplified the Core Values of this department – he was accountable to all, he went the extra mile to understand the needs of our service customers and he always made excellence the ultimate goal.  As of July 3, 2020, Ron will retire from UK and after 12 strong years we wish him nothing but the very best!</div>
+							<div style="display: table-cell; padding:5px;">We welcome Maridely Loyselle as the department’s new Assistant Director. She comes to UK after years of service with the Kentucky Energy &amp; Environment Cabinet as well as the Transportation Cabinet. She is a UK graduate in Biosystems &amp; Agricultural Engineering and a Professional Engineer.  Everyone served by the department will enjoy working with Maridely and we’re very excited to have her on the team!</div>
+						</div>
+					</div>
+					<br>
+				  	
+					
                   <div id="env_mission" class="center">
                         <a href="../docs/pdf/emm_mission_0001.pdf" target="_blank" class="no_icon"><img src="../media/image/em_mission_0001.jpg" title="Mission Statement" alt="Mission Statement" /></a>
                   </div><!--/env_mission-->
