@@ -9,6 +9,7 @@
 						<li><a href="/covid-19_guidance.php" title="Covid-19, General Guidelines" target="">General Guidelines</a></li>
       					<li><a href="/covid-19_mask_fit.php" title="Covid-19, Mask Guidance" target="">Mask Guidance</a></li>
 						<li><a href="/covid-19_cleaning_office.php" title="Covid-19, Office Cleaning Guide" target="">Office Cleaning</a></li>
+						<li><a href="/covid-19_reopening_gen_spaces.php" title="Covid-19, Reopening General Spaces" target="">Reopening Gen Spaces</a></li>
 	</ul>
 	<p><a href="http://ehs.uky.edu/bioraft.php">UKY BioRaft:&nbsp;  Laboratory Audit Inspection System.</a></p>
 
