@@ -39,6 +39,9 @@
                     <?php if ($oAcc->get_dialog()){ echo "<p>".$oAcc->get_dialog()."</p>"; } ?>
                     
                     <form method="post" name="main" id="main">
+						
+						Note - only enter your Link Blue account name, do not include the domain. Example: "lblue0", not "lblue01@uky.edu".
+						
                         <fieldset id="credentials">
                         	<legend>Credentials</legend>
                             
