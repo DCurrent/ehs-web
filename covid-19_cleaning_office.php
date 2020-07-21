@@ -28,12 +28,11 @@
 				    <li>    The sick person should leave campus and follow <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">CDC guidelines</a>.</li>
 				    <li> Close off areas used by the affected persons and lock/restrict access.</li>
 				    <li> Notify the building’s custodial staff of the affected area.</li>
-				    <li> Custodial staff have been trained on cleaning protocols. If practical, close the area for 7 days.  Custodial staff will wait up to 72 hours to clean the space. This will minimize potential for exposure to respiratory droplets.				      </li>
-				    <li>Open outside doors and windows to increase air circulation in the area.				      </li>
+				    <li> Custodial staff have been trained on cleaning protocols. It is recommended to close off areas used by the ill persons and wait as long as practical before beginning cleaning and disinfection to minimize potential for exposure to respiratory droplets. Open outside doors and windows to increase air circulation in the area. If possible, wait up to 24 hours before beginning cleaning and disinfection. 				      </li>
 				    <li>Cleaning staff should clean and disinfect all areas (e.g., offices, bathrooms, and common areas) used by the affected persons, focusing especially on frequently touched surfaces.				      </li>
 				    <li><a href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2">Occupants should use disinfecting wipes</a> to clean desks area and other high touch surfaces that custodial staff is not cleaning. See <a href="https://www.uky.edu/coronavirus/faqs">UK Coronavirus FAQ page</a>.</li>
 			    </ul>
-				  <h2>Indentify Unoccupied Areas To Preserve Resources</h2>
+				  <h2>Identify Unoccupied Areas To Preserve Resources</h2>
 				  <p>As much as possible, campuses and work units should close, lock, and label rooms and/or buildings that are not being used (such as classrooms, offices of employees working from home, etc.) so that cleaning staff can focus their time, energy, and supplies on the spaces still in use.</p>
 				  
                   
