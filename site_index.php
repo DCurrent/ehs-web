@@ -80,6 +80,7 @@
 						<li><a href="/covid-19_guidance.php" title="Covid-19, General Guidelines" target="">Covid-19, General Guidelines</a></li>
       					<li><a href="/covid-19_mask_fit.php" title="Covid-19, Mask Fitting Guide" target="" >Covid-19, Mask Guidance</a></li>
 						<li><a href="/covid-19_cleaning_office.php" title="Covid-19, Office Cleaning Guide" target="">Covid-19, Office Cleaning</a></li>
+						<li><a href="/covid-19_reopening_gen_spaces.php" title="Covid-19, Reopening General Spaces" target="">Covid-19, Reopening General Spaces</a></li>
 						<li><a href="ohs/cryogenic.html" title="Cryogenic Materials Safety.">Cryogenic Materials</a></li>
                     </ul>
                     
