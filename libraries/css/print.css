@@ -253,3 +253,8 @@ a:hover > img
 {
 	opacity:					0.5;
 }
+
+.no_break
+{
+	page-break-inside: avoid;
+}
