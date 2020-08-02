@@ -23,7 +23,7 @@
                     <h1><span data-contrast="auto" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="header">Guidelines with Suspected/Confirmed COVID-19</span></span></h1>                      
                     <p>This guidance provides recommendations on the cleaning and disinfection of rooms or areas of those with suspected or with confirmed COVID-19 have visited. It is aimed at limiting the survival of novel coronavirus in key environments. These recommendations will be updated if additional information becomes available. These recommendations are adapted from the <a href="https://www.cdc.gov/coronavirus/2019-ncov/community/organizations/cleaning-disinfection.html">CDC guidelines</a> focused on community, non-healthcare facilities (e.g., schools, institutions of higher education, offices, daycare centers, businesses, community centers).</p>
 				  <h2>Restrict Access and Disinfection Procedures For Affected Areas</h2>
-				  <p>Based on the information about knowledge of the case and in accordance with the CDC guidelines, the following guidelines have been established for the cleaning and disinfection of facilities where individuals of suspected or confirmed cases of COVID-19 are reported. </p>
+				  <p>Based on the information about knowledge of the case and in accordance with the CDC guidelines, the following guidelines have been established for the cleaning and disinfection of facilities where confirmed cases  of COVID-19 are reported.. </p>
 				  <ul>
 				    <li>    The sick person should leave campus and follow <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">CDC guidelines</a>.</li>
 				    <li> Close off areas used by the affected persons and lock/restrict access.</li>
