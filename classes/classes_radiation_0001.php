@@ -46,47 +46,41 @@
             
             <tr>
               <td><p>Thursday </p></td>
-              <td><p>January 30</p></td>
+              <td><p>August 27</p></td>
               <td><p>09:00 to 12:00</p></td>
               <td><p>Animal Pathology Bldg, rm. 202</p></td>
             </tr>
             <tr>
               <td><p>Wednesday            </p></td>
-              <td><p>February 26</p></td>
+              <td><p>September 23</p></td>
               <td><p>09:00 to 12:00</p></td>
               <td><p>Animal Pathology Bldg, rm. 202</p></td>
             </tr>
             <tr>
               <td><p>Thursday  </p></td>
-              <td><p>March 26</p></td>
+              <td><p>October 29</p></td>
               <td><p>09:00 to 12:00</p></td>
               <td><p>Animal Pathology Bldg, rm. 202</p></td>
             </tr>
             <tr>
               <td><p>Wednesday      </p></td>
-              <td><p>April 29</p></td>
+              <td><p>November 25</p></td>
               <td><p>09:00 to 12:00</p></td>
               <td><p>Animal Pathology Bldg, rm. 202</p></td>
             </tr>
             <tr>
               <td><p>Thursday</p></td>
-              <td><p>May 28</p></td>
-              <td><p>09:00 to 12:00</p></td>
-              <td><p>Animal Pathology Bldg, rm. 202</p></td>
-            </tr>
-            <tr>
-              <td><p>Wednesday </p></td>
-              <td><p>June 24</p></td>
+              <td><p>December 17</p></td>
               <td><p>09:00 to 12:00</p></td>
               <td><p>Animal Pathology Bldg, rm. 202</p></td>
             </tr>
             </table>
         
-        <h4>Check in at room 102 prior to class.</h4>
+        <h4>Check in at room 102 prior to class. Class is limited to the first 10 people who show up.</h4>
         <p>Contact <a href="main.php?cClassID=35">Bill Garner</a> at (859) 323-1009. </p>
         <h2><a name="advanced_radiation_safety" id="advanced_radiation_safety"></a>Advanced Radiation Safety </h2>
         <p>Required                   training for principal investigators, lab   managers, and others who                   have significant radioactive   materials experience and previous safety                   training, but   are new to UK. These personnel must complete the on-line class prior to their approval as an authorized user (AU).</p>
-        <p>Contact <a href="../docs/pdf/rad_worker_reg_form_0001.pdf">Fred Rawlings</a> at  (859) 323-1008 for more information.</p>
+        <p>Contact <a href="main.php?cClassID=35">Bill Garner</a> at (859) 323-1009 for more information.</p>
         <p>This class is only available <a href="main.php?cClassID=26" class="link-class">online</a>.</p>
         <h2><a name="diagnostic_xray" id="diagnostic_xray"></a>On-Site and Diagnostic X-Ray Safety</h2>
         <p>In  order to comply with federal and state regulations, all individuals at UK  proposing to work with diagnostic x-ray radiation must register with the  Radiation Safety Office by submitting a completed and signed <a href="../docs/pdf/rad_worker_reg_form_0001.pdf">Radiation Worker Registration  Form</a>, a completed and signed <a href="main.php?cClassID=35" target="_top">On-Site X-ray  Safety Training Form</a> and completing the Initial Radiation Safety Training.  Initial Training is held Monday &ndash; Friday at 1:40pm at the Radiation Safety  Office, 102 Animal Pathology Bldg. Please arrive by 1:30pm so the receptionist  can process your paperwork. If you  cannot make this scheduled time, call the Radiation Safety Office at 3-6777 to  schedule a specific appointment. This  training is a video and/or lecture lasting about fifteen minutes. You will receive the training form when you  come to the training.<br />
