@@ -120,10 +120,11 @@
                   Classroom training sessions are available upon request. Contact <a href="mailto:melissa.claar@uky.edu" title="Email Melissa Claar.">Melissa Claar</a> at <a href="tel:+18592573827" title="Call (859) 257-9739.">(859) 257-3827</a>.<br />
   <br />
                   This class is available <a href="main.php?cClassID=43" class="link-class">online</a>.</p>
-                <h2>Ergonomics For Remote Workers</h2>
+                
+					<h2 id="ergonomics_remote">Ergonomics For Remote Workers</h2>
                 <p>If you are a remote worker, ergonomics is just as important as if you   were working in an employer&rsquo;s office.  By adopting proper ergonomics,   you can work comfortably, avoid injury, and improve your productivity.   Our online training provides recommendations on improving your remote   workstation. Zoom meetings are available upon request or if you need   more information. Contact <a href="mailto:melissa.claar@uky.edu" title="Email Melissa Claar.">Melissa Claar</a> at <a href="tel:+18592573827" title="Call (859) 257-9739.">(859) 257-3827</a>.</p>
                 
-				Class Materials Available <a href="../docs/ppt/train_ergonomics_for_remote_workers.pptx" class="link-class">here</a>
+				Class Materials Available <a href="main.php?cClassID=115" class="link-class">online</a>
 					
 					
                 
