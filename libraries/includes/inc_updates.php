@@ -3,14 +3,32 @@
 	<hr />
 
 	<h2>Recent Updates </h2>
+	
+	<a href="/docs/pdf/sasp_poster.pdf" target="_blank"><img src="/media/image/sasp_poster.png" width="400" height="518" alt=""/></a>
+	<ul>
+	  	<li><a href="/docs/pdf/sasp_sop_researchers.pdf" target="_blank">SASP SOP for Researchers</a></li>
+		<li><a href="/docs/pdf/sasp_flow_researchers.pdf" target="_blank">SASP Process Flowchart for Researchers</a></li>
+		<li><a href="https://spark.adobe.com/page/3K4AmkHeZe1OQ/" target="_blank">SASP Training for Researchers</a></li>
+		<li><a href="https://spark.adobe.com/page/2EI4wncbionXi/" target="_blank">SASP Training for DLAR personnel</a></li>
+	</ul>
+	
+	<hr>
+	    
+      
+  
+  <h3 class="alert"><a href="https://etrax.chematix.com" target="new">!! E-Trax and Chematix Moved !!</a></h3>
+	
+	As part of a recent update, the university's Hazardous Waste Pickup and Chemical Inventory System has <a href="https://etrax.chematix.com" target="new">a new location</a>. Make sure to update your bookmarks!	
+	
 	<h3>Covid-19</h3>
 	<ul>
 		<li><a href="/covid-19_cleaning_computer.php" title="Covid-19, Cleaning Computer Surfaces Guide" target="" >Computers and High Touch Surfaces</a></li>
 						<li><a href="/covid-19_guidance.php" title="Covid-19, General Guidelines" target="">General Guidelines</a></li>
       					<li><a href="/covid-19_mask_fit.php" title="Covid-19, Mask Guidance" target="">Mask Guidance</a></li>
 						<li><a href="/covid-19_cleaning_office.php" title="Covid-19, Office Cleaning Guide" target="">Office Cleaning</a></li>
-						<li><a href="/covid-19_reopening_gen_spaces.php" title="Covid-19, Reopening General Spaces" target="">Reopening Gen Spaces</a></li>
-	</ul>
+	  <li><a href="/covid-19_reopening_gen_spaces.php" title="Covid-19, Reopening General Spaces" target="">Reopening Gen Spaces</a></li>
+	  <li><a href="https://www.uky.edu/facilities/covid-19-resources">Signage</a>&nbsp;</li>
+    </ul>
 	<p><a href="http://ehs.uky.edu/bioraft.php">UKY BioRaft:&nbsp;  Laboratory Audit Inspection System.</a></p>
 
 	<!-- Winter Walking -->
@@ -38,10 +56,10 @@
 		<li><a href="/classes/classes_ohs_0001.php#utility_cart">Utility Cart Training</a></li>
 		<li><a href="//www.csb.gov/videoroom/detail.aspx?vid=61&amp;F=0&amp;CID=0&amp;pg=1&amp;F_All=y">CSB Investigation into Recent Academic Lab Accidents</a></li>
 		<li><a href="/ohs/aed.php" target="_blank">Automated External Defibrillator Use</a></li>
-		<li><a href="https://www.etrax.uky.edu/Chematix/">Chematix Chemical and Waste Management System</a></li>
+		<li><a href="https://etrax.chematix.com/Chematix/">Chematix Chemical and Waste Management System</a></li>
 		<li><a href="/apps/hero" title="Hero application.">HERO (Hazard Education, Recording, and Observation) Application</a></li>
 		<li><a href="/ohs/minors_0001.php">High Schoolers in UK Laboratories Program</a></li>
-		<li><a href="/classes/classes_ohs_0001.php#annual_refresher">Laboratory Safety Refresher Training</a></li>
+		<!--<li><a href="/classes/classes_ohs_0001.php#annual_refresher">Laboratory Safety Refresher Training</a></li>-->
 	</ul>
 
 

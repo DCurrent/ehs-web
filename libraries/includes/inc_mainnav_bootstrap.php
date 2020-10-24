@@ -55,7 +55,7 @@
                     	<li class="divider"></li>
                         <li class="dropdown-header">Applications</li>   
                         	<li><a href="#" title="Inspector Blair is the EHS inspection tracking system."><?php echo NAV_INDENT; ?>Inspector Blair</a></li>	
-                            <li><a href="https://www.etrax.uky.edu" title="Create waste tickets and schedule waste pick up."><?php echo NAV_INDENT; ?>E-Trax</a></li>
+                            <li><a href="https://etrax.chematix.com" title="Create waste tickets and schedule waste pick up."><?php echo NAV_INDENT; ?>E-Trax</a></li>
                             <li><a href="#" title="Get online safety training, set up in person training, and view safety training records."><?php echo NAV_INDENT; ?>Rocky</a></li>    
                         <li class="divider"></li>
                         <li class="dropdown-header">Other</li>    
