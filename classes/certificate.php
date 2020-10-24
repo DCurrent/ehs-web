@@ -132,7 +132,7 @@
 		$db->space->query = new class_db_query($db->space->connection);
 		
 		// Set SQL string.
-		$db->space->query->set_sql('SELECT DeptName FROM MasterDepartment WHERE DeptNo = ?');
+		$db->space->query->set_sql('SELECT DeptName FROM vEbarsDepartments WHERE DeptCode = ?');
 		
 		$department = $fields->department;		
 		$department = trim($department);
