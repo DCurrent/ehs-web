@@ -69,7 +69,7 @@
 	
 	$string_out = new string_out();
 	
-	$string_out->etrax = "https://www.etrax.uky.edu/Chematix/UKYHazWasteTrainingUpdate?action=7"
+	$string_out->etrax = "https://etrax.chematix.com/Chematix/UKYHazWasteTrainingUpdate?action=7"
 		."&&FistName="	.$post->name_f
 		."&&LastName="	.$post->name_l
 		."&&eMail="		.$post->email

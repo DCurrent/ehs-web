@@ -115,7 +115,7 @@
 			$iRecordID = $oTra->training_class_record($cClassParams);
 			
 			/* Etrax Link. */
-			$cClassParams['etrax'] = "https://www.etrax.uky.edu/Chematix/UKYHazWasteTrainingUpdate?action=7"
+			$cClassParams['etrax'] = "https://etrax.chematix.com/Chematix/UKYHazWasteTrainingUpdate?action=7"
 				."&&FistName="	.$cClassParams['name_f']
 				."&&LastName="	.$cClassParams['name_l']
 				."&&eMail="		.$cClassParams['email']
