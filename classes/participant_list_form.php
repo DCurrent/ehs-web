@@ -110,7 +110,7 @@
 	$oFrm->forms_fieldset("fs_name", "Name");	
 	
 	// Fieldset markup: Dept	
-	$query = "SELECT distinct department, department, DeptName FROM ehsinfo.dbo.tbl_class_participant LEFT JOIN UKSpace.dbo.MasterDepartment ON department = UKSpace.dbo.MasterDepartment.DeptNo where department <> '' AND DeptName <> '' order by DeptName";
+	$query = "SELECT distinct department, department, DeptName FROM ehsinfo.dbo.tbl_class_participant LEFT JOIN UKSpace.dbo.vEbarsDepartments ON department = UKSpace.dbo.vEbarsDepartments.DeptCode where department <> '' AND DeptName <> '' order by DeptName";
 		
 	$oFrm->itemsList = $oFrmSpace->forms_list_array_from_query($query, NULL);	
 	
