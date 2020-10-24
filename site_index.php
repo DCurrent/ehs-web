@@ -207,6 +207,7 @@
                     	<li><a href="ep/sewer.html" title="Sanitary and storm sewers.">Sanitary and Storm Sewers</a></li>
                         <li><a href="exit.php" title="Setup and exit survey checklist.">Setup and Exit Survey Checklist</a></li>
                     	<li><a href="env/fs_disposal_0001.php" title="Disposal of needles, syringes, broken glass, and other sharps.">Sharps Disposal</a></li>
+						<li><a href="https://ehs.uky.edu/fire/smoke_and_haze_use_policy.php">Smoke and Haze Use Policy</a></li>
                         <li><a href="ehsstaff.php" title="Complete EHS staff listing.">Staff List</a></li>
                         <li><a href="fire/flstpol1.html" title="Standards for solvents in laboratories
 (excluding laboratories in health care occupancies).">Standard for Solvents in Laboratories</a></li>
@@ -221,6 +222,7 @@
                     <h2 id="T">T</h2>
                     <ul>
                     	<li><a href="http://ehsweb.ad.uky.edu:81/TapRooT/login.aspx" target="_blank" title="Taproot">Taproot</a>
+						<li><a href="fire/temporary_structures_policy.php">Temporary Structures Policy</a></li>
                         <li><a href="docs/pdf/bio_tissue_culture_facility_requirements.pdf" target="_blank" title="Facility requirements for handling tissue cultures as per UK Policy.">Tissue Culture Facility Requirements</a></li>
                     </ul>                        
                         
