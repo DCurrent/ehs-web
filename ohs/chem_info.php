@@ -32,7 +32,7 @@
 		  <ul>
           <li><a href="//ntp.niehs.nih.gov/?objectid=72016262-BDB7-CEBA-FA60E922B18C2540">Carcinogenic 
             Compounds</a>  </li>
-          <li><a href="https://www.etrax.uky.edu/Chematix">Chemical 
+          <li><a href="https://etrax.chematix.com/Chematix">Chemical 
             Inventory Software</a> (UK Access Only)  </li>
           <li><a href="pregnant.php">Chemical 
             Use by Pregnant Laboratory Workers</a></li>

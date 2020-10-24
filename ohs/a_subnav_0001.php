@@ -5,7 +5,7 @@
       
         <li><a href="#" onclick="return false" class="fly" >Chematix Chemical and Waste Management</a>
             <ul>
-                <li><a href="https://www.etrax.uky.edu/Chematix">Chematix</a></li>
+                <li><a href="https://etrax.chematix.com/Chematix">Chematix</a></li>
                 <li><a href="/ohs/chematix.php">Chematix Training</a></li>
             </ul>
         </li>

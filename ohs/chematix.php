@@ -28,7 +28,13 @@
 		</div>
 		<div id="content">
 			<h1>Chematix Chemical and Waste Management System</h1>
-			<p><a href="https://www.etrax.uky.edu/Chematix/">Chematix</a> - Link to Chematix site where you can add inventory items, create hazardous waste cards, manage personnel etc.</p>
+
+			<h3 class="alert"><a href="https://etrax.chematix.com" target="new">!! E-Trax and Chematix Moved !!</a></h3>
+			
+			<span class="alert">Note that as part of a recent update, Chematix has <a href="https://etrax.chematix.com">a new location</a>. Please update your bookmarks!</span>
+
+			
+			<p><a href="https://etrax.chematix.com">Chematix</a> - Link to Chematix site where you can add inventory items, create hazardous waste cards, manage personnel etc.</p>
 			<p><a href="/docs/pdf/ohs_chematix_user_guide_0001.pdf" target="_blank">Chematix User Guide</a></p>
 			<p><a href="#faq">Frequently Asked Questions</a></p>
 			<h2>Training Videos</h2>
