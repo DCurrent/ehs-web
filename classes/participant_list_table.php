@@ -86,6 +86,7 @@
 	}
 	
 	$query				= "SELECT
+					account																	AS  'Account',
 					participant_name														AS	'Name',
 					department																AS	'Dept',
 					desc_title																AS	'Class',
