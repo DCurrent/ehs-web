@@ -286,7 +286,7 @@
 			$bRegInfo = TRUE;
 		
 			/* Prepare list array. */
-			$cDList['Dept'] 	= $oFrmDept->forms_list_array_from_query("SELECT DISTINCT DeptNo, DeptNo, DeptName FROM MasterDepartment WHERE (DeptName <> '') ORDER BY DeptName", NULL, array("Select Department" =>NULL, 'Outside Entity' => -1));	//Department.
+			$cDList['Dept'] 	= $oFrmDept->forms_list_array_from_query("SELECT DISTINCT DeptCode, DeptCode, DeptName FROM vEbarsDepartments WHERE (DeptName <> '') ORDER BY DeptName", NULL, array("Select Department" =>NULL, 'Outside Entity' => -1));	//Department.
 											
 			$oFrm->forms_select("department", class_forms::ID_USE_NAME, "Department", class_forms::LABEL_USE_ITEM_KEY, $cDList['Dept'], NULL, $c_vals['department'], array("element" => "quiz_parameters required"), class_forms::EVENTS_NONE, "required");
 			
