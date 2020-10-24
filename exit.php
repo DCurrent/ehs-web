@@ -48,7 +48,7 @@ below. </p>
 		    <li>Remove all chemicals when vacating the laboratory space.</li>
 		    <li>Recycle unwanted usable chemicals within the department or contribute 
 		    to the <a href="hmm/chemrecycle.html">Free Chemical List</a>.</li>
-		    <li>Ticket expired or unwanted chemicals for <a href="//www.etrax.uky.edu">Hazardous 
+		    <li>Ticket expired or unwanted chemicals for <a href="https://etrax.chematix.com">Hazardous 
 		    Waste Disposal</a>.</li>
 		    <li>Fill out the <a href="ohs/perch_check.php">Perchloric Acid Questionnaire</a> if perchloric acid was used in the laboratory.</li>
 		    <li>Submit a hazardous chemical inventory to Occupational Health and 
@@ -57,7 +57,7 @@ below. </p>
 	      </ul>
 		  <h2>Hazardous Waste - <a href="/env">Environmental Management</a></h2>
 		  <ul>
-		    <li>  Utilize the <a href="//www.etrax.uky.edu">E-Trax</a> system to have
+		    <li>  Utilize the <a href="https://etrax.chematix.com">E-Trax</a> system to have
 	        hazardous waste picked up. This needs to be done a least one week before the           move.</li>
 		    <li> Conduct a closeout survey for each laboratory. Contact <a href="/env/">Environmental           Management</a> at least one week before the move to schedule the           survey. </li>
 	      </ul>
