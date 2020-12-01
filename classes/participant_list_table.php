@@ -1,4 +1,4 @@
-<div id="thestuff">
+<div id="container_table_" class="overflow tablesorter">
 <?php		
 		
 	require($_SERVER['DOCUMENT_ROOT']."/libraries/php/classes/config.php"); //Basic configuration file.
@@ -111,12 +111,49 @@
 	
 	/* Execute query. */
 	$oDB->db_basic_select($query, $params, FALSE, TRUE, TRUE, TRUE);
-			
-	/* Create table markup */
-	$markup =	$oTbl->tables_db_output($oDB, TRUE);
-
-	/* Output table markup */
-	echo $markup; 	
 	
-?>
+	?>
+	<style>
+		@media print {
+		   table td:last-child {display:none}
+		   table th:last-child {display:none}
+	   }
+	</style>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>Class</th>
+				<th>Taken</th>
+				<th>Trainer</th>
+				<th class=".NoPrint">Certificate</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<th>Class</th>
+				<th>Taken</th>
+				<th>Trainer</th>
+				<th class=".NoPrint">Certificate</th>
+			</tr>
+		</tfoot>
+		<tbody>
+	<?php
+	
+	// Output query results as table.
+	while($oDB->db_line(SQLSRV_FETCH_ASSOC))
+	{			
+		?>
+			<tr>
+				<td><?php echo $oDB->DBLine['Class']; ?></td>
+				<td><?php echo $oDB->DBLine['Taken']; ?></td>
+				<td><?php echo $oDB->DBLine['Trainer']; ?></td>
+				<td class=".NoPrint"><?php echo $oDB->DBLine['Certificate']; ?></td>
+			</tr>
+		<?php
+	}	
+			
+	?>
+		</tbody>
+	</table>
 </div>
