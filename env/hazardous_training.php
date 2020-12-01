@@ -28,7 +28,7 @@
 		<div id="content">
 			<h1>Hazardous Waste Management Online Training</h1>
 			<p>To ensure safe and compliant practices, it is a University policy that those engaged in the generation of hazardous waste take initial training and annual refresher training thereafter.  Training can be accomplished on-line through an easy two step process:</p>
-			<p><b>Step 1 –	</b>Review the <a href="../docs/pdf/emm_hazardous_waste_management.pdf">Hazardous Waste Management Training Manual</a> and a copy of the<a href="https://ehs.uky.edu/apps/rocky/media/material/uk_hazardous_waste_training.pdf" target="_blank"> training session PowerPoint presentaiton</a> to become completely familiar with the regulatory requirements and University guidelines.  If you have any questions do not hesitate to get in contact with our Environmental Affairs Compliance Manager who will gladly assist you.</p>
+			<p><b>Step 1 –	</b>Review the <a href="https://drive.google.com/file/d/1l1Z1pKx7l7gSIysIkYUehvd19EFzPRGz/view?usp=sharing" target="_blank">Hazardous Waste Management Training Manual</a> and a copy of the<a href="https://drive.google.com/file/d/1C0zQQT8vhGlA4_x24ilt0y1Eu67OiDzq/view?usp=sharing" target="_blank"> training session PowerPoint presentaiton</a> to become completely familiar with the regulatory requirements and University guidelines.  If you have any questions do not hesitate to get in contact with our Environmental Affairs Compliance Manager who will gladly assist you.</p>
 			<p><b>Step 2 –	</b>Take the appropriate on-line quiz based on the location of the waste generating process:</p>
 		  <blockquote>
 				<p><a href="/classes/classes_env_0001.php#hazardous_waste">"General" Hazardous Waste Management Quiz</a></p>
