@@ -24,6 +24,9 @@
                   	<h2 id="autoclave">Autoclave</h2>
         			<p>Contact the <a href="mailto:ehsbiosafety@uky.edu" >Biological Safety Department</a> at 323-5728 or 257-8655 for details.</p>
         			<p>This class is only available <a href="main.php?cClassID=11" class="link-class">online</a>.</p>
+        			<h2>Biosafety Cabinets</h2>
+                    <p>This training is designed for individuals who utilize biological safety cabinets for their work.</p>
+                    <p>This class is only available <a href="main.php?cClassID=1" class="link-class">online<.</p>
                   	<h2 id="biological_safety">Biological Safety</h2>
                   	<p>The Institutional Biosafety Committee and Biological Safety Officer require all personnel working with biohazardous materials in research laboratories at the University of Kentucky to complete this training. Beginning August 2nd, 2006, Principal Investigators who submit new protocols or renewals to the IBC will be required to complete this training. In addition personnel named on the protocol or new personnel added to a previously approved protocol will also be required to complete this training. The training module will emphasize the basic principles and practices of biological safety. </p>
                   	<p>This class is only available <a href="main.php?cClassID=12" class="link-class">online</a>.</p>
@@ -50,8 +53,7 @@
                   	<p>This training is designed for individuals who work with Tier 1 Select Agents and/or Toxins.  This class must be taken on an annual basis by individuals approved for non-escorted access.</p>
                   	<p>This class is available <a href="main.php?cClassID=86" class="link-class">online</a>.</p>
                   	<h2 id="viral_vectors">Viral Vectors</h2>
-                  	<p>This training is designed for individuals who work with viral vector systems.</p>
-                  	<p>This class must be retaken annually. Classroom training sessions are available upon request. Class duration is one hour. Contact the <a href="mailto:ehsbiosafety@uky.edu" >Biological Safety Department</a>, 323-5728 or 257-8655.                    </p>
+                  	<p>This training is designed for individuals who work with viral vector systems.                  	</p>
                   	<p>This class is available <a href="main.php?cClassID=78" class="link-class">online</a>.</p>
                 </div><!--/content-->       
             </div><!--/subContent-->    
