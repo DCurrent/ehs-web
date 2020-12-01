@@ -26,7 +26,7 @@
         			<p>This class is only available <a href="main.php?cClassID=11" class="link-class">online</a>.</p>
         			<h2 id = "biosafety_cabinets">Biosafety Cabinets</h2>
                     <p>This training is designed for individuals who utilize biological safety cabinets for their work.</p>
-                    <p>This class is only available <a href="main.php?cClassID=1" class="link-class">online<.</p>
+                    <p>This class is only available <a href="main.php?cClassID=1" class="link-class">online</a>.</p>
                   	<h2 id="biological_safety">Biological Safety</h2>
                   	<p>The Institutional Biosafety Committee and Biological Safety Officer require all personnel working with biohazardous materials in research laboratories at the University of Kentucky to complete this training. Beginning August 2nd, 2006, Principal Investigators who submit new protocols or renewals to the IBC will be required to complete this training. In addition personnel named on the protocol or new personnel added to a previously approved protocol will also be required to complete this training. The training module will emphasize the basic principles and practices of biological safety. </p>
                   	<p>This class is only available <a href="main.php?cClassID=12" class="link-class">online</a>.</p>
