@@ -91,6 +91,9 @@
                         	<td><a href="classes_biosafety_0001.php#biological_safety" >Biological Safety</a></td>
                         </tr>
                         <tr>
+                          <td><a href="classes_biosafety_0001.php#biosafety_cabinets" >Biosafety Cabinets</a></td>
+                        </tr>
+                        <tr>
                         	<td><a href="classes_ohs_0001.php#bloodborne_pathogens_general" >Bloodborne Pathogens (General)</a></td>
                         </tr>
                         <tr>
@@ -148,6 +151,9 @@
                           <td><a href="classes_ohs_0001.php#formaldehyde_awareness">Formaldehyde Awareness</a></td>
                         </tr>
                         <tr>
+							<td><a href="classes_ohs_0001.php#hand_tool_safety">Hand Tool Safety</a></td>
+                        </tr>
+                        <tr>
                         	<td><a href="classes_ohs_0001.php#hazard_assessment">Hazard Assessment</a></td>
                         </tr>
                         <tr>
@@ -179,6 +185,9 @@
                         </tr>
                         <tr>
                         	<td><a href="classes_ohs_0001.php#pass_van">Passenger Van Training</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="classes_ohs_0001.php#personal_protective_equipment">Personal Protective Equipment (PPE)</a></td>
                         </tr>
                         <tr>
                           <td><a href="classes_ohs_0001.php#pesticide">Pesticide Handler in Agriculture</a></td>
