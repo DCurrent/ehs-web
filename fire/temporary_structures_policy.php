@@ -9,7 +9,8 @@
 ?>
 
 <!DOCtype html>
-    <head>
+<html lang="en">
+    <head>		
         <title>UK - Environmental Health And Safety</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css">
@@ -51,13 +52,11 @@
                 
                     <h1>Temporary Structures Policy</h1>
                     <h2>Objective</h2>
-                      This  policy  sets forth the requirements for  the permitting and approval of any tent or other  temporary structure erected on any property owned by the University of Kentucky (UK). It also provides  standards  for the safe operation  and use of the temporary structure.</p>
+                      <p>This  policy  sets forth the requirements for  the permitting and approval of any tent or other  temporary structure erected on any property owned by the University of Kentucky (UK). It also provides  standards  for the safe operation  and use of the temporary structure.</p>
 				
                   <h2>Applicability</h2>
                       <p>This policy applies to any tent or other temporary structure  erected, operated, or maintained for any purpose on any property owned by  UK. The policy requirements shall  apply to all temporary structures erected on the main campus  for clinical  operations,     athletic events, and for  the establishment of a  satellite campus used for agricultural purposes and owned by the University.</p>
-                  <p> Tents not exceeding 400 square feet used exclusively by athletic  event patrons outside of a stadium or arena shall be excluded from this policy.  Additionally, tents not exceeding 400 square feet that have been submitted and  approved by  UK Event Management are excluded by  this policy. Site placement requirements may still apply in either instance.
-                        </p>
-                      </p>
+                  <p> Tents not exceeding 400 square feet used exclusively by athletic  event patrons outside of a stadium or arena shall be excluded from this policy.  Additionally, tents not exceeding 400 square feet that have been submitted and  approved by  UK Event Management are excluded by  this policy. Site placement requirements may still apply in either instance.</p>
 			<h2>Definitions</h2>
                   <p>Temporary  Structure –  any  structure erected for human occupancy on a temporary basis for less than 180  days within a 12-month period. Temporary structures include, but are not  limited to  membrane structures, tents,  canopies, stages, and platforms.</p>
                     <p>Tents  –  a  structure, enclosure, or shelter, with or without sidewalls, constructed of  pliable material supported in any manner except by air or the contents it  protects.</p>
@@ -77,12 +76,10 @@
                     </ul>
                   <p>The application documents required for the University Fire  Marshal are found here:</p>
                   <ul>
-                    <li><a href="UK_TemporaryStructure_ModelSubmittal_v2_form.pdf" target="_blank">Temporary Structure Model Sumbittal Form</a> – To be  completed by the representative supplying the temporary structure.</li>
-                    <li><a href="UK_TemporaryStructure_SiteSubmittal_v2_form.pdf" target="_blank">Temporary Structure Site Submittal Form</a> – To be  completed by the unit or department requesting the temporary.</li>
+                    <li><a href="https://app.smartsheet.com/b/form/766a5ff463a24c07b720cbe8de366597" target="_blank">Temporary Structure Model Sumbittal Form</a> – To be  completed by the representative supplying the temporary structure.</li>
+                    <li><a href="https://app.smartsheet.com/b/form/797fc5021b46463192c23cec07386c2e" target="_blank">Temporary Structure Site Submittal Form</a> – To be  completed by the unit or department requesting the temporary.</li>
                   </ul>
-Completed forms and documentation can be emailed  to <a href="mailto:brandon.ernest@uky.edu">Brandon Ernest</a>.
-                    
-                    <p>The following requirements will be in effect for all temporary  structures that are approved for placement.<br>
+                  <p style="font-weight: bold;">The following requirements will be in effect for all temporary  structures that are approved for placement.<br>
                       </p>
                     <h4>Wind Speed Capacity</h4>
 			
@@ -99,8 +96,7 @@ Completed forms and documentation can be emailed  to <a href="mailto:brandon.ern
                       <li>Exits shall be spaced at approximately equal  intervals around the perimeter of the structure and located such that all  points are 100 feet or less from an exit.</li>
                       <li>The number of exits provided shall not be less  than the number of exits shown below:<br>
                         <br>
-                      </li>
-                    
+                      
                       <table>
                         <tr>
                           <th>Occupant Load</th>
@@ -128,7 +124,7 @@ Completed forms and documentation can be emailed  to <a href="mailto:brandon.ern
                           <td>120 inches</td>
                         </tr>
                       </table>
-                    
+						</li>
                     
                       <li>Exit  openings may be covered with a contrasting colored, flame-resistant  curtain. The curtain must be free-sliding and mounted on a metal support at  least 80 inches above the ground.</li>
                       <li>Aisles must be provided for in the furniture and  equipment placement. Aisles must be at least 44&rdquo; in width and maintained  throughout the use of the structure. Larger aisles may be required with  increased occupant loads.</li>
@@ -172,7 +168,9 @@ Completed forms and documentation can be emailed  to <a href="mailto:brandon.ern
                       <li>Flammable and combustible liquids shall not be  used or stored inside temporary structures. If approved, these materials must  be stored at least 50 feet from the structure.</li>
                     </ul>
                     <hr>
-                    <p>Last Update: 2020-08-20 10:45</p>
+                    <p>This policy has been reviewed and endorsed by the University Committee on Safety and Environmental Health.
+</p>
+                    <p>Date Endorsed: 2020-11-04 </p>
                 </div>
                 <!--/content-->
             
