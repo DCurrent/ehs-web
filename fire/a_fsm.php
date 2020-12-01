@@ -1,6 +1,6 @@
 <!--Include: <?php echo __FILE__ . ", Last update: " . date(DATE_ATOM,filemtime(__FILE__)); ?>-->
 
-<script type="text/javascript" src="/libraries/jquery/fire.js"></script>
+<script src="/libraries/jquery/fire.js"></script>
 
 <script>
     <!--
