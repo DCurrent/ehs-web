@@ -149,6 +149,11 @@
 				<p>Formaldehyde awareness training is provided for all employees that work   with formaldehyde containing products as part of their job duties. This   training should be completed upon hire, when a new formaldehyde exposure   is introduced, and repeated annually.  This course is designed to meet   the training requirements for the OSHA Formaldehyde Standard (29 CFR   1910.1048), as well as formaldehyde-specific requirements of the OSHA   Laboratory Standard (29 CFR 1910.1450) and OSHA Hazard Communication   Standard (29 CFR 1910.1200).</p>
                 <p>This class is only available <a href="main.php?cClassID=128" class="link-class">online</a>.</p>
                 
+				<h2 id="hand_tool_safety">Hand Tool Safety</h2>
+				<p>This training session has been designed for employees who use hand tools as a part of their work with UK.  The training will assist employees on how to identify hazards, care for, and proper use of hand tools.</p>
+				
+					<p>This class is only available <a href="main.php?cClassID=134" class="link-class">online</a>.</p>
+					
 				<h2>Hazard Assessment</h2>
                 <p>Training                 for supervisors in how to conduct workplace   hazard assessments for                 determining the need and proper   selection of personal protective                 equipment. Provides   instruction on the use and application of the                   University's hazard assessment checklists. Training is for personnel                   responsible for employees who have the potential to   encounter hazards.<br />
                   <br />
@@ -191,10 +196,15 @@
                   
         		<p>Classroom training sessions are available upon request. Duration is 1 hour. Contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>
                   <p>This class is available <a href="main.php?cClassID=5" class="link-class">online</a>.</p>
+					
+					<h2 id="personal_protective_equipment">Personal Protective Equipment (PPE)</h2>
+					<p>This training session will review with employees how a PPE hazard assessment is conducted; understand how PPE is selected to protect against the hazards found during the PPE hazard assessment; and how to wear and care for their PPE.  </p>
+					
+					<p>This class is only available <a href="main.php?cClassID=135" class="link-class">online</a>.</p>
+					
                   <h2 id="pesticide">Pesticide Handler in Agriculture</h2>
                   <p>Provide employees and students of potential risks of working in areas   where pesticides are being used and pesticide residues may be found.    This will complete annual training requirements of Worker Protection   Standard.</p>
                   <p>This class is available <a href="main.php?cClassID=129" class="link-class">online</a>.</p>
-                  <p>&nbsp;</p>
                   
                   <h2 id="powered_industrial_trucks">Powered Industrial Trucks (Forklifts) </h2>
                   <p>This course informs the   learner about the safe operating procedures needed for using powered   industrial trucks. Powered industrial trucks refer to fork trucks,   tractors, platform lift trucks, motorized hand trucks, and other   specialized industrial trucks powered by electric motor or internal   combustion engines.  The course participants will know safe operating   procedures for powered industrial trucks. </p>
@@ -234,7 +244,7 @@
 					
 				
 					
-<h2 id="utility_cart">Utility Cart Training</h2>
+<h2 id="utility_cart">Utility Cart Safety</h2>
                 <p>This training is mandatory  for all employees who drive a utility carts while working at University of  Kentucky.&nbsp; The objective of the training is </p>
                 <ul>
                   <li>Prevent  injury to pedestrians, utility cart operators and their passengers</li>
@@ -245,7 +255,7 @@
                   <li>Pedestrian  Safety</li>
                 </ul>
                 <p>Classroom training sessions are available upon  request. Duration is 1 hour. Contact <a href="mailto:michele.laur@uky.edu">Michele Laur</a> at (859) 257-9739.</p>
-                <p>This class is available <a href="main.php?cClassID=24" class="link-class">online</a>.</p>
+                <p>This class is available <a href="main.php?cClassID=136" class="link-class">online</a>.</p>
                 
 					<h2 id="working-in-winter-weather">Working In Winter Weather</h2>
 					<p>This course is for employees whose role it is to work outside during   winter weather.  This course will teach employees to recognize winter   weather hazards, how to prevent those hazards, and what to do if   affected</p>
