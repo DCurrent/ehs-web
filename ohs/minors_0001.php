@@ -26,7 +26,10 @@
                 </div><!--/subContainer-->
                 <div id="content">
                     <h1>Minors In Research Laboratories or Animal Facilities</h1>
-                    <p>Environmental Health and Safety is committed to helping young  researchers understand the risks involved with working in research laboratories  or animal facilities and how those risks can be minimized. The Minors In  Research Laboratories  or Animal Facilities Policy was developed to  document the risk assessment decision logic for each proposed project. The risk  assessment also provides researchers information on controls and training that  are required when certain hazards are present.</p>
+					
+					<p class = "alert">Notice: Per the Vice President of <a href="https://www.research.uky.edu/resources/uk-resumption-research-plan">Research’s Resumption of Research plan</a>, high school volunteers are not allowed in research workspaces for the duration of the pandemic.  Forms submitted for approval of Minors in Research cannot be approved at the current time.</p>
+					
+                    <p>Environmental Health and Safety is committed to helping young researchers understand the risks involved with working in research laboratories  or animal facilities and how those risks can be minimized. The Minors In  Research Laboratories  or Animal Facilities Policy was developed to  document the risk assessment decision logic for each proposed project. The risk  assessment also provides researchers information on controls and training that  are required when certain hazards are present.</p>
                     <ul>
                       <li>Please read the <a href="/docs/pdf/ohs_minors_in_labs_0001.pdf" target="_blank">instructions document</a></li>
                       <li>And complete the <a href="/docs/pdf/ohs_minors_in_labs_research_proposal_registration_0001.pdf" target="_blank">Project Registration form</a></li>
