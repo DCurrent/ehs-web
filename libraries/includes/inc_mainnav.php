@@ -16,7 +16,7 @@
 </script>
 
 <!-- 2020-05-12 - Part of navigation list. Disabled and moved here to make room for Covid-19 items. -->
-<div style="display:none">
+<!--div style="display:none">
 <li><a href="#" onclick="return false" class="icon_events">Events</a>
 	<ul>
 		<li><a href="/fsm">Campus Fire Safety Month, September</a></li>
@@ -24,7 +24,7 @@
 		<li><a href="/docs/ppt/StormReady.ppt" title="StormReady Ceremony pictures in PowerPoint" target="_blank" >UK Campus StormReady Ceremony Pictures</a></li>
 	</ul>
 </li>
-</div>
+</div -->
 
 <div id="nav_main" class="nav_main navbar navbar-default">
     <ul class="nav navbar-nav">
@@ -41,10 +41,10 @@
         
 		<li><a href="#" onclick="return false" class="icon_events">Covid-19</a>
 			<ul>
-            	<li><a href="/covid-19_guidance.php" title="Covid-19, General Guidelines" target="">General Guidelines</a></li>
-      			<li><a href="/covid-19_cleaning_office.php" title="Covid-19, Office Cleaning Guide" target="">Office Cleaning</a></li>
-      			<li><a href="/covid-19_cleaning_computer.php" title="Covid-19, Cleaning Computer Surfaces Guide" target="" >Computers and High Touch Surfaces</a></li>
-				<li><a href="/covid-19_mask_fit.php" title="Covid-19, Mask Guidance" target="" >Mask Guidance</a></li>
+            	<li><a href="/covid-19_guidance.php" title="Covid-19, General Guidelines">General Guidelines</a></li>
+      			<li><a href="/covid-19_cleaning_office.php" title="Covid-19, Office Cleaning Guide">Office Cleaning</a></li>
+      			<li><a href="/covid-19_cleaning_computer.php" title="Covid-19, Cleaning Computer Surfaces Guide">Computers and High Touch Surfaces</a></li>
+				<li><a href="/covid-19_mask_fit.php" title="Covid-19, Mask Guidance">Mask Guidance</a></li>
 			</ul>
 		
 		<li><a href="#" onclick="return false" class="icon_reporting">Report an Incident</a>
