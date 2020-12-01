@@ -1,6 +1,7 @@
 <?php require($_SERVER['DOCUMENT_ROOT']."/libraries/php/classes/config.php"); //Basic configuration file. ?>
 
 <!DOCtype html>
+<html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>UK - Environmental Health And Safety</title>        
