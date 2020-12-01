@@ -24,7 +24,7 @@
                   	<h2 id="autoclave">Autoclave</h2>
         			<p>Contact the <a href="mailto:ehsbiosafety@uky.edu" >Biological Safety Department</a> at 323-5728 or 257-8655 for details.</p>
         			<p>This class is only available <a href="main.php?cClassID=11" class="link-class">online</a>.</p>
-        			<h2>Biosafety Cabinets</h2>
+        			<h2 id = "biosafety_cabinets">Biosafety Cabinets</h2>
                     <p>This training is designed for individuals who utilize biological safety cabinets for their work.</p>
                     <p>This class is only available <a href="main.php?cClassID=1" class="link-class">online<.</p>
                   	<h2 id="biological_safety">Biological Safety</h2>
