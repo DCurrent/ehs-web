@@ -9,6 +9,7 @@
 ?>
 
 <!DOCtype html>
+<html lang="en">
     <head>
         <title>UK - Environmental Health And Safety</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -45,23 +46,28 @@
                   <h2>Background</h2>
                   <p>Smoke and haze use in University buildings is often associated with concerts, theatrical productions, and athletic events. The UK Fire Marshal’s Office does not prohibit the use of these effects, but they do need to be approved and regulated. Smoke and haze production inside of a building can be problematic for several reasons. First, smoke and haze is capable of tripping smoke detectors and activating the building’s fire alarm system. Second, the improper use of smoke and haze can create a situation where exits and exit routes are obscured and difficult to navigate in an emergency. Lastly, smoke and haze production has previously been perceived by uninformed occupants as a fire condition followed by confusion and unnecessary emergency response.</p>
                   <h2>Smoke and Haze Usage</h2>
-                  <p>Smoke and haze use in any University building and on any property owned by the University shall be submitted to the UK Fire Marshal for review and approval prior to the event or use. You may use the <a href="smoke_and_haze_use_submission_form.pdf">form located here</a>.</p>
+                  <p>Smoke and haze use in any University building and on any  property owned by the University shall be submitted to the UK Fire Marshal for  review and approval prior to the event or use. You may use the form located <a href="https://app.smartsheet.com/b/form/b0236d6fbfbe4eeca1e0b87697f8efee">here</a>.
+Some activities produce smoke and haze but are not covered  under the scope of this policy. These include, but may not be limited to:</p>
+                  <ul>
+                    <li>Work activities where       the production of smoke and haze is accounted for in normal code and OSHA       requirements. May include cooking, laboratory functions, workshops, etc.</li>
+                    <li>The testing of building and mechanical equipment where  smoke is used. May include fire alarm systems, HVAC systems, etc. </li>
+                  </ul>
                   <h2>Smoke and Haze Approval Process</h2>
-                  <p>Any event where smoke and haze may be used shall be submitted to the UK Fire Marshal’s Office for review and approval. Considerations for the approval will include the following:</p>
-                  
-                  <p>
-					  <ul>
-						  <li>Location of the event</li>
-						  <li>The type of smoke and/or haze produced</li>
-						  <li>Method of smoke and/or haze production</li>
-						  <li>Duration of the smoke and/or haze production</li>
-						  <li>Proximity to egress components</li>
-						  <li>Proximity to fire alarm detection devices</li>
-					</ul>
-				  </p> 
-				<p>If the smoke and haze use is approved, there may be additional requirements for the event staff. If the facility has smoke detectors in close proximity to the event, it may be necessary for Fire Marshal staff or approved PPD staff to be present to monitor the fire alarm system. Monetary fees associated with the additional personnel will be the responsibility of the person(s) producing the event. Event staff shall also notify building occupants and facility personnel of the smoke and haze use. This can be done through email and can be coordinated with facility representatives. </p>
-
-                    
+                  <p>Any event where smoke and haze may be used shall be  submitted to the UK Fire Marshal&rsquo;s Office for review and approval at least two  weeks before the event. Considerations for the approval will include the  following:</p>
+                  <ul>
+                    <li>Location of the event</li>
+                    <li>The type of smoke and/or       haze produced</li>
+                    <li>Method of smoke and/or       haze production</li>
+                    <li>Duration of the smoke       and/or haze production</li>
+                    <li>Proximity to egress       components</li>
+                    <li>Proximity to fire alarm       detection devices</li>
+                  </ul>
+                  <p>If the smoke and haze use is approved, there may be  additional requirements for the event staff. If the facility has smoke  detectors in close proximity to the event, it may be necessary for Fire Marshal  staff or approved PPD staff to be present to monitor the fire alarm system.  Monetary fees associated with the additional personnel will be the  responsibility of the person(s) producing the event. Event staff shall also  notify building occupants and facility personnel of the smoke and haze use.  This can be done through email and can be coordinated with facility  representatives.</p>
+                  <p>Additionally, the Safety Data Sheet (SDS) for any product  used to produce smoke and/or haze shall be obtained from the manufacturer and  kept on the premises during the event. </p>
+                  <p>The form to submit your smoke and/or haze use can be found  here:<br>
+                    <a href="https://app.smartsheet.com/b/form/b0236d6fbfbe4eeca1e0b87697f8efee">Smoke  and Haze Use Submission Form</a></p>
+                  <p>This policy has been reviewed and endorsed by the  University Committee on Safety and Environmental Health.<br>
+                    Date Endorsed: 2019-12-10</p>
                 </div><!--/content-->
             
             </div><!--/subContainer-->
