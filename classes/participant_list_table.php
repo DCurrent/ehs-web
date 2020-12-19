@@ -1,4 +1,4 @@
-<div id="container_table_" class="overflow tablesorter">
+<div id="container_table_">
 <?php		
 		
 	require($_SERVER['DOCUMENT_ROOT']."/libraries/php/classes/config.php"); //Basic configuration file.
@@ -86,13 +86,13 @@
 	}
 	
 	$query				= "SELECT
+					id,
 					account																	AS  'Account',
 					participant_name														AS	'Name',
 					department																AS	'Dept',
 					desc_title																AS	'Class',
 					class_date_char															AS	'Taken',			
-					trainer_name															AS	'Trainer',
-					cert_link																AS  'Certificate'
+					trainer_name															AS	'Trainer'
 													
 					FROM vw_class_participant_list
 					WHERE
@@ -113,28 +113,51 @@
 	$oDB->db_basic_select($query, $params, FALSE, TRUE, TRUE, TRUE);
 	
 	?>
-	<style>
-		@media print {
-		   table td:last-child {display:none}
-		   table th:last-child {display:none}
-	   }
+	<style>		
+		.clickable-row:hover {
+          background-color: #CCCCCC;
+			cursor: pointer;
+        }
 	</style>
+	
+	<?php
+		$row_text = '';
+		$row_count = $oDB->DBRowCount;
+	
+		switch($row_count)
+		{
+			default:
+				$row_text = $row_count.' records found.';
+				break;
+			case 0:
+				$row_text = 'No records found.';
+				break;
+			case 1:
+				$row_text = '1 record found.';
+				break;
+		}
+	
+	?>
+	
+	<p><?php echo $row_text; ?>&nbsp;Click a record to generate its certificate of completiton.</p>
 	
 	<table>
 		<thead>
 			<tr>
+				<th>Name</th>
+				<th>Dept.</th>
 				<th>Class</th>
-				<th>Taken</th>
-				<th>Trainer</th>
-				<th class=".NoPrint">Certificate</th>
+				<th>Time</th>
+				<th>Trainer</th>				
 			</tr>
 		</thead>
 		<tfoot>
 			<tr>
+				<th>Name</th>
+				<th>Dept.</th>
 				<th>Class</th>
-				<th>Taken</th>
+				<th>Time</th>
 				<th>Trainer</th>
-				<th class=".NoPrint">Certificate</th>
 			</tr>
 		</tfoot>
 		<tbody>
@@ -144,16 +167,27 @@
 	while($oDB->db_line(SQLSRV_FETCH_ASSOC))
 	{			
 		?>
-			<tr>
+			<tr class="clickable-row" role="button" data-href="<?php echo $oDB->DBLine['id']; ?>">
+				<td><?php echo $oDB->DBLine['Name']; ?></td>
+				<td><?php echo $oDB->DBLine['Dept']; ?></td>
 				<td><?php echo $oDB->DBLine['Class']; ?></td>
 				<td><?php echo $oDB->DBLine['Taken']; ?></td>
 				<td><?php echo $oDB->DBLine['Trainer']; ?></td>
-				<td class=".NoPrint"><?php echo $oDB->DBLine['Certificate']; ?></td>
 			</tr>
 		<?php
 	}	
 			
 	?>
 		</tbody>
-	</table>
+	</table>	
+	
+	<script>
+		// Clickable table row.
+		jQuery(document).ready(function($) {
+			$(".clickable-row").click(function() {
+				window.open('https://ehs.uky.edu/classes/certificate.php?id=' + $(this).data("href"));
+			});
+		});
+	</script>
+	
 </div>
