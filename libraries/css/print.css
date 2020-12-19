@@ -258,3 +258,106 @@ a:hover > img
 {
 	page-break-inside: avoid;
 }
+
+#content 
+{
+	display: inherit;
+	float: left;
+	margin: 10px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+	width: 100%;
+	font-family: arial, verdana, helvetica, sans-serif;
+	text-align: left;
+}
+
+table 
+{
+	border:thin solid black;	
+	margin-bottom:				10px;
+	width:						100%;
+}
+
+
+.table_header,
+table caption
+{	
+
+	/* display:					table-row; */
+	background-color: 			#224D7A;
+	background-image: 			linear-gradient(to bottom right, #3981CC 0%, #09131F 100%);	
+	color: 						#FFF;	
+	font-size:					medium;
+	font-weight: 				bold;
+	padding:					3px;
+	text-align:					center;
+	width:						auto;
+	border-radius:				5px;
+	margin-bottom:				2px;
+}
+
+th
+{
+	background-color: 			#224D7A;
+	color: 						#FFF;
+	font-weight: 				bold;
+	font-size:					medium;
+	text-align:					center;
+	padding:					3px;
+	width:						auto;
+}
+
+th a, table a:hover, table a:active
+{
+	/* color:#FFF; */
+}
+
+th.header 
+{ 
+    background-image: url(../img/small.gif); 
+    cursor: pointer; 
+    font-weight: bold; 
+    background-repeat: no-repeat; 
+    background-position: center left; 
+    padding-left: 20px; 
+    border-right: 1px solid #dad9c7; 
+    margin-left: -1px; 
+	
+}
+
+th.header:after
+{    
+	font-family: 				FontAwesome;
+	padding-left: 				5px;
+	content: 					"\f0dc";  
+}
+
+th.header:hover
+{
+	font-style:					italic; 
+	text-shadow: 				0px 0px 10px #CCC;
+}
+
+th.headerSortUp:after
+{    
+	font-family: 				FontAwesome;
+	padding-left: 				5px;
+	content: 					"\f15e";  
+}
+
+th.headerSortDown:after 
+{ 
+    font-family: 				FontAwesome;
+	padding-left: 				5px;
+	content: 					"\f15d"; 
+}
+
+tr:nth-child(even) 
+{
+	background-color: 			#DDDDFF;	
+}
+
+tr:nth-child(odd) 
+{
+	background-color: 			#CECEFF;	
+}
