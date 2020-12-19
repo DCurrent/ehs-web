@@ -8,15 +8,18 @@
     	<a href="//www.uky.edu" target="_blank">University of Kentucky</a> - <a href="//www.uky.edu/Home/Web/eo/" target="_blank">An Equal Opportunity University</a>																																							<br />
       Questions/Comments: <a href="mailto:dvcask2@uky.edu">Damon V. Caskey</a><br />
       	Copyright &copy; <?php echo date("Y"); ?>, University of Kentucky<br />
-    	<!--Last update: 
-					<?php 
-					echo date(DATE_ATOM, filemtime($_SERVER['SCRIPT_FILENAME']));  
-                    
-					if (isset($iReqTime)) 
-					{ 
-						echo ". Generated in " .round(microtime(true) - $iReqTime,3). " seconds."; 
-					} 
-					?>-->
+    	Last update: <?php echo date(DATE_ATOM, filemtime($_SERVER['SCRIPT_FILENAME'])); ?>
+		<br />
+        Powered by <?php echo 'PHP ' . phpversion(); ?>.
+		<?php		
+		if (isset($iReqTime)) 
+		{
+		?>
+		<br />Generated in <?php echo round(microtime(true) - $iReqTime,3); ?> seconds. 
+		<?php
+		}
+		?>							
+					
     </div><!--/footer_desc-->
                     
     <a href="//validator.w3.org/check?uri=referer" class="no_icon"><img src="//www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" class="wc3_logo" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics" /></a>        

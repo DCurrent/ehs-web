@@ -1,4 +1,7 @@
-<?php require($_SERVER['DOCUMENT_ROOT']."/libraries/php/classes/config.php"); //Basic configuration file. ?>
+<?php require($_SERVER['DOCUMENT_ROOT']."/libraries/php/classes/config.php"); //Basic configuration file. 
+
+// echo 'Current PHP version: ' . phpversion();
+?>
 
 <!DOCtype html>
 <html lang="en">
