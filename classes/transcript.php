@@ -35,19 +35,17 @@
 	$oAcc->access_verify();	
 		
 	$query 	= "SELECT 
+				id,
 				desc_title																AS	'Class',
 				class_date_char															AS	'Taken',			
-				trainer_name															AS	'Trainer',
-				cert_link																AS  'Certificate'						
+				trainer_name															AS	'Trainer'						
 				FROM vw_class_participant_list
 				WHERE (account = ?)
 				ORDER BY class_date desc";	
 	
 	$params = array($oAcc->get_account());
 
-	$oDB->db_basic_select($query, $params, FALSE, TRUE, TRUE, TRUE);
-	
-	$cOutput =	$oTbl->tables_db_output($oDB, TRUE);		
+	$oDB->db_basic_select($query, $params, FALSE, TRUE, TRUE, TRUE);	
 		
 ?>
 
@@ -58,6 +56,8 @@
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css">
 		<link rel="stylesheet" href="/libraries/css/style.css" type="text/css" />
         <link rel="stylesheet" href="../libraries/css/print.css" type="text/css" media="print" />
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     </head>
     
     <body>
@@ -85,9 +85,80 @@
                     
                     <p>This <span class="NoPrint">online </span>transcript serves as verification for all safety training taken by <?php echo $oAcc->get_name_f()." ".$oAcc->get_name_l(); ?> from 2012/01/20 as required by UK Environmental Health And Safety.</p> 
                     
-                    <p class="NoPrint">You may also <a href="javascript:window.print()">print a copy</a> for your personal records.</p>            
-                    
-                    <?php echo $cOutput; ?>  
+                    <!-- start table -->
+					<style>		
+						.clickable-row:hover {
+						  background-color: #CCCCCC;
+							cursor: pointer;
+						}
+					</style>
+
+					<?php
+						$row_text = '';
+						$row_count = $oDB->DBRowCount;
+
+						switch($row_count)
+						{
+							default:
+								$row_text = $row_count.' records found.';
+								break;
+							case 0:
+								$row_text = 'No records found.';
+								break;
+							case 1:
+								$row_text = '1 record found.';
+								break;
+						}
+
+					?>
+
+					<p><?php echo $row_text; ?>&nbsp;Click a record to generate its certificate of completiton.</p>
+
+					<table>
+						<thead>
+							<tr>
+								<th>Class</th>
+								<th>Time</th>
+								<th>Trainer</th>				
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<th>Class</th>
+								<th>Time</th>
+								<th>Trainer</th>
+							</tr>
+						</tfoot>
+						<tbody>
+					<?php
+
+					// Output query results as table.
+					while($oDB->db_line(SQLSRV_FETCH_ASSOC))
+					{			
+						?>
+							<tr class="clickable-row" role="button" data-href="<?php echo $oDB->DBLine['id']; ?>">
+								<td><?php echo $oDB->DBLine['Class']; ?></td>
+								<td><?php echo $oDB->DBLine['Taken']; ?></td>
+								<td><?php echo $oDB->DBLine['Trainer']; ?></td>
+							</tr>
+						<?php
+					}	
+
+					?>
+						</tbody>
+					</table>	
+
+					<script>
+						// Clickable table row.
+						jQuery(document).ready(function($) {
+							$(".clickable-row").click(function() {
+								window.open('https://ehs.uky.edu/classes/certificate.php?id=' + $(this).data("href"));
+							});
+						});
+					</script>
+					<!-->
+					
+					
                 </div><!--/content-->     
             </div><!--/subcontainer-->
             <div id="sidePanel">		
@@ -101,15 +172,7 @@
         <div id="footerPad">
             <?php include($cDocroot."libraries/includes/inc_footerpad.php"); ?>
         </div><!--/footerPad-->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-40196994-1', 'uky.edu');
-  ga('send', 'pageview');
-
-</script>
+   
+  
 </body>
 </html>
