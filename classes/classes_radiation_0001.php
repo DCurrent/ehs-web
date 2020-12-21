@@ -45,38 +45,44 @@
             <caption>Class Schedule</caption>
             
             <tr>
-              <td><p>Thursday </p></td>
-              <td><p>August 27</p></td>
-              <td><p>09:00 to 12:00</p></td>
-              <td><p>Animal Pathology Bldg, rm. 202</p></td>
+              <td>Wednesday </td>
+              <td>January 27</td>
+              <td>09:00 to 12:00</td>
+              <td>Animal Pathology Bldg, rm. 202</td>
             </tr>
             <tr>
-              <td><p>Wednesday            </p></td>
-              <td><p>September 23</p></td>
-              <td><p>09:00 to 12:00</p></td>
-              <td><p>Animal Pathology Bldg, rm. 202</p></td>
+              <td>Thursday             </td>
+              <td>February 25</td>
+              <td>09:00 to 12:00</td>
+              <td>Animal Pathology Bldg, rm. 202</td>
             </tr>
             <tr>
-              <td><p>Thursday  </p></td>
-              <td><p>October 29</p></td>
-              <td><p>09:00 to 12:00</p></td>
-              <td><p>Animal Pathology Bldg, rm. 202</p></td>
+              <td>Wednesday </td>
+              <td>March 24</td>
+              <td>09:00 to 12:00</td>
+              <td>Animal Pathology Bldg, rm. 202</td>
             </tr>
             <tr>
-              <td><p>Wednesday      </p></td>
-              <td><p>November 25</p></td>
-              <td><p>09:00 to 12:00</p></td>
-              <td><p>Animal Pathology Bldg, rm. 202</p></td>
+              <td>Thursday     </td>
+              <td>April 29</td>
+              <td>09:00 to 12:00</td>
+              <td>Animal Pathology Bldg, rm. 202</td>
             </tr>
             <tr>
-              <td><p>Thursday</p></td>
-              <td><p>December 17</p></td>
-              <td><p>09:00 to 12:00</p></td>
-              <td><p>Animal Pathology Bldg, rm. 202</p></td>
+              <td>Wednesday</td>
+              <td>May 26</td>
+              <td>09:00 to 12:00</td>
+              <td>Animal Pathology Bldg, rm. 202</td>
+            </tr>
+            <tr>
+              <td>Thursday  </td>
+              <td>June 24</td>
+              <td>09:00 to 12:00</td>
+              <td>Animal Pathology Bldg, rm. 202</td>
             </tr>
             </table>
         
-        <h4>Check in at room 102 prior to class. Class is limited to the first 10 people who show up.</h4>
+        <h4>Check in at room 102 prior to class.</h4>
         <p>Contact <a href="main.php?cClassID=35">Bill Garner</a> at (859) 323-1009. </p>
         <h2><a name="advanced_radiation_safety" id="advanced_radiation_safety"></a>Advanced Radiation Safety </h2>
         <p>Required                   training for principal investigators, lab   managers, and others who                   have significant radioactive   materials experience and previous safety                   training, but   are new to UK. These personnel must complete the on-line class prior to their approval as an authorized user (AU).</p>
