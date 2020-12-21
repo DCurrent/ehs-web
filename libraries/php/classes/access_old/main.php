@@ -584,7 +584,9 @@ class class_access {
 		Damon V. Caskey
 		
 		Send login information to external diagnostic log.		
-		*/
+		
+		2020-12-18: Disable function. We don't need diagnostic data any more and 
+		- want to turn off the mysqli extension.
 		
 		mysqli_report(MYSQLI_REPORT_ALL);
 		
@@ -626,6 +628,7 @@ class class_access {
 				$this->mail_alert();			
 			}
 		}
+		*/
 	}	
 	
 	private function mail_alert()
