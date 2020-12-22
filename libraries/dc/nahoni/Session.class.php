@@ -14,8 +14,7 @@ interface iSession
 class Session implements \SessionHandlerInterface, iSession
 {    
 	
-	private
-		$config			= NULL;	// Config options.
+	private	$config	= NULL;	// Config options.
 
 	function __construct(SessionConfig $config = NULL)
 	{
@@ -115,7 +114,19 @@ class Session implements \SessionHandlerInterface, iSession
 			$result = new Data();
 		}
 		
-		return $result->get_session_data();		
+		// 7.1+ throws an error when returning a
+		// NULL value on session start up. If our
+		// session_data member is NULL, return
+		// an empty string instead.
+		
+		$output = $result->get_session_data();	
+		
+		if(is_null($output))
+		{
+			$output = '';			
+		}
+		
+		return $output;		
     }
 
 	// Update or insert session data. Note that only ID and Session Data are 
