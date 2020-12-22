@@ -116,8 +116,8 @@ abstract class EXCEPTION_MSG
 {
 	const CONNECT_CLOSE_FAIL		= 'Close Connection - Failed closing connection to host.';
 	const CONNECT_CLOSE_CONNECTION	= 'Close Connection - No valid connection to close.';
-	const CONNECT_OPEN_FAIL			= 'Close Connection - Failed to open connection with host.';
-	const CONNECT_OPEN_HOST			= 'Close Connection - Missing or invalid host argument.';
+	const CONNECT_OPEN_FAIL			= 'Open Connection - Failed to open connection with host.';
+	const CONNECT_OPEN_HOST			= 'Open Connection - Missing or invalid host argument.';
 	
 	const FIELD_COUNT_ERROR			= 'Field Count - Error occurred.';
 	const FIELD_COUNT_STATEMENT		= 'Field Count - Missing or invalid statement.';
