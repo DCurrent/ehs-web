@@ -123,20 +123,31 @@
 	
     spl_autoload_register('app_load_class');
 
+	// Set up database control.
+
 	$db_ehs_connect_config = new \dc\yukon\ConnectConfig();
 	
-	// Connection setup
-	// /Connection setup.
+	// Database config
+	// /Database config
 	
 	$db_ehs_connection = new \dc\yukon\Connect($db_ehs_connect_config);
-	
-	$nahoni_config = new \dc\nahoni\SessionConfig();
+	$db_ehs_database = new \dc\yukon\Database($db_ehs_connection);
 
-	$nahoni_config->set_database($db_ehs_connection);
+	// Set up session control.
+
+	$nahoni_config = new \dc\nahoni\SessionConfig();
+	$nahoni_config->set_sp_prefix('ehs_');
+	$nahoni_config->set_database($db_ehs_database);
 
 	// Replace default session handler.
 	$session_handler = new \dc\nahoni\Session($nahoni_config);
-	session_set_save_handler($session_handler, TRUE);	
+	session_set_save_handler($session_handler, TRUE);
+
+	session_start();
+
+	$_SESSION['TEST_SES'] = 'Damon';
+
+	echo $_SESSION['TEST_SES'];
 	
 ?>
 
