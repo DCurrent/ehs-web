@@ -64,8 +64,8 @@
         $file_name = '';
         $namespace = '';
 
-		//echo '<!-- Class request: '.$class_name.' -->'.PHP_EOL;
-		error_log('<!-- Class request: '.$class_name.' -->'.PHP_EOL, 0);
+		// echo '<!-- Class request: '.$class_name.' -->'.PHP_EOL;
+		// error_log('<!-- Class request: '.$class_name.' -->'.PHP_EOL, 0);
 		
         // Sets the include path as the "src" directory
         //$include_path = __DIR__;
@@ -84,28 +84,28 @@
 			// from 0 and ending at last namespace separator.
             $namespace = substr($class_name, 0, $lastNsPos);
 			
-			error_log('<!-- namespace: '.$namespace.' -->'.PHP_EOL, 0);
+			// error_log('<!-- namespace: '.$namespace.' -->'.PHP_EOL, 0);
 			
 			// Crop namespace from class name to leave only class name itself.
             $class_name = substr($class_name, $lastNsPos + 1);
 			
-			error_log('<!-- class_name: '.$class_name.' -->'.PHP_EOL, 0);
+			// error_log('<!-- class_name: '.$class_name.' -->'.PHP_EOL, 0);
 			
 			// Add directory separator to namespace to start a file path.
             $file_name = str_replace('\\', DIRECTORY_SEPARATOR, $namespace).DIRECTORY_SEPARATOR;
 			
-			error_log('<!-- file_name: '.$file_name.' -->'.PHP_EOL, 0);
+			// error_log('<!-- file_name: '.$file_name.' -->'.PHP_EOL, 0);
         }
 		
 		// Add suffix to file name, then add include path to build
 		// full file name path.
         $file_name .= $class_name.'.class.php';
 		
-		error_log('<!-- file_name: '.$file_name.' -->'.PHP_EOL, 0);
+		// error_log('<!-- file_name: '.$file_name.' -->'.PHP_EOL, 0);
 		
         $file_name_full = $include_path . DIRECTORY_SEPARATOR . $file_name;
 		
-		error_log('<!-- file_name_full: '.$file_name_full.' -->'.PHP_EOL, 0);
+		// error_log('<!-- file_name_full: '.$file_name_full.' -->'.PHP_EOL, 0);
 		
 	   
 	   	// If complete file path exists, then load it.
@@ -123,15 +123,20 @@
 	
     spl_autoload_register('app_load_class');
 
-	$connect_config = new \dc\yukon\ConnectConfig();
-
+	$db_ehs_connect_config = new \dc\yukon\ConnectConfig();
+	
+	// Connection setup
+	// /Connection setup.
+	
+	$db_ehs_connection = new \dc\yukon\Connect($db_ehs_connect_config);
+	
 	$nahoni_config = new \dc\nahoni\SessionConfig();
 
+	$nahoni_config->set_database($db_ehs_connection);
+
 	// Replace default session handler.
-	//$session_handler = new class_session();
-	//session_set_save_handler($session_handler, TRUE);
-	
-	
+	$session_handler = new \dc\nahoni\Session($nahoni_config);
+	session_set_save_handler($session_handler, TRUE);	
 	
 ?>
 
