@@ -113,11 +113,11 @@
 		{
             require($file_name_full);
 			
-        	echo $file_name_full.', loaded successfully. -->'.PHP_EOL;
+        	//echo $file_name_full.', loaded successfully. -->'.PHP_EOL;
 		} 
 		else 
 		{
-            echo '<-- '.$file_name_full.' not found. -->'.PHP_EOL;
+            //echo '<-- '.$file_name_full.' not found. -->'.PHP_EOL;
         }
     }
 	
@@ -128,6 +128,10 @@
 	$db_ehs_connect_config = new \dc\yukon\ConnectConfig();
 	
 	// Database config
+	$db_ehs_connect_config->set_host('GENSQLAGL\general');
+	$db_ehs_connect_config->set_name('ehsinfo');
+	$db_ehs_connect_config->set_user('EHSInfo_User');
+	$db_ehs_connect_config->set_password('ehsinfo');
 	// /Database config
 	
 	$db_ehs_connection = new \dc\yukon\Connect($db_ehs_connect_config);
@@ -137,7 +141,13 @@
 
 	$nahoni_config = new \dc\nahoni\SessionConfig();
 	$nahoni_config->set_sp_prefix('ehs_');
-	$nahoni_config->set_database($db_ehs_database);
+	
+	// Temporary PDO connection for session variables.
+	// Connection variables
+		
+	$dbh_pdo_connection = new \PDO($dsn, $user, $password);
+
+	$nahoni_config->set_database($dbh_pdo_connection);
 
 	// Replace default session handler.
 	$session_handler = new \dc\nahoni\Session($nahoni_config);
@@ -145,8 +155,12 @@
 
 	session_start();
 
-	$_SESSION['TEST_SES'] = 'Damon';
+	error_log('$_SESSION[TEST_SES] (preset): '.$_SESSION['TEST_SES']);
 
+	$_SESSION['TEST_SES'] = 'Damon Caskey';
+	
+	error_log('$_SESSION[TEST_SES] (post): '.$_SESSION['TEST_SES']);
+	
 	echo $_SESSION['TEST_SES'];
 	
 ?>
