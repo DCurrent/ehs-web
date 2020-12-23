@@ -177,20 +177,16 @@ class Session implements \SessionHandlerInterface, iSession
 		// execute.
 		
 		$sql_string = 'EXEC '.$this->config->get_sp_prefix().$this->config->get_sp_set().' :id, :data, :source, :ip';
-		error_log('sql_string: '.$sql_string);
 			
 		$dbh_pdo_statement = $dbh_pdo_connection->prepare($sql_string);
 		
-		$dbh_pdo_statement->bindParam(':id', $id);
-		$dbh_pdo_statement->bindParam(':data', $data);
-		$dbh_pdo_statement->bindParam(':source', $source);
-		$dbh_pdo_statement->bindParam(':ip', $ip);
+		$dbh_pdo_statement->bindParam(':id', $id, \PDO::PARAM_INT);
+		$dbh_pdo_statement->bindParam(':data', $data, \PDO::PARAM_STR);
+		$dbh_pdo_statement->bindParam(':source', $source, \PDO::PARAM_STR);
+		$dbh_pdo_statement->bindParam(':ip', $ip, \PDO::PARAM_STR);
 		
 		$rowcount = $dbh_pdo_statement->execute();
-		$error = $dbh_pdo_connection->errorInfo();
-		print_r($error);
-		error_log('error_info: '.$error[2]);
-				
+						
 		// Return TRUE. 
 		return TRUE;
     }
