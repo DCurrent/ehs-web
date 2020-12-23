@@ -73,7 +73,7 @@ class Session implements \SessionHandlerInterface, iSession
 	// Locate and read session data from database.
     public function read($id)
     {		
-		error_log('read: '.$id);        
+		// error_log('read: '.$id);        
 
 		$dbh_pdo_connection = $this->config->get_database();
 		
@@ -83,12 +83,15 @@ class Session implements \SessionHandlerInterface, iSession
 		// execute.
 		
 		$sql_string = 'EXEC '.$this->config->get_sp_prefix().$this->config->get_sp_get().' :id';
-		error_log('sql_string: '.$sql_string);
-				
 		$dbh_pdo_statement = $dbh_pdo_connection->prepare($sql_string);
 		
 		$dbh_pdo_statement->bindParam(':id', $id, \PDO::PARAM_INT);
+		
 		$rowcount = $dbh_pdo_statement->execute();
+		
+		// If there is a row returned, fetch it as
+		// an object using our data class. Otherwise
+		// we just establish a fresh object.
 		
 		if($rowcount)
 		{			
@@ -98,48 +101,12 @@ class Session implements \SessionHandlerInterface, iSession
 		{
 			$result = new Data();
 		}
-		
-		
-		/*
-		$sql_string = '{call '.$this->config->get_sp_prefix().$this->config->get_sp_get().'(@id = ?)}';
-		
-		$iDatabase->set_sql($sql_string);
-		
-		$params = array(array(&$id, SQLSRV_PARAM_IN));
-		$iDatabase->set_param_array($params);
-		
-		$iDatabase->query_run();		
-		
-		// If there is a row returned from the 
-		// database we need to send the name
-		// of our data class so our database
-		// handler can populate it (data class) 
-		// as an object with the row data.
-		//
-		// If we got no rows returned, then
-		// establish a blank copy of our
-		// data class instead.
-		//
-		// Either way, we get and return the
-		// value of "session_data" member. 
-		
-		if($iDatabase->get_row_exists())
-		{
-			// Set class and acquire object.
-			$iDatabase->get_line_config()->set_class_name(__NAMESPACE__.'\Data');
-			$result = $iDatabase->get_line_object();	
-		}
-		else
-		{
-			$result = new Data();
-		}
-		
+				
 		// 7.1+ throws an error when returning a
 		// NULL value on session start up. If our
 		// session_data member is NULL, return
 		// an empty string instead.
-		*/
-		
+				
 		$output = $result->get_session_data();	
 		
 		if(is_null($output))
@@ -156,7 +123,7 @@ class Session implements \SessionHandlerInterface, iSession
 	// required. Other data is to aid in debugging.
     public function write($id, $data)
     {
-		error_log('write: '.$id);
+		// error_log('write: '.$id);
 						
 		$source	= $_SERVER['PHP_SELF'];		// Current file.
 		$ip		= $_SERVER['REMOTE_ADDR'];	// Client IP address.					
