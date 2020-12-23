@@ -85,7 +85,7 @@ class Session implements \SessionHandlerInterface, iSession
 		$sql_string = 'EXEC '.$this->config->get_sp_prefix().$this->config->get_sp_get().' :id';
 		$dbh_pdo_statement = $dbh_pdo_connection->prepare($sql_string);
 		
-		$dbh_pdo_statement->bindParam(':id', $id, \PDO::PARAM_INT);
+		$dbh_pdo_statement->bindParam(':id', $id, \PDO::PARAM_STR);
 		
 		$rowcount = $dbh_pdo_statement->execute();
 		
@@ -147,7 +147,7 @@ class Session implements \SessionHandlerInterface, iSession
 			
 		$dbh_pdo_statement = $dbh_pdo_connection->prepare($sql_string);
 		
-		$dbh_pdo_statement->bindParam(':id', $id, \PDO::PARAM_INT);
+		$dbh_pdo_statement->bindParam(':id', $id, \PDO::PARAM_STR);
 		$dbh_pdo_statement->bindParam(':data', $data, \PDO::PARAM_STR);
 		$dbh_pdo_statement->bindParam(':source', $source, \PDO::PARAM_STR);
 		$dbh_pdo_statement->bindParam(':ip', $ip, \PDO::PARAM_STR);
@@ -163,20 +163,19 @@ class Session implements \SessionHandlerInterface, iSession
     {	
 		// echo 'Destroy';
 
-		$iDatabase = $this->config->get_database();
+		$dbh_pdo_connection = $this->config->get_database();
 		
 		// Populate database class members with 
 		// the SQL string of our stored procedure
 		// and its parameter array. Then we can 
 		// execute.
 				
-		$sql_string = '{call '.$this->config->get_sp_prefix().$this->config->get_sp_destroy().'(@id = ?)}';		
-		$iDatabase->set_sql($sql_string);				
-
-		$params = array(array(&$id, SQLSRV_PARAM_IN));
-		$iDatabase->set_param_array($params);				
+		$sql_string = 'EXEC '.$this->config->get_sp_prefix().$this->config->get_sp_destroy().' :id';
+		$dbh_pdo_statement = $dbh_pdo_connection->prepare($sql_string);
 		
-		$iDatabase->query_run();		
+		$dbh_pdo_statement->bindParam(':id', $id, \PDO::PARAM_STR);
+		
+		$rowcount = $dbh_pdo_statement->execute();		
 				
 		return TRUE;
     }
