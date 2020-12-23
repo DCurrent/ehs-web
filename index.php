@@ -30,7 +30,7 @@
                     <p>The EHS Division supports the University's teaching, research, and public service mission by promoting a safe, healthful, clean, and accessible campus environment.</p>
                     <p>The Division's  programs are intended to provide safe and healthy conditions for work   and study, protect the environment, and comply with applicable laws and regulations. The Division serves the University community by providing   technical services, education and training, periodic audits, and   compliance assistance.</p>
                      
-                    <?php include($cDocroot."libraries/includes/inc_updates.php"); ?>
+                    <?php include($_SERVER['DOCUMENT_ROOT']."/libraries/includes/inc_updates.php"); ?>
               	</div><!--/content-->                      
             </div><!--/subContainer-->
             
@@ -39,7 +39,7 @@
             </div><!--/sidePanel-->
             
             <div id="footer">
-                <?php include($cDocroot."libraries/includes/inc_footer.php"); ?>		
+                <?php include($_SERVER['DOCUMENT_ROOT']."/libraries/includes/inc_footer.php"); ?>		
             </div><!--/footer-->
         </div><!--container-->
         
