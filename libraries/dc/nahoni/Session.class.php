@@ -87,21 +87,19 @@ class Session implements \SessionHandlerInterface, iSession
 		
 		$dbh_pdo_statement->bindParam(':id', $id, \PDO::PARAM_STR);
 		
-		$rowcount = $dbh_pdo_statement->execute();
+		$dbh_pdo_statement->execute();
 		
-		// If there is a row returned, fetch it as
-		// an object using our data class. Otherwise
-		// we just establish a fresh object.
+		// Fetch row into an object using our data class. 
+		// If we fail, we need to start up a blank object 
+		// instead.	
 		
-		if($rowcount)
-		{			
-			$result = $dbh_pdo_statement->fetchObject (__NAMESPACE__.'\Data' );
-		}
-		else
-		{
-			$result = new Data();
-		}
-				
+		$result = $dbh_pdo_statement->fetchObject(__NAMESPACE__.'\Data');
+					
+		if(!$result)
+		{		
+			$result = new Data();			
+		}		
+		
 		// 7.1+ throws an error when returning a
 		// NULL value on session start up. If our
 		// session_data member is NULL, return
@@ -114,9 +112,7 @@ class Session implements \SessionHandlerInterface, iSession
 			$output = '';			
 		}
 		
-		error_log('read (output): '.$output);
-		return $output;		
-    	
+		return $output;    	
 	}
 
 	// Update or insert session data. Note that only ID and Session Data are 
@@ -161,7 +157,7 @@ class Session implements \SessionHandlerInterface, iSession
 	// Delete current session.
     public function destroy($id)
     {	
-		// echo 'Destroy';
+		// error_log('destroy: '.$id);
 
 		$dbh_pdo_connection = $this->config->get_database();
 		
@@ -186,7 +182,7 @@ class Session implements \SessionHandlerInterface, iSession
 	//	passed from the php.ini session.gc_maxlifetime setting.
     public function gc($life_max)
     {
-		// echo 'gc';
+		// error_log('gc: '.$life_max);
 		
 		// If local setting isn't NULL, use it to override the default
 		// lifetime value.
@@ -200,15 +196,19 @@ class Session implements \SessionHandlerInterface, iSession
 		// and its parameter array. Then we can 
 		// execute.
 		
-		$iDatabase = $this->config->get_database();		
+		$dbh_pdo_connection = $this->config->get_database();
 		
-		$sql_string = '{call '.$this->config->get_sp_prefix().$this->config->get_sp_clean().'(@life_max = ?)}';
-		$iDatabase->set_sql($sql_string);				
-
-		$params = array(array(&$life_max, SQLSRV_PARAM_IN));
-		$iDatabase->set_param_array($params);				
-
-		$iDatabase->query_run();		
+		// Populate database class members with 
+		// the SQL string of our stored procedure
+		// and its parameter array. Then we can 
+		// execute.
+				
+		$sql_string = 'EXEC '.$this->config->get_sp_prefix().$this->config->get_sp_clean().' :life_max';
+		$dbh_pdo_statement = $dbh_pdo_connection->prepare($sql_string);
+		
+		$dbh_pdo_statement->bindParam(':life_max', $life_max, \PDO::PARAM_INT);
+		
+		$rowcount = $dbh_pdo_statement->execute();		
 		
 		// Return TRUE.
 		return TRUE;
