@@ -12,7 +12,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[tbl_session](
-	[session_id] [varchar](40) NOT NULL,
+	[session_id] [varchar](128) NOT NULL, -- PHP generates 40 character session IDs by default, can accept a user generated ID up to 128 characters.
 	[session_data] [varchar](max) NULL,
 	[last_update] [datetime2](7) NULL,
 	[source] [varchar](max) NULL,
