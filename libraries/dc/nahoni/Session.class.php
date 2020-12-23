@@ -10,7 +10,10 @@ interface iSession
 	function set_config(SessionConfig $value);
 }
 
-// Override PHP's default session handling to store data in an MSSQL table. 
+/*
+Override PHP's default session handling so we can store 
+session data in an RDMS table.
+*/
 class Session implements \SessionHandlerInterface, iSession
 {    
 	
@@ -70,8 +73,13 @@ class Session implements \SessionHandlerInterface, iSession
         return TRUE;
     }
 
-	// Locate and read session data from database.
-    public function read($id)
+	/*
+	Caskey, Damon V.
+	2020-12-23 (Refactor from orginal ~2015)
+		
+	Locate and read session data from database.
+    */
+	public function read($id)
     {		
 		// error_log('read: '.$id);        
 
@@ -115,9 +123,14 @@ class Session implements \SessionHandlerInterface, iSession
 		return $output;    	
 	}
 
-	// Update or insert session data. Note that only ID and Session Data are 
-	// required. Other data is to aid in debugging.
-    public function write($id, $data)
+	/*
+	Caskey, Damon V.
+	2020-12-23 (Refactor from orginal ~2015)
+	
+	Update or insert session data. Note that only ID and Session Data are 
+	required. Other data is to aid in debugging.
+    */
+	public function write($id, $data)
     {
 		// error_log('write: '.$id);
 						
@@ -145,8 +158,8 @@ class Session implements \SessionHandlerInterface, iSession
 		
 		$dbh_pdo_statement->bindParam(':id', $id, \PDO::PARAM_STR);
 		$dbh_pdo_statement->bindParam(':data', $data, \PDO::PARAM_STR);
-		$dbh_pdo_statement->bindParam(':source', $source, \PDO::PARAM_STR);
-		$dbh_pdo_statement->bindParam(':ip', $ip, \PDO::PARAM_STR);
+		$dbh_pdo_statement->bindParam(':source_file', $source, \PDO::PARAM_STR);
+		$dbh_pdo_statement->bindParam(':client_ip', $ip, \PDO::PARAM_STR);
 		
 		$rowcount = $dbh_pdo_statement->execute();
 						
@@ -154,8 +167,13 @@ class Session implements \SessionHandlerInterface, iSession
 		return TRUE;
     }
 
-	// Delete current session.
-    public function destroy($id)
+	/*
+	Caskey, Damon V.
+	2020-12-23 (Refactor from orginal ~2015)
+	
+	Delete current session.
+    */
+	public function destroy($id)
     {	
 		// error_log('destroy: '.$id);
 
@@ -176,26 +194,26 @@ class Session implements \SessionHandlerInterface, iSession
 		return TRUE;
     }
 
-	// Delete expired session data.
+	/* 
+	Caskey, Damon V.
+	2020-12-23 (Refactor from orginal ~2015)
+	Delete expired session data.
 		
-	//	$life_max: Maximum lifetime of a session, in seconds. This is
-	//	passed from the php.ini session.gc_maxlifetime setting.
-    public function gc($life_max)
+	$life_max: Maximum lifetime of a session, in seconds. This is
+	passed from the php.ini session.gc_maxlifetime setting.
+    */
+	public function gc($life_max)
     {
 		// error_log('gc: '.$life_max);
 		
 		// If local setting isn't NULL, use it to override the default
 		// lifetime value.
+		
 		if($this->config->get_life() != NULL)
 		{
 			$life_max = $this->config->get_life();
 		}
-		
-		// Populate database class members with 
-		// the SQL string of our stored procedure
-		// and its parameter array. Then we can 
-		// execute.
-		
+				
 		$dbh_pdo_connection = $this->config->get_database();
 		
 		// Populate database class members with 
