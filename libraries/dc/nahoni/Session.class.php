@@ -95,7 +95,7 @@ class Session implements \SessionHandlerInterface, iSession
 		
 		$dbh_pdo_statement->bindParam(':id', $id, \PDO::PARAM_STR);
 		
-		$dbh_pdo_statement->execute();
+		$dbh_pdo_statement->execute();		
 		
 		// Fetch row into an object using our data class. 
 		// If we fail, we need to start up a blank object 
@@ -152,10 +152,10 @@ class Session implements \SessionHandlerInterface, iSession
 		// and its parameter array. Then we can 
 		// execute.
 		
-		$sql_string = 'EXEC '.$this->config->get_sp_prefix().$this->config->get_sp_set().' :id, :data, :source, :ip';
+		$sql_string = 'EXEC '.$this->config->get_sp_prefix().$this->config->get_sp_set().' :id, :data, :source_file, :client_ip';
 			
 		$dbh_pdo_statement = $dbh_pdo_connection->prepare($sql_string);
-		
+				
 		$dbh_pdo_statement->bindParam(':id', $id, \PDO::PARAM_STR);
 		$dbh_pdo_statement->bindParam(':data', $data, \PDO::PARAM_STR);
 		$dbh_pdo_statement->bindParam(':source_file', $source, \PDO::PARAM_STR);
