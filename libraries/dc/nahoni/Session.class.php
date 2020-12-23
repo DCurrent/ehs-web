@@ -28,7 +28,7 @@ class Session implements \SessionHandlerInterface, iSession
 		else
 		{
 			$this->set_config(new SessionConfig);
-		}
+		}		
 	}
 	
 	function __destruct()
@@ -73,16 +73,36 @@ class Session implements \SessionHandlerInterface, iSession
 	// Locate and read session data from database.
     public function read($id)
     {		
-		// echo 'read';        
+		error_log('read: '.$id);        
 
-		$iDatabase = $this->config->get_database();
+		$dbh_pdo_connection = $this->config->get_database();
 		
 		// Populate database class members with 
 		// the SQL string of our stored procedure
 		// and its parameter array. Then we can 
 		// execute.
 		
+		$sql_string = 'EXEC '.$this->config->get_sp_prefix().$this->config->get_sp_get().' :id';
+		error_log('sql_string: '.$sql_string);
+				
+		$dbh_pdo_statement = $dbh_pdo_connection->prepare($sql_string);
+		
+		$dbh_pdo_statement->bindParam(':id', $id, \PDO::PARAM_INT);
+		$rowcount = $dbh_pdo_statement->execute();
+		
+		if($rowcount)
+		{			
+			$result = $dbh_pdo_statement->fetchObject (__NAMESPACE__.'\Data' );
+		}
+		else
+		{
+			$result = new Data();
+		}
+		
+		
+		/*
 		$sql_string = '{call '.$this->config->get_sp_prefix().$this->config->get_sp_get().'(@id = ?)}';
+		
 		$iDatabase->set_sql($sql_string);
 		
 		$params = array(array(&$id, SQLSRV_PARAM_IN));
@@ -118,6 +138,7 @@ class Session implements \SessionHandlerInterface, iSession
 		// NULL value on session start up. If our
 		// session_data member is NULL, return
 		// an empty string instead.
+		*/
 		
 		$output = $result->get_session_data();	
 		
@@ -126,14 +147,16 @@ class Session implements \SessionHandlerInterface, iSession
 			$output = '';			
 		}
 		
+		error_log('read (output): '.$output);
 		return $output;		
-    }
+    	
+	}
 
 	// Update or insert session data. Note that only ID and Session Data are 
 	// required. Other data is to aid in debugging.
     public function write($id, $data)
     {
-		// echo 'write';
+		error_log('write: '.$id);
 						
 		$source	= $_SERVER['PHP_SELF'];		// Current file.
 		$ip		= $_SERVER['REMOTE_ADDR'];	// Client IP address.					
@@ -146,30 +169,28 @@ class Session implements \SessionHandlerInterface, iSession
 		// Ensure IP string is <= 15. Anything over is a MAC or unexpected (and useless) value.
 		$ip = substr($ip, 0, 15);
 		
-		$iDatabase = $this->config->get_database();
+		$dbh_pdo_connection = $this->config->get_database();
 		
 		// Populate database class members with 
 		// the SQL string of our stored procedure
 		// and its parameter array. Then we can 
 		// execute.
 		
-		$set_sql = '{call '.$this->config->get_sp_prefix().$this->config->get_sp_set().'(@id 			= ?,
-											@data 			= ?,											
-											@source 		= ?,
-											@ip 			= ?)}';
+		$sql_string = 'EXEC '.$this->config->get_sp_prefix().$this->config->get_sp_set().' :id, :data, :source, :ip';
+		error_log('sql_string: '.$sql_string);
+			
+		$dbh_pdo_statement = $dbh_pdo_connection->prepare($sql_string);
 		
-		$iDatabase->set_sql($set_sql);				
-
+		$dbh_pdo_statement->bindParam(':id', $id);
+		$dbh_pdo_statement->bindParam(':data', $data);
+		$dbh_pdo_statement->bindParam(':source', $source);
+		$dbh_pdo_statement->bindParam(':ip', $ip);
 		
-		$params = array(array($id, SQLSRV_PARAM_IN),
-						array($data, SQLSRV_PARAM_IN),
-						array($source, SQLSRV_PARAM_IN),
-						array($ip, SQLSRV_PARAM_IN));						
-		
-		$iDatabase->set_param_array($params);		
-		
-		$iDatabase->query_run();		
-					
+		$rowcount = $dbh_pdo_statement->execute();
+		$error = $dbh_pdo_connection->errorInfo();
+		print_r($error);
+		error_log('error_info: '.$error[2]);
+				
 		// Return TRUE. 
 		return TRUE;
     }
