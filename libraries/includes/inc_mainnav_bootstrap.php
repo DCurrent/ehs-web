@@ -9,9 +9,9 @@
 	
 	// Set up database.
 	$db_conn_set = new class_db_connect_params();
-	$db_conn_set->set_name(ROCKY_DATABASE::NAME);
-	$db_conn_set->set_user('ehsinfo_public');
-	$db_conn_set->set_password('eh$inf0');
+	$db_conn_set->set_db_name(ROCKY_DATABASE::NAME);
+	$db_conn_set->set_db_user('ehsinfo_public');
+	$db_conn_set->set_db_password('eh$inf0');
 	
 	$db = new class_db_connection($db_conn_set);
 	$query = new class_db_query($db);

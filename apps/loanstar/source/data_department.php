@@ -33,7 +33,7 @@
 		{
 			// Set connection params to space database.
 			$connect = new class_db_connect_params();			
-			$connect->set_name('UKSpace');
+			$connect->set_db_name('UKSpace');
 			
 			$this->db 		= new class_db_connection($connect);
 			$this->query	= new class_db_query($this->db);

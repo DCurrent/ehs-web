@@ -51,14 +51,14 @@ interface db_error
 // Structure of parameters used for database connection attempt.
 interface db_connect_params
 {	
-	function get_host();			// Return host name.
-	function get_name();			// Return logical database name.
-	function get_user();			// Return user.
-	function get_password();		// Return password.
-	function set_host($value);		// Set host name.
-	function set_name($value);		// Set logical database name.
-	function set_user($value);		// Set user.
-	function set_password($value);	// Set password.	
+	function get_db_host();			// Return host name.
+	function get_db_name();			// Return logical database name.
+	function get_db_user();			// Return user.
+	function get_db_password();		// Return password.
+	function set_db_host($value);		// Set host name.
+	function set_db_name($value);		// Set logical database name.
+	function set_db_user($value);		// Set user.
+	function set_db_password($value);	// Set password.	
 }
 
 // Database connection object.

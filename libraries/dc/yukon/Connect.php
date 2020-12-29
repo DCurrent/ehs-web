@@ -72,32 +72,32 @@ class Connect implements iConnect
 		$error	= $config->get_error();
 				
 		// Set up credential array.
-		$db_cred = array('Database'	=> $config->get_name(), 
-				'UID' 		=> $config->get_user(), 
-				'PWD' 		=> $config->get_password(),
+		$db_cred = array('Database'	=> $config->get_db_name(), 
+				'UID' 		=> $config->get_db_user(), 
+				'PWD' 		=> $config->get_db_password(),
 				'CharacterSet' 	=> $config->get_charset());	
 		
 		try 
 		{
 			// Can't connect if there's no host.
-			if(!$config->get_host())
+			if(!$config->get_db_host())
 			{
 				$msg = EXCEPTION_MSG::CONNECT_OPEN_HOST;
-				$msg .= ', Host: '.$config->get_host();
-				$msg .= ', DB: '.$config->get_name();
+				$msg .= ', Host: '.$config->get_db_host();
+				$msg .= ', DB: '.$config->get_db_name();
 				
 				$error->exception_throw(new Exception($msg, EXCEPTION_CODE::CONNECT_OPEN_HOST));				
 			}
 			
 			// Establish database connection.
-			//$connect = sqlsrv_connect($config->get_host(), $db_cred);
+			//$connect = sqlsrv_connect($config->get_db_host(), $db_cred);
 			
 			// PDO requires a single concatenated string 
 			// containing the type (MYSQL, MSSQL, etc.), 
 			// hostname, and database name.
-			$dsn = 'sqlsrv:Server='.$config->get_host().';Database='.$config->get_name();
+			$dsn = 'sqlsrv:Server='.$config->get_db_host().';Database='.$config->get_db_name();
 						
-			$connect = new \PDO($dsn, $config->get_user(), $config->get_password());
+			$connect = new \PDO($dsn, $config->get_db_user(), $config->get_db_password());
 			
 			// False returned. Database connection has failed.
 			if(!$connect)

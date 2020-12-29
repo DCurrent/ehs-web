@@ -87,49 +87,49 @@ class class_db_old_connect_params implements DB_DEFAULTS_old
 		$this->password_m = $password;
 	}
 	
-	public function get_host()
+	public function get_db_host()
 	{
 		// Return data member.
 		return $this->host_m;
 	}
 	
-	public function get_name()
+	public function get_db_name()
 	{
 		// Return data member.
 		return $this->name_m;
 	}
 	
-	public function get_user()
+	public function get_db_user()
 	{
 		// Return data member.
 		return $this->user_m;
 	}
 	
-	public function get_password()
+	public function get_db_password()
 	{
 		// Return data member.
 		return $this->password_m;
 	}
 	
-	public function set_host($value)
+	public function set_db_host($value)
 	{
 		// Set data member.
 		$this->host_m = $value;
 	}
 	
-	public function set_name($value)
+	public function set_db_name($value)
 	{
 		// Set data member.
 		$this->name_m = $value;
 	}
 	
-	public function set_user($value)
+	public function set_db_user($value)
 	{
 		// Set data member.
 		$this->user_m = $value;
 	}
 	
-	public function set_password($value)
+	public function set_db_password($value)
 	{
 		// Set data member.
 		$this->password_m = $value;
@@ -179,10 +179,10 @@ class class_db implements DB_DEFAULTS_old {
 		// If connect parameter object set, use it to define connect member object values.
 		if($connect)
 		{		
-			$this->connect->set_host($connect->get_host());
-			$this->connect->set_name($connect->get_name());
-			$this->connect->set_user($connect->get_user());
-			$this->connect->set_password($connect->get_password());
+			$this->connect->set_db_host($connect->get_db_host());
+			$this->connect->set_db_name($connect->get_db_name());
+			$this->connect->set_db_user($connect->get_db_user());
+			$this->connect->set_db_password($connect->get_db_password());
 		}
 	
 		// Connect to database server.
@@ -416,10 +416,10 @@ class class_db implements DB_DEFAULTS_old {
 		$db_cred = NULL; //Credentials array.
 		
 		// Dereference member variables.
-		$host = $this->connect->get_host();
-		$name = $this->connect->get_name();
-		$user = $this->connect->get_user();
-		$password = $this->connect->get_password();
+		$host = $this->connect->get_db_host();
+		$name = $this->connect->get_db_name();
+		$user = $this->connect->get_db_user();
+		$password = $this->connect->get_db_password();
 		
 		//$host = 'GENSQLAGL\general', $name = 'ehsinfo', $user = 'EHSInfo_User', $password = 'ehsinfo'
 		

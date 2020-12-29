@@ -80,7 +80,7 @@
 	$db->space->connect_params = new class_db_connect_params();
 
 	// Set UKSpace name.
-	$db->space->connect_params->set_name('UKSpace');
+	$db->space->connect_params->set_db_name('UKSpace');
 	
 	// Initialize connection object.
 	$db->space->connection = new class_db_connection($db->space->connect_params);

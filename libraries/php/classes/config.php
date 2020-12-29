@@ -1,7 +1,9 @@
 <?php	
 	
-	// Configuration file. This should be added to all PHP scripts to set up commonly used includes, 
-	// functions, objects, variables and so on.	
+	/*
+	* Configuration file. This should be added to all PHP scripts to set up commonly used includes, 
+	* functions, objects, variables and so on.	
+	*/
 	
 	require_once($_SERVER['DOCUMENT_ROOT'].'/libraries/php/classes/location/main.php');
 	require_once($_SERVER['DOCUMENT_ROOT'].'/libraries/php/classes/url_query/main.php'); 			// URL request var builder.
@@ -84,21 +86,17 @@
     spl_autoload_register('app_load_class');
 
 	/* 
-	* Set up database control. Inject the site config 
-	* file and initialize database handler objects.
+	* DC Yukon is the database controller. Most
+	* other libraries will accept it as an injected
+	* dependency.
 	*/
 	$dc_yukon_connect_config = new \dc\yukon\ConnectConfig($config_file_full);
 	$dc_yukon_connection = new \dc\yukon\Connect($dc_yukon_connect_config);
 
 	/*
-	* Set up Nahoni session control. The Nahoni library
-	* replaces PHP's native session handling so we
-	* can use an RDBMS to handle session data. 	
-	*
-	* First we configure Nahoni, including injecting
-	* database handler. Then we initialize Nahoni as
-	* an object and send to PHP. When we start the
-	* session PHP will use Nahoni classes.
+	* DC Nahoni replaces PHP's native session 
+	* handling and sends the session data to
+	* an RDBMS table.
 	*/
 	$dc_nahoni_config = new \dc\nahoni\SessionConfig();
 	$dc_nahoni_config->set_sp_prefix('ehs_');

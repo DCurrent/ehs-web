@@ -21,7 +21,7 @@
 	// Initialize UK Space database object.
 	$connect = new class_db_old_connect_params();	
 	
-	$connect->set_name('UKSpace');
+	$connect->set_db_name('UKSpace');
 	
 	$oDBSpace = new class_db($connect);
 	

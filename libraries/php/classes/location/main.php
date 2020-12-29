@@ -77,7 +77,7 @@
 		public function __construct()
 		{
 			$db_conn_set = new class_db_connect_params();
-			$db_conn_set->set_name('UKSpace'); 
+			$db_conn_set->set_db_name('UKSpace'); 
 			
 			// Initialize DB connection and query objects.			
 			$this->db 		= new class_db_connection($db_conn_set);		

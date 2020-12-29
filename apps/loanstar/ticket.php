@@ -15,7 +15,7 @@
 				
 	// Set up database.
 	$db_conn_set = new class_db_connect_params();
-	$db_conn_set->set_name(DATABASE::NAME);
+	$db_conn_set->set_db_name(DATABASE::NAME);
 	
 	$db = new class_db_connection($db_conn_set);
 	$query = new class_db_query($db);		

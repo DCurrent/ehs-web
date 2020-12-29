@@ -30,22 +30,22 @@ class class_db_connect_params implements db_connect_params
 		return $this->charset_m;
 	}	
 	
-	public function get_host()
+	public function get_db_host()
 	{		
 		return $this->host_m;
 	}	
 	
-	public function get_name()
+	public function get_db_name()
 	{		
 		return $this->name_m;
 	}
 
-	public function get_user()
+	public function get_db_user()
 	{		
 		return $this->user_m;
 	}
 
-	public function get_password()
+	public function get_db_password()
 	{		
 		return $this->password_m;
 	}
@@ -56,22 +56,22 @@ class class_db_connect_params implements db_connect_params
 		$this->charset_m = $value;
 	}
 
-	public function set_host($value)
+	public function set_db_host($value)
 	{		
 		$this->host_m = $value;
 	}
 
-	public function set_name($value)
+	public function set_db_name($value)
 	{		
 		$this->name_m = $value;
 	}
 
-	public function set_user($value)
+	public function set_db_user($value)
 	{		
 		$this->user_m = $value;
 	}
 
-	public function set_password($value)
+	public function set_db_password($value)
 	{		
 		$this->password_m = $value;
 	}
@@ -107,10 +107,10 @@ class class_db_connection implements db_connection
 		if($connect)
 		{		
 			$this->connect->set_charset($connect->charset());
-			$this->connect->set_host($connect->get_host());
-			$this->connect->set_name($connect->get_name());
-			$this->connect->set_user($connect->get_user());
-			$this->connect->set_password($connect->get_password());
+			$this->connect->set_db_host($connect->get_db_host());
+			$this->connect->set_db_name($connect->get_db_name());
+			$this->connect->set_db_user($connect->get_db_user());
+			$this->connect->set_db_password($connect->get_db_password());
 		}
 	
 		// Connect to database server.
@@ -151,10 +151,10 @@ class class_db_connection implements db_connection
 		
 		// Dereference member variables.
 		$charset = $this->connect->charset();
-		$host = $this->connect->get_host();
-		$name = $this->connect->get_name();
-		$user = $this->connect->get_user();
-		$password = $this->connect->get_password();
+		$host = $this->connect->get_db_host();
+		$name = $this->connect->get_db_name();
+		$user = $this->connect->get_db_user();
+		$password = $this->connect->get_db_password();
 		
 		// Set up credential array.
 		$db_cred = array('Database' => $name, 
