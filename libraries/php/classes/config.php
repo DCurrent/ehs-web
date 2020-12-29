@@ -1,166 +1,115 @@
 <?php	
 	
 	// Configuration file. This should be added to all PHP scripts to set up commonly used includes, 
-	// functions, objects, variables and so on.
-	
-	/*
-
-	const	ADMIN_LIST		= "dvcask2, dwhibb0, kmcgu1, rdeldr0";		//Default "all access" user accounts.
-	const	DATE_FORMAT		= "Y-m-d H:i:s";							//Default date format.
-	
-	$iReqTime 	= $_SERVER['REQUEST_TIME_FLOAT'];
-	$cDocroot 	= NULL; //Document root.	
-	$oDB		= NULL;	//Database class object.
-	$err		= NULL;	//Error class object.
-	$oMail		= NULL;	//E-Mail handler class object.
-	$utl		= NULL;	//Utility class object.
-	$oFrm		= NULL;	//Forms class object.
-		
-	// Get needed includes.
-	require_once("access_old/main.php");		//Account based access.
-	require_once("database.php");	//Database handler.
-	require_once("forms.php");		//Forms handler.
-	require_once("error.php");		//Error handler.
-	require_once("mail.php");		//Mail handler.
-	require_once("session.php");	//Session handler.
-	require_once("tables.php");		//Table handler.
-	require_once("utility.php");		//Utility functions.	
-	
-	// Replace default session handler.
-	$session_handler	= new class_session();	
-	session_set_save_handler($session_handler, TRUE);
-			
-	// Initialize class objects
-	$utl	= new class_utility();											//Utility functions.
-	$oMail	= new class_mail();												//E-Mail handler.
-	$err 	= new class_error();											//Error handler.
-	
-	$connect = new class_db_old_connect_params();
-	
-	$oDB	= new class_db($connect);										//Database handler.
-	
-	$oAcc	= new class_access();	//Account based access.
-	
-	$oTbl 	= new class_tables(array("Utl"=> $utl));									//Tables handler.
-	$oFrm 	= new class_forms(array("DB"=> $oDB));										//Forms handler.
-		
-	$cDocroot = $utl->utl_get_server_value('DOCUMENT_ROOT')."/";
-	
-	*/
+	// functions, objects, variables and so on.	
 	
 	require_once($_SERVER['DOCUMENT_ROOT'].'/libraries/php/classes/location/main.php');
 	require_once($_SERVER['DOCUMENT_ROOT'].'/libraries/php/classes/url_query/main.php'); 			// URL request var builder.
 	require_once($_SERVER['DOCUMENT_ROOT'].'/libraries/php/classes/session.php');					// Session class.
-	
-	//require_once($_SERVER['DOCUMENT_ROOT'].'/libraries/php/classes/sorting/main.php'); 				// record sorting.
-	//require(__DIR__.'/dc/cache/main.php'); 		// Page cache.
 
-	//require_once(__DIR__.'/navigation.php');
-	//require_once(__DIR__.'/data_main.php');
-	
+	/**
+	* Site specific configuration settings. File
+	* is located in PHP installation directory.
+	* 
+	* To get location of our file, get path info
+	* array for PHP.ini and read file path element.
+	* Then add filename of our custom .ini file.
+	* This gives us the full path with filename
+	* of our config file.
+	**/
+	$config_file_info = pathinfo(php_ini_loaded_file());
+	$config_file_full = $config_file_info['dirname'].'\config_ehsweb.ini';
+
 	// Load class using namespace.
-	function app_load_class($class_name) 
+	function app_load_class($class_name_arg) 
 	{
         $file_name = '';
         $namespace = '';
-
-		// echo '<!-- Class request: '.$class_name.' -->'.PHP_EOL;
-		// error_log('<!-- Class request: '.$class_name.' -->'.PHP_EOL, 0);
-		
-        // Sets the include path as the "src" directory
-        //$include_path = __DIR__;
+		$class_name = $class_name_arg;
+	
+		/**
+		* Use the root path as our base directory, then
+		* find the string position of last namespace 
+		* separator in class name.
+		**/
 		$include_path = $_SERVER['DOCUMENT_ROOT'].'\libraries';
 		
-		// Find the string position of the last namespace separator (\) in class name.
-		$lastNsPos = strripos($class_name, '\\');
-
+		$last_namespace_position = strripos($class_name, '\\');		
 		
-		
-		// If we found the namespace separator, let's build a 
-		// file name string.
-        if ($lastNsPos)
+		/**
+		* If we found the namespace separator, let's build a 
+		* file name string.
+		**/
+        if ($last_namespace_position)
 		{
 			// Namespace is the portion of of class name starting
 			// from 0 and ending at last namespace separator.
-            $namespace = substr($class_name, 0, $lastNsPos);
-			
-			// error_log('<!-- namespace: '.$namespace.' -->'.PHP_EOL, 0);
+            $namespace = substr($class_name, 0, $last_namespace_position);
 			
 			// Crop namespace from class name to leave only class name itself.
-            $class_name = substr($class_name, $lastNsPos + 1);
-			
-			// error_log('<!-- class_name: '.$class_name.' -->'.PHP_EOL, 0);
+            $class_name = substr($class_name, $last_namespace_position + 1);
 			
 			// Add directory separator to namespace to start a file path.
             $file_name = str_replace('\\', DIRECTORY_SEPARATOR, $namespace).DIRECTORY_SEPARATOR;
 			
-			// error_log('<!-- file_name: '.$file_name.' -->'.PHP_EOL, 0);
-        }
+		}
 		
-		// Add suffix to file name, then add include path to build
-		// full file name path.
-        $file_name .= $class_name.'.class.php';
-		
-		// error_log('<!-- file_name: '.$file_name.' -->'.PHP_EOL, 0);
-		
+		/**
+		* Add suffix to file name, then add include path to build
+		* full file name path.
+		**/
+        $file_name .= $class_name.'.php';
+				
         $file_name_full = $include_path . DIRECTORY_SEPARATOR . $file_name;
 		
-		// error_log('<!-- file_name_full: '.$file_name_full.' -->'.PHP_EOL, 0);
-		
-	   
-	   	// If complete file path exists, then load it.
+		/** 
+		* If complete file path exists, then load it. 
+		* Otherwise just die on the spot. It's a little
+		* redudant since require() would fail anyway, but
+		* I'd rather control what the error looks like.
+		**/
         if (file_exists($file_name_full)) 
 		{
             require($file_name_full);
 			
-        	//echo $file_name_full.', loaded successfully. -->'.PHP_EOL;
+        	echo '<!-- '.$class_name_arg.', loaded successfully. -->'.PHP_EOL;
 		} 
 		else 
 		{
-            //echo '<-- '.$file_name_full.' not found. -->'.PHP_EOL;
+			error_log('Autoloader Error: '.$file_name_full.' not found.');
+			die('Autoloader Error: '.$class_name_arg.' not found. Please contact administrator.');
         }
     }
 	
     spl_autoload_register('app_load_class');
 
-	// Set up database control.
+	/* 
+	* Set up database control. Inject the site config 
+	* file and initialize database handler objects.
+	*/
+	$dc_yukon_connect_config = new \dc\yukon\ConnectConfig($config_file_full);
+	$dc_yukon_connection = new \dc\yukon\Connect($dc_yukon_connect_config);
 
-	$db_ehs_connect_config = new \dc\yukon\ConnectConfig();
+	/*
+	* Set up Nahoni session control. The Nahoni library
+	* replaces PHP's native session handling so we
+	* can use an RDBMS to handle session data. 	
+	*
+	* First we configure Nahoni, including injecting
+	* database handler. Then we initialize Nahoni as
+	* an object and send to PHP. When we start the
+	* session PHP will use Nahoni classes.
+	*/
+	$dc_nahoni_config = new \dc\nahoni\SessionConfig();
+	$dc_nahoni_config->set_sp_prefix('ehs_');
 	
-	// Database config
-	$db_ehs_connect_config->set_host('GENSQLAGL\general');
-	$db_ehs_connect_config->set_name('ehsinfo');
-	$db_ehs_connect_config->set_user('EHSInfo_User');
-	$db_ehs_connect_config->set_password('ehsinfo');
-	// /Database config
-	
-	$db_ehs_connection = new \dc\yukon\Connect($db_ehs_connect_config);
-	$db_ehs_database = new \dc\yukon\Database($db_ehs_connection);
+	$dc_nahoni_config->set_database($dc_yukon_connection->get_connection());
 
-	// Set up session control.
-
-	$nahoni_config = new \dc\nahoni\SessionConfig();
-	$nahoni_config->set_sp_prefix('ehs_');
-	
-	// Temporary PDO connection for session variables.
-	// Connection variables
-		
-	$dbh_pdo_connection = new \PDO($dsn, $user, $password);
-
-	$nahoni_config->set_database($dbh_pdo_connection);
-
-	// Replace default session handler.
-	$session_handler = new \dc\nahoni\Session($nahoni_config);
-	session_set_save_handler($session_handler, TRUE);
-
+	$dc_nahoni_session = new \dc\nahoni\Session($dc_nahoni_config);
+	session_set_save_handler($dc_nahoni_session, TRUE);
 	session_start();
-
-	error_log('$_SESSION[TEST_SES] (preset): '.$_SESSION['TEST_SES']);
-
-	$_SESSION['TEST_SES'] = 'Damon Caskey';
 	
-	error_log('$_SESSION[TEST_SES] (post): '.$_SESSION['TEST_SES']);
-	
+	$_SESSION['TEST_SES'] = 'Damon Caskey';	
 	echo $_SESSION['TEST_SES'];
 	
 ?>
