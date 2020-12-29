@@ -42,7 +42,7 @@ class Connect implements iConnect
 	public function __destruct() 
 	{		
 		// Close DB connection.
-		$this->close_connection();
+		// $this->close_connection();
    	}
 	
 	// Accessors.
@@ -90,13 +90,34 @@ class Connect implements iConnect
 			}
 			
 			// Establish database connection.
-			$connect = sqlsrv_connect($config->get_host(), $db_cred);
-
+			//$connect = sqlsrv_connect($config->get_host(), $db_cred);
+			
+			// PDO requires a single concatenated string 
+			// containing the type (MYSQL, MSSQL, etc.), 
+			// hostname, and database name.
+			$dsn = 'sqlsrv:Server='.$config->get_host().';Database='.$config->get_name();
+						
+			$connect = new \PDO($dsn, $config->get_user(), $config->get_password());
+			
 			// False returned. Database connection has failed.
 			if(!$connect)
 			{
 				$error->exception_throw(new Exception(EXCEPTION_MSG::CONNECT_OPEN_FAIL, EXCEPTION_CODE::CONNECT_OPEN_FAIL));
 			}			
+		}		
+		catch (\PDOException $pdo_exception)
+		{
+			// PDO always throws an exception on connect fail.
+			// Let's just catch it here since sending it
+			// on to our custom exception handler isn't really
+			// tennable at the moment. Hopefully fix that soon. :)
+			
+			echo('<br />');
+			echo('<b>'.LIBRARY::NAME.' error code '.EXCEPTION_CODE::CONNECT_OPEN_FAIL.": </b>");
+			echo(EXCEPTION_MSG::CONNECT_OPEN_FAIL);
+			echo('<br />');
+			
+			error_log($pdo_exception->getMessage());
 		}
 		catch (Exception $exception) 
 		{		
@@ -114,6 +135,7 @@ class Connect implements iConnect
 	// return FALSE if connection does not exist.
 	public function close_connection()
 	{
+		/*
 		$result 	= FALSE;					// Connection present and closed?
 		$connect 	= $this->connect;			// Database connection.
 		$config		= $this->config;
@@ -148,8 +170,10 @@ class Connect implements iConnect
 			$error->exception_catch();
 			
 		}
-				
 		return $result;
+		*/	
+		
+		return TRUE;
 	}
 }
 
