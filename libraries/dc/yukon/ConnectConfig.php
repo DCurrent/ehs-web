@@ -154,6 +154,19 @@ class ConnectConfig implements iConnectConfig
 		return $result;
 	}
 	
+	/*
+	* Populates member data from supplied 
+	* config file. 
+	* 
+	* 1. Reads config file secion matched to 
+	* full class name (including namepsace).
+	*
+	* 2. Values in config are sent to matched
+	* mutator. Example: 
+	*
+	* Config: user_name = "John Doe"
+	* Method: $this->set_user_name($value);
+	*/
 	public function populate_config(string $config_file)
 	{
 		/*
@@ -162,9 +175,9 @@ class ConnectConfig implements iConnectConfig
 		* Throw an exception for any kind of notice 
 		* or warning so we can catch and handle it. 
 		*/
-		////set_error_handler(function ($severity, $message, $file, $line) {
-    	//throw new \ErrorException($message, $severity, $severity, $file, $line);
-		//});
+		set_error_handler(function ($severity, $message, $file, $line) {
+    	throw new \ErrorException($message, $severity, $severity, $file, $line);
+		});
 		
 		/*
 		* Parse config into array, get class specfic 
@@ -180,9 +193,6 @@ class ConnectConfig implements iConnectConfig
 			{		
 				$key = str_replace('set_', '', $method);
 				
-				error_log(PHP_EOL.'key '.$key);
-				error_log(PHP_EOL.'sa '.$section_array[$key]);
-				
 				/*
 				* If there is an array element with key matching
 				* current method name, then the current method 
@@ -194,11 +204,6 @@ class ConnectConfig implements iConnectConfig
 					$this->$method($section_array[$key]);					
 				}
 			}
-			
-			//$this->host 	= $section_array['HOST'];
-			//$this->name 	= $section_array['DATABASE_NAME'];
-			//$this->user 	= $section_array['USER_NAME'];
-			//$this->password	= $section_array['USER_PASSWORD'];
 		}
 		catch(\Exception $exception)
 		{			
