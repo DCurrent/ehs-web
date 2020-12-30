@@ -35,7 +35,7 @@ class SessionConfig implements iSessionConfig
 		$sp_get		= NULL,
 		$sp_set		= NULL;
 	
-	public function __construct()
+	public function __construct(String $config_file = NULL)
 	{
 		$this->life 		= DEFAULTS::LIFE;
 		$this->sp_prefix	= DEFAULTS::SP_PREFIX;
@@ -43,6 +43,15 @@ class SessionConfig implements iSessionConfig
 		$this->sp_destroy	= DEFAULTS::SP_DESTROY;
 		$this->sp_get 		= DEFAULTS::SP_GET;
 		$this->sp_set 		= DEFAULTS::SP_SET;
+	
+		/*
+		* If config file is supplied, use it to
+		* populate member values.
+		*/
+		if($config_file)
+		{
+			$this->populate_config($config_file);
+		}
 	}
 	
 	// Accessors
@@ -118,8 +127,17 @@ class SessionConfig implements iSessionConfig
 	}
 	
 	/*
-	* Reads config file and populates class
-	* members accordingly.
+	* Populates member data from supplied 
+	* config file. 
+	* 
+	* 1. Reads config file secion matched to 
+	* full class name (including namepsace).
+	*
+	* 2. Values in config are sent to matched
+	* mutator. Example: 
+	*
+	* Config: user_name = "John Doe"
+	* Method: $this->set_user_name($value);
 	*/
 	public function populate_config(string $config_file)
 	{
@@ -138,39 +156,33 @@ class SessionConfig implements iSessionConfig
 		* section and pass values into members.
 		*/		
 		try
-		{	
+		{			
+			$config_array = parse_ini_file($config_file, TRUE);
+			$section_array = $config_array[__CLASS__];	
+			
 			// Interate through each class method.
 			foreach(get_class_methods($this) as $method) 
 			{		
 				$key = str_replace('set_', '', $method);
-							
+				
 				/*
 				* If there is an array element with key matching
 				* current method name, then the current method 
 				* is a set mutator for the element. Populate 
 				* the set method with the element's value.
 				*/
-				if(isset($config_array[$key]))
+				if(isset($section_array[$key]))
 				{					
-					$this->$method($config_array[$key]);					
+					$this->$method($section_array[$key]);					
 				}
 			}
-			
-			$config_array = parse_ini_file($config_file, TRUE);
-			$section_array = $config_array[__CLASS__];	
-			
-			$this->set_sp_clean($section_array['HOST']);
-			$this->set_sp_destroy($section_array['DATABASE_NAME']);
-			$this->set_sp_get($section_array['USER_NAME']);
-			$this->set_sp_prefix($section_array['USER_NAME']);
-			$this->set_sp_set($section_array['USER_PASSWORD']);
 		}
 		catch(\Exception $exception)
 		{			
 			error_log(__CLASS__.' Fatal Error: '.$exception->getMessage());
 			die(__NAMESPACE__.' Fatal Error: Failed to read values from config file. Please contact administrator.');
 		}		
-	}
+	}	
 }
 
 ?>
