@@ -98,9 +98,7 @@
 	* handling and sends the session data to
 	* an RDBMS table.
 	*/
-	$dc_nahoni_config = new \dc\nahoni\SessionConfig();
-	$dc_nahoni_config->set_sp_prefix('ehs_');
-	
+	$dc_nahoni_config = new \dc\nahoni\SessionConfig($config_file_full);		
 	$dc_nahoni_config->set_database($dc_yukon_connection->get_connection());
 
 	$dc_nahoni_session = new \dc\nahoni\Session($dc_nahoni_config);
