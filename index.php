@@ -28,9 +28,9 @@
                 <?php // include($cDocroot."libraries/includes/inc_mainnav.php"); ?>
             </div><!--/mainNavigation-->            
             <div id="subContainer">                            
-				<?php include("a_banner_0001.php"); ?>                               
+				<?php include("a_banner.php"); ?>                               
                 <div id="subNavigation">                
-                    <?php include("a_subnav_0001.php"); ?>                     
+                    <?php include("a_subnav.php"); ?>                     
                 </div><!--/subNavigation-->                
                 <div id="content">                
                     <h1>Welcome</h1>                      
