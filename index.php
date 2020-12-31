@@ -1,6 +1,14 @@
-<?php require($_SERVER['DOCUMENT_ROOT']."/libraries/php/classes/config.php"); //Basic configuration file. 
+<?php 
 
-// echo 'Current PHP version: ' . phpversion();
+	/*
+	* Global configuration file.
+	*/
+	require($_SERVER['DOCUMENT_ROOT']."/libraries/config.php"); //Basic configuration file. 
+
+	/*
+	* Start page caching.
+	*/
+	$dc_prudhoe_cache_control = new \dc\prudhoe\PageCache();
 ?>
 
 <!DOCtype html>
@@ -8,9 +16,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>UK - Environmental Health And Safety</title>        
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" />
+        <!-- link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" />
 		<link rel="stylesheet" href="libraries/css/style.css" type="text/css" />
-        <link rel="stylesheet" href="libraries/css/print.css" type="text/css" media="print" />
+        <link rel="stylesheet" href="libraries/css/print.css" type="text/css" media="print" / -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
     
     <body>    
@@ -58,7 +68,6 @@
 /*
 * Output page contents to browser.
 */
-//$dc_prudhoe_cache_control->clean_cache();
 echo $dc_prudhoe_cache_control->markup_and_flush();
 
 ?>
