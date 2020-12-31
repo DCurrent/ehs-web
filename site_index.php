@@ -1,4 +1,4 @@
-<?php require('libraries/php/classes/config.php'); //Basic configuration file. ?>
+<?php require('libraries/config.php'); //Basic configuration file. ?>
 
 <?php 
 
@@ -30,7 +30,7 @@
                 <?php include($cDocroot."libraries/includes/inc_mainnav.php"); ?>
             </div><!--/mainNavigation-->            
             <div id="subContainer">                            
-				<?php include("a_banner_0001.php"); ?>                               
+				<?php include("a_banner.php"); ?>                               
                 <div id="subNavigation">                
                     <?php include("a_subnav_0001.php"); ?>                     
                 </div><!--/subNavigation-->                

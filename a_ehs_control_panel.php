@@ -23,7 +23,7 @@ auth_verify_0001();
 		<?php include($cDocroot."libraries/includes/inc_mainnav.php"); ?>
 	</div>
 	<div id="subContainer">
-		<?php include("a_banner_0001.php"); ?>
+		<?php include("a_banner.php"); ?>
 		<div id="subNavigation">
 		 	<?php include("a_subnav_0001.php"); ?> 
 		</div>
