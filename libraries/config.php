@@ -85,14 +85,6 @@
 	
     spl_autoload_register('app_load_class');
 
-	/*
-	* DC Prudhoe is a wrapper for output buffer
-	* functions. Using output buffers, we can 
-	* capture PHP output into a string and
-	* send it to the broswer when we are ready.
-	*/
-	$dc_prudhoe_cache_control = new \dc\prudhoe\PageCache();
-
 	/* 
 	* DC Yukon is the database controller. Most
 	* other libraries will accept it as an injected
