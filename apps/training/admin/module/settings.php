@@ -1,6 +1,6 @@
 <?php 
 
-	require('../../../../libraries/php/classes/config.php'); //Basic configuration file.
+	require('../../../../libraries/config.php'); //Basic configuration file.
 	require_once('../../source/s_main.php');
 		
 	$local_root		= $cDocroot."classes/";

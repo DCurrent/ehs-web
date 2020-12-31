@@ -52,3 +52,13 @@
 </script>
 </body>
 </html>
+
+<?php 
+
+/*
+* Output page contents to browser.
+*/
+//$dc_prudhoe_cache_control->clean_cache();
+echo $dc_prudhoe_cache_control->markup_and_flush();
+
+?>

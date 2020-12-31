@@ -233,7 +233,7 @@
 		return $result;
 	}
 	
-	require('../../libraries/php/classes/config.php'); //Basic configuration file.
+	require('../../libraries/config.php'); //Basic configuration file.
 	require('../../libraries/php/classes/database/main.php'); 	// Database class. 
 	
 	$get				= NULL;	// Get object.

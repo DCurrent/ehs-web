@@ -1,6 +1,6 @@
 <?php 
 
-	require('../../../../libraries/php/classes/config.php'); //Basic configuration file.
+	require('../../../../libraries/config.php'); //Basic configuration file.
 	require('../../../../libraries/php/classes/database/main.php'); 	// Database class.
 	require('../../source/s_main.php');
 		
