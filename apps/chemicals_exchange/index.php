@@ -93,7 +93,7 @@
             <div id="subContainer">                            
 				<?php include("../../a_banner.php"); ?>                               
                 <div id="subNavigation">                
-                    <?php include("../../a_subnav_0001.php"); ?>                     
+                    <?php include("../../a_subnav.php"); ?>                     
                 </div><!--#subNavigation-->                
                 <div id="content">                
                     <h1>Free Chemicals</h1>                      

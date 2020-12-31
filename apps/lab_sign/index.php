@@ -106,7 +106,7 @@
                     </div><!--#banner_content-->
                 </div><!--#banner_container-->                               
                 <div id="subNavigation">                
-                    <?php include("../../a_subnav_0001.php"); ?>                     
+                    <?php include("../../a_subnav.php"); ?>                     
                 </div><!--#subNavigation-->                
                 <div id="content">                
                     <h3>Build Lab Sign</h3>

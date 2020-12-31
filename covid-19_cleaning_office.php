@@ -17,7 +17,7 @@
             <div id="subContainer">                            
 				<?php include("a_banner.php"); ?>                               
                 <div id="subNavigation">                
-                    <?php include("a_subnav_0001.php"); ?>                     
+                    <?php include("a_subnav.php"); ?>                     
                 </div><!--/subNavigation-->                
               <div id="content">                
                     <h1><span data-contrast="auto" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="header">Guidelines with Suspected/Confirmed COVID-19</span></span></h1>                      
