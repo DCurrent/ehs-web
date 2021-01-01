@@ -103,15 +103,15 @@ class class_session implements SessionHandlerInterface
 		$time 	= date(DATE_ATOM); 	// Current time.
 		$line	= NULL;				// Line object.						
 		
-		echo '<br />'.$time;
-		echo '<br />'.$id;
+		error_log('session_read: '.$time);
+		error_log('session_read: '.$id);
 					
 		// Set SQL.
-		$this->query_m->set_sql('MERGE INTO tbl_php_sessions
+		$this->query_m->set_sql('MERGE INTO tbl_legacy_session
 			USING 
 				(SELECT ? AS search_col) AS SRC
 			ON 
-				tbl_php_sessions.session_id = SRC.search_col
+				tbl_legacy_session.session_id = SRC.search_col
 			WHEN MATCHED THEN
 				UPDATE SET
 					updated = ?			
@@ -163,11 +163,11 @@ class class_session implements SessionHandlerInterface
 		$ip = substr($ip, 0, 15);
 		
 		// Set query string.
-		$this->query_m->set_sql('MERGE INTO tbl_php_sessions
+		$this->query_m->set_sql('MERGE INTO tbl_legacy_session
 		USING 
 			(SELECT ? AS search_col) AS SRC
 		ON 
-			tbl_php_sessions.session_id = SRC.search_col
+			tbl_legacy_session.session_id = SRC.search_col
 		WHEN MATCHED THEN
 			UPDATE SET
 				session_data	= ?,
@@ -209,7 +209,7 @@ class class_session implements SessionHandlerInterface
 		*/		
 				
 		// Set query string.
-		$this->query_m->set_sql('DELETE FROM tbl_php_sessions WHERE session_id = ?;');
+		$this->query_m->set_sql('DELETE FROM tbl_legacy_session WHERE session_id = ?;');
 		
 		// Set parameters.
 		$this->query_m->set_params(array(&$id)); 
@@ -236,7 +236,7 @@ class class_session implements SessionHandlerInterface
   		$expired = date(DATE_ATOM, time() - ($maxlifetime + $this->maxlife_m));
  				
 		// Set query string.
-		$this->query_m->set_sql('DELETE FROM tbl_php_sessions WHERE updated < ?;');
+		$this->query_m->set_sql('DELETE FROM tbl_legacy_session WHERE updated < ?;');
 		
 		// Set parameters.
 		$this->query_m->set_params(array(&$expired)); 

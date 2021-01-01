@@ -11,7 +11,7 @@ class class_session_data
 {
 	private		
 		$session_id 	= NULL,
-		$session_data	= NULL,
+		$session_data	= '',
 		$expire			= NULL,
 		$source			= NULL,
 		$ip				= NULL;
@@ -20,7 +20,12 @@ class class_session_data
 	public function get_session_data()
 	{
 		return $this->session_data;
-	}	
+	}
+	
+	public function set_session_id($value)
+	{
+		$this->session_id = $value;
+	}
 }
 
 // Override PHP's default session handling to store data in an MSSQL table. 
@@ -48,7 +53,7 @@ class class_session implements SessionHandlerInterface
 		$this->life = SESSION_SETTINGS::LIFE;			
 		
 		$this->db_conn_m 	= new class_db_connection();
-		$this->db_query_m	= new class_db_query($this->db_conn_m);
+		$this->db_query_m	= new class_db_query($this->db_conn_m);			
 	}
     	
    	public function open($savePath, $sessionName)
@@ -110,6 +115,8 @@ class class_session implements SessionHandlerInterface
 		
 		if($db_query->get_row_exists())
 		{
+			// error_log('found session data');
+			
 			// Set class and acquire object.
 			$db_query->get_line_params()->set_class_name('class_session_data');
 			$result = $db_query->get_line_object();	
@@ -117,6 +124,9 @@ class class_session implements SessionHandlerInterface
 		else
 		{
 			$result = new class_session_data();
+			$result->set_session_id($id);
+			
+			// error_log('No session data:');
 		}
 		
 		// Return session data.
@@ -164,7 +174,7 @@ class class_session implements SessionHandlerInterface
 						array(&$time, SQLSRV_PARAM_IN),
 						array(&$source, SQLSRV_PARAM_IN),
 						array(&$ip, SQLSRV_PARAM_IN));
-						
+								
 		// Bind parameters and execute query.
 		$db_query->set_params($params);				
 		$db_query->query();		

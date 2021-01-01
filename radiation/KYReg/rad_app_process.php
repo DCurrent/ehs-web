@@ -880,7 +880,7 @@ window.print();
 
 $todaysdate = date("F d, Y");
 				
-$toaddress = "david.rich@uky.edu, glschl1@email.uky.edu";
+$toaddress = "david.rich@uky.edu, glschl1@email.uky.edu, dvcask2@uky.edu";
 $subject = "Application to possess and use rad materials " .$todaysdate;
 $mailcontent = "Today's date: " .$todaysdate."\n\n"
 	."Name: ".$firstName." ".$lastName."\n"

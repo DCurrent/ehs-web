@@ -1105,14 +1105,15 @@ th a, table a:hover, table a:active
 
 th.header 
 { 
-    background-image: url(../img/small.gif); 
+    /* background-image: url(../img/small.gif); */ 
     cursor: pointer; 
     font-weight: bold; 
     background-repeat: no-repeat; 
-    background-position: center left; 
+    background-position: left; 
     padding-left: 20px; 
     border-right: 1px solid #dad9c7; 
-    margin-left: -1px; 
+    margin-left: -1px;
+	text-align: left;
 }
 
 th.header:after

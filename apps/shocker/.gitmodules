@@ -1,0 +1,12 @@
+[submodule "source/dc/Nahoni"]
+	path = source/dc/Nahoni
+	url = https://github.com/DCurrent/Nahoni
+[submodule "source/dc/Yukon"]
+	path = source/dc/Yukon
+	url = https://github.com/DCurrent/Yukon
+[submodule "source/dc/Chronofix"]
+	path = source/dc/Chronofix
+	url = https://github.com/DCurrent/Chronofix/
+[submodule "source/dc/stoeckl"]
+	path = source/dc/stoeckl
+	url = https://github.com/dcurrent/stoeckl

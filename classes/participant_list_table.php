@@ -185,7 +185,7 @@
 		// Clickable table row.
 		jQuery(document).ready(function($) {
 			$(".clickable-row").click(function() {
-				window.open('https://ehs.uky.edu/classes/certificate.php?id=' + $(this).data("href"));
+				window.open('certificate.php?id=' + $(this).data("href"));
 			});
 		});
 	</script>
