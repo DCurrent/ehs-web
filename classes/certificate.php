@@ -4,7 +4,12 @@
 	require('../libraries/php/classes/database/main.php'); 	// Database class.
 	require('../libraries/vendor/mpdf/mpdf.php');	// pdf maker.	
 	
-	
+	/*
+	Allocate an adequate memory limit for this 
+	script only, so we can keep the default
+	limit low as possible.
+	*/
+	ini_set('memory_limit','24M');
 	
 	// Initialize pdf maker class.
 	$pdf_gen = new mPDF();
@@ -336,5 +341,4 @@
 
 	// Send pdf and exit script.
 	$pdf_gen->Output('ehs_class_certificate.pdf', 'I');
-	exit;
 ?>
