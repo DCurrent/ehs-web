@@ -2,7 +2,7 @@
 <?php		
 		
 	require($_SERVER['DOCUMENT_ROOT']."/libraries/php/classes/config.php"); //Basic configuration file.
-	
+		
 	function append_like_char($value)
 	{
 		return ($value.'%');
@@ -127,7 +127,15 @@
 		switch($row_count)
 		{
 			default:
-				$row_text = $row_count.' records found.';
+				
+				if($row_count > 300)
+				{
+					$row_text = $row_count.' records found, displaying first 300.';
+				}
+				else
+				{
+					$row_text = $row_count.' records found.';
+				}
 				break;
 			case 0:
 				$row_text = 'No records found.';
@@ -163,9 +171,12 @@
 		<tbody>
 	<?php
 	
+	$row_print_count = 0;
+			
 	// Output query results as table.
 	while($oDB->db_line(SQLSRV_FETCH_ASSOC))
-	{			
+	{	
+		
 		?>
 			<tr class="clickable-row" role="button" data-href="<?php echo $oDB->DBLine['id']; ?>">
 				<td><?php echo $oDB->DBLine['Name']; ?></td>
@@ -175,6 +186,16 @@
 				<td><?php echo $oDB->DBLine['Trainer']; ?></td>
 			</tr>
 		<?php
+		if(++$row_print_count > 300)
+		{
+			break;
+		?>
+			</tbody>
+		</table>
+	
+		<p>Showing first 300 entries.</p>
+		<?php
+		}
 	}	
 			
 	?>
