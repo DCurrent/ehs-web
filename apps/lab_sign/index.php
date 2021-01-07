@@ -112,7 +112,7 @@
                     <h3>Build Lab Sign</h3>
                     <p>Fill out the form below, indicate any hazards present in your lab, and press the "Create Sign" button. A <span class="icon_pdf">pdf</span> lab sign will then be sent to your broswer.</p>                      
                     
-                    <form name="lab_sign" id="lab_sign" class="lab_sign" action="print.php" method="post" target="_blank">                                    
+                    <form name="lab_sign" id="lab_sign" class="lab_sign" action="print_gen.php" method="post" target="_blank">                                    
                         
                         
                         <fieldset name="fs_pi" id="fs_pi">
