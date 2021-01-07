@@ -12,6 +12,12 @@
 // Changes:  See changelog.txt                                                  *
 // ******************************************************************************
 
+/*
+Allocate an adequate memory limit for this 
+script only, so we can keep the default
+limit low as possible.
+*/
+//echo 'mem: '.ini_set('memory_limit','48M');
 
 define('mPDF_VERSION','6.0');
 
