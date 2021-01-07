@@ -429,7 +429,7 @@ class class_db implements DB_DEFAULTS_old {
 		// Establish database connection.
 		$this->DBConn = sqlsrv_connect($host, $db_cred);		
 		
-		echo "<!-- class_db->DBConn: ".$this->DBConn." -->";
+		//echo "<!-- class_db DBConn: ".$this->DBConn." -->";
 		
 		// False returned. Database connection has failed.
 		if($this->DBConn === FALSE)
@@ -637,7 +637,7 @@ class class_db implements DB_DEFAULTS_old {
 		// Execute query.
 		$this->DBResult = sqlsrv_query($this->DBConn, $query, $params, $options);
 		
-		echo "<!-- class_db->db_query(query): ".$query." -->";
+		// echo "<!-- class_db->db_query(query): ".$query." -->";
 		
 		// Error trapping.
 		$this->db_error();
