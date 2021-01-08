@@ -143,14 +143,16 @@
 				width:auto;				
 			  	display: grid;
 			  	grid-template-areas: "a a";
-			  	gap: 10px;
+			  	gap: 5px;
 			  	grid-auto-rows: auto;
+                border-style: double;
+                border-width: 10px;
+                padding: 5px;
 			}
 			
 			.hazard_item
 			{
 				text-align: center;
-				background-color: lime;
 			}
 			
 			.hazard_label
@@ -201,7 +203,7 @@
 		<h1 class="center" style="color:#C60; text-transform:uppercase;">Authorized personnel only!</h1>                  
 
 
-			<h3 class="hazard_sign center" style="margin:auto;">CAUTION: The following hazards are present within this area:</h3>                    
+			<h3 class="hazard_sign center">CAUTION: The following hazards are present within this area:</h3>                    
 			<div class="auto_grid_container" id="hazard_item_container">
 				<?php
 
