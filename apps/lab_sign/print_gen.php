@@ -3,18 +3,9 @@
 	require('source/main.php');
 	require($_SERVER['DOCUMENT_ROOT'].'/libraries/php/classes/config.php'); // Basic configuration file. 
 	require($_SERVER['DOCUMENT_ROOT'].'/libraries/php/classes/database/main.php'); // Database handler.
-	// require($_SERVER['DOCUMENT_ROOT'].'/libraries/vendor/mpdf/mpdf.php'); // pdf
-
-	// Verify user is authorized.
-	//$oAcc->access_verify();
-
-	// Initialize pdf maker class.
-	//$pdf_gen = new mPDF();
 	
-	//$pdf_gen->SetTitle(settings::TITLE);
-	//$pdf_gen->SetAuthor($oAcc->get_name_full());
-	//$pdf_gen->setAuthor('NA');
-	//$pdf_gen->SetCreator('Caskey, Damon V.');
+	// Verify user is authorized.
+	//$oAcc->access_verify();	
 	
 	///////////////////////////////////////////////////////////////////////////////
 	
@@ -95,17 +86,45 @@
 		echo 'You have not entered any after hours or emergency contacts. Close this window and add at least one contact, then submit again.';
 	
 		exit;
-	}
+	} 
 	
 	// Start caching page contents.
 	ob_start();
 ?>
 
+
 <!DOCtype html>
     <head>
-    	<title><?php echo settings::TITLE; ?></title>      
+    	<title><?php echo settings::TITLE; ?>b</title>
     	<style>
 		
+            
+            @page { 
+                size: auto; 
+                margin: 0; 
+            } 
+            
+            @print { 
+                @page :footer { 
+                    display: none
+                } 
+
+                @page :header { 
+                    display: none
+                } 
+            }             
+            
+            @media print { 
+                @page { 
+                    margin-top: 0; 
+                    margin-bottom: 0; 
+                } 
+                body { 
+                    padding-top: 72px; 
+                    padding-bottom: 72px ; 
+                } 
+            }
+            
 			.center
 			{
 				text-align:center;
@@ -113,8 +132,8 @@
 				
 			img.hazard_sign
 			{
-				height:100px;
-				width:100px;
+				height:150px;
+				width:150px;
 				border:none;				
 			}
 			
@@ -155,7 +174,8 @@
 			table 
 			{
 				page-break-inside: avoid;
-				width:100%;
+				table-layout:auto;
+				border-style:solid;	
 			}
 			
 			caption
@@ -167,25 +187,10 @@
 				color:#900;
 			}
 			
-			table.hazard_sign
-			{
-				table-layout:fixed;
-				border-style:solid;
-				border-top:thick;
-				border-bottom:thick;
-								
-			}
-			
 			td, th
 			{
 				text-align:left;
-			}
-			
-			td.hazard_sign
-			{
-				vertical-align:top;							
-				text-align:center;	
-				padding:5px;			
+                border-style:solid;	
 			}
 		</style>
     
@@ -232,30 +237,33 @@
 				<?php
 				}	
 			?>
-				</div>
+				
 			<?php
 
 				if($post->get_explosives())
 				{
-				?>							                                     
+				?>		
+                    <div id="hazard_explosives" class="hazard_item">
 						<img src="../../media/image/hazard_explosives.png" alt="Explosives" class="hazard_sign" />
 
-						<h4 class="hazard_sign">
-							Explosives<br />
-							Self Reactives<br />
-							Organic Peroxides
-						</h4>
+                        <p>
+                            <span class="hazard_label_small">Explosives</span><br />
+							<span class="hazard_label_small">Self Reactives</span><br />
+							<span class="hazard_label_small">Organic Peroxides</span>
+                        </p>
+                    </div>
 				<?php
 				} 
 
 				if($post->get_corrosives())
 				{
-				?>                                       
+				?>    
+                    <div id="hazard_corrosives" class="hazard_item">
 						<img src="../../media/image/hazard_corrosives.png" alt="Corrosives" class="hazard_sign" />
-
-						<h3 class="hazard_sign">
-							Corrosives
-						</h3>
+                        <p>
+                            <span class="hazard_label">Corrosives</span>
+						</p>
+                    </div>
 				<?php
 				} 
 
@@ -436,7 +444,7 @@
 				}
 
 			?>
-			  
+            </div>			  
 		
 			<?php
 				if($post->get_special())
@@ -466,9 +474,9 @@
 						?>							
                                 <table>
                                   <caption>
-                                    Principal Investigator<?php if($pi_count > 1){ echo 's'; } ?>
+                                    Principal Investigator<?php if($pi_count > 1){ ?>s<?php } ?>
                                   </caption>
-                                  
+                                  <tbody>
                                   <?php foreach ($post->get_pi_id() as $key => $value)
                                         {                                            						  
                                   ?>                                            
@@ -479,7 +487,8 @@
                                             </tr>
                                     <?php 
                                         }
-                                    ?>                                
+                                    ?>   
+                                    </tbody>
                                 </table>
                     	<?php
 							}
@@ -499,9 +508,9 @@
 						?>							
                                 <table>
                                   <caption>
-                                    Lab Supervisor<?php if($super_count > 1){ echo 's'; } ?>
+                                    Lab Supervisor<?php if($super_count > 1){ ?>s<?php } ?>
                                   </caption>
-                                  
+                                  <tbody>
                                   <?php foreach ($post->get_super_id() as $key => $value)
                                         {                                            						  
                                   ?>                                            
@@ -512,7 +521,8 @@
                                             </tr>
                                     <?php 
                                         }
-                                    ?>                                
+                                    ?>  
+                                    </tbody>
                                 </table>
                     	<?php
 							}
@@ -532,17 +542,17 @@
                                 $ec_phone_h	= $post->get_ec_phone_h();
 						?>							
                                 <table>
-                                  <caption>
-                                    Emergency/After Hours Contacts
-                                  </caption>
-                                  
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Location</th>
-                                    <th>Office Phone</th>
-                                    <th>Cell/Home Phone</th>
-                                </tr>
-                                  
+                                    <caption>Emergency/After Hours Contacts</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Location</th>
+                                            <th>Office Phone</th>
+                                            <th>Cell/Home Phone</th>
+                                        </tr>
+                                    </thead>
+                                
+                                    <tbody>
                                   <?php foreach ($post->get_ec_id() as $key => $value)
                                         {                                            						  
                                   ?>
@@ -557,40 +567,44 @@
                                             </tr>
                                     <?php 
                                         }
-                                    ?>                                
+                                    ?>
+                                    </tbody>
                                 </table>
                     	<?php
 							}
 						?>
                    	</p>
 
-              		<p>                    	
-                        <table>
-                        	<?php if($post->get_room()){ ?>
-                                <tr>
-                                	<th>Area/Room:</td>
-									<td><?php echo $room_data->room.' ('.$post->get_room().'), '.ucwords(strtolower($room_data->useage_desc)); ?><td>
-                                </td>
-                            <?php } ?>
-                            
-							<?php if($post->get_department()) { ?>
-                            	<tr>
-                                	<th>Department:</th>
-									<td><?php echo $post->get_department() .', '.$department_name->name; ?></td>
-                            	</tr>
-                            <?php } ?>
-							
-								<tr>
-                        			<th>Date Posted:</th>
-                            		<td><?php echo date(DATE_COOKIE); ?></td>
-								</tr>
-						</table>
-      
-                    </p>
+              		<div class="center">                         
+                            <table>
+                                <tbody>
+                                <?php if($post->get_room()){ ?>
+                                    <tr>
+                                        <th>Area/Room:</th>
+                                        <td><?php echo $room_data->room.' ('.$post->get_room().'), '.ucwords(strtolower($room_data->useage_desc)); ?></td>
+                                    </tr>
+                                <?php } ?>
+
+                                <?php if($post->get_department()) { ?>
+                                    <tr>
+                                        <th>Department:</th>
+                                        <td><?php echo $post->get_department() .', '.$department_name->name; ?></td>
+                                    </tr>
+                                <?php } ?>
+
+                                    <tr>
+                                        <th>Date Posted:</th>
+                                        <td><?php echo date(DATE_COOKIE); ?></td>
+                                    </tr>
+                                </tbody>
+                            </table>                        
+                    </div>
                     
-                    <p>
-    					The information on this sign must be updated at least annually or in the event of any change of emergency contacts or special hazards.
-                    </p>
+                    <div class="center">
+                        <p>
+                            The information on this sign must be updated at least annually or in the event of any change of emergency contacts or special hazards.
+                        </p>
+                    </div>
               
 </body>
 </html>
