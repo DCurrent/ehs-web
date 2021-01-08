@@ -274,25 +274,28 @@
 				?>
 						<img src="../../media/image/hazard_magnetic.png" alt="Magnetic Field" class="hazard_sign" />
 
-						<h3 class="hazard_sign">
-							Strong<br /> Magnetic Field
-						</h3>
+                        <p>
+						    <span class="hazard_label">Strong Magnetic Field</span>
+                        </p>
 				<?php
 				}
 
 				if($post->get_carcinogen())
 				{
 				?>
+                    <div id="hazard_carcinogen" class="hazard_item">
 						<img src="../../media/image/hazard_carcinogen.png" alt="Carcinogen" class="hazard_sign" />
-
-						<h4 class="hazard_sign">
-							Carcinogen<br />
+                        
+                        <p class="hazard_label_small">
+                            Carcinogen<br />
 							Respiratory Sensitizer<br />
 							Reproductive Toxicity<br />
 							Target Organ Toxicity<br />
 							Mutagenicity<br />
-							Aspiration Toxicity
-						</h4>
+                            Aspiration Toxicity					    
+                        </p>
+                    </div>
+						
 				<?php
 				}							
 
