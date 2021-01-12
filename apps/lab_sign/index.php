@@ -259,14 +259,14 @@
                                                         Organic Peroxides</label>
 							</td>
                             <td width="21%">
-                                <input name="flammables" id="flamables" type="checkbox" value="<?php echo TRUE; ?>" />
+                                <input name="agent_flammables" id="agent_flamables" type="checkbox" value="<?php echo TRUE; ?>" />
                                 </td>
                           </tr>
                           <tr>
                             <td><img src="../../media/image/hazard_oxidizers.png" alt="Oxidizers" width="1017" height="1017" class="haz_icon"></td>
                             <td><label for="oxidizers">Oxidizers</label></td>
                             <td>
-                            	<input name="oxidizers" id="oxidizers" type="checkbox" value="<?php echo TRUE; ?>" />
+                            	<input name="agent_oxidizers" id="agent_oxidizers" type="checkbox" value="<?php echo TRUE; ?>" />
                             </td>
                           </tr>
                           <tr>
@@ -278,21 +278,21 @@
                                 </label>
                             </td>
                             <td>
-                            	<input name="explosives" id="explosives" type="checkbox" value="<?php echo TRUE; ?>" />
+                            	<input name="agent_explosives" id="agent_explosives" type="checkbox" value="<?php echo TRUE; ?>" />
                             </td>
                           </tr>
                           <tr>
                             <td><img src="../../media/image/hazard_corrosives.png" alt="Corrosives" width="1017" height="1017" class="haz_icon"></td>
                             <td><label for="corrosives">Corrosives</label></td>
                             <td>
-                            	<input name="corrosives" id="corrosives" type="checkbox" value="<?php echo TRUE; ?>" />
+                            	<input name="agent_corrosives" id="agent_corrosives" type="checkbox" value="<?php echo TRUE; ?>" />
                             </td>
                           </tr>
                           <tr>
                             <td><img src="../../media/image/hazard_magnetic.png" alt="Strong Magnetic Field" width="281" height="281" class="haz_icon"></td>
                             <td><label for="magnetic">Strong Magnetic Field</label></td>
                             <td>
-                            	<input name="magnetic" id="magnetic" type="checkbox" value="<?php echo TRUE; ?>" />
+                            	<input name="agent_magnetic" id="agent_magnetic" type="checkbox" value="<?php echo TRUE; ?>" />
                             </td>
                           </tr>
                           <tr>
@@ -305,7 +305,7 @@
                                                     Aspiration Toxicity</label>
 							</td>
                             <td>
-                            	<input name="carcinogen" id="carcinogen" type="checkbox" value="<?php echo TRUE; ?>" />
+                            	<input name="agent_carcinogen" id="agent_carcinogen" type="checkbox" value="<?php echo TRUE; ?>" />
                             </td>
                           </tr>
                           <tr>
@@ -318,33 +318,33 @@
                                                         Irritation </label>
 							</td>
                             <td>
-                            	<input name="irritant" id="irritant" type="checkbox" value="<?php echo TRUE; ?>" />
+                            	<input name="agent_irritant" id="agent_irritant" type="checkbox" value="<?php echo TRUE; ?>" />
                             </td>
                           </tr>
                           <tr>
                             <td><img src="../../media/image/hazard_toxicity.png" alt="Acute Toxicity" width="1017" height="1017" class="haz_icon"></td>
                             <td><label for="toxicity">Acute Toxicity (severe)</label></td>
                             <td>
-                            	<input name="toxicity" id="toxicity" type="checkbox" value="<?php echo TRUE; ?>" />
+                            	<input name="agent_toxicity" id="agent_toxicity" type="checkbox" value="<?php echo TRUE; ?>" />
                             </td>
                           </tr>
                           <tr>
                             <td><img src="../../media/image/hazard_pressure.png" alt="Gas Under Pressure" width="1017" height="1017" class="haz_icon"></td>
                             <td><label for="pressure">Gas Under Pressure</label></td>
                             <td>
-                            	<input name="pressure" id="pressure" type="checkbox" value="<?php echo TRUE; ?>" />
+                            	<input name="agent_pressure" id="agent_pressure" type="checkbox" value="<?php echo TRUE; ?>" />
                             </td>
                           </tr>
                           <tr>
                             <td><img src="../../media/image/hazard_electric.png" alt="Electric" width="360" height="316" class="haz_icon"></td>
                             <td><label for = "electric">Electrical</label></td>
-                            <td><input name="electric" id="electric" type="checkbox" value="<?php echo TRUE; ?>" /></td>
+                            <td><input name="agent_electric" id="agent_electric" type="checkbox" value="<?php echo TRUE; ?>" /></td>
                           </tr>
                           <tr>
                             <td><img src="../../media/image/hazard_laser.png" alt="Laser" width="233" height="232" class="haz_icon"></td>
                             <td><label for="laser">Laser (class)</label></td>
                             <td>
-                            	<select name="laser" id="laser">
+                            	<select name="agent_laser" id="agent_laser">
                                 	<option value="0">None</option>
                             	<?php 
 									foreach($laser->result() as $value) 
@@ -364,38 +364,38 @@
                             <td><img src="../../media/image/hazard_radiation.png" alt="Radiation" width="253" height="237" class="haz_icon"></td>
                             <td><label for="radioactive">Radioactive Material</label></td>
                             <td>
-                            	<input name="radioactive" id="radioactive" type="checkbox" value="<?php echo TRUE; ?>" />
+                            	<input name="agent_radioactive" id="agent_radioactive" type="checkbox" value="<?php echo TRUE; ?>" />
                             </td>
                           </tr>
                           <tr>
                             <td>No Icon</td>
                             <td><label for="biohazards">Biohazards (Indicate IBC#)</label></td>
-                            <td><input name="biohazards" id="biohazards" type="text" /></td>
+                            <td><input name="agent_biohazards" id="agent_biohazards" type="text" /></td>
                           </tr>
                           <tr>
                             <td><img src="../../media/image/hazard_pathogens_human.png" alt="Pathogens (Human)" width="470" height="470" class="haz_icon"></td>
                             <td><label for="pathogens_h">Human pathogens</label></td>
                             <td>
-                            	<input name="pathogens_h" id="pathogens_h" type="checkbox" value="<?php echo TRUE; ?>" />
+                            	<input name="agent_pathogens_h" id="agent_pathogens_h" type="checkbox" value="<?php echo TRUE; ?>" />
                             </td>
                           </tr>
                           <tr>
                             <td><img src="../../media/image/hazard_plant_transgenic.png" alt="Tansgenic Plants" width="150" height="150" class="haz_icon"></td>
                             <td><label for="transgenic_p">Transgenic Plants</label></td>
-                            <td><input name="transgenic_p" id="transgenic_p" type="checkbox" value="<?php echo TRUE; ?>" /></td>
+                            <td><input name="agent_transgenic_p" id="agent_transgenic_p" type="checkbox" value="<?php echo TRUE; ?>" /></td>
                           </tr>
                           
                           <tr>
                             <td><img src="../../media/image/hazard_pathogens_plant.png" alt="Pathogens (Plant)" width="150" height="145" class="haz_icon"></td>
                             <td><label for="pathogens_p">Plant Pathogens</label></td>
-                            <td><input name="pathogens_p" id="pathogens_p" type="checkbox" value="<?php echo TRUE; ?>" /></td>
+                            <td><input name="agent_pathogens_p" id="agent_pathogens_p" type="checkbox" value="<?php echo TRUE; ?>" /></td>
                           </tr>
                           
                           <tr>
                             <td><img src="../../media/image/hazard_viral_vectors.png" alt="Viral Vectors" width="139" height="150" class="haz_icon"></td>
                             <td><label for="vectors_v">Viral vectors</label></td>
                             <td>
-                            	<input name="vectors_v" id="vectors_v" type="checkbox" value="<?php echo TRUE; ?>" />
+                            	<input name="agent_vectors_v" id="agent_vectors_v" type="checkbox" value="<?php echo TRUE; ?>" />
                             </td>
                           </tr>
                           
@@ -403,7 +403,7 @@
                             <td><img src="../../media/image/hazard_bio.png" alt="Biohazard" width="125" height="150" class="haz_icon"></td>
                             <td><label for="bsl">BSL</label></td>
                             <td>
-                            	<select name="bsl" id="bsl">
+                            	<select name="agent_bsl" id="agent_bsl">
                                 	<option value="0">None</option>
                             	<?php 
 									foreach($bsl->result() as $value) 
