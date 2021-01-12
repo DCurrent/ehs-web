@@ -49,7 +49,7 @@
 	$query->set_sql('SELECT text
 						FROM tbl_list_laser 
 						WHERE     (id = ?)');
-	$query->set_params(array($post->get_laser()));
+	$query->set_params(array($post->get_agent_laser()));
 	$query->query();
 	
 	if($query->get_row_exists()) $laser = $query->get_line_object();
@@ -58,7 +58,7 @@
 	$query->set_sql('SELECT text, image
 						FROM tbl_list_bsl 
 						WHERE     (id = ?)');
-	$query->set_params(array($post->get_bsl()));
+	$query->set_params(array($post->get_agent_bsl()));
 	$query->query();
 	
 	if($query->get_row_exists()) $bsl = $query->get_line_object();	
@@ -97,11 +97,10 @@
     <head>
     	<title><?php echo settings::TITLE; ?>b</title>
     	<style>
-		
-            
             @page { 
-                size: auto; 
-                margin: 0; 
+               
+                size: 21cm 29.7cm;
+                 /* change the margins as you want them to be. */               
             } 
             
             @print { 
@@ -137,22 +136,41 @@
 				border:none;				
 			}
 			
+            .print_container
+            {               
+                break-inside: avoid;  
+            }
+            
 			.auto_grid_container
-			{
-				
-				width:auto;				
-			  	display: grid;
-			  	grid-template-areas: "a a";
-			  	gap: 5px;
-			  	grid-auto-rows: auto;
-                border-style: double;
-                border-width: 10px;
-                padding: 5px;
+			{   
+                padding-bottom: 10px;
+                display: grid;  
+                grid: auto / auto auto auto;
+                grid-gap: 10px;
+                justify-items: center;
+                justify-content: center;
+                border-bottom-style: double;               
+                border-bottom-width: 10px;
+                border-top-style: double;
+                border-top-width: 10px;                
 			}
 			
 			.hazard_item
-			{
-				text-align: center;
+			{  
+                margin: 5px;
+                min-width: 220px;
+                text-align: center;
+                padding: 2px;                
+                text-align: center;  
+                
+                /*
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-style: solid;               
+                border-width: thick;
+                */
 			}
 			
 			.hazard_label
@@ -195,276 +213,327 @@
                 border-style:solid;	
 			}
 		</style>
-    
+        
     </head>
     
-    <body>     
-                        		
-		<h1 class="center" style="color:#C60; text-transform:uppercase;">Authorized personnel only!</h1>                  
+    <body>          
+		<div class="print_container" id="hazard_item_container_outer">
+            
+        <h1 class="center" style="color:#C60; text-transform:uppercase;">Authorized personnel only!</h1>                  
 
-
-			<h3 class="hazard_sign center">CAUTION: The following hazards are present within this area:</h3>                    
-			<div class="auto_grid_container" id="hazard_item_container">
+		<h2 class="hazard_sign center">CAUTION: The following hazards are present within this area:</h2>
+            <div class="auto_grid_container" id="hazard_item_container">
 				<?php
-
-				// Check each hazard item post and add to signs array if present.
-				// To do: Move items to database table.
-				if($post->get_flammables())
+				/* 
+                Check each hazard item post and add to signs array if present.
+				
+                To do: Move items to database table so we don't need to
+                check each item peicemeal.
+				*/
+                
+                if($post->get_agent_flammables())
 				{
 				?>
-					<div id="hazard_flammables" class="hazard_item">
-						<img src="../../media/image/hazard_flammables.png" alt="Flammables" class="hazard_sign" />
-		
-						<p>
-							<span class="hazard_label_small">Flammables</span><br />
-							<span class="hazard_label_small">Self Reactives</span><br />
-							<span class="hazard_label_small">Pyrophorics</span><br />
-							<span class="hazard_label_small">Self-Heating</span><br />
-							<span class="hazard_label_small">Emits Flammable Gas</span><br />
-							<span class="hazard_label_small">Organic Peroxides</span><br />
-						</p>
-					</div>
+                
+                <div id="hazard_flammables" class="hazard_item">
+                    <img src="../../media/image/hazard_flammables.png" alt="Flammables" class="hazard_sign" />
+
+                    <p class="hazard_label_small">
+                        Flammables<br />
+                        Self Reactives<br />
+                        Pyrophorics<br />
+                        Self-Heating<br />
+                        Emits Flammable Gas<br />
+                        Organic Peroxides<br />
+                    </p>
+                </div>
+                
 				<?php
 				}
 
-				if($post->get_oxidizers())
+				if($post->get_agent_oxidizers())
 				{
 				?>
-					<div id="hazard_oxidizers" class="hazard_item">
-						<img src="../../media/image/hazard_oxidizers.png" alt="Oxidizers" class="hazard_sign" />
-						<p>
-							<span class="hazard_label">Oxidizers</span> 
-						</p>
-					</div>
+                
+                <div id="hazard_oxidizers" class="hazard_item">
+                    <img src="../../media/image/hazard_oxidizers.png" alt="Oxidizers" class="hazard_sign" />
+                    <p class="hazard_label">
+                        Oxidizers 
+                    </p>
+                </div>
+                
 				<?php
 				}	
-			?>
-				
-			<?php
+                ?>
 
-				if($post->get_explosives())
+                <?php
+				if($post->get_agent_explosives())
 				{
 				?>		
-                    <div id="hazard_explosives" class="hazard_item">
-						<img src="../../media/image/hazard_explosives.png" alt="Explosives" class="hazard_sign" />
+                
+                <div id="hazard_explosives" class="hazard_item">
+                    <img src="../../media/image/hazard_explosives.png" alt="Explosives" class="hazard_sign" />
 
-                        <p>
-                            <span class="hazard_label_small">Explosives</span><br />
-							<span class="hazard_label_small">Self Reactives</span><br />
-							<span class="hazard_label_small">Organic Peroxides</span>
-                        </p>
-                    </div>
+                    <p class="hazard_label_small">
+                        Explosives<br />
+                        Self Reactives<br />
+                        Organic Peroxides
+                    </p>
+                </div>
+                
 				<?php
 				} 
 
-				if($post->get_corrosives())
+				if($post->get_agent_corrosives())
 				{
-				?>    
-                    <div id="hazard_corrosives" class="hazard_item">
-						<img src="../../media/image/hazard_corrosives.png" alt="Corrosives" class="hazard_sign" />
-                        <p>
-                            <span class="hazard_label">Corrosives</span>
-						</p>
-                    </div>
+				?>  
+                
+                <div id="hazard_corrosives" class="hazard_item">
+                    <img src="../../media/image/hazard_corrosives.png" alt="Corrosives" class="hazard_sign" />
+                    
+                    <p class="hazard_label">
+                        Corrosives
+                    </p>
+                </div>
+                
 				<?php
 				} 
 
-				if($post->get_magnetic())
+				if($post->get_agent_magnetic())
 				{							
 				?>
-						<img src="../../media/image/hazard_magnetic.png" alt="Magnetic Field" class="hazard_sign" />
+                
+                <div id="hazard_magnetic" class="hazard_item">
+                    <img src="../../media/image/hazard_magnetic.png" alt="Magnetic Field" class="hazard_sign" />
 
-                        <p>
-						    <span class="hazard_label">Strong Magnetic Field</span>
-                        </p>
+                    <p class="hazard_label">
+                        Strong Magnetic Field
+                    </p>
+                </div>
+                
 				<?php
 				}
 
-				if($post->get_carcinogen())
+				if($post->get_agent_carcinogen())
 				{
 				?>
-                    <div id="hazard_carcinogen" class="hazard_item">
-						<img src="../../media/image/hazard_carcinogen.png" alt="Carcinogen" class="hazard_sign" />
-                        
-                        <p class="hazard_label_small">
-                            Carcinogen<br />
-							Respiratory Sensitizer<br />
-							Reproductive Toxicity<br />
-							Target Organ Toxicity<br />
-							Mutagenicity<br />
-                            Aspiration Toxicity					    
-                        </p>
-                    </div>
+                
+                <div id="hazard_carcinogen" class="hazard_item">
+                    <img src="../../media/image/hazard_carcinogen.png" alt="Carcinogen" class="hazard_sign" />
+
+                    <p class="hazard_label_small">
+                        Carcinogen<br />
+                        Respiratory Sensitizer<br />
+                        Reproductive Toxicity<br />
+                        Target Organ Toxicity<br />
+                        Mutagenicity<br />
+                        Aspiration Toxicity					    
+                    </p>
+                </div>
 						
 				<?php
 				}							
 
-				if($post->get_irritant())
+				if($post->get_agent_irritant())
 				{
-				?>                                       
-						<img src="../../media/image/hazard_irritant.png" alt="Irritant" class="hazard_sign" />
+				?>   
+                
+                <div id="hazard_irritant" class="hazard_item">
+                    <img src="../../media/image/hazard_irritant.png" alt="Irritant" class="hazard_sign" />
 
-						<h4 class="hazard_sign">
-							Irritant<br />
-							Dermal Sensitizer<br />
-							Acute toxicity (harmful)<br />
-							Narcotic Effects<br />
-							Respiratory Tract<br />
-							Irritation
-						</h4>
+                    <p class="hazard_label_small">
+                        Irritant<br />
+                        Dermal Sensitizer<br />
+                        Acute toxicity (harmful)<br />
+                        Narcotic Effects<br />
+                        Respiratory Tract<br />
+                        Irritation
+                    </p>
+                </div>
+                
 				<?php
 				} 
 
-				if($post->get_toxicity())
+				if($post->get_agent_toxicity())
 				{
-				?>							                                       
-						<img src="../../media/image/hazard_toxicity.png" alt="Toxicity" class="hazard_sign" />
+				?>		
+                <div id="hazard_toxicity" class="hazard_item">                    
+                    <img src="../../media/image/hazard_toxicity.png" alt="Toxicity" class="hazard_sign" />
 
-						<h3 class="hazard_sign">
-							Acute Toxicity<br />
-							(Severe)
-						</h3>';
+                    <p class="hazard_label">
+                        Acute Toxicity (Severe)
+                    </p>                    
+                </div>
+                
 				<?php
 				} 
 
-				if($post->get_pressure())
+				if($post->get_agent_pressure())
 				{
 				?>
-						<img src="../../media/image/hazard_pressure.png" alt="Pressure" class="hazard_sign" />
+                
+                <div id="hazard_pressure" class="hazard_item">                    
+                    <img src="../../media/image/hazard_pressure.png" alt="Pressure" class="hazard_sign" />
 
-						<h3 class="hazard_sign">
-							Gas Under<br />
-							Pressure
-						</h3>
+                    <p class="hazard_label">
+                        Gas Under Pressure
+                    </p>                    
+                </div>
+                
 				<?php
 				} 
 
-				if($post->get_laser())
+				if($post->get_agent_laser())
 				{
-				?>							
-						<img src="../../media/image/hazard_laser.png" alt="Laser" class="hazard_sign" />
+				?>	
+                
+                <div id="hazard_laser" class="hazard_item"> 
+                    <img src="../../media/image/hazard_laser.png" alt="Laser" class="hazard_sign" />
 
-						<h3 class="hazard_sign">
-							Class <?php echo $laser->text; ?> Laser.
-						</h3>
+                    <p class="hazard_label">
+                        Class <?php echo $laser->text; ?> Laser
+                    </p>
+                </div>
+                
 				<?php
 				} 
 
-				if($post->get_radioactive())
+				if($post->get_agent_radioactive())
 				{
 				?>
+                
+                <div id="hazard_radioactive" class="hazard_item">
+                    <img src="../../media/image/hazard_radiation.png" alt="Radiation" class="hazard_sign" />
 
-						<img src="../../media/image/hazard_radiation.png" alt="Radiation" class="hazard_sign" />
-
-						<h3 class="hazard_sign">
-							Radioactive<br /> 
-							Material
-						</h3>
+                    <p class="hazard_label">
+                        Radioactive Material
+                    </p>
+                </div>
+                
 				<?php
 				}
 
-				if($post->get_biohazards())
+				if($post->get_agent_biohazards())
 				{
-				?>							
-						<!--img src="../../media/image/hazard_bio.png" alt="Biohazard" class="hazard_sign" -->
+				?>		
+                <div id="hazard_biohazards" class="hazard_item">
+                    <!-- img src="../../media/image/hazard_bio.png" alt="Biohazard" class="hazard_sign" -->
 
-						<h3 class="hazard_sign">
-							Biohazard<br /> 
-							IBC#: '<?php echo $post->get_biohazards(); ?>
-						</h3>
+                    <p class="hazard_label">
+                        Biohazard<br /> 
+                        IBC#: '<?php echo $post->get_agent_biohazards(); ?>
+                    </p>
+                </div>
 				<?php
 				} 
 
-				if($post->get_transgenic_p())
+				if($post->get_agent_transgenic_p())
 				{
 				?>
-						<img src="../../media/image/hazard_plant_transgenic.png" alt="Transgenic Plants" class="hazard_sign" />
+                <div id="hazard_transgenic_p" class="hazard_item">
+                    <img src="../../media/image/hazard_plant_transgenic.png" alt="Transgenic Plants" class="hazard_sign" />
 
-						<h3 class="hazard_sign">
-							Transgenic Plants
-						</h3>
+                    <p class="hazard_label">
+                        Transgenic Plants
+                    </p>
+                </div>
 				<?php
 				} 
 
-				if($post->get_pathogens_p())
+				if($post->get_agent_pathogens_p())
 				{
 				?>
-						<img src="../../media/image/hazard_pathogens_plant.png" alt="Plant Pathogens" class="hazard_sign" />
+                <div id="hazard_pathogens_p" class="hazard_item">
+                    <img src="../../media/image/hazard_pathogens_plant.png" alt="Plant Pathogens" class="hazard_sign" />
 
-						<h3 class="hazard_sign">
-							Plant Pathogens
-						</h3>
+                    <p class="hazard_label">
+                        Plant Pathogens
+                    </p>
+                </div>
 				<?php
 				} 
 
-				if($post->get_pathogens_h())
+				if($post->get_agent_pathogens_h())
 				{
-				?>							
-						<img src="../../media/image/hazard_pathogens_human.png" alt="Human Pathogens" class="hazard_sign" />
+				?>
+                <div id="hazard_pathogens_h" class="hazard_item">
+                    <img src="../../media/image/hazard_pathogens_human.png" alt="Human Pathogens" class="hazard_sign" />
 
-						<h3 class="hazard_sign">
-							Human<br /> 
-							Pathogens
-						</h3>
+                    <p class="hazard_label">
+                        Human Pathogens
+                    </p>
+                </div>
 				<?php
 				}
 
-				if($post->get_vectors_v())
+				if($post->get_agent_vectors_v())
 				{
 				?>
-						<img src="../../media/image/hazard_viral_vectors.png" alt="Viral Vectors" class="hazard_sign" />
+                <div id="hazard_vectors_v" class="hazard_item">
+                    <img src="../../media/image/hazard_viral_vectors.png" alt="Viral Vectors" class="hazard_sign" />
 
-						<h3 class="hazard_sign">
-							Viral Vectors
-						</h3>
+                    <p class="hazard_label">
+                        Viral Vectors
+                    </p>
+                </div>
 				<?php
 				} 
 
-				if($post->get_bsl())
+				if($post->get_agent_bsl())
 				{
-					if ($bsl->image)
+                ?>
+                
+                <div id="hazard_bsl" class="hazard_item">
+                    <?php
+                    if ($bsl->image)
 					{
 					?>
-						<img src="../../media/image/hazard_bio.png'.$bsl->image.'.png" alt="BSL" class="hazard_sign" />							
+                    <img src="../../media/image/hazard_<?php echo $bsl->image; ?>.png" alt="BSL" class="hazard_sign" />							
 					<?php
 					}
-
 					?>
 
-					<h3 class="hazard_sign">
+					<p class="hazard_label">
 						<?php echo $bsl->text; ?>                                        
-					</h3>
-				<?php
+					</p>
+                </div>
+				
+                <?php
 				}
 
-				if($post->get_electric())
+				if($post->get_agent_electric())
 				{
-				?>							
-						<img src="../../media/image/hazard_electric.png" alt="Eletrical" class="hazard_sign" />
-
-						<h3 class="hazard_sign">
-							Electrical
-						</h3>
+				?>	
+                <div id="hazard_electric" class="hazard_item">
+				    <img src="../../media/image/hazard_electric.png" alt="Eletrical" class="hazard_sign" />
+                    
+                    <p class="hazard_label">
+                        Electrical
+                    </p>
+                </div>
 				<?php
 				}
 
 			?>
-            </div>			  
-		
-			<?php
-				if($post->get_special())
-				{
-			?>		
-					<div class="hazard_sign" style="width:auto; height:auto;">
-						<h4 class="hazard_sign">
-							Special procedures required for entry or exit:                                                                                
-						</h4>                                    
+            </div>
+        </div>
+		    <!--hazard types-->
+			
+            <?php
+            if($post->get_special())
+            {
+            ?>		
+            <div class="hazard_special">
+                <h1 class="hazard_label">
+                    Special procedures required for entry or exit:                                                                                
+                </h1>                                    
 
-						<?php echo $post->get_special(); ?>
-					</div>								
-					<!--hazard_sign-->
-			<?php 
-				} 
+                <p>
+                    <?php echo $post->get_special(); ?>
+                </p>
+            </div>								
+			<?php
+            }
 			?>  
                    	<!-- Principal Investigator -->
 					<p>
