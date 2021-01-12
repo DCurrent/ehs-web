@@ -28,25 +28,25 @@
 		private	$ec_phone_h		= array();
 			
         // Agents
-		private	$electric		= NULL;
-		private	$flammables		= NULL;
-		private	$oxidizers		= NULL;
-		private	$explosives		= NULL;
-		private	$corrosives		= NULL;
-		private	$magnetic		= NULL;
-		private	$carcinogen		= NULL;
-		private	$irritant		= NULL;
-		private	$toxicity		= NULL;
-		private	$pressure		= NULL;
-		private	$laser			= NULL;
-		private	$radioactive	= NULL;
-		private	$biohazards		= NULL;
-		private	$transgenic_p	= NULL;	// Transgenic plants.
-		private	$pathogens_p	= NULL;	// Plant pathogens.
-		private	$pathogens_h	= NULL; // Human pathogens.
-		private	$vectors_v		= NULL;	// Virual vectors.
-		private	$bsl			= NULL;
-		private	$special		= NULL;				
+		private	$agent_electric	      = NULL;
+		private	$agent_flammables     = NULL;
+		private	$agent_oxidizers      = NULL;
+		private	$agent_explosives     = NULL;
+		private	$agent_corrosives     = NULL;
+		private	$agent_magnetic	      = NULL;
+		private	$agent_carcinogen     = NULL;
+		private	$agent_irritant       = NULL;
+		private	$agent_toxicity       = NULL;
+		private	$agent_pressure       = NULL;
+		private	$agent_laser          = NULL;
+		private	$agent_radioactive    = NULL;
+		private	$agent_biohazards     = NULL;
+		private	$agent_transgenic_p   = NULL;	// Transgenic plants.
+		private	$agent_pathogens_p    = NULL;	// Plant pathogens.
+		private	$agent_pathogens_h    = NULL; // Human pathogens.
+		private	$agent_vectors_v      = NULL;	// Virual vectors.
+		private	$agent_bsl            = NULL;
+		private	$agent_special        = NULL;				
 		
 		public function __construct()
 		{	
@@ -143,94 +143,94 @@
 			$this->super_name_l = $value;
 		}
 		
-		public function set_electric($value)
+		public function set_agent_electric($value)
 		{
-			$this->electric = $value;
+			$this->agent_electric = $value;
 		}
 		
-		public function set_flammables($value)
+		public function set_agent_flammables($value)
 		{
-			$this->flammables = $value;
+			$this->agent_flammables = $value;
 		}
 			
-		public function set_oxidizers($value)
+		public function set_agent_oxidizers($value)
 		{
-			$this->oxidizers = $value;
+			$this->agent_oxidizers = $value;
 		}
 			
-		public function set_explosives($value)
+		public function set_agent_explosives($value)
 		{
-			$this->explosives = $value;
+			$this->agent_explosives = $value;
 		}
 			
-		public function set_corrosives($value)
+		public function set_agent_corrosives($value)
 		{
-			$this->corrosives = $value;
+			$this->agent_corrosives = $value;
 		}
 			
-		public function set_magnetic($value)
+		public function set_agent_magnetic($value)
 		{
-			$this->magnetic = $value;
+			$this->agent_magnetic = $value;
 		}
 			
-		public function set_carcinogen($value)
+		public function set_agent_carcinogen($value)
 		{
-			$this->carcinogen = $value;
+			$this->agent_carcinogen = $value;
 		}
 			
-		public function set_irritant($value)
+		public function set_agent_irritant($value)
 		{
-			$this->irritant = $value;
+			$this->agent_irritant = $value;
 		}
 			
-		public function set_toxicity($value)
+		public function set_agent_toxicity($value)
 		{
-			$this->toxicity = $value;
+			$this->agent_toxicity = $value;
 		}
 			
-		public function set_pressure($value)
+		public function set_agent_pressure($value)
 		{
-			$this->pressure = $value;
+			$this->agent_pressure = $value;
 		}
 			
-		public function set_laser($value)
+		public function set_agent_laser($value)
 		{
-			$this->laser = $value;
+			$this->agent_laser = $value;
 		}
 			
-		public function set_radioactive($value)
+		public function set_agent_radioactive($value)
 		{
-			$this->radioactive = $value;
+			$this->agent_radioactive = $value;
 		}
 			
-		public function set_biohazards($value)
+		public function set_agent_biohazards($value)
 		{
-			$this->biohazards = $value;
+			$this->agent_biohazards = $value;
 		}
 			
-		public function set_transgenic_p($value)
+		public function set_agent_transgenic_p($value)
 		{
-			$this->transgenic_p = $value;
+			$this->agent_transgenic_p = $value;
 		}
 			
-		public function set_pathogens_p($value)
+		public function set_agent_pathogens_p($value)
 		{
-			$this->pathogens_p = $value;
+			$this->agent_pathogens_p = $value;
 		}
 			
-		public function set_pathogens_h($value)
+		public function set_agent_pathogens_h($value)
 		{
-			$this->pathogens_h = $value;
+			$this->agent_pathogens_h = $value;
 		}
 		
-		public function set_vectors_v($value)
+		public function set_agent_vectors_v($value)
 		{
-			$this->vectors_v = $value;
+			$this->agent_vectors_v = $value;
 		}
 		
-		public function set_bsl($value)
+		public function set_agent_bsl($value)
 		{
-			$this->bsl = $value;
+			$this->agent_bsl = $value;
 		}
 		
 		public function set_special($value)
@@ -309,94 +309,94 @@
 			return $this->super_name_l;
 		}
 	
-		public function get_electric()
+		public function get_agent_electric()
 		{
-			return $this->electric;
+			return $this->agent_electric;
 		}
 	
-		public function get_flammables()
+		public function get_agent_flammables()
 		{
-			return $this->flammables;
+			return $this->agent_flammables;
 		}
 		
-		public function get_oxidizers()
+		public function get_agent_oxidizers()
 		{
-			return $this->oxidizers;
+			return $this->agent_oxidizers;
 		}
 		
-		public function get_explosives()
+		public function get_agent_explosives()
 		{
-			return $this->explosives;
+			return $this->agent_explosives;
 		}
 		
-		public function get_corrosives()
+		public function get_agent_corrosives()
 		{
-			return $this->corrosives;
+			return $this->agent_corrosives;
 		}
 		
-		public function get_magnetic()
+		public function get_agent_magnetic()
 		{
-			return $this->magnetic;
+			return $this->agent_magnetic;
 		}
 		
-		public function get_carcinogen()
+		public function get_agent_carcinogen()
 		{
-			return $this->carcinogen;
+			return $this->agent_carcinogen;
 		}
 		
-		public function get_irritant()
+		public function get_agent_irritant()
 		{
-			return $this->irritant;
+			return $this->agent_irritant;
 		}
 		
-		public function get_toxicity()
+		public function get_agent_toxicity()
 		{
-			return $this->toxicity;
+			return $this->agent_toxicity;
 		}
 		
-		public function get_pressure()
+		public function get_agent_pressure()
 		{
-			return $this->pressure;
+			return $this->agent_pressure;
 		}
 		
-		public function get_laser()
+		public function get_agent_laser()
 		{
-			return $this->laser;
+			return $this->agent_laser;
 		}
 		
-		public function get_radioactive()
+		public function get_agent_radioactive()
 		{
-			return $this->radioactive;
+			return $this->agent_radioactive;
 		}
 		
-		public function get_biohazards()
+		public function get_agent_biohazards()
 		{
-			return $this->biohazards;
+			return $this->agent_biohazards;
 		}
 		
-		public function get_transgenic_p()
+		public function get_agent_transgenic_p()
 		{
-			return $this->transgenic_p;
+			return $this->agent_transgenic_p;
 		}
 		
-		public function get_pathogens_p()
+		public function get_agent_pathogens_p()
 		{
-			return $this->pathogens_p;
+			return $this->agent_pathogens_p;
 		}
 		
-		public function get_pathogens_h()
+		public function get_agent_pathogens_h()
 		{
-			return $this->pathogens_h;
+			return $this->agent_pathogens_h;
 		}
 		
-		public function get_vectors_v()
+		public function get_agent_vectors_v()
 		{
-			return $this->vectors_v;
+			return $this->agent_vectors_v;
 		}
 		
-		public function get_bsl()
+		public function get_agent_bsl()
 		{
-			return $this->bsl;
+			return $this->agent_bsl;
 		}
 		
 		public function get_special()
