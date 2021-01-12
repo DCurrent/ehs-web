@@ -10,44 +10,43 @@
 	// Post data.			
 	class class_data_sign
 	{
-		private			
-			$department		= NULL,
-			$room			= NULL,
+		private	$department		= NULL;
+		private	$room			= NULL;
 			
-			$pi_id			= array(),
-			$pi_name_f		= array(),
-			$pi_name_l		= array(),
-			$super_id		= array(),
-			$super_name_f	= array(),
-			$super_name_l	= array(),
+		private	$pi_id			= array();
+		private	$pi_name_f		= array();
+		private	$pi_name_l		= array();
+		private	$super_id		= array();
+		private	$super_name_f	= array();
+		private	$super_name_l	= array();
 			
-			$ec_id			= array(),
-			$ec_name_f		= array(),
-			$ec_name_l		= array(),
-			$ec_loc			= array(),
-			$ec_phone_o		= array(),
-			$ec_phone_h		= array(),
+		private	$ec_id			= array();
+		private	$ec_name_f		= array();
+		private	$ec_name_l		= array();
+		private	$ec_loc			= array();
+		private	$ec_phone_o		= array();
+		private	$ec_phone_h		= array();
 			
-			// Agents
-			$electric		= NULL,
-			$flammables		= NULL,
-			$oxidizers		= NULL,
-			$explosives		= NULL,
-			$corrosives		= NULL,
-			$magnetic		= NULL,
-			$carcinogen		= NULL,
-			$irritant		= NULL,
-			$toxicity		= NULL,
-			$pressure		= NULL,
-			$laser			= NULL,
-			$radioactive	= NULL,
-			$biohazards		= NULL,
-			$transgenic_p	= NULL,	// Transgenic plants.
-			$pathogens_p	= NULL,	// Plant pathogens.
-			$pathogens_h	= NULL, // Human pathogens.
-			$vectors_v		= NULL,	// Virual vectors.
-			$bsl			= NULL,
-			$special		= NULL;				
+        // Agents
+		private	$electric		= NULL;
+		private	$flammables		= NULL;
+		private	$oxidizers		= NULL;
+		private	$explosives		= NULL;
+		private	$corrosives		= NULL;
+		private	$magnetic		= NULL;
+		private	$carcinogen		= NULL;
+		private	$irritant		= NULL;
+		private	$toxicity		= NULL;
+		private	$pressure		= NULL;
+		private	$laser			= NULL;
+		private	$radioactive	= NULL;
+		private	$biohazards		= NULL;
+		private	$transgenic_p	= NULL;	// Transgenic plants.
+		private	$pathogens_p	= NULL;	// Plant pathogens.
+		private	$pathogens_h	= NULL; // Human pathogens.
+		private	$vectors_v		= NULL;	// Virual vectors.
+		private	$bsl			= NULL;
+		private	$special		= NULL;				
 		
 		public function __construct()
 		{	
