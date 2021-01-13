@@ -193,9 +193,10 @@
 						
 			table 
 			{
+                width: 100%;
 				page-break-inside: avoid;
 				table-layout:auto;
-				border-style:solid;	
+				border-style:none;	
 			}
 			
 			caption
@@ -210,7 +211,7 @@
 			td, th
 			{
 				text-align:left;
-                border-style:solid;	
+                border-style:none;	
 			}
 		</style>
         
@@ -535,39 +536,39 @@
 			<?php
             }
 			?>  
-                   	<!-- Principal Investigator -->
-					<p>
-                    	<?php 
-							$pi_id = $post->get_pi_id();
-							$pi_count = count($pi_id);	
-						
-							if($pi_count > 0)
-							{
-								$pi_name_f	= $post->get_pi_name_f();
-                                $pi_name_l	= $post->get_pi_name_l();
-						?>							
-                                <table>
-                                  <caption>
-                                    Principal Investigator<?php if($pi_count > 1){ ?>s<?php } ?>
-                                  </caption>
-                                  <tbody>
-                                  <?php foreach ($post->get_pi_id() as $key => $value)
-                                        {                                            						  
-                                  ?>                                            
-                                            <tr>
-                                                <td class="center"><?php 
-                                                        if(array_key_exists($key, $pi_name_f)) echo $pi_name_f[$key];
-                                                        if(array_key_exists($key, $pi_name_l)) echo ' '.$pi_name_l[$key]; ?></td>
-                                            </tr>
-                                    <?php 
-                                        }
-                                    ?>   
-                                    </tbody>
-                                </table>
-                    	<?php
-							}
-						?>
-                   	</p>
+            <div class="print_container" id="contact_information_container">
+                <!-- Principal Investigator -->
+
+                <?php 
+                    $pi_id = $post->get_pi_id();
+                    $pi_count = count($pi_id);	
+
+                    if($pi_count > 0)
+                    {
+                        $pi_name_f	= $post->get_pi_name_f();
+                        $pi_name_l	= $post->get_pi_name_l();
+                ?>                        
+                        <table style="">
+                          <caption>
+                            Principal Investigator<?php if($pi_count > 1){ ?>s<?php } ?>
+                          </caption>
+                          <tbody>
+                          <?php foreach ($post->get_pi_id() as $key => $value)
+                                {                                            						  
+                          ?>                                            
+                                    <tr>
+                                        <td class="center"><?php 
+                                                if(array_key_exists($key, $pi_name_f)) echo $pi_name_f[$key];
+                                                if(array_key_exists($key, $pi_name_l)) echo ' '.$pi_name_l[$key]; ?></td>
+                                    </tr>
+                            <?php 
+                                }
+                            ?>   
+                            </tbody>
+                        </table>
+                <?php
+                    }
+                ?>                   	
                     
 					<!-- Lab Supervisor -->
 					<p>
@@ -648,26 +649,28 @@
 							}
 						?>
                    	</p>
+            </div>
 
               		<div class="center">                         
                             <table>
+                                <caption></caption>
                                 <tbody>
                                 <?php if($post->get_room()){ ?>
                                     <tr>
-                                        <th>Area/Room:</th>
+                                        <th>Area/Room</th>
                                         <td><?php echo $room_data->room.' ('.$post->get_room().'), '.ucwords(strtolower($room_data->useage_desc)); ?></td>
                                     </tr>
                                 <?php } ?>
 
                                 <?php if($post->get_department()) { ?>
                                     <tr>
-                                        <th>Department:</th>
+                                        <th>Department</th>
                                         <td><?php echo $post->get_department() .', '.$department_name->name; ?></td>
                                     </tr>
                                 <?php } ?>
 
                                     <tr>
-                                        <th>Date Posted:</th>
+                                        <th>Date Posted</th>
                                         <td><?php echo date(DATE_COOKIE); ?></td>
                                     </tr>
                                 </tbody>
