@@ -26,8 +26,6 @@
 		private	$ec_loc			= array();
 		private	$ec_phone_o		= array();
 		private	$ec_phone_h		= array();
-		
-        private $agent_count    = 0;
         
         // Agents
 		private	$agent_electric	      = NULL;
@@ -71,15 +69,8 @@
 				// is a set mutator for this request var. Run 
 				// it (the set method) with the request var. 
 				if(isset($_REQUEST[$key]))
-				{
-                    // If this is an agent, increment the agent counter.
-                    if(strstr($key, 'agent'))
-                    {
-                        $this->agent_count++;
-                    }
-                    
-                    // Run the method to populate member.
-					$this->$method($_REQUEST[$key]);					
+				{                    
+                    $this->$method($_REQUEST[$key]);
 				}
 			}			
 		}
@@ -157,7 +148,7 @@
 		
 		public function set_agent_electric($value)
 		{
-			$this->agent_electric = $value;
+			$this->agent_electric = $value;            
 		}
 		
 		public function set_agent_flammables($value)
@@ -250,13 +241,7 @@
 			$this->special = $value;
 		} 
 		
-		// Access methods		
-        public function get_agent_count()
-        {
-            return $this->agent_count;
-        }
-        
-        
+		// Access methods        
 		public function get_ec_id()
 		{
 			return $this->ec_id;
