@@ -99,7 +99,7 @@
     	<style>
             @page { 
                
-                size: 21cm 29.7cm;
+                size: letter;
                  /* change the margins as you want them to be. */               
             } 
             
