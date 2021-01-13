@@ -537,8 +537,8 @@
             }
 			?>  
             <div class="print_container" id="contact_information_container">
+                
                 <!-- Principal Investigator -->
-
                 <?php 
                     $pi_id = $post->get_pi_id();
                     $pi_count = count($pi_id);	
@@ -570,119 +570,111 @@
                     }
                 ?>                   	
                     
-					<!-- Lab Supervisor -->
-					<p>
-                    	<?php 
-							$super_id = $post->get_super_id();
-							$super_count = count($super_id);	
-						
-							if($super_count > 0)
-							{
-								$super_name_f	= $post->get_super_name_f();
-                                $super_name_l	= $post->get_super_name_l();
-						?>							
-                                <table>
-                                  <caption>
-                                    Lab Supervisor<?php if($super_count > 1){ ?>s<?php } ?>
-                                  </caption>
-                                  <tbody>
-                                  <?php foreach ($post->get_super_id() as $key => $value)
-                                        {                                            						  
-                                  ?>                                            
-                                            <tr>
-                                                <td class="center"><?php 
-                                                        if(array_key_exists($key, $super_name_f)) echo $super_name_f[$key];
-                                                        if(array_key_exists($key, $super_name_l)) echo ' '.$super_name_l[$key]; ?></td>
-                                            </tr>
-                                    <?php 
-                                        }
-                                    ?>  
-                                    </tbody>
-                                </table>
-                    	<?php
-							}
-						?>
-                   	</p>
+					<!-- Lab Supervisor -->					
+                    <?php 
+                        $super_id = $post->get_super_id();
+                        $super_count = count($super_id);	
 
-                    <p>
-                    	<?php 
-							$ec_id = $post->get_ec_id();
-							
-							if(count($ec_id) > 0)
-							{
-								$ec_name_f	= $post->get_ec_name_f();
-                                $ec_name_l	= $post->get_ec_name_l();
-                                $ec_loc		= $post->get_ec_loc();
-                                $ec_phone_o	= $post->get_ec_phone_o();
-                                $ec_phone_h	= $post->get_ec_phone_h();
-						?>							
-                                <table>
-                                    <caption>Emergency/After Hours Contacts</caption>
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Location</th>
-                                            <th>Office Phone</th>
-                                            <th>Cell/Home Phone</th>
-                                        </tr>
-                                    </thead>
-                                
-                                    <tbody>
-                                  <?php foreach ($post->get_ec_id() as $key => $value)
-                                        {                                            						  
-                                  ?>
-                                            
-                                            <tr>
-                                                <td><?php 
-                                                        if(array_key_exists($key, $ec_name_f)) echo $ec_name_f[$key];
-                                                        if(array_key_exists($key, $ec_name_l)) echo ' '.$ec_name_l[$key]; ?></td>
-                                                <td><?php if(array_key_exists($key, $ec_loc)) echo $ec_loc[$key]; ?></td>
-                                                <td><?php if(array_key_exists($key, $ec_phone_o)) echo $ec_phone_o[$key]; ?></td>
-                                                <td><?php if(array_key_exists($key, $ec_phone_h)) echo $ec_phone_h[$key]; ?></td>
-                                            </tr>
-                                    <?php 
-                                        }
-                                    ?>
-                                    </tbody>
-                                </table>
-                    	<?php
-							}
-						?>
-                   	</p>
-            </div>
-
-              		<div class="center">                         
+                        if($super_count > 0)
+                        {
+                            $super_name_f	= $post->get_super_name_f();
+                            $super_name_l	= $post->get_super_name_l();
+                    ?>							
                             <table>
-                                <caption></caption>
-                                <tbody>
-                                <?php if($post->get_room()){ ?>
-                                    <tr>
-                                        <th>Area/Room</th>
-                                        <td><?php echo $room_data->room.' ('.$post->get_room().'), '.ucwords(strtolower($room_data->useage_desc)); ?></td>
-                                    </tr>
-                                <?php } ?>
-
-                                <?php if($post->get_department()) { ?>
-                                    <tr>
-                                        <th>Department</th>
-                                        <td><?php echo $post->get_department() .', '.$department_name->name; ?></td>
-                                    </tr>
-                                <?php } ?>
-
-                                    <tr>
-                                        <th>Date Posted</th>
-                                        <td><?php echo date(DATE_COOKIE); ?></td>
-                                    </tr>
+                              <caption>
+                                Lab Supervisor<?php if($super_count > 1){ ?>s<?php } ?>
+                              </caption>
+                              <tbody>
+                              <?php foreach ($post->get_super_id() as $key => $value)
+                                    {                                            						  
+                              ?>                                            
+                                        <tr>
+                                            <td class="center"><?php 
+                                                    if(array_key_exists($key, $super_name_f)) echo $super_name_f[$key];
+                                                    if(array_key_exists($key, $super_name_l)) echo ' '.$super_name_l[$key]; ?></td>
+                                        </tr>
+                                <?php 
+                                    }
+                                ?>  
                                 </tbody>
-                            </table>                        
-                    </div>
+                            </table>
+                    <?php
+                        }
+                    ?>
+                   
+                    <?php 
+                        $ec_id = $post->get_ec_id();
+
+                        if(count($ec_id) > 0)
+                        {
+                            $ec_name_f	= $post->get_ec_name_f();
+                            $ec_name_l	= $post->get_ec_name_l();
+                            $ec_loc		= $post->get_ec_loc();
+                            $ec_phone_o	= $post->get_ec_phone_o();
+                            $ec_phone_h	= $post->get_ec_phone_h();
+                    ?>							
+                            <table>
+                                <caption>Emergency/After Hours Contacts</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Location</th>
+                                        <th>Office Phone</th>
+                                        <th>Cell/Home Phone</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                              <?php foreach ($post->get_ec_id() as $key => $value)
+                                    {                                            						  
+                              ?>
+
+                                        <tr>
+                                            <td><?php 
+                                                    if(array_key_exists($key, $ec_name_f)) echo $ec_name_f[$key];
+                                                    if(array_key_exists($key, $ec_name_l)) echo ' '.$ec_name_l[$key]; ?></td>
+                                            <td><?php if(array_key_exists($key, $ec_loc)) echo $ec_loc[$key]; ?></td>
+                                            <td><?php if(array_key_exists($key, $ec_phone_o)) echo $ec_phone_o[$key]; ?></td>
+                                            <td><?php if(array_key_exists($key, $ec_phone_h)) echo $ec_phone_h[$key]; ?></td>
+                                        </tr>
+                                <?php 
+                                    }
+                                ?>
+                                </tbody>
+                            </table>
+                    <?php
+                        }
+                    ?>
+              		                         
+                    <table>
+                        <caption></caption>
+                        <tbody>
+                        <?php if($post->get_room()){ ?>
+                            <tr>
+                                <th>Area/Room</th>
+                                <td><?php echo $room_data->room.' ('.$post->get_room().'), '.ucwords(strtolower($room_data->useage_desc)); ?></td>
+                            </tr>
+                        <?php } ?>
+
+                        <?php if($post->get_department()) { ?>
+                            <tr>
+                                <th>Department</th>
+                                <td><?php echo $post->get_department() .', '.$department_name->name; ?></td>
+                            </tr>
+                        <?php } ?>
+
+                            <tr>
+                                <th>Date Posted</th>
+                                <td><?php echo date(DATE_COOKIE); ?></td>
+                            </tr>
+                        </tbody>
+                    </table>
                     
-                    <div class="center">
-                        <p>
-                            The information on this sign must be updated at least annually or in the event of any change of emergency contacts or special hazards.
-                        </p>
-                    </div>
-              
+                    <p class="center">
+                        The information on this sign must be updated at least annually or in the event of any change of emergency contacts or special hazards.
+                    </p>
+                    
+              </div>
 </body>
 </html>
 	
