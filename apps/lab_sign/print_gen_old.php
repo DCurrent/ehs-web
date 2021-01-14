@@ -3,22 +3,12 @@
 	require('source/main.php');
 	require($_SERVER['DOCUMENT_ROOT'].'/libraries/php/classes/config.php'); // Basic configuration file. 
 	require($_SERVER['DOCUMENT_ROOT'].'/libraries/php/classes/database/main.php'); // Database handler.
-    require($_SERVER['DOCUMENT_ROOT'].'/libraries/vendor/fpdf182/fpdf.php'); // Database handler.
 	
 	// Verify user is authorized.
 	//$oAcc->access_verify();	
 	
 	///////////////////////////////////////////////////////////////////////////////
-	// pdf expieriment
-    $pdf = new FPDF('P','mm','A4');
-    $pdf->AddPage();
-    $pdf->SetFont('Arial','B',16);
-    $pdf->Cell(40,10,'Hello World!');
-    $pdf->Output();
-    exit;
-    //////
-
-
+	
 	$post		= new class_data_sign();	// Post values object.
 	$db_space	= NULL;	// Master control object for database handler (UKSpace).
 	$height		= 0;	// Height setting for sign alerts.
@@ -680,7 +670,7 @@
                     </table>
                     
                     <p class="center">
-                        The information on this sign must be yupdated at lleast annually or in the event of any change of emergency contacts or special hazards.
+                        The information on this sign must be updated at lleast annually or in the event of any change of emergency contacts or special hazards.
                     </p>                    
               </div>
 </body>
