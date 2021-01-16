@@ -10,12 +10,28 @@
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// pdf expieriment
+    /*
+    const CELL_LINE_RIGHT = 0;
+    const CELL_LINE_NEXT = 1;
+    const CELL_LINE_BELOW = 2;
+
+    const CELL_FILL_ON = true;
+    const CELL_FILL_OFF = false;
+
+    const CELL_ALIGN_CENTER = 'C';
+    const CELL_ALIGN_LEFT = 'L';
+    const CELL_ALIGN_RIGHT = 'R';
+
+    const CELL_BORDER_ON = 1;
+    const CELL_BORDER_OFF = 0;
+
     $pdf = new FPDF('P','mm','A4');
     $pdf->AddPage();
-    $pdf->SetFont('Arial','B',16);
-    $pdf->Cell(40,10,'Hello World!');
+    $pdf->SetFont('Arial','B', 16);
+    $pdf->Cell(0, 10, 'Hello World!', CELL_BORDER_OFF, CELL_LINE_BELOW, CELL_ALIGN_CENTER, CELL_FILL_OFF);
     $pdf->Output();
     exit;
+    */
     //////
 
 
@@ -104,25 +120,21 @@
 
 <!DOCtype html>
     <head>
-    	<title><?php echo settings::TITLE; ?>b</title>
+    	<title><?php echo settings::TITLE; ?></title>
     	<style>
             @page { 
                
                 size: letter;
                  /* change the margins as you want them to be. */               
-            } 
-            
-            @print { 
-                @page :footer { 
-                    display: none
-                } 
-
-                @page :header { 
-                    display: none
-                } 
-            }             
+            }                     
             
             @media print { 
+                
+                .no_print 
+                {
+                    display: none !important;
+                }
+                
                 @page { 
                     margin-top: 0; 
                     margin-bottom: 0; 
@@ -131,6 +143,14 @@
                     padding-top: 72px; 
                     padding-bottom: 72px ; 
                 } 
+                
+                @page :footer { 
+                    display: none
+                } 
+
+                @page :header { 
+                    display: none
+                }
             }
             
 			.center
@@ -221,12 +241,21 @@
 			{
 				text-align:left;
                 border-style:none;	
-			}
+			}           
+            
 		</style>
         
     </head>
     
-    <body>          
+    <body>
+        
+        <div class="no_print">
+            <h1>Lab Sign</h1>
+            
+            <p>If a print window does not automatically appear, <a href="#" onclick="window.print()">click here</a> or open your browser's printing options.</p>
+            <hr />
+        </div>
+        
 		<div class="print_container" id="hazard_item_container_outer">
             
         <h1 class="center" style="color:#C60; text-transform:uppercase;">Authorized personnel only!</h1>                  
@@ -680,9 +709,13 @@
                     </table>
                     
                     <p class="center">
-                        The information on this sign must be yupdated at lleast annually or in the event of any change of emergency contacts or special hazards.
+                        The information on this sign must be yupdated at least annually or in the event of any change of emergency contacts or special hazards.
                     </p>                    
               </div>
+        <script>
+        // Try to print soona s page load is finished.
+        window.onload = function() { window.print(); }
+        </script>
 </body>
 </html>
 	
