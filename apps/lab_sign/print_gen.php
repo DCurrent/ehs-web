@@ -553,7 +553,7 @@
             if($post->get_special())
             {
             ?>		
-            <div class="hazard_special">
+            <div class="hazard_special center">
                 <h1 class="hazard_label">
                     Special procedures required for entry or exit:                                                                                
                 </h1>                                    
@@ -704,7 +704,7 @@
                     </p>                    
               </div>
         <script>
-        // Try to print soona s page load is finished.
+        // Try to print soon as page load is finished.
         window.onload = function() { window.print(); }
         </script>
 </body>
