@@ -170,7 +170,7 @@
                 break-inside: avoid;  
             }
             
-			.auto_grid_container
+			.grid_container
 			{   
                 padding-bottom: 10px;
                 display: grid;  
@@ -190,16 +190,7 @@
                 min-width: 220px;
                 text-align: center;
                 padding: 2px;                
-                text-align: center;  
-                
-                /*
-                border-bottom-right-radius: 10px;
-                border-bottom-left-radius: 10px;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                border-style: solid;               
-                border-width: thick;
-                */
+                text-align: center; 
 			}
 			
 			.hazard_label
@@ -260,8 +251,8 @@
             
         <h1 class="center" style="color:#C60; text-transform:uppercase;">Authorized personnel only!</h1>                  
 
-		<h2 class="hazard_sign center">CAUTION: The following hazards are present within this area:</h2>
-            <div class="auto_grid_container" id="hazard_item_container">
+		<h2 class="hazard_sign center" style="color: #900;">CAUTION: The following hazards are present within this area:</h2>
+            <div class="grid_container" id="hazard_item_container">
 				<?php
 				/* 
                 Check each hazard item post and add to signs array if present.
@@ -709,7 +700,7 @@
                     </table>
                     
                     <p class="center">
-                        The information on this sign must be yupdated at least annually or in the event of any change of emergency contacts or special hazards.
+                        The information on this sign must be updated at least annually or in the event of any change of emergency contacts or special hazards. This sign expires <?php echo date(DATE_COOKIE,strtotime(date(DATE_COOKIE, time()) . " + 365 day")) ?>.
                     </p>                    
               </div>
         <script>
