@@ -2,14 +2,14 @@
 	
 	require($_SERVER['DOCUMENT_ROOT']."/libraries/php/classes/config.php"); //Basic configuration file.
 	require('../libraries/php/classes/database/main.php'); 	// Database class.
-	require('../libraries/vendor/fpdf182/fpdf.php');	// pdf maker.	
+	require('../libraries/vendor/mpdf/autoload.php');	// pdf maker.	
 	
 	// Initialize pdf maker class.
-	//$pdf_gen = new fpdf();
+	$pdf_gen = new \Mpdf\Mpdf();
 	
-	//$pdf_gen->SetTitle('EHS Class Certificate');	
-	//$pdf_gen->SetCreator('Caskey, Damon V.');
-	//$pdf_gen->AddPage('L', 'pt', 'A4'); // Adds a new page in Landscape orientation	
+	$pdf_gen->SetTitle('EHS Class Certificate');	
+	$pdf_gen->SetCreator('Caskey, Damon V.');
+	$pdf_gen->AddPage('L'); // Adds a new page in Landscape orientation	
 	
 	
 	// Initialize utility object.
@@ -145,7 +145,7 @@
 		$db->space->line = $db->space->query->get_line_object();
 		
 		// If we have the department, let's add the name as well.
-		if($department && $department != -1)
+		if($department)
 		{
 			$department .= ', ' .$db->space->line->DeptName;
 		}
@@ -155,57 +155,10 @@
 		$fields->signature	= $fields->signature ? $fields->signature : NULL;
 		$fields->taken		= $fields->taken ? $fields->taken : 'Unavailable';
 		
-        
-        //////////////
-        class PDF extends FPDF
-        {
-            // Page header
-            function Header()
-            {
-                // Logo
-                $this->Image('../media/image/uk_logo.png');
-                // Arial bold 15
-                $this->SetFont('Arial','B',15);
-                
-                $this->Rect(5, 5, 287, 200, 'D');
-                $this->Rect(4, 4, 289, 202, 'D');
-               
-                // Line break
-                $this->Ln(20);
-            }
-
-            // Page footer
-            function Footer()
-            {
-                // Position at 1.5 cm from bottom
-                $this->SetY(-15);
-                // Arial italic 8
-                $this->SetFont('Arial','I',8);
-                // Page number
-                $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
-            }
-        }
-        
-        // Initialize pdf maker class.
-        $pdf_gen = new pdf();        
-        
-        $pdf_gen->AddPage('L', 'A4'); // Adds a new page in Landscape orientation	
-        $pdf_gen->SetTitle('EHS Class Certificate');	
-        $pdf_gen->SetCreator('Caskey, Damon V.');      
-        
-        $pdf_gen->SetFont('Arial','B',24);        
-        $pdf_gen->Cell(100, 20, 'Certificate of Completion', 'BT', 1, 'C', false, '');
-        
-        $pdf_gen->Output('ehs_class_certificate.pdf', 'I');
-        
-        exit;
-        //////////////
-        
 		// Start caching page contents.
-		//ob_start();      
-        
-?>
+		ob_start();
 		
+?>
 <!DOCtype html>
 	<head>
         <title>UK - Environmental Health And Safety</title>
@@ -371,14 +324,14 @@
 	///////////////////////////////////////////////////////////////////////////////
 	
 	// Collect contents from cache and then clean it.
-	//$content = ob_get_contents();
-	//ob_end_clean();		
+	$content = ob_get_contents();
+	ob_end_clean();		
 	
-	//$pdf_gen->SetFooter($footer);
+	$pdf_gen->SetFooter($footer);
 	
 	// Send contents to pdf gen.
-	//$pdf_gen->WriteHTML($content);
+	$pdf_gen->WriteHTML($content);
 
 	// Send pdf and exit script.
-	//$pdf_gen->Output('ehs_class_certificate.pdf', 'I');
+	$pdf_gen->Output('ehs_class_certificate.pdf', 'I');
 ?>
