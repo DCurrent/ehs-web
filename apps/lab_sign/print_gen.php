@@ -135,10 +135,12 @@
                     display: none !important;
                 }
                 
+                /*
                 @page { 
                     margin-top: 0; 
                     margin-bottom: 0; 
                 } 
+                */
                 body { 
                     padding-top: 72px; 
                     padding-bottom: 72px ; 
