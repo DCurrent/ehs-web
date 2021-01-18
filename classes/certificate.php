@@ -2,7 +2,7 @@
 	
 	require($_SERVER['DOCUMENT_ROOT']."/libraries/php/classes/config.php"); //Basic configuration file.
 	require('../libraries/php/classes/database/main.php'); 	// Database class.
-	require('../libraries/vendor/mpdf/mpdf.php');	// pdf maker.	
+	require('../libraries/vendor/mpdf/autoload.php');	// pdf maker.	
 	
 	// Initialize pdf maker class.
 	$pdf_gen = new mPDF();
