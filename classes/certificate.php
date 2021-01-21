@@ -84,7 +84,7 @@
 	$db->space->connection = new class_db_connection($db->space->connect_params);
 		
 	if($get->id)
-	{
+	{       
 		// Verify user is logged in.
 		$oAcc->access_verify($_SERVER['PHP_SELF']."?id=".$get->id);
 		
@@ -147,7 +147,7 @@
 		// If we have the department, let's add the name as well.
 		if($department && $department != -1)
 		{
-			$department .= ', ' .$db->space->line->DeptName;
+			$department = $db->space->line->DeptName;
 		}
 		
 		$fields->verbiage	= $fields->verbiage ? $fields->verbiage : 'Unavailable';
@@ -159,16 +159,85 @@
         //////////////
         class PDF extends FPDF
         {
+            // Load data
+            function LoadData($file)
+            {
+                // Read file lines
+                $lines = file($file);
+                $data = array();
+                foreach($lines as $line)
+                    $data[] = explode(';',trim($line));
+                return $data;
+            }
+
+            // Simple table
+            function BasicTable($header, $data)
+            {
+                // Header
+                foreach($header as $col)
+                {
+                    $this->Cell(40,7,$col,1);
+                }
+                $this->Ln();
+                
+                // Data
+                foreach($data as $row)
+                {
+                    foreach($row as $col)
+                    {
+                        $this->Cell(40,6,$col,1);
+                    }
+                    $this->Ln();
+                }
+            }
+            
             // Page header
             function Header()
             {
-                // Logo
-                $this->Image('../media/image/uk_logo.png');
-                // Arial bold 15
-                $this->SetFont('Arial','B',15);
+                // Global broder
+                $this->Rect(20, 20, $this->GetPageWidth()-40, $this->GetPageheight()-40, 'D');
+                $this->Rect(16, 16, $this->GetPageWidth()-32, $this->GetPageheight()-32, 'D');
                 
-                $this->Rect(5, 5, 287, 200, 'D');
-                $this->Rect(4, 4, 289, 202, 'D');
+                /*
+                We're going to need our starting positions, so
+                lets get them now.
+                */
+                $pos_y = $this->GetY();
+                $pos_x = $this->GetX();
+                
+                // Logo
+                $imgFilename = '../media/image/uk_logo.png';
+                
+                
+                list($width, $height) = getimagesize($imgFilename);
+                
+                $width = $width * 72 / 96;
+                $height = $height * 72 / 96;
+                                
+                $this->Image($imgFilename, null, $pos_y, $width, $height);
+                
+                /*
+                Logo text. Add the logo width to move us toward the right.
+                */
+                $pos_x += $width+10;
+                $this->SetX($pos_x);
+                $this->SetY($pos_y+5, false);
+                
+                $this->SetFont('Arial', 'B', 12);                
+                $this->SetTextColor(0, 51, 160);
+                $this->Cell(200, 20, 'University of Kentucky', 0, 1, 'L', false, '');
+                
+                $this->ln(5);
+                $this->SetX($pos_x);
+                $this->SetFont('Arial', 'B', 24);
+                $this->SetTextColor(0, 51, 160);
+                $this->Cell(380, 20, 'Environmental Health and Safety', 0, 1, 'L', false, '');
+                
+                $this->ln(5);
+                $this->SetX($pos_x);
+                $this->SetFont('Arial','BI', 10);
+                $this->SetTextColor(0, 51, 160);
+                $this->Cell(380, 20, 'UK safety begins with you!', 0, 1, 'R', false, '');               
                
                 // Line break
                 $this->Ln(20);
@@ -178,24 +247,112 @@
             function Footer()
             {
                 // Position at 1.5 cm from bottom
-                $this->SetY(-15);
+                $this->SetY(-35);
                 // Arial italic 8
                 $this->SetFont('Arial','I',8);
-                // Page number
-                $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
+                
+                /*
+                Just in case we'd like to find the database record from
+                certificate, let's create an ID here that includes the
+                record ID. Then we add a UUID just to give the certificate
+                a timestamp and uniqueness.
+                */
+                
+                $string = 'Certificate ID '.uniqid(dechex($_GET['id']).'.', true);                
+                $string_width = $this->GetStringWidth($string);
+                
+                $this->Cell($string_width, 10, $string, 0, 0, 'L');               
             }
         }
         
         // Initialize pdf maker class.
-        $pdf_gen = new pdf();        
+        $pdf_gen = new pdf('L', 'pt');        
         
         $pdf_gen->AddPage('L', 'A4'); // Adds a new page in Landscape orientation	
         $pdf_gen->SetTitle('EHS Class Certificate');	
         $pdf_gen->SetCreator('Caskey, Damon V.');      
         
-        $pdf_gen->SetFont('Arial','B',24);        
-        $pdf_gen->Cell(100, 20, 'Certificate of Completion', 'BT', 1, 'C', false, '');
+        /*
+        Certificate title.
         
+        Once we set a font, we can figure out the width
+        of our string. From there, we are able to set
+        the cell width, and do some math to center it.
+        */
+        $pdf_gen->Ln(80);
+        $pdf_gen->SetFont('Arial','B',36); 
+        
+        $string = 'Certificate of Completion';
+        $string_width = $pdf_gen->GetStringWidth($string);       
+               
+        $pdf_gen->SetX($pdf_gen->GetPageWidth()/2 - ($string_width / 2));
+        $pdf_gen->Cell($string_width, 40, 'Certificate of Completion', 'BT', 1, 'C', false, '');
+        
+        // Name
+        $pdf_gen->Ln(30);
+        $pdf_gen->SetFont('Times','I',36);
+                
+        $string = $fields->name;
+        $string_width = $pdf_gen->GetStringWidth($string);
+        
+        $pdf_gen->SetX($pdf_gen->GetPageWidth()/2 - ($string_width / 2)); 
+        $pdf_gen->Cell($string_width, 20, $string, 0, 1, 'C', false, '');
+        
+        // Department
+        $pdf_gen->Ln(10);
+        $pdf_gen->SetFont('Times','I',14);
+                
+        $string = $department;
+        $string_width = $pdf_gen->GetStringWidth($string);
+        
+        $pdf_gen->SetX($pdf_gen->GetPageWidth()/2 - ($string_width / 2)); 
+        $pdf_gen->Cell($string_width, 20, $string, 0, 1, 'C', false, '');
+        
+        // Verbiage
+        $pdf_gen->Ln(20);
+        $pdf_gen->SetFont('Arial','',14);
+                
+        $string = strip_tags($fields->verbiage);
+        $string_width = $pdf_gen->GetStringWidth($string);
+        
+        $pdf_gen->MultiCell(0, 20, $string, 0, 'C', false);
+                
+        // Date taken
+        $pdf_gen->Ln(10);
+        $pdf_gen->SetFont('Times','BI',14);
+                
+        $string = $fields->taken;
+        $string_width = $pdf_gen->GetStringWidth($string);
+        
+        $pdf_gen->SetX($pdf_gen->GetPageWidth()/2 - ($string_width / 2)); 
+        $pdf_gen->Cell($string_width, 20, $string, 0, 1, 'C', false, '');
+        
+        
+        // Responsible party (sig image)        
+        $imgFilename = '../media/image/'.$fields->signature;
+
+        //list($width, $height) = getimagesize($imgFilename);
+
+        $width = 200 * 72 / 96;
+        $height = 100 * 72 / 96;
+        
+        $pdf_gen->SetXY($pdf_gen->GetPageWidth() - ($width + 35 + 20), -(60+10+$height));
+        $pdf_gen->Image($imgFilename, null, null, $width, $height);
+        
+        // Responsible Party
+        $pdf_gen->SetAutoPageBreak(0);
+        $pdf_gen->Ln(10);
+        $pdf_gen->SetFont('Times','I',14);
+                
+        $string = $fields->party;
+        $string_width = $pdf_gen->GetStringWidth($string);
+        
+        $pdf_gen->SetXY(-($string_width+35), -35); 
+        $pdf_gen->Cell($string_width, 0, $string, 0, 0, 'R', false, '');
+        
+        /*
+        Now we send the finished .pdf to browser!
+        */
         $pdf_gen->Output('ehs_class_certificate.pdf', 'I');
         
         exit;
