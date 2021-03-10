@@ -14,6 +14,7 @@
 	{
 		const CODE_FIRST	= 0;
 		const ADDRESS_FIRST	= 1;
+        const CODE_NAME_ADDRESS = 2;
 	}
 	
 	class post
@@ -125,8 +126,11 @@
 					$markup .= $line->get_code().' - '.ucwords(strtolower($line->get_name()));
 					break;
 				case FACILITY_COL_ORDER::ADDRESS_FIRST:
-					$markup.= ucwords(strtolower($line->get_address())).'  - '.ucwords(strtolower($line->get_name()));
-					break;			
+					$markup.= ucwords(strtolower($line->get_address())).' - '.ucwords(strtolower($line->get_name()));
+					break;	
+                case FACILITY_COL_ORDER::CODE_NAME_ADDRESS:
+                    $markup.= $line->get_code().' - '.ucwords(strtolower($line->get_name())).' - '.ucwords(strtolower($line->get_address()));
+                    break;
 			}
 			
 			// Close markup for option.		

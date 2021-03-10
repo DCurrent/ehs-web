@@ -18,7 +18,7 @@
 	require_once("access_old/main.php");		//Account based access.
 	require_once("database.php");	//Database handler.
 	require_once("forms.php");		//Forms handler.
-	//require_once("error.php");		//Error handler.
+	require_once("error.php");		//Error handler.
 	require_once("mail.php");		//Mail handler.
 	require_once("session.php");	//Session handler.
 	require_once("tables.php");		//Table handler.
@@ -27,12 +27,11 @@
 	// Replace default session handler.
 	$session_handler	= new class_session();	
 	session_set_save_handler($session_handler, TRUE);
-	session_start();
 			
 	// Initialize class objects
 	$utl	= new class_utility();											//Utility functions.
 	$oMail	= new class_mail();												//E-Mail handler.
-	//$err 	= new class_error();											//Error handler.
+	$err 	= new class_error();											//Error handler.
 	
 	$connect = new class_db_old_connect_params();
 	
@@ -44,4 +43,8 @@
 	$oFrm 	= new class_forms(array("DB"=> $oDB));										//Forms handler.
 		
 	$cDocroot = $utl->utl_get_server_value('DOCUMENT_ROOT')."/";
+	
+	
 ?>
+
+

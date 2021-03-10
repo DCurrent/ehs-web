@@ -83,8 +83,7 @@
                   <h2 id="chemical_hygiene">Chemical Hygiene Plan/Laboratory Safety - General Awareness</h2>
                 <p>Chemical                 safety for laboratory workers. This class is   required for anyone                 who works with chemicals in a   laboratory. If you have any questions                 about this class,   please contact <a href="mailto:Jacquelyn.rhinehart@uky.edu">Jackie Rhinehart</a> at (859) 257-3242.<br />
                     <br />
-        Classes are held in the Keeneland Room of the William T. Young   Library. </p>
-                <p>This class is available  <a href="main.php?cClassID=9" class="link-class">online</a>.</p>
+                This class is available  <a href="main.php?cClassID=9" class="link-class">online</a>.</p>
                 
                 	<h2 id="annual_refresher">Chemical Hygiene Plan/Laboratory Safety - Annual refresher</h2>
                 	

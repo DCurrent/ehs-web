@@ -551,7 +551,7 @@ class class_db_query implements db_query
 	
 		// Execute query.
 		$statement = sqlsrv_query($connect, $sql, $params, $options_a);
-				
+		
 		// Error trapping.
 		$this->error_m->error();
 		

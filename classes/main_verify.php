@@ -97,7 +97,8 @@
 		//echo "<!--Assesment Score : ".$cResults["score"]."-->".PHP_EOL;
 		
 		// If the score is not passing or the grading isn't
-		// handled elsewhere, the user failed.
+		// handled elsewhere, the user failed.        
+        
 		if ($cResults["score"] < $cClassParams['pass_score'] && !$cClassParams['external_grade'])
 		{	
 			/* Create failed verbiage markup. */
@@ -155,8 +156,9 @@
 			if($cClassParams['trainstatus'] != NULL)
 			{
 				$cClassParams['trainstatus'].= ', '. $cClassParams['trainstatus'] == 1 ? "Annual Refresher" : "Initial";
-			}		
-			
+			}			
+            
+            /* Build the email alert. */
 			if($cClassParams['email_list'])
 			{	
 				// paraquat text
@@ -176,7 +178,7 @@
 				
 				
 				/* Email results to responsible party and webmaster. */		  
-				$cMailHead['From'] 		= "EHS Online Training";
+				$cMailHead['From'] 		= "ehs_noreply@uky.edu";
 				$cMailHead['To'] 		= $cClassParams['email_list'];
 				$cMailHead['Subject']	= "EHS Online Training: ".$cClassParams['desc_title'];			
 				$cMailCont = array(
@@ -195,8 +197,10 @@
 							"Supervisor"				=>	$cClassParams['supervisor_namef'] .' '.$cClassParams['supervisor_namel'],
 							"EPA Paraquat"				=> 	$paraquat,
 							"Paraquat Assured"			=> 	$paraquat_assured);				
-				$oMail->mail_send($cMailCont, $cMailHead['Subject'], $cMailHead['To'], $cMailHead['From']); 
-			}
+				
+                $oMail->mail_send($cMailCont, $cMailHead['Subject'], $cMailHead['To'], $cMailHead['From']); 
+			    
+            }
 			/*
 			$cEtraxReturn = file_get_contents($cClassParams['etrax']);	
 			

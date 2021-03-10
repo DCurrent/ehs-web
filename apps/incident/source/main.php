@@ -23,7 +23,7 @@
 	abstract class MAILING
 	{
 		const
-			TO		= 'lpoor2@uky.edu, jlyoun3@uky.edu, mla263@uky.edu',
+			TO		= 'lpoor2@uky.edu, jlyoun3@uky.edu, mla263@uky.edu, rjwhit2@uky.edu',
 			CC		= '',
 			BCC		= 'dvcask2@uky.edu',
 			SUBJECT = 'Incident Report',

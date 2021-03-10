@@ -1,2 +1,0 @@
-# Prudhoe
-Page cache library.
