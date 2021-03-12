@@ -21,9 +21,16 @@
 		$cSel	= NULL;
 		$aFiles = direcrtory_scan($cDir, $cSearch, 'name', 1);	
 		
-		foreach ($aFiles as &$aFilesE)
+        
+        
+		foreach ($aFiles as $aFilesE)
 		{	
-			if(strpos($aFilesE, $cTopEntry))
+            /* 
+            * If a "top entry" is provided and matches the
+            * file name in this iteration, we mark it selected
+            * and label it "listserv subscription".
+            */
+            if($cTopEntry != NULL && strpos($aFilesE, $cTopEntry))
 			{					
 				$cSel .= "<option value='$cFile$aFilesE' selected='selected'>Listserv Subscription</option>";
 			}				
