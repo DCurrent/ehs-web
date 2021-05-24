@@ -243,7 +243,7 @@
 					
 				
 					
-<h2 id="utility_cart">Utility Cart Safety</h2>
+<h2 id="utility_cart">Utility And Golf Cart Safety</h2>
                 <p>This training is mandatory  for all employees who drive a utility carts while working at University of  Kentucky.&nbsp; The objective of the training is </p>
                 <ul>
                   <li>Prevent  injury to pedestrians, utility cart operators and their passengers</li>
