@@ -27,8 +27,8 @@
                 <div id="content">
                     <h1>Minors In Research Laboratories or Animal Facilities</h1>
 					
-					<p class = "alert">Notice: Per the Vice President of <a href="https://www.research.uky.edu/resources/uk-resumption-research-plan">Research’s Resumption of Research plan</a>, high school volunteers are not allowed in research workspaces for the duration of the pandemic.  Forms submitted for approval of Minors in Research cannot be approved at the current time.</p>
-					
+                    <p class = "alert">Notice: Per the Vice President of <a href="https://www.research.uky.edu/resources/uk-resumption-research-plan">Research’s Resumption of Research plan</a>, on April 2, 2021, we moved to Phase 4. High school students or other volunteers are only allowed during Phase 4 with specific pre-approval of the OVPR. Please see the FAQ. Justification is required for specific undergraduates to participate in research during Phase 4, so that health and safety is maximized and the research mission is protected.</p>
+                    
                     <p>Environmental Health and Safety is committed to helping young researchers understand the risks involved with working in research laboratories  or animal facilities and how those risks can be minimized. The Minors In  Research Laboratories  or Animal Facilities Policy was developed to  document the risk assessment decision logic for each proposed project. The risk  assessment also provides researchers information on controls and training that  are required when certain hazards are present.</p>
                     <ul>
                       <li>Please read the <a href="/docs/pdf/ohs_minors_in_labs_0001.pdf" target="_blank">instructions document</a></li>
