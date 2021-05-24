@@ -31,11 +31,11 @@
     </ul>
 	<p><a href="http://ehs.uky.edu/bioraft.php">UKY BioRaft:&nbsp;  Laboratory Audit Inspection System.</a></p>
 
-	<!-- Winter Walking -->
+	<!-- Winter Walking 
     <h3>Walk Safe This Winter!</h3> 
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/033q0MM-ErA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br />
-    <br />
+    <br />-->
     
     <!--<a href="http://www.uky.edu/hr/hr-home/uk-walk-safe-winter"><img src="../../media/image/female_snowboot_0001.png" /></a>
 	<h3><a href="http://www.uky.edu/hr/hr-home/uk-walk-safe-winter">Walk Safe This Winter!</a></h3>
@@ -47,9 +47,9 @@
 	</div -->
 
 	<!-- Generic Walking Tips -->
-	<!--a href="/docs/pdf/ohs_walk_safely_flyer.pdf">Wildcats Walk Safely! Be a Safe Pedestrian at UK</a>
+	<a href="/docs/pdf/ohs_walk_safely_flyer.pdf">Wildcats Walk Safely! Be a Safe Pedestrian at UK</a>
 	<br>
-	<br-->
+	<br>
 
 	<iframe id="campus_safety" src="//www.youtube.com/embed/9yH7nqJeRZw?wmode=transparent" allowfullscreen></iframe>
 
@@ -92,7 +92,7 @@
 				<li><a href="/docs/pdf/bio_lab_surplusing_biohazardous_equipment_0001.pdf" target="_blank">Surplusing Biohazardous Contaminated Equipment</a></li>
 			</ul>
 		</li>
-		<li>Respiratory Protection, <a href="/ohs/respgate.php#enrollment">Animal Handlers</a></li>
+		<li><a href="/ohs/respgate.php#enrollment">Respiratory Protection - Medical Clearance</a></li>
 	</ul>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
