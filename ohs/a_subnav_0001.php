@@ -24,12 +24,12 @@
                 <li><a href="/docs/pdf/ohs_hcp.pdf" target="_blank">Hazard Communication Program</a></li>
                 <li><a href="/classes/safe_checklist_non_lab_0001.php">Health &amp; Safety Checklist For Non-Laboratories</a></li>				
 				<li><a href="/apps/hero">HERO (Hazard Education, Recording, and Observation)</a></li>				
-                <li><a href="hot_work_plan.pdf" target="_blank">Hot Work Program</a></li>
+                <li><a href="/ohs/hot_work_plan.pdf" target="_blank">Hot Work Program</a></li>
 				<li><a href="/ohs/laser_safety.php">Laser Safety</a></li>
                 <li><a href="/ohs/lockout.html">Lockout/Tagout Program</a></li>
                 <li><a href="/ohs/machineguard">Machine Guarding</a></li>
                 <li><a href="/docs/pdf/ohs_machine_shop_safety_guidelines_0001.pdf" target="_blank">Machine Shop Safety Guidelines</a></li>
-                <li><a href="../docs/pdf/ohs_powered_industrial_truck_safety_program_0001.pdf" target="_blank">Powered Industrial Truck Safety Program</a></li>
+                <li><a href="/docs/pdf/ohs_powered_industrial_truck_safety_program_0001.pdf" target="_blank">Powered Industrial Truck Safety Program</a></li>
                 <li><a href="/docs/pdf/ohs_ppe_hazard_assessment_instructions_and_form.pdf" target="_blank">PPE Hazard Assessment</a></li>
                 <li><a href="/ohs/zika.php">Zika Virus</a></li>
             </ul>
@@ -66,8 +66,8 @@
                 <li><a href="/ohs/fumehood.php">Chemical Hood</a></li>
                 <li><a href="/ohs/chp">Chemical Hygiene</a></li>
                 <li><a href="/ohs/chem_info.php">Chemical/Flammable Information</a></li>
-                <li><a href="labsafe.php#glove_selection">Glove Selection</a></li>
-                <li><a href="labsafe.php#lab_setup">Lab Design &amp; Emergency Equipment</a></li>
+                <li><a href="/ohs/labsafe.php#glove_selection">Glove Selection</a></li>
+                <li><a href="/ohs/labsafe.php#lab_setup">Lab Design &amp; Emergency Equipment</a></li>
                 <li><a href="#">Lab Inspection Procedures</a>
                   <ul>
                     <li><a href="/ohs/inspections.php">Lab Inspections</a></li>
@@ -76,7 +76,7 @@
                 </li>
                 <li><a href="/ohs/alerts.html">Lab Safety Alerts</a></li>
                 <li><a href="/classes/">Training</a></li>
-                <li><a href="labsafe.php#useful_links">Useful Links</a></li>
+                <li><a href="/ohs/labsafe.php#useful_links">Useful Links</a></li>
             </ul>
         </li>
         
