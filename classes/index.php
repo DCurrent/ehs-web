@@ -217,7 +217,7 @@
                           <td><a href="classes_ohs_0001.php#hero">Slips, Trips, and Falls; Hazard Recognition</a></td>
                         </tr>
                         <tr>
-                        	<td><a href="classes_ohs_0001.php#utility_cart">Utility Cart Training</a></td>
+                        	<td><a href="classes_ohs_0001.php#utility_cart">Utility And Golf Cart  Safety</a></td>
                         </tr>
                         <tr>
                           <td><a href="classes_biosafety_0001.php#viral_vectors">Viral Vectors</a></td>
