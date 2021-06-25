@@ -70,12 +70,16 @@
 				&$cPost['name_f'],
 				&$cPost['name_f']));
 		
-	if(is_array($cPost['frm_lst_account']) === TRUE)
+	if(is_array($cPost['frm_lst_account']) == TRUE && $cPost['frm_lst_account'][0] != '')
 	{	
+        //var_dump($cPost['frm_lst_account']);
+        
+        
+        
 		/* Build parameter string insert for query. */
 		//$sqlAdd['account'] = " AND (account IN (".str_repeat('?,', count($cPost['frm_lst_account']) - 1). '?'."))";
 		
-		$sqlAdd['account'] = " AND (".str_repeat('account LIKE ? OR ', count($cPost['frm_lst_account']) - 1). 'account LIKE ?'.")";
+		$sqlAdd['account'] = "AND (".str_repeat('account LIKE %?% OR ', count($cPost['frm_lst_account']) - 1). 'account LIKE ?'.")";
 		
 		// Adds the '%' to end of every string in array.'
 		$cPost['frm_lst_account'] = array_map('append_like_char', $cPost['frm_lst_account']);
