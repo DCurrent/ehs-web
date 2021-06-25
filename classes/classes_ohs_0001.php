@@ -237,6 +237,12 @@
                 <p>Please contact <a href="mailto:derek.bocard@uky.edu">Derek Bocard</a> or <a href="mailto:melissa.claar@uky.edu">Melissa Claar</a> with questions.</p>
                 <p>This class is available <a href="main.php?cClassID=126" class="link-class">online</a>.</p>
                 
+                <h2 id="silica_training">Silica Training</h2>
+                <p>This class in mandatory for any employees that work in a area where exposure to respirable crystalline silica has been determined to work in an environment where exposure to respirable crystalline silica is present. This training should be completed upon hire, when a new silica exposure is introduced, and repeated annually. </p>
+                <p>Please contact <a href="mailto:derek.bocard@uky.edu">Derek Bocard</a> with questions.</p>
+                <p>This class is available <a href="main.php?cClassID=138" class="link-class">online</a>.</p>
+                <p>&nbsp;</p>
+                
 				<h2 id="hero">Slips, Trips, and Falls; Hazard Recognition</h2>
 				<p>Learn how slips, trips, and falls happen, how to identify hazards, and how to eliminate or minimize these hazards.</p>
 				<p>This class is available <a href="https://ehs.uky.edu/apps/hero" class="link-class">online</a>.</p>
