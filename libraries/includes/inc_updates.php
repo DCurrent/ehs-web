@@ -20,7 +20,8 @@
 	
 	As part of a recent update, the university's Hazardous Waste Pickup and Chemical Inventory System has <a href="https://etrax.chematix.com" target="new">a new location</a>. Make sure to update your bookmarks!	
 	
-	<h3>Covid-19</h3>
+	<!-- <h3>Covid-19</h3>
+        
 	<ul>
 		<li><a href="/covid-19_cleaning_computer.php" title="Covid-19, Cleaning Computer Surfaces Guide" target="" >Computers and High Touch Surfaces</a></li>
 						<li><a href="/covid-19_guidance.php" title="Covid-19, General Guidelines" target="">General Guidelines</a></li>
@@ -28,7 +29,8 @@
 						<li><a href="/covid-19_cleaning_office.php" title="Covid-19, Office Cleaning Guide" target="">Office Cleaning</a></li>
 	  <li><a href="/covid-19_reopening_gen_spaces.php" title="Covid-19, Reopening General Spaces" target="">Reopening Gen Spaces</a></li>
 	  <li><a href="https://www.uky.edu/facilities/covid-19-resources">Signage</a>&nbsp;</li>
-    </ul>
+    </ul>-->
+    
 	<p><a href="http://ehs.uky.edu/bioraft.php">UKY BioRaft:&nbsp;  Laboratory Audit Inspection System.</a></p>
 
 	<!-- Winter Walking 
