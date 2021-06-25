@@ -214,6 +214,9 @@
                           <td><a href="classes_biosafety_0001.php#select_agents_insider_threat">Select Agents - Insider threat Awareness</a></td>
                         </tr>
                         <tr>
+                          <td><a href="classes_ohs_0001.php#silica_training">Silica Training</a></td>
+                        </tr>
+                        <tr>
                           <td><a href="classes_ohs_0001.php#hero">Slips, Trips, and Falls; Hazard Recognition</a></td>
                         </tr>
                         <tr>
